@@ -1,0 +1,113 @@
+###二楼无线开关自动化设置###
+- alias: IF_DOUBLE_CLICK_THAN_TURN_OFF_2F_KETING
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: single
+  condition:
+    condition: sun
+    after: sunset
+  action:
+  - service: switch.toggle
+    entity_id: switch.keting_light
+- alias: changanguanbiyingyuan
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: hold
+  action:
+  - service: scene.turn_on
+    entity_id: scene.guanbiyingyuan
+- alias: shuangjidakaiyingyuan
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: double
+  action:
+    - service: scene.turn_on
+      entity_id: 
+        - scene.dakaiyingyuan   
+ ###一楼无线开关自动化设置###
+- alias: IF_SINGLE_CLICK_THAN_TURN_ON_1F_WOSHI
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: single
+  condition:
+    condition: sun
+    after: sunset
+  action:
+  - service: switch.toggle
+    entity_id: switch.1f_woshi
+- alias: IF_DOUBLE_CLICK_THAN_TURN_OFF_1F_WOSHI
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: double
+  condition:
+    condition: sun
+    after: sunset
+  action:
+  - service: light.toggle
+    entity_id: light.gateway_light_286c07f0c4e5
+- alias: IF_HOLD_CLICK_THAN_TURN_OFF_MI_LIGHT
+  trigger:
+  - platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: hold
+
+  action:
+  - service: homeassistant.turn_off
+    entity_id:
+      - light.gateway_light_286c07f0c4e5
+      - switch.1f_woshi         
+#####二楼贴墙式开关自动化设置#######
+- alias: leftguanbiwoshideng
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.wall_switch_left_158d0001831b67
+      click_type: single
+  condition:
+    condition: sun
+    after: sunset
+  action:
+  - service: switch.toggle
+    entity_id: switch.keting_light
+- alias: rightguanbiketingdeng
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.wall_switch_right_158d0001831b67
+      click_type: single
+  condition:
+    condition: sun
+    after: sunset
+  action:
+  - service: switch.toggle
+    entity_id: switch.woshi_light
+- alias: BOTHguanbiyingyuan
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.wall_switch_both_158d0001831b67
+      click_type: both
+  action:
+  - service: scene.turn_on
+    entity_id: 
+      - scene.guanbiyingyuan

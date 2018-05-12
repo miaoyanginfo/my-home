@@ -1,0 +1,103 @@
+####TTSWELCOME####
+- alias: paulwelcomeback
+  trigger:
+     - platform: state
+       entity_id: device_tracker.iphone
+       from: 'not_home'
+       to: 'home'
+  action:    
+     - service: hello_miai.send
+       data_template:
+         message: >
+           苗洋回来了
+         miai_num:
+           0
+- alias: yanwelcomeback
+  trigger:
+     - platform: state
+       entity_id: device_tracker.smartisanu2pro
+       from: 'not_home'
+       to: 'home'
+  action:    
+     - service: hello_miai.send
+       data_template:
+         message: >
+           秋燕回来了
+         miai_num:
+           0
+- alias: jiewelcomeback
+  trigger:
+     - platform: state
+       entity_id: device_tracker.mi5xxiaomishouji
+       from: 'not_home'
+       to: 'home'
+  action:    
+     - service: hello_miai.send
+       data_template:
+         message: >
+           苗菁洁回来了
+         miai_num:
+           0
+- alias: yanwelcomeback
+  trigger:
+     - platform: state
+       entity_id: device_tracker.redmi3hongmishouji
+       from: 'not_home'
+       to: 'home'
+  action:    
+     - service: hello_miai.send
+       data_template:
+         message: >
+           爸爸回来了
+         miai_num:
+           0
+- alias: yanwelcomeback
+  trigger:
+     - platform: state
+       entity_id: device_tracker.minote
+       from: 'not_home'
+       to: 'home'
+  action:    
+     - service: hello_miai.send
+       data_template:
+         message: >
+           妈妈回来了
+         miai_num:
+           0
+#####TTS#####
+- alias: switch_status_tts
+  trigger:
+    - platform: state
+      entity_id: switch.1f_keting,switch.plug_158d00015d1bf5,switch.1f_woshi,switch.keting_light,switch.mynas,switch.plug_158d00015d1bf5,switch.woshi1,switch.woshi2,switch.woshi3,switch.woshi4,switch.woshi_light
+  condition:
+    - condition: state
+      entity_id: input_boolean.switch_status_tts
+      state: 'on'
+  action:
+    - service: hello_miai.send
+      data_template:
+        message: >
+          好的
+          {{ trigger.to_state.attributes.friendly_name }}
+          {%- if trigger.to_state.state == "off" %}
+          已关闭
+          {%- elif trigger.to_state.state == "on" %}
+          已开启
+          {% endif -%}
+        miai_num:
+          0
+####TTS工作时间####
+- alias: TTSON
+  trigger: 
+  - platform: time
+    at: '7:05:00'
+  action:
+  - service: input_boolean.turn_on
+    entity_id: input_boolean.switch_status_tts
+- alias: TTSOFF
+  trigger: 
+  - platform: time
+    at: '21:05:00'
+  action:
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.switch_status_tts

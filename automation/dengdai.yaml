@@ -1,0 +1,24 @@
+#####灯带自动化#####
+- alias: "Holiday Input Effect"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: input_select.holiday_led_effect
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "bruh/mqttstrip/seteffect"
+        payload: '{{ trigger.to_state.state | string }}'
+
+- alias: "Animation Speed"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: input_number.animation_speed
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "bruh/mqttstrip/setanimationspeed"
+        payload: '{{ trigger.to_state.state | int }}'
