@@ -1,0 +1,10 @@
+
+- platform: newifi
+  host: 192.168.1.1
+  interval_seconds: 30
+  consider_home: 180
+  username: admin
+  password: admin...
+  track_new_devices: no
+
+  

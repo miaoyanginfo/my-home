@@ -1,0 +1,287 @@
+minote:
+  hide_if_away: false
+  icon:
+  mac: F4:8B:32:A6:61:FC
+  name: MUM
+  picture: /local/mum.png
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+redmi3hongmishouji:
+  hide_if_away: false
+  icon:
+  mac: 64:CC:2E:D3:5E:10
+  name: DAD
+  picture: /local/dad.png
+  track: true
+  vendor: unknown
+smartisanu2pro:
+  hide_if_away: false
+  icon:
+  mac: B4:0B:44:A2:D1:EA
+  name: YAN
+  picture: /local/yan.png
+  track: true
+  vendor: unknown
+iphone:
+  hide_if_away: false
+  icon:
+  mac: D8:96:95:43:8B:04
+  name: PAUL
+  picture: /local/paul.png
+  track: true
+  vendor: Apple, Inc.
+mi5xxiaomishouji:
+  hide_if_away: false
+  icon:
+  mac: E4:46:DA:FB:19:BF
+  name: JIE
+  picture: /local/jie.png
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+miaopi:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:9B:A2:F3
+  name: miao-pi
+  picture:
+  track: false
+
+lumigatewayv3_mi:
+  hide_if_away: false
+  icon:
+  mac: 28:6C:07:F0:C4:E5
+  name: lumi-gateway-v3 mi
+  picture:
+  track: false
+
+miaisoundbox:
+  hide_if_away: false
+  icon:
+  mac: 00:9E:C8:E7:67:1D
+  name: MiAiSoundbox
+  picture:
+  track: false
+
+brdlk:
+  hide_if_away: false
+  icon:
+  mac: 34:EA:34:E9:BA:18
+  name: brdlk
+  picture:
+  track: false
+
+broadlink_oemt1woshi:
+  hide_if_away: false
+  icon:
+  mac: 34:EA:34:C9:82:3D
+  name: BroadLink OEM-T1-woshi
+  picture:
+  track: false
+
+001132d4b883:
+  hide_if_away: false
+  icon:
+  mac: 00:11:32:D4:B8:83
+  name: 001132d4b883
+  picture:
+  track: false
+
+thinkpadx230:
+  hide_if_away: false
+  icon:
+  mac: 3C:A9:F4:06:06:E8
+  name: THINKPAD-X230
+  picture:
+  track: false
+
+broadlink_oemt1c:
+  hide_if_away: false
+  icon:
+  mac: 34:EA:34:C7:19:15
+  name: BroadLink OEM-T1-c
+  picture:
+  track: false
+
+fangcamera:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:E6:B3:D3
+  name: Fangcamera
+  picture:
+  track: false
+
+broadlink_oemt1f:
+  hide_if_away: false
+  icon:
+  mac: 34:EA:34:C9:95:75
+  name: BroadLink OEM-T1-f
+  picture:
+  track: false
+
+spmini:
+  hide_if_away: false
+  icon:
+  mac: 34:EA:34:F1:C0:33
+  name: spmini
+  picture:
+  track: false
+
+uplushaieracaf5:
+  hide_if_away: false
+  icon:
+  mac: 00:07:A8:AD:AF:5D
+  name: uplus-haier-ac-af5
+  picture:
+  track: false
+
+e0a3ac37bac9:
+  hide_if_away: false
+  icon:
+  mac: E0:A3:AC:37:BA:C9
+  name: e0a3ac37bac9
+  picture:
+  track: false
+
+desktop39ipl1h:
+  hide_if_away: false
+  icon:
+  mac: 00:E7:4C:68:00:DA
+  name: DESKTOP-39IPL1H
+  picture:
+  track: false
+
+'207693268194':
+  hide_if_away: false
+  icon:
+  mac: 20:76:93:26:81:94
+  name: '207693268194'
+  picture:
+  track: false
+
+000c437620e8:
+  hide_if_away: false
+  icon:
+  mac: 00:0C:43:76:20:E8
+  name: 000c437620e8
+  picture:
+  track: false
+
+_iphone:
+  hide_if_away: false
+  icon:
+  mac:
+  name: ' iphone'
+  picture:
+  track: false
+
+minoteltexiaomishou:
+  hide_if_away: false
+  icon:
+  mac: 34:80:B3:15:3E:9D
+  name: MINOTELTE-xiaomishou
+  picture:
+  track: false
+
+ipadmini:
+  hide_if_away: false
+  icon:
+  mac: 9C:F3:87:96:D5:8F
+  name: iPadmini
+  picture:
+  track: false
+
+3c970e286d06:
+  hide_if_away: false
+  icon:
+  mac: 3C:97:0E:28:6D:06
+  name: 3c970e286d06
+  picture:
+  track: false
+
+90adf71a80a4:
+  hide_if_away: false
+  icon:
+  mac: 90:AD:F7:1A:80:A4
+  name: 90adf71a80a4
+  picture:
+  track: false
+
+iphone2:
+  hide_if_away: false
+  icon:
+  mac: 50:82:D5:69:B7:A5
+  name: iPhone-2
+  picture:
+  track: false
+
+android89bee56eea893ea8:
+  hide_if_away: false
+  icon:
+  mac: B4:EF:FA:68:DD:24
+  name: android-89bee56eea893ea8
+  picture:
+  track: false
+
+androida2b7f9f54b62cb3c:
+  hide_if_away: false
+  icon:
+  mac: 78:C2:C0:9A:4E:8E
+  name: android-a2b7f9f54b62cb3c
+  picture:
+  track: false
+
+androiddab7ff35150985b2:
+  hide_if_away: false
+  icon:
+  mac: 78:C2:C0:94:11:09
+  name: android-dab7ff35150985b2
+  picture:
+  track: false
+
+android92134a9d6bed2852:
+  hide_if_away: false
+  icon:
+  mac: 44:04:44:0E:FE:64
+  name: android-92134a9d6bed2852
+  picture:
+  track: false
+
+androidce4f82fad55110b3:
+  hide_if_away: false
+  icon:
+  mac: 38:29:5A:AA:51:43
+  name: android-ce4f82fad55110b3
+  picture:
+  track: false
+
+redmi4xhongmishouji:
+  hide_if_away: false
+  icon:
+  mac: 00:EC:0A:12:5C:ED
+  name: Redmi4X-hongmishouji
+  picture:
+  track: false
+
+changxideiphone:
+  hide_if_away: false
+  icon:
+  mac: CC:2D:B7:5E:E1:67
+  name: changxideiPhone
+  picture:
+  track: false

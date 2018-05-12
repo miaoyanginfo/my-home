@@ -1,0 +1,56 @@
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+- platform: systemmonitor
+  resources:
+  - type: memory_free
+  - type: memory_use_percent
+  - type: processor_use
+  - type: since_last_boot
+- platform: darksky
+  api_key: d61092f55db0a2818f3625cd421ead3d
+  monitored_conditions:
+    # - summary
+    - icon
+    # - nearest_storm_distance
+    # - nearest_storm_bearing
+    # - precip_type
+    - precip_intensity
+    - precip_probability
+    - temperature
+    - apparent_temperature
+    # - dew_point
+    - wind_speed
+    - wind_bearing
+    # - cloud_cover
+    - humidity
+    - pressure
+    - visibility
+    # - ozone
+    # - minutely_summary
+    # - hourly_summary
+    # - daily_summary
+    # - temperature_max
+    # - temperature_min
+    # - apparent_temperature_max
+    # - apparent_temperature_min
+    # - precip_intensity_max 
+- platform: speedtest
+  minute:
+    - 0
+    - 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+- platform: synologydsm
+  host: 192.168.1.111
+  username: admin
+  password: 64269264
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    - network_down
+    - cpu_user_load

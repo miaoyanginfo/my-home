@@ -1,0 +1,118 @@
+# ###首页显示###
+default_view:
+    name: 首页 
+    view: yes
+    entities:      
+      - group.date
+      - group.pi_system
+      - group.xiaomi
+      - group.fish  
+      - group.dengdai    
+      - group.status 
+      - group.light
+      - weather.dark_sky
+      - weather.yweather
+      - group.local_weather
+      - group.switch  
+      - device_tracker.iphone
+      - device_tracker.mi5xxiaomishouji
+      - device_tracker.minote
+      - device_tracker.smartisanu2pro
+      - device_tracker.redmi3hongmishouji 
+      - group.yingyuan
+      - input_boolean.weather
+      
+
+
+
+    
+###顶部导航### 
+
+      
+      
+     
+
+
+# ###分组详情###
+Date:
+    - sensor.date
+    - sensor.time
+    - sun.sun
+Pi_System:
+    - sensor.cpu_use
+    - sensor.cpu_temperature
+    - sensor.ram_use
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    - sensor.since_last_boot
+
+dengdai:
+    - input_number.animation_speed
+    - input_select.holiday_led_effect
+    - light.holiday_lights    
+local_weather:
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_cloud_coverage
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_icon
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_wind_bearing
+    - sensor.wind_dir
+    - sensor.dark_sky_wind_speed
+    - sensor.wind_grade
+fish:
+    - switch.device1
+    - switch.device2
+    - switch.device3
+    - switch.device4
+    - switch.fish1
+    - switch.fish2
+    - switch.fish3
+    - switch.fish4    
+switch:
+    - switch.sharp_tv
+    - switch.spmini
+    - switch.haier   
+    - switch.sonoff_taideng
+    - switch.sonoff_2
+    - switch.1f_keting   
+        
+status:
+    - binary_sensor.padavan
+    - binary_sensor.thinkpad
+    - binary_sensor.baidu
+    - binary_sensor.h96
+    - binary_sensor.nas
+    - binary_sensor.route2
+    - binary_sensor.route3
+device_tracker:
+    - device_tracker.iphone
+    - device_tracker.mi5xxiaomishouji
+    - device_tracker.minote
+    - device_tracker.smartisanu2pro
+    - device_tracker.redmi3hongmishouji   
+xiaomi:    
+    - binary_sensor.motion_sensor_158d00015d5c57
+    - binary_sensor.switch_158d0001839247
+    - switch.plug_158d00015d1bf5
+    - binary_sensor.motion_sensor_158d00015d2507
+    - sensor.illumination_286c07f0c4e5
+    - binary_sensor.door_window_sensor_158d0001a64708
+    - binary_sensor.motion_sensor_158d00015dbaec
+light: 
+    - switch.keting_light
+    - switch.woshi_light
+    - switch.1f_woshi
+    - light.gateway_light_286c07f0c4e5
+yingyuan:
+    - switch.mynas  
+    - switch.woshi1
+    - switch.woshi2
+    - switch.woshi3
+    - switch.woshi4 
+    - media_player.kodi    

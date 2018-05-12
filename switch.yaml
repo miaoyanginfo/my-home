@@ -1,0 +1,78 @@
+- platform: broadlink
+  host: 192.168.1.4
+  mac: 34:ea:34:e9:ba:18
+  switches:
+    woshi_light:
+      command_on: 'sg40AAocHQkKHB0JChwdCgocHQkKHAobChwKHAobChsdCR0JCgABGwocHQkKHBwKChwdCQocHAkAAAAA'
+      command_off: 'shQ0ABwKChscCQobHAoKGxwJChscCgocHAkKGxwJChsKHBwJHAoKGwocChsKGwoAARgKHBwKChsAAAAA'    
+      friendly_name: "woshi_light"
+    keting_light:
+      command_on: 'shA0AAocHAkKHBwJChwcCQocHAkKHBwKChscCQocHAkKHAocChwKGxwJHAkKHAobCgABGQobHAoAAAAA'
+      command_off: 'sgs0AAobHAkKGxwJChscCRwJHAkKGwobChwKGwobChsKAAEVChscCQobHAkKHBwJChscCQobHAkAAAAA'
+      friendly_name: "keting_light"
+    1f_woshi:
+      command_on: 'shI0AAobHAoKHBwJChscCQobHAkKGx0JChwcCQocHAoKHAocChwKGxwJHAkKHAocCgABGRwKHAkAAAAA'
+      command_off: 'sgs0AAoAARUcCRwJChscCQobHAkKGxwJChscCQobHAkKGxwJChscCRwJHAkKGwobChsKGwobChsAAAAA'
+      friendly_name: "1f_woshi"
+    1f_keting:
+      command_on: '1ww0AA0kDSQNJA0kJA0NJA0kDSQkDSQNDSQNJCQNJA0kDSQNDSQNJA0kJA0kDQ0kDSQkDQwAAW8AAAAA'
+      command_off: '1ww0AA0kJA0kDQ0kJA0NJA0kJA0NJA0kDSQNJA0kDSQkDSQNDSQNJCQNJA0NJA0kJA0kDQwAAW8AAAAA'
+      friendly_name: "1f_keting"
+- platform: broadlink
+  host: 192.168.1.7
+  mac: '34:ea:34:f1:c0:33'
+  type: spmini2
+  friendly_name: 'spmini' 
+  
+- platform: mqtt
+  name: "Sonoff_taideng"
+  state_topic: "home/paul/1/stat"
+  command_topic: "home/paul/1"
+  qos: 1
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+- platform: mqtt
+  name: "Sonoff_2"
+  state_topic: "home/paul/2/stat"
+  command_topic: "home/paul/2"
+  qos: 1
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+- platform: broadlink
+  host: 192.168.1.5
+  mac: '34:EA:34:C7:19:15'
+  type: mp1
+  friendly_name: "Broadlink MP1"
+  slots:
+    slot_1: 'device1'
+    slot_2: 'device2'
+    slot_3: 'device3'
+    slot_4: 'device4' 
+- platform: broadlink
+  host: 192.168.1.6
+  mac: '34:EA:34:C9:95:75'
+  type: mp1
+  friendly_name: "Broadlink MP1"
+  slots:
+    slot_1: 'fish1'
+    slot_2: 'fish2'
+    slot_3: 'fish3'
+    slot_4: 'fish4'
+- platform: broadlink
+  host: 192.168.1.23
+  mac: '34:EA:34:C9:82:3D'
+  type: mp1
+  friendly_name: "Broadlink MP1"
+  slots:
+    slot_1: 'woshi1'
+    slot_2: 'woshi2'
+    slot_3: 'woshi3'
+    slot_4: 'woshi4'
+- platform: wake_on_lan
+  mac_address: "B8-97-5A-F5-5B-CA"
+  host: 192.168.1.111
+  name: MY-NAS
+  turn_off:
+    service: shell_command.nasoff

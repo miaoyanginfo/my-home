@@ -1,0 +1,10 @@
+- platform: mqtt
+  name: "Holiday Lights"
+  command_topic: "bruh/mqttstrip/setpower"
+  state_topic: "bruh/mqttstrip/setpowerpub"
+  rgb_state_topic: "bruh/mqttstrip/setcolorpub"
+  rgb_command_topic: "bruh/mqttstrip/setcolor"
+  brightness_state_topic: "bruh/mqttstrip/setbrightnesspub"
+  brightness_command_topic: "bruh/mqttstrip/setbrightness"
+  optimistic: false
+

@@ -1,0 +1,606 @@
+2018-05-12 19:50:47 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 308, in _async_add_entity
+    msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: automation.yanwelcomeback
+2018-05-12 19:50:47 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 308, in _async_add_entity
+    msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: automation.yanwelcomeback
+2018-05-12 19:50:55 ERROR (MainThread) [custom_components.climate.gree] No Gree Air Conditioning discovered
+2018-05-12 19:50:56 WARNING (MainThread) [homeassistant.components.binary_sensor] Setup of platform ping is taking over 10 seconds.
+2018-05-12 19:50:56 WARNING (MainThread) [homeassistant.setup] Setup of config is taking over 10 seconds.
+2018-05-12 19:51:06 WARNING (MainThread) [homeassistant.components.switch] Setup of platform broadlink is taking over 10 seconds.
+2018-05-12 19:51:07 ERROR (Thread-7) [homeassistant.components.switch.broadlink] Failed to connect to device
+2018-05-12 19:51:07 WARNING (MainThread) [homeassistant.components.switch] Setup of platform broadlink is taking over 10 seconds.
+2018-05-12 19:51:08 ERROR (Thread-21) [homeassistant.components.switch.broadlink] Failed to connect to device
+2018-05-12 19:51:12 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/device_tracker/__init__.py", line 348, in async_update_config
+    dev_id, device)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/device_tracker/__init__.py", line 734, in update_config
+    with open(path, 'a') as out:
+PermissionError: [Errno 13] Permission denied: '/home/homeassistant/.homeassistant/known_devices.yaml'
+2018-05-12 19:51:12 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/device_tracker/__init__.py", line 348, in async_update_config
+    dev_id, device)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/device_tracker/__init__.py", line 734, in update_config
+    with open(path, 'a') as out:
+PermissionError: [Errno 13] Permission denied: '/home/homeassistant/.homeassistant/known_devices.yaml'
+2018-05-12 19:51:24 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:51:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.woshi2 is taking over 10 seconds
+2018-05-12 19:51:38 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:51:38 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:51:46 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:51:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.spmini is taking over 10 seconds
+2018-05-12 19:51:57 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:51:59 WARNING (MainThread) [homeassistant.components.switch] Updating broadlink switch took longer than the scheduled update interval 0:00:30
+2018-05-12 19:52:19 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:52:30 WARNING (MainThread) [homeassistant.components.switch] Updating broadlink switch took longer than the scheduled update interval 0:00:30
+2018-05-12 19:52:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.woshi4 is taking over 10 seconds
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:52:30 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:52:41 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:53:03 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:53:11 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.woshi4 is taking over 10 seconds
+2018-05-12 19:53:11 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:53:21 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.spmini is taking over 10 seconds
+2018-05-12 19:53:25 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:53:32 WARNING (MainThread) [homeassistant.components.switch] Updating broadlink switch took longer than the scheduled update interval 0:00:30
+2018-05-12 19:53:47 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:54:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.woshi1 is taking over 10 seconds
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:01 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:03 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:09 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:54:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.spmini is taking over 10 seconds
+2018-05-12 19:54:31 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:54:34 WARNING (MainThread) [homeassistant.components.switch] Updating broadlink switch took longer than the scheduled update interval 0:00:30
+2018-05-12 19:54:53 WARNING (MainThread) [homeassistant.components.binary_sensor] Updating ping binary_sensor took longer than the scheduled update interval 0:00:10
+2018-05-12 19:54:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.woshi1 is taking over 10 seconds
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi4 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device1 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi2 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.woshi3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 348, in update
+    self._state = self._parent_device.get_outlet_status(self._slot)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 361, in get_outlet_status
+    return self._states['s{}'.format(slot)]
+TypeError: 'NoneType' object is not subscriptable
+2018-05-12 19:54:53 ERROR (MainThread) [homeassistant.helpers.entity] Update for switch.device3 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 347, in update
+    self._parent_device.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/util/__init__.py", line 319, in wrapper
+    result = method(*args, **kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 366, in update
+    self._update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/switch/broadlink.py", line 371, in _update
+    states = self._device.check_power()
+  File "/srv/homeassistant/lib/python3.5/site-packages/broadlink/__init__.py", line 369, in check_power
+    data['s1'] = bool(state & 0x01)
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'

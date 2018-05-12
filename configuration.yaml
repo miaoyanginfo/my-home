@@ -1,0 +1,92 @@
+homeassistant:
+  name: MY HOME
+  latitude: 38.00763897986482
+  longitude: 112.4411282522046
+  elevation: 795
+  unit_system: metric
+  time_zone: Asia/Chongqing
+  customize: !include customize.yaml
+  customize_glob: !include customize_glob.yaml
+
+
+# Enables the frontend
+frontend:
+  themes: !include themes.yaml
+  extra_html_url:
+    - /local/custom_ui/custom-weather-card.html
+    - /local/custom_ui/state-card-custom-ui.html
+    #- /local/custom_ui/state-card-tiles.html
+  extra_html_url_es5:
+    - /local/custom_ui/custom-weather-card.html
+    - /local/custom_ui/state-card-custom-ui-es5.html
+    #- /local/custom_ui/state-card-tiles_es5.html
+    # - /local/custom_ui/state-card-diy.html
+config:
+http:
+  api_password: My64269264
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+ios: 
+map:
+dlna:
+wake_on_lan:
+homekit:
+tts:
+  - platform: baidu
+    app_id: 10474163
+    api_key: HYfZ24XKpUsdK9EXuAVnEyp7
+    secret_key: zHpBFYNaybFhIY1woXMDBUEmFMThm1Nf
+###配置指向###
+group: !include groups.yaml
+automation: !include_dir_merge_list automation/
+switch: !include switch.yaml
+binary_sensor: !include binary.yaml
+sensor: !include sensors.yaml
+light: !include lights.yaml
+device_tracker: !include device_trackers.yaml
+input_select: !include input_select.yaml
+input_boolean: !include input_boolean.yaml
+media_player: !include media_player.yaml
+script: !include scripts.yaml
+scene: !include scene.yaml
+weather:
+  # - platform: darksky
+    # api_key: d61092f55db0a2818f3625cd421ead3d
+  - platform: yweather
+zone 2:
+  name: office  
+  latitude: 37.83296408836876
+  longitude: 112.5445905877271
+  radius: 250
+  icon: mdi:office
+xiaomi_aqara:
+  discovery_retry: 10
+  gateways:
+   - mac: 
+     key: 9A62A0F6915A483C
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  keepalive: 60
+  username: pi
+  password: raspberry
+  protocol: 3.1.1
+input_number:
+  animation_speed:
+    name: Animation Speed
+    initial: 150
+    min: 1
+    max: 150
+    step: 10
+shell_command:
+  nasoff: "ssh root@192.168.1.111 'shutdown -h now'"
+climate:
+  - platform: gree
+hello_miai:
+  miid: '13111093760'
+  password: 'Xm64269264'
