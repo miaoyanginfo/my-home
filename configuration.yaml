@@ -88,5 +88,5 @@ shell_command:
 climate:
   - platform: gree
 hello_miai:
-  miid: '13111093760'
-  password: 'Xm64269264'
+  miid: ''
+  password: ''
