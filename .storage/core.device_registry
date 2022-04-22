@@ -1,0 +1,630 @@
+{
+    "version": 1,
+    "minor_version": 2,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "f5640bc483f8236e409d1a97d8eec2af"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e4:08:01:a7:68:49"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "f5640bc483f8236e409d1a97d8eec2af",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "HomeKit Bridge",
+                "name": "Home Assistant Bridge:21063",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "fe394cdaa0bafc205e3927f4efb3aef9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "e89f2733a3056cffdbbd5d73e626a524"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:e9:ba:18"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34e9ba18"
+                    ]
+                ],
+                "manufacturer": "Broadlink",
+                "model": "RM pro",
+                "name": "\u667a\u80fd\u9065\u63a7RMPRO",
+                "sw_version": 20028,
+                "entry_type": null,
+                "id": "0c1b13b67a18605321f278814b0c9cca",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "28:6c:07:f0:c4:e5"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "gateway",
+                "name": "Xiaomi Aqara Gateway",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "63fd1f0072677a9bbe4709862b10e593",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00015d5c57"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00015d5c57"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d00015d5c57",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "086bd96585034383c986d371c6ab728a",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d000121221d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d000121221d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d000121221d",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "342e93a4b856b0d348bf63e218198a0f",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001839247"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001839247"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d0001839247",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "8ae62ff4ca028ac365b013e5fb4197e5",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00015d2507"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00015d2507"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d00015d2507",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "ab0786a1e3c3a40cfa6378291e6cc3e4",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001a64708"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001a64708"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d0001a64708",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "51063d7b01fec7f6f4cf123ad6244770",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001a21774"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001a21774"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d0001a21774",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "59482b32cc5b8135b9b60d77a1ae523d",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d000128fa46"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d000128fa46"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d000128fa46",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "679b3797f662f9561681df086234819e",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00015dbaec"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00015dbaec"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d00015dbaec",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "f9ec7b475045ec2ac6c7020171b52643",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001e80ca7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001e80ca7"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "sensor_ht",
+                "name": "sensor_ht_158d0001e80ca7",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "43caad2ae4e1cdce9b8e10b7b1c848cc",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00015d1bf5"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00015d1bf5"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "plug",
+                "name": "plug_158d00015d1bf5",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "2afe8ac73286f15ad3e8828245ec8b9b",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "ad62282c7cd3f215af057760eb35fd44"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:c9:95:75"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34c99575"
+                    ]
+                ],
+                "manufacturer": "Broadlink",
+                "model": "MP1-1K4S",
+                "name": "desk",
+                "sw_version": 10024,
+                "entry_type": null,
+                "id": "e3815deaa0b39f01e0b87ac1ad7acb71",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "2f29cd913cf025e813c25c7d64312af4"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:c9:82:3d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34c9823d"
+                    ]
+                ],
+                "manufacturer": "Broadlink",
+                "model": "MP1-1K4S",
+                "name": "tv",
+                "sw_version": 10028,
+                "entry_type": null,
+                "id": "edd0ba1a2eb5b431b1608e562f47ea41",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "fb9132afbdc12609f16b43a8d67ea665"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "17590EED-B460-454F-9268-6E3B9C1E5D23"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone12,1",
+                "name": "\u82d7\u6d0b\u7684iPhone",
+                "sw_version": "15.3.1",
+                "entry_type": null,
+                "id": "a4134769ad716cba349519526de4dc7a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "358431b44afbba18ee2495e2eb14d7bf"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "12C697A9-57DA-4CD4-AE47-EB23254CBCCF"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone13,2",
+                "name": "iPhone\u79cb\u79cb",
+                "sw_version": "15.2",
+                "entry_type": null,
+                "id": "fe5c517d590a384f94bdb3d23bd695ad",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "b620d41c52e4a6e0040f6bcc0597ed7d"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:c7:19:15"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34c71915"
+                    ]
+                ],
+                "manufacturer": "Broadlink",
+                "model": "MP1-1K4S",
+                "name": "1FTV",
+                "sw_version": 10024,
+                "entry_type": null,
+                "id": "d93ee876ac2a890b907768d2b1fd420f",
+                "via_device_id": null,
+                "area_id": "ke_ting",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "633cf0bd7653a13a2dbc147fc9e73916"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0000fd0ac2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0000fd0ac2"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d0000fd0ac2",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "35f7fd96b45939e41d332a793ed2f6f4",
+                "via_device_id": "63fd1f0072677a9bbe4709862b10e593",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "7acf5be2a49e4b80346126240efa09c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "speedtestdotnet",
+                        "7acf5be2a49e4b80346126240efa09c5"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "SpeedTest",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "becdc33af202bed4fe6808bef1b864ab",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://www.speedtest.net/"
+            },
+            {
+                "config_entries": [
+                    "8e2e3ee6c5398ec497eedca06466c633"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:0f:77:cb:7d:cf"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "780f77cb7dcf"
+                    ]
+                ],
+                "manufacturer": "Broadlink (OEM)",
+                "model": "SP mini 3",
+                "name": "\u51b0\u67dc",
+                "sw_version": 41034,
+                "entry_type": null,
+                "id": "16b5b2846c9b0b92b31f07be3b04b1d0",
+                "via_device_id": null,
+                "area_id": "ke_ting",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "8083f0e870a23a733da9a21097b63446"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "9157A31E-ABEC-4F50-9EA4-93BD776039B7"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone9,1",
+                "name": "iPhone",
+                "sw_version": "14.2",
+                "entry_type": null,
+                "id": "9e12d6b314be1b12f29a184ddc04bf88",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "e1807168250e1c4034db4e8b855759d8"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:f1:c0:33"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34f1c033"
+                    ]
+                ],
+                "manufacturer": "URANT",
+                "model": "SP2-compatible",
+                "name": "\u95e8\u53e3\u706f\u7b3c",
+                "sw_version": 10029,
+                "entry_type": null,
+                "id": "cdfee5b5c3de20f51b5c596e260e8af2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

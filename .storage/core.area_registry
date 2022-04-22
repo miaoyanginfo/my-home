@@ -1,0 +1,24 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "\u5ba2\u5385",
+                "id": "ke_ting",
+                "picture": null
+            },
+            {
+                "name": "\u53a8\u623f",
+                "id": "chu_fang",
+                "picture": null
+            },
+            {
+                "name": "\u5367\u5ba4",
+                "id": "wo_shi",
+                "picture": null
+            }
+        ]
+    }
+}

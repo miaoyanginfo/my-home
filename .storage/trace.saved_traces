@@ -1,0 +1,280 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "trace.saved_traces",
+    "data": {
+        "automation.fffacf1e89ae439ba638bea5deea126f": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "16747b9736162a860658b84bfa707d11",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-23T01:00:00.007588+00:00",
+                        "finish": "2022-03-23T01:00:00.084479+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "fffacf1e89ae439ba638bea5deea126f",
+                    "trigger": "time pattern",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-23T01:00:00.008014+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.wang_guan_bao_shi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-23T00:00:00.007149+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "fffacf1e89ae439ba638bea5deea126f",
+                                            "friendly_name": "\u7f51\u5173\u62a5\u65f6"
+                                        },
+                                        "last_changed": "2022-03-23T00:37:43.231467+00:00",
+                                        "last_updated": "2022-03-23T00:37:43.231467+00:00",
+                                        "context": {
+                                            "id": "b2251f07ea07cf56a038ff8274fdae99",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "time_pattern",
+                                        "now": "2022-03-23T09:00:00.001041+08:00",
+                                        "description": "time pattern"
+                                    }
+                                }
+                            }
+                        ],
+                        "condition/0": [
+                            {
+                                "path": "condition/0",
+                                "timestamp": "2022-03-23T01:00:00.009011+00:00",
+                                "result": {
+                                    "after": {
+                                        "__type": "<class 'datetime.time'>",
+                                        "isoformat": "06:00:00"
+                                    },
+                                    "now_time": {
+                                        "__type": "<class 'datetime.time'>",
+                                        "isoformat": "09:00:00.009179"
+                                    },
+                                    "before": {
+                                        "__type": "<class 'datetime.time'>",
+                                        "isoformat": "23:00:00"
+                                    },
+                                    "result": true
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-23T01:00:00.017621+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "3c6623e9e2ed14a61c614631514fc94f",
+                                        "parent_id": null,
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "xiaomi_aqara",
+                                        "service": "play_ringtone",
+                                        "service_data": {
+                                            "gw_mac": "28:6C:07:F0:C4:E5",
+                                            "ringtone_id": 10001,
+                                            "ringtone_vol": 10
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "fffacf1e89ae439ba638bea5deea126f",
+                        "alias": "\u7f51\u5173\u62a5\u65f6",
+                        "trigger": [
+                            {
+                                "platform": "time_pattern",
+                                "hours": "/1"
+                            }
+                        ],
+                        "condition": [
+                            {
+                                "condition": "time",
+                                "after": "06:00",
+                                "before": "23:00"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "xiaomi_aqara.play_ringtone",
+                                "data_template": {
+                                    "gw_mac": "28:6C:07:F0:C4:E5",
+                                    "ringtone_id": 10001,
+                                    "ringtone_vol": 10
+                                }
+                            }
+                        ],
+                        "initial_state": "on",
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "3c6623e9e2ed14a61c614631514fc94f",
+                        "parent_id": null,
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "16747b9736162a860658b84bfa707d11",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-23T01:00:00.007588+00:00",
+                        "finish": "2022-03-23T01:00:00.084479+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "fffacf1e89ae439ba638bea5deea126f",
+                    "trigger": "time pattern"
+                }
+            }
+        ],
+        "automation.30f16b3b5b2c481193cdbd9ae6a1ae19": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "267709ac3a61a97a38af560e47ae39cd",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-23T01:00:00.012539+00:00",
+                        "finish": "2022-03-23T01:00:00.533998+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "30f16b3b5b2c481193cdbd9ae6a1ae19",
+                    "trigger": "time",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-23T01:00:00.012850+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.zao_shang_jiu_dian_guan_bi_suo_you_deng",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-22T01:00:00.015404+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "30f16b3b5b2c481193cdbd9ae6a1ae19",
+                                            "friendly_name": "\u65e9\u4e0a\u4e5d\u70b9\u5173\u95ed\u6240\u6709\u706f"
+                                        },
+                                        "last_changed": "2022-03-23T00:37:43.230114+00:00",
+                                        "last_updated": "2022-03-23T00:37:43.230114+00:00",
+                                        "context": {
+                                            "id": "720fcf781ce0f7aeb165dd931849455c",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "time",
+                                        "now": "2022-03-23T09:00:00.002933+08:00",
+                                        "description": "time",
+                                        "entity_id": null
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-23T01:00:00.031263+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "0d6b1e2b4ed802ab734bd74b622a7df6",
+                                        "parent_id": null,
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "homeassistant",
+                                        "service": "turn_off",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "switch.yi_lou_wo_shi_deng",
+                                                "switch.er_lou_wo_shi_deng",
+                                                "switch.keting_light",
+                                                "light.gateway_light_286c07f0c4e5"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "30f16b3b5b2c481193cdbd9ae6a1ae19",
+                        "alias": "\u65e9\u4e0a\u4e5d\u70b9\u5173\u95ed\u6240\u6709\u706f",
+                        "trigger": [
+                            {
+                                "platform": "time",
+                                "at": "9:00"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "homeassistant.turn_off",
+                                "entity_id": [
+                                    "switch.yi_lou_wo_shi_deng",
+                                    "switch.er_lou_wo_shi_deng",
+                                    "switch.keting_light",
+                                    "light.gateway_light_286c07f0c4e5"
+                                ]
+                            }
+                        ],
+                        "initial_state": "on",
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "0d6b1e2b4ed802ab734bd74b622a7df6",
+                        "parent_id": null,
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "267709ac3a61a97a38af560e47ae39cd",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-23T01:00:00.012539+00:00",
+                        "finish": "2022-03-23T01:00:00.533998+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "30f16b3b5b2c481193cdbd9ae6a1ae19",
+                    "trigger": "time"
+                }
+            }
+        ]
+    }
+}

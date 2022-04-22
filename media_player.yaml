@@ -1,9 +1,0 @@
-- platform: kodi
-  host: 192.168.1.222
-  turn_off_action:
-    service: media_player.kodi_call_method
-    data:
-      entity_id: media_player.kodi
-      method: System.Shutdown
-- platform: cast
-- platform: plex

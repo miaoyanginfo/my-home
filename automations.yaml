@@ -1,0 +1,337 @@
+- alias: 1f woshi switch on long press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: long_click_press
+  action:
+    service: homeassistant.turn_off
+    entity_id:
+    - switch.yi_lou_wo_shi_deng
+    - light.gateway_light_286c07f0c4e5
+  id: 2dcca1bf281e4be28bb9b75868ddb268
+- alias: 1f woshi switch on double press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: double
+  action:
+    service: light.toggle
+    data:
+      brightness: 80
+      rgb_color:
+      - 15
+      - 30
+      - 60
+    entity_id:
+    - light.gateway_light_286c07f0c4e5
+  id: 6bd06c56a1c0494182fae79da740c359
+- id: 31579a77b0434d168e0a3dabe253baab
+  alias: 1f woshi switch on single press
+  trigger:
+  - platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001839247
+      click_type: single
+  condition: []
+  action:
+  - service: switch.toggle
+    entity_id:
+    - switch.yi_lou_wo_shi_deng
+  mode: single
+- alias: 2f keting switch on single press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: single
+  condition:
+    condition: sun
+    after: sunset
+  action:
+    service: switch.toggle
+    entity_id:
+    - switch.er_lou_ke_ting_deng
+  id: 87e8359fc63f4f3c87795b35f5cfb92f
+- alias: 2f keting switch on long press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: long_click_press
+  action:
+    service: switch.turn_off
+    entity_id:
+    - switch.tv_s1
+    - switch.tv_s2
+  id: 472ca4d9882d41ef959d502be515ea77
+- alias: 2f keting switch on double press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0001a21774
+      click_type: double
+  action:
+  - service: switch.turn_on
+    entity_id: switch.my_nas
+  - delay:
+      seconds: 5
+  - service: switch.turn_on
+    entity_id: switch.tv_s1
+  - delay:
+      seconds: 5
+  - service: switch.turn_on
+    entity_id: switch.tv_s2
+  id: 358de3ff81c64768af53aec9a9cbab74
+- alias: 2f keting switch on single press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0000fd0ac2
+      click_type: single
+  action:
+  - service: switch.turn_on
+    entity_id: switch.1ftv_s4
+  - service: switch.turn_off
+    entity_id: switch.1ftv_s2
+  - delay:
+      seconds: 5
+  - service: switch.turn_on
+    entity_id: switch.1ftv_s1
+  id: 8717ade3b50d4d9986d0411bbd0c40b5
+- alias: 2f keting switch on long press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0000fd0ac2
+      click_type: long_click_press
+  action:
+    service: switch.turn_off
+    entity_id:
+    - switch.1ftv_s1
+    - switch.1ftv_s2
+    - switch.1ftv_s3
+    - switch.1ftv_s4
+  id: 95c5c5b603e3488a8a69f868d1a6c6d1
+- alias: 2f keting switch on double press
+  trigger:
+    platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0000fd0ac2
+      click_type: double
+  action:
+  - service: switch.turn_on
+    entity_id: switch.1ftv_s2
+  - service: switch.turn_off
+    entity_id: switch.1ftv_s4
+  - delay:
+      seconds: 5
+  - service: switch.turn_on
+    entity_id: switch.1ftv_s1
+  id: 98793dbe43b34726980ea32199242f0c
+- alias: 2f keting motion on
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015d5c57
+    from: 'off'
+    to: 'on'
+  condition:
+    condition: sun
+    after: sunset
+  action:
+    service: switch.turn_on
+    entity_id: switch.keting_light
+  id: f2165091e27b4502aaa2c4772530a46f
+- alias: 2f keting motion off
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015d5c57
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 30
+  action:
+    service: switch.turn_off
+    entity_id: switch.keting_light
+  id: 9ae95e4c70c84ae684096ffbaccb7340
+- alias: 2f woshi motion on
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015dbaec
+    from: 'off'
+    to: 'on'
+  condition:
+    condition: sun
+    after: sunset
+  action:
+    service: switch.turn_on
+    entity_id: switch.er_lou_wo_shi_deng
+  id: 928a33b5f230476d94b9b8b9382ba399
+- alias: 2f woshi motion off
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015dbaec
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 30
+  action:
+    service: switch.turn_off
+    entity_id: switch.er_lou_wo_shi_deng
+  id: e1408b563f774e939625b31471878764
+- id: a1654709416b4aa4bb94fbc18f4b0bae
+  alias: 一楼卧室人体感应控制小米夜灯开关
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015d2507
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: sun
+    after: sunset
+    before: sunrise
+  action:
+  - service: light.turn_on
+    data:
+      brightness: 80
+      rgb_color:
+      - 55
+      - 200
+      - 30
+    entity_id: light.gateway_light_286c07f0c4e5
+  initial_state: 'on'
+  mode: single
+- alias: 1f woshi motion off
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d00015d2507
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 30
+  action:
+    service: light.turn_off
+    entity_id: light.gateway_light_286c07f0c4e5
+  id: 75a7de60d1804eb19102cc1cafd212ee
+- id: ed8ad2048e124ba0b825e7e54db28d11
+  alias: IF TURN OFF 1F WOSHI LIGHT THAN TURN ON MI LIGHT
+  trigger:
+  - platform: state
+    entity_id: switch.yi_lou_wo_shi_deng
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      brightness: 100
+      rgb_color:
+      - 253
+      - 56
+      - 68
+    entity_id: light.gateway_light_286c07f0c4e5
+  initial_state: 'on'
+- id: 30f16b3b5b2c481193cdbd9ae6a1ae19
+  alias: 早上九点关闭所有灯
+  trigger:
+  - platform: time
+    at: '9:00'
+  action:
+  - service: homeassistant.turn_off
+    entity_id:
+    - switch.yi_lou_wo_shi_deng
+    - switch.er_lou_wo_shi_deng
+    - switch.keting_light
+    - light.gateway_light_286c07f0c4e5
+  initial_state: 'on'
+  mode: single
+- id: fffacf1e89ae439ba638bea5deea126f
+  alias: 网关报时
+  trigger:
+  - platform: time_pattern
+    hours: /1
+  condition:
+  - condition: time
+    after: 06:00
+    before: '23:00'
+  action:
+  - service: xiaomi_aqara.play_ringtone
+    data_template:
+      gw_mac: 28:6C:07:F0:C4:E5
+      ringtone_id: 10001
+      ringtone_vol: 10
+  initial_state: 'on'
+  mode: single
+- id: 3e9065926f364a9a99fd65edc7d7cb7d
+  alias: 二楼冰柜每隔六小时执行开关
+  trigger:
+  - platform: time_pattern
+    hours: /6
+  action:
+  - service: switch.toggle
+    entity_id:
+    - switch.bing_ju_switch
+  initial_state: 'on'
+  mode: single
+- id: '1640338073135'
+  alias: 扫描到标签 测试
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 6b500ddc-20f5-47d7-b541-cbee02c814dd
+  condition: []
+  action:
+  - service: switch.toggle
+    target:
+      device_id: e3815deaa0b39f01e0b87ac1ad7acb71
+  mode: single
+- id: '1642993653147'
+  alias: 灯笼开启控制
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: 00:30:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      device_id:
+      - 2afe8ac73286f15ad3e8828245ec8b9b
+      - cdfee5b5c3de20f51b5c596e260e8af2
+  mode: single
+- id: '1642993799404'
+  alias: 灯笼关闭控制
+  description: ''
+  trigger:
+  - platform: time
+    at: 04:00
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      device_id:
+      - cdfee5b5c3de20f51b5c596e260e8af2
+      - 2afe8ac73286f15ad3e8828245ec8b9b
+  mode: single

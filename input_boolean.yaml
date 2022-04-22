@@ -1,6 +1,0 @@
-#######天气######
-weather:
-switch_status_tts:
-  name: switch_status_tts
-  initial: on
-  icon: mdi:dip-switch

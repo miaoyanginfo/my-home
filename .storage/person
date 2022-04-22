@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "minor_version": 1,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "miaoyang",
+                "user_id": "433a3bf93cd84d03af54e66e817c202a",
+                "device_trackers": [
+                    "device_tracker.iphone"
+                ],
+                "id": "miaoyang"
+            }
+        ]
+    }
+}

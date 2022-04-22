@@ -1,6 +1,0 @@
-- name: dakaiyingyuan
-  entities:
-    script.dakaijiatingyingyuan: on
-- name: guanbiyingyuan
-  entities:
-    script.guanbijiatingyingyuan: on

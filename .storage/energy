@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "key": "energy",
+    "data": {
+        "energy_sources": [],
+        "device_consumption": []
+    }
+}
