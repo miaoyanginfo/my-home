@@ -4,18 +4,18 @@
 - platform: broadlink
   mac: '34:ea:34:e9:ba:18'
   switches:
-    # woshi_light:
-      # command_on: 'sg40AAocHQkKHB0JChwdCgocHQkKHAobChwKHAobChsdCR0JCgABGwocHQkKHBwKChwdCQocHAkAAAAA'
-      # command_off: 'shQ0ABwKChscCQobHAoKGxwJChscCgocHAkKGxwJChsKHBwJHAoKGwocChsKGwoAARgKHBwKChsAAAAA'    
-      # friendly_name: "二楼卧室灯"
-    # keting_light:
-      # command_on: 'shA0AAocHAkKHBwJChwcCQocHAkKHBwKChscCQocHAkKHAocChwKGxwJHAkKHAobCgABGQobHAoAAAAA'
-      # command_off: 'sgs0AAobHAkKGxwJChscCRwJHAkKGwobChwKGwobChsKAAEVChscCQobHAkKHBwJChscCQobHAkAAAAA'
-      # friendly_name: "二楼客厅灯"
-    1f_woshi:
+    - name: woshi_light
+      command_on: 'sg40AAocHQkKHB0JChwdCgocHQkKHAobChwKHAobChsdCR0JCgABGwocHQkKHBwKChwdCQocHAkAAAAA'
+      command_off: 'shQ0ABwKChscCQobHAoKGxwJChscCgocHAkKGxwJChsKHBwJHAoKGwocChsKGwoAARgKHBwKChsAAAAA'    
+     
+    - name: keting_light
+      command_on: 'shA0AAocHAkKHBwJChwcCQocHAkKHBwKChscCQocHAkKHAocChwKGxwJHAkKHAobCgABGQobHAoAAAAA'
+      command_off: 'sgs0AAobHAkKGxwJChscCRwJHAkKGwobChwKGwobChsKAAEVChscCQobHAkKHBwJChscCQobHAkAAAAA'
+      
+    - name: 1f_woshi
       command_on: 'shI0AAobHAoKHBwJChscCQobHAkKGx0JChwcCQocHAoKHAocChwKGxwJHAkKHAocCgABGRwKHAkAAAAA'
       command_off: 'sgs0AAoAARUcCRwJChscCQobHAkKGxwJChscCQobHAkKGxwJChscCRwJHAkKGwobChsKGwobChsAAAAA'
-      friendly_name: "一楼卧室灯"
+      
 ####博联SPMINI####
 
 ####SONOFF-BASIC####
@@ -39,7 +39,7 @@
 ####WOL-NAS####
 - platform: wake_on_lan
   mac: 00:E0:70:86:C7:BA
-  host: 192.168.1.200
+  host: 192.168.1.8
   name: MY-NAS
   turn_off:
     service: shell_command.nasoff

@@ -1,0 +1,624 @@
+{
+    "version": 1,
+    "key": "mobile_app",
+    "data": {
+        "binary_sensor": {
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_camera_in_use": {
+                "icon": "mdi:camera-off",
+                "name": "Camera In Use",
+                "state": false,
+                "type": "binary_sensor",
+                "unique_id": "camera_in_use",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_microphone_in_use": {
+                "icon": "mdi:microphone-off",
+                "name": "Microphone In Use",
+                "state": false,
+                "type": "binary_sensor",
+                "unique_id": "microphone_in_use",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_active": {
+                "attributes": {
+                    "Fast User Switched": false,
+                    "Idle": false,
+                    "Locked": false,
+                    "Screen Off": false,
+                    "Screensaver": false,
+                    "Sleeping": false,
+                    "Terminating": false
+                },
+                "icon": "mdi:monitor",
+                "name": "Active",
+                "state": true,
+                "type": "binary_sensor",
+                "unique_id": "active",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_camera_in_use": {
+                "icon": "mdi:camera-off",
+                "name": "Camera In Use",
+                "state": false,
+                "type": "binary_sensor",
+                "unique_id": "camera_in_use",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_microphone_in_use": {
+                "icon": "mdi:microphone",
+                "name": "Microphone In Use",
+                "state": true,
+                "type": "binary_sensor",
+                "unique_id": "microphone_in_use",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_active": {
+                "attributes": {
+                    "Fast User Switched": false,
+                    "Idle": false,
+                    "Locked": false,
+                    "Screen Off": false,
+                    "Screensaver": false,
+                    "Sleeping": false,
+                    "Terminating": true
+                },
+                "icon": "mdi:monitor-off",
+                "name": "Active",
+                "state": false,
+                "type": "binary_sensor",
+                "unique_id": "active",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            }
+        },
+        "deleted_ids": [
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944"
+        ],
+        "sensor": {
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_battery_level": {
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-70",
+                "name": "Battery Level",
+                "state": 79,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_battery_state": {
+                "attributes": {
+                    "Battery Level": 79,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-70",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_storage": {
+                "attributes": {
+                    "Available": "66.26 GB",
+                    "Available (Important)": "78.98 GB",
+                    "Available (Opportunistic)": "77.70 GB",
+                    "Total": "127.97 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "60.72",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_connectivity_connection_type": {
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "attributes": {},
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_connectivity_sim_1": {
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "\u4e2d\u56fd\u8054\u901a",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "cn",
+                    "Mobile Country Code": "460",
+                    "Mobile Network Code": "01"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "\u4e2d\u56fd\u8054\u901a",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_connectivity_bssid": {
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "attributes": {},
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_geocoded_location": {
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "attributes": {},
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_last_update_trigger": {
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Signaled",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "attributes": {},
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a_connectivity_ssid": {
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "attributes": {},
+                "webhook_id": "28927422a4ce48df9e7878a000eecae33a90945f6aa11ce51996fb13402e1e2a",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_D866033W5V7FY5GC2_level": {
+                "attributes": {
+                    "Battery Provides Time Remaining": true,
+                    "BatteryHealth": "Good",
+                    "BatteryHealthCondition": "",
+                    "Current": -1617,
+                    "Current Capacity": 90,
+                    "DesignCycleCount": 1000,
+                    "Hardware Serial Number": "D866033W5V7FY5GC2",
+                    "Is Charging": false,
+                    "Is Present": true,
+                    "Max Capacity": 100,
+                    "Name": "InternalBattery-0",
+                    "Power Source ID": 6946915,
+                    "Power Source State": "Battery Power",
+                    "Time to Empty": 173,
+                    "Time to Full Charge": 0,
+                    "Transport Type": "Internal",
+                    "Type": "InternalBattery"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-90",
+                "name": "Internal Battery Level",
+                "state": 90,
+                "type": "sensor",
+                "unique_id": "D866033W5V7FY5GC2_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_D866033W5V7FY5GC2_state": {
+                "attributes": {
+                    "Battery Provides Time Remaining": true,
+                    "BatteryHealth": "Good",
+                    "BatteryHealthCondition": "",
+                    "Current": -1617,
+                    "Current Capacity": 90,
+                    "DesignCycleCount": 1000,
+                    "Hardware Serial Number": "D866033W5V7FY5GC2",
+                    "Is Charging": false,
+                    "Is Present": true,
+                    "Low Power Mode": false,
+                    "Max Capacity": 100,
+                    "Name": "InternalBattery-0",
+                    "Power Source ID": 6946915,
+                    "Power Source State": "Battery Power",
+                    "Time to Empty": 173,
+                    "Time to Full Charge": 0,
+                    "Transport Type": "Internal",
+                    "Type": "InternalBattery"
+                },
+                "icon": "mdi:battery-90",
+                "name": "Internal Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "D866033W5V7FY5GC2_state",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_storage": {
+                "attributes": {
+                    "Available": "163.52\u2006GB",
+                    "Available (Important)": "163.64\u2006GB",
+                    "Available (Opportunistic)": "151.30\u2006GB",
+                    "Total": "239.00\u2006GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "63.30",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_connectivity_ssid": {
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_connectivity_bssid": {
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_connectivity_connection_type": {
+                "attributes": {
+                    "Hardware Address": "f4:5c:89:a8:52:ef",
+                    "Name": "Wi-Fi"
+                },
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_active_camera": {
+                "attributes": {
+                    "Active Camera": [],
+                    "All Camera": [
+                        "FaceTime\u9ad8\u6e05\u6444\u50cf\u5934"
+                    ]
+                },
+                "icon": "mdi:camera-off",
+                "name": "Active Camera",
+                "state": "Inactive",
+                "type": "sensor",
+                "unique_id": "active_camera",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_active_microphone": {
+                "attributes": {
+                    "Active Microphone": [],
+                    "All Microphone": [
+                        "\u5185\u5efa\u9ea6\u514b\u98ce"
+                    ]
+                },
+                "icon": "mdi:microphone-off",
+                "name": "Active Microphone",
+                "state": "Inactive",
+                "type": "sensor",
+                "unique_id": "active_microphone",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_primary_display_name": {
+                "icon": "mdi:monitor-star",
+                "name": "Primary Display Name",
+                "state": "\u5185\u5efa\u89c6\u7f51\u819c\u663e\u793a\u5668",
+                "type": "sensor",
+                "unique_id": "primary_display_name",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_displays_count": {
+                "attributes": {
+                    "Display IDs": [
+                        "0AA6E386-CE2C-5EE2-CC95-F2B67DCDF861"
+                    ],
+                    "Display Names": [
+                        "\u5185\u5efa\u89c6\u7f51\u819c\u663e\u793a\u5668"
+                    ]
+                },
+                "icon": "mdi:monitor-multiple",
+                "name": "Displays",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "displays_count",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_primary_display_id": {
+                "icon": "mdi:monitor-star",
+                "name": "Primary Display ID",
+                "state": "0AA6E386-CE2C-5EE2-CC95-F2B67DCDF861",
+                "type": "sensor",
+                "unique_id": "primary_display_id",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_frontmost_app": {
+                "attributes": {
+                    "Bundle Identifier": "io.robbie.HomeAssistant",
+                    "Is Hidden": false,
+                    "Launch Date": "2021-03-08T20:55:05+08:00",
+                    "Owns Menu Bar": true
+                },
+                "icon": "mdi:traffic-light",
+                "name": "Frontmost App",
+                "state": "Home Assistant",
+                "type": "sensor",
+                "unique_id": "frontmost_app",
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_last_update_trigger": {
+                "icon": "mdi:laptop-mac",
+                "name": "Last Update Trigger",
+                "state": "Significant Location Change",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944_geocoded_location": {
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "attributes": {},
+                "webhook_id": "cad325a412dae19854cf833f1cfdce7867614f2ee32a19da279c666a94ea3944",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_storage": {
+                "attributes": {
+                    "Available": "160.87\u2006GB",
+                    "Available (Important)": "161.14\u2006GB",
+                    "Available (Opportunistic)": "148.79\u2006GB",
+                    "Total": "239.00\u2006GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "62.26",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_connectivity_connection_type": {
+                "attributes": {
+                    "Hardware Address": "f4:5c:89:a8:52:ef",
+                    "Name": "Wi-Fi"
+                },
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_D866033W5V7FY5GC2_state": {
+                "attributes": {
+                    "Battery Provides Time Remaining": true,
+                    "BatteryHealth": "Good",
+                    "BatteryHealthCondition": "",
+                    "Current": -1374,
+                    "Current Capacity": 86,
+                    "DesignCycleCount": 1000,
+                    "Hardware Serial Number": "D866033W5V7FY5GC2",
+                    "Is Charging": false,
+                    "Is Present": true,
+                    "Low Power Mode": false,
+                    "Max Capacity": 100,
+                    "Name": "InternalBattery-0",
+                    "Power Source ID": 6946915,
+                    "Power Source State": "Battery Power",
+                    "Time to Empty": 196,
+                    "Time to Full Charge": 0,
+                    "Transport Type": "Internal",
+                    "Type": "InternalBattery"
+                },
+                "icon": "mdi:battery-80",
+                "name": "Internal Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "D866033W5V7FY5GC2_state",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_connectivity_ssid": {
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_D866033W5V7FY5GC2_level": {
+                "attributes": {
+                    "Battery Provides Time Remaining": true,
+                    "BatteryHealth": "Good",
+                    "BatteryHealthCondition": "",
+                    "Current": -1374,
+                    "Current Capacity": 86,
+                    "DesignCycleCount": 1000,
+                    "Hardware Serial Number": "D866033W5V7FY5GC2",
+                    "Is Charging": false,
+                    "Is Present": true,
+                    "Max Capacity": 100,
+                    "Name": "InternalBattery-0",
+                    "Power Source ID": 6946915,
+                    "Power Source State": "Battery Power",
+                    "Time to Empty": 196,
+                    "Time to Full Charge": 0,
+                    "Transport Type": "Internal",
+                    "Type": "InternalBattery"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Internal Battery Level",
+                "state": 86,
+                "type": "sensor",
+                "unique_id": "D866033W5V7FY5GC2_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_connectivity_bssid": {
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_geocoded_location": {
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_active_camera": {
+                "attributes": {
+                    "Active Camera": [],
+                    "All Camera": [
+                        "FaceTime\u9ad8\u6e05\u6444\u50cf\u5934"
+                    ]
+                },
+                "icon": "mdi:camera-off",
+                "name": "Active Camera",
+                "state": "Inactive",
+                "type": "sensor",
+                "unique_id": "active_camera",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_active_microphone": {
+                "attributes": {
+                    "Active Microphone": [
+                        "\u5185\u5efa\u9ea6\u514b\u98ce"
+                    ],
+                    "All Microphone": [
+                        "\u5185\u5efa\u9ea6\u514b\u98ce"
+                    ]
+                },
+                "icon": "mdi:microphone",
+                "name": "Active Microphone",
+                "state": "\u5185\u5efa\u9ea6\u514b\u98ce",
+                "type": "sensor",
+                "unique_id": "active_microphone",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_displays_count": {
+                "attributes": {
+                    "Display IDs": [
+                        "0AA6E386-CE2C-5EE2-CC95-F2B67DCDF861"
+                    ],
+                    "Display Names": [
+                        "\u5185\u5efa\u89c6\u7f51\u819c\u663e\u793a\u5668"
+                    ]
+                },
+                "icon": "mdi:monitor-multiple",
+                "name": "Displays",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "displays_count",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_primary_display_name": {
+                "icon": "mdi:monitor-star",
+                "name": "Primary Display Name",
+                "state": "\u5185\u5efa\u89c6\u7f51\u819c\u663e\u793a\u5668",
+                "type": "sensor",
+                "unique_id": "primary_display_name",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_primary_display_id": {
+                "icon": "mdi:monitor-star",
+                "name": "Primary Display ID",
+                "state": "0AA6E386-CE2C-5EE2-CC95-F2B67DCDF861",
+                "type": "sensor",
+                "unique_id": "primary_display_id",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_frontmost_app": {
+                "attributes": {
+                    "Bundle Identifier": "com.apple.systempreferences",
+                    "Is Hidden": false,
+                    "Launch Date": "2021-03-08T21:00:36+08:00",
+                    "Owns Menu Bar": true
+                },
+                "icon": "mdi:traffic-light",
+                "name": "Frontmost App",
+                "state": "\u7cfb\u7edf\u504f\u597d\u8bbe\u7f6e",
+                "type": "sensor",
+                "unique_id": "frontmost_app",
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            },
+            "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334_last_update_trigger": {
+                "icon": "mdi:laptop-mac",
+                "name": "Last Update Trigger",
+                "state": "Signaled",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "attributes": {},
+                "webhook_id": "712129746988b0828570f969c3328582be67cc1d575bd69ab3a3cd1e42754334",
+                "added": true
+            }
+        }
+    }
+}

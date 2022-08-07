@@ -1,0 +1,155 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "\u6211\u7684\u5bb6",
+            "views": [
+                {
+                    "title": "\u9996\u9875",
+                    "path": "",
+                    "badges": [
+                        {
+                            "entity": "sun.sun"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d00015dbaec"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d00015d2507"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d00015d5c57"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d0001a64708"
+                        },
+                        {
+                            "entity": "binary_sensor.switch_158d0001a21774"
+                        },
+                        {
+                            "entity": "binary_sensor.switch_158d0001839247"
+                        },
+                        {
+                            "entity": "binary_sensor.nas"
+                        },
+                        {
+                            "entity": "binary_sensor.d191g"
+                        },
+                        {
+                            "entity": "binary_sensor.openwrt"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.date"
+                                },
+                                {
+                                    "entity": "sensor.time"
+                                }
+                            ],
+                            "title": "\u65e5\u671f\u65f6\u95f4"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.speedtest_download"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping"
+                                }
+                            ],
+                            "title": "\u5b9e\u65f6\u7f51\u901f"
+                        },
+                        {
+                            "type": "weather-forecast",
+                            "entity": "weather.wo_de_jia"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.temperature_158d0001e80ca7",
+                            "graph": "line"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.humidity_158d0001e80ca7",
+                            "graph": "line"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.illumination_286c07f0c4e5",
+                            "graph": "line"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.slot2_s1"
+                                },
+                                {
+                                    "entity": "switch.slot2_s2"
+                                },
+                                {
+                                    "entity": "switch.slot2_s3"
+                                },
+                                {
+                                    "entity": "switch.slot2_s4"
+                                },
+                                {
+                                    "entity": "switch.sap_mini2_switch"
+                                },
+                                {
+                                    "entity": "switch.plug_158d00015d1bf5"
+                                }
+                            ],
+                            "title": "\u5bb6\u5ead\u5f71\u9662"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "light.gateway_light_286c07f0c4e5"
+                                },
+                                {
+                                    "entity": "switch.yi_lou_wo_shi_deng"
+                                },
+                                {
+                                    "entity": "switch.er_lou_ke_ting_deng"
+                                },
+                                {
+                                    "entity": "switch.er_lou_wo_shi_deng"
+                                }
+                            ],
+                            "title": "\u706f\u5149"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.slot1_s1"
+                                },
+                                {
+                                    "entity": "switch.slot1_s2"
+                                },
+                                {
+                                    "entity": "switch.slot1_s3"
+                                },
+                                {
+                                    "entity": "switch.slot1_s4"
+                                }
+                            ],
+                            "title": "\u4e66\u684c\u63d2\u6392"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

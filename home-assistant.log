@@ -1,0 +1,234 @@
+2022-08-05 14:12:22 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2022-08-05 14:12:22 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=1 from 2022-07-25 12:37:29.319201)
+2022-08-05 14:12:36 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SpeedTest' for speedtestdotnet integration not ready yet: <urlopen error [Errno -3] Try again>; Retrying in background
+2022-08-05 14:12:41 WARNING (MainThread) [homeassistant.config_entries] Config entry '电视插排' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2022-08-05 14:12:41 WARNING (MainThread) [homeassistant.config_entries] Config entry '1FTV' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2022-08-05 14:12:41 WARNING (MainThread) [homeassistant.config_entries] Config entry '书桌插排' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2022-08-05 14:12:41 WARNING (MainThread) [homeassistant.config_entries] Config entry '智能遥控RMPRO' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2022-08-05 14:12:41 WARNING (MainThread) [homeassistant.config_entries] Config entry '冰柜' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2022-08-05 14:12:48 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 14:13:02 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform broadlink is taking over 10 seconds.
+2022-08-05 14:13:02 WARNING (MainThread) [homeassistant.components.remote] Setup of remote platform broadlink is taking over 10 seconds.
+2022-08-05 14:13:02 WARNING (MainThread) [homeassistant.components.switch] Setup of switch platform broadlink is taking over 10 seconds.
+2022-08-05 14:13:14 WARNING (MainThread) [homeassistant.components.switch] Setup of switch platform broadlink is taking over 10 seconds.
+2022-08-05 14:13:14 WARNING (MainThread) [homeassistant.components.switch] Setup of switch platform broadlink is taking over 10 seconds.
+2022-08-05 14:13:14 WARNING (MainThread) [homeassistant.components.switch] Setup of switch platform broadlink is taking over 10 seconds.
+2022-08-05 16:24:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 16:24:05 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 16:24:05 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-05 16:24:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-05 16:24:05 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 16:24:05 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2022-08-05 16:29:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 16:29:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-05 16:29:05 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 16:29:05 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-05 16:29:05 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 16:29:05 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2022-08-05 16:39:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 16:39:05 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 16:39:05 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-05 18:04:21 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-05 19:29:21 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-05 19:53:16 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng or it is/they are currently not available
+2022-08-05 20:05:46 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng or it is/they are currently not available
+2022-08-05 20:13:26 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-05 20:13:26 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-05 20:13:26 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-05 20:13:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 20:13:36 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 20:13:36 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-05 20:35:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 20:35:36 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 20:35:36 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-05 21:27:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-05 21:27:06 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 21:27:06 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2022-08-05 21:47:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-05 21:47:36 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-05 21:47:36 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-06 01:56:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-06 01:56:37 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 01:56:37 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2022-08-06 02:01:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-06 02:01:37 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 02:01:37 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-06 02:27:31 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 05:03:31 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 05:16:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-06 05:16:37 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 05:16:37 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-06 05:23:36 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 05:39:41 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 05:50:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-06 05:50:37 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 05:50:37 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-06 06:14:12 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2022-08-06 06:14:12 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2022-08-06 06:23:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-06 06:23:07 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 06:23:07 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-06 06:25:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-06 06:25:07 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 06:25:07 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-06 07:01:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-06 07:01:38 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 07:01:38 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-06 07:25:46 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 07:32:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-06 07:32:08 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 07:32:08 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2022-08-06 07:36:51 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 08:00:56 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 09:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng, switch.yi_lou_wo_shi_deng or it is/they are currently not available
+2022-08-06 10:22:36 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 10:59:41 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 11:15:01 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 12:00:46 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 14:07:32 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 14:09:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-06 14:09:39 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 14:09:39 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-06 17:42:07 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 18:06:37 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 19:00:42 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 19:02:12 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-06 20:15:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-06 20:15:40 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-06 20:15:40 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-06 21:15:34 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2022-08-07 00:37:47 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 01:55:52 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 02:47:51 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 03:16:57 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng or it is/they are currently not available
+2022-08-07 04:54:56 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 05:18:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 05:18:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 05:18:42 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 05:18:42 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 05:18:42 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-07 05:18:42 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2022-08-07 05:34:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 05:34:42 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 05:34:42 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-07 05:43:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 05:43:42 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 05:43:42 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2022-08-07 06:03:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 06:03:42 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 06:03:42 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-07 06:47:01 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 07:01:06 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 07:18:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 07:18:42 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 07:18:42 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2022-08-07 07:24:17 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 08:05:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 08:05:12 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 08:05:12 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-07 08:30:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 08:30:42 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 08:30:42 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2022-08-07 08:59:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 08:59:12 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 08:59:12 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2022-08-07 08:59:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 08:59:42 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 08:59:42 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2022-08-07 09:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng, switch.yi_lou_wo_shi_deng or it is/they are currently not available
+2022-08-07 09:11:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 09:11:42 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 09:11:42 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2022-08-07 09:15:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 09:15:42 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 09:15:42 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-07 09:19:57 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 09:24:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 09:24:12 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 09:24:12 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-07 09:54:11 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 10:15:22 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 10:31:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 10:31:13 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 10:31:13 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-07 10:33:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 10:33:13 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 10:33:13 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-07 10:33:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 10:33:13 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 10:33:13 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-07 10:59:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 10:59:43 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 10:59:43 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-07 11:05:27 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 11:13:32 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 11:15:37 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 11:17:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 11:17:43 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 11:17:43 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-07 11:20:42 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 12:30:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 12:30:43 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 12:30:43 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-07 12:35:47 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 12:49:49 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2022-08-07 12:57:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 12:57:43 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 12:57:43 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-07 13:02:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 13:02:43 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 13:02:43 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-07 14:11:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 14:11:13 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 14:11:13 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2022-08-07 14:12:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 14:12:13 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 14:12:13 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2022-08-07 14:20:16 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 电视插排 (MP1-1K4S at 192.168.1.14) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 15:11:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 15:11:43 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 15:11:43 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-07 16:03:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2022-08-07 16:03:14 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 16:03:14 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2022-08-07 17:08:02 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 1FTV (MP1-1K4S at 192.168.1.16) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 17:27:52 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 17:47:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 17:47:44 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 17:47:44 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2022-08-07 18:14:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 18:14:44 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 18:14:44 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2022-08-07 19:20:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 19:20:44 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 19:20:44 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2022-08-07 19:27:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 19:27:44 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 19:27:44 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2022-08-07 20:02:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2022-08-07 20:02:44 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 20:02:44 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2022-08-07 20:02:57 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching 书桌插排 (MP1-1K4S at 192.168.1.15) data: [Errno -4000] Network timeout: No response received within 5s
+2022-08-07 20:24:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2022-08-07 20:24:44 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to Gateway
+2022-08-07 20:24:44 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None

@@ -31,7 +31,7 @@ speedtestdotnet:
     - upload
 binary_sensor:
   - platform: ping
-    host: 192.168.1.200
+    host: 192.168.1.8
     name: NAS
   - platform: ping
     host: 192.168.1.3

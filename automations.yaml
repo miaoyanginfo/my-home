@@ -1,25 +1,26 @@
-- alias: 1f woshi switch on long press
+- id: 2dcca1bf281e4be28bb9b75868ddb268
+  alias: 长按一楼卧室灯
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0001839247
       click_type: long_click_press
   action:
-    service: homeassistant.turn_off
+  - service: homeassistant.turn_off
     entity_id:
-    - switch.yi_lou_wo_shi_deng
+    - switch.1f_woshi
     - light.gateway_light_286c07f0c4e5
-  id: 2dcca1bf281e4be28bb9b75868ddb268
-- alias: 1f woshi switch on double press
+- id: 6bd06c56a1c0494182fae79da740c359
+  alias: 双击一楼卧室灯
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0001839247
       click_type: double
   action:
-    service: light.toggle
+  - service: light.toggle
     data:
       brightness: 80
       rgb_color:
@@ -28,9 +29,8 @@
       - 60
     entity_id:
     - light.gateway_light_286c07f0c4e5
-  id: 6bd06c56a1c0494182fae79da740c359
 - id: 31579a77b0434d168e0a3dabe253baab
-  alias: 1f woshi switch on single press
+  alias: 单击一楼卧室灯
   trigger:
   - platform: event
     event_type: xiaomi_aqara.click
@@ -41,7 +41,7 @@
   action:
   - service: switch.toggle
     entity_id:
-    - switch.yi_lou_wo_shi_deng
+    - switch.1f_woshi
   mode: single
 - alias: 2f keting switch on single press
   trigger:
@@ -235,10 +235,11 @@
     entity_id: light.gateway_light_286c07f0c4e5
   id: 75a7de60d1804eb19102cc1cafd212ee
 - id: ed8ad2048e124ba0b825e7e54db28d11
-  alias: IF TURN OFF 1F WOSHI LIGHT THAN TURN ON MI LIGHT
+  alias: 关一楼卧室灯开小米夜灯
   trigger:
   - platform: state
-    entity_id: switch.yi_lou_wo_shi_deng
+    entity_id:
+    - switch.1f_woshi
     from: 'on'
     to: 'off'
   condition: []

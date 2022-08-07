@@ -1,0 +1,1227 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.paul",
+                "state": "home",
+                "attributes": {
+                    "editable": false,
+                    "id": "paul",
+                    "latitude": 38.007624854324646,
+                    "longitude": 112.44117222690514,
+                    "gps_accuracy": 65,
+                    "source": "device_tracker.paulde_macbook_pro",
+                    "user_id": "9660563256824020a2d7f1aefc239c4c",
+                    "friendly_name": "PAUL"
+                },
+                "last_changed": "2021-10-07T05:13:53.272726+00:00",
+                "last_updated": "2021-10-07T05:13:59.577166+00:00",
+                "context": {
+                    "id": "f7e3e5650e78348e1abb358e9a0731cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.nas",
+                "state": "on",
+                "attributes": {
+                    "round_trip_time_avg": 0.394,
+                    "round_trip_time_max": 0.887,
+                    "round_trip_time_mdev": "",
+                    "round_trip_time_min": 0.269,
+                    "friendly_name": "NAS",
+                    "device_class": "connectivity"
+                },
+                "last_changed": "2021-10-07T05:13:54.823821+00:00",
+                "last_updated": "2021-10-07T05:13:54.823821+00:00",
+                "context": {
+                    "id": "eab8238f6857bec0be205a9d29fda199",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.d191g",
+                "state": "on",
+                "attributes": {
+                    "round_trip_time_avg": 1.256,
+                    "round_trip_time_max": 1.549,
+                    "round_trip_time_mdev": "",
+                    "round_trip_time_min": 1.083,
+                    "friendly_name": "D191G",
+                    "device_class": "connectivity"
+                },
+                "last_changed": "2021-10-07T05:13:54.824073+00:00",
+                "last_updated": "2021-10-07T05:13:54.824073+00:00",
+                "context": {
+                    "id": "1f61d3c330976e902762b4c5e6fe6add",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.openwrt",
+                "state": "on",
+                "attributes": {
+                    "round_trip_time_avg": 1.484,
+                    "round_trip_time_max": 2.494,
+                    "round_trip_time_mdev": "",
+                    "round_trip_time_min": 1.008,
+                    "friendly_name": "OPENWRT",
+                    "device_class": "connectivity"
+                },
+                "last_changed": "2021-10-07T05:13:54.824264+00:00",
+                "last_updated": "2021-10-07T05:13:54.824264+00:00",
+                "context": {
+                    "id": "954b607e18dc450fb5077c8e0cd11b4f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.1f_woshi_switch_on_long_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-04T09:38:35.576993+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "1f woshi switch on long press"
+                },
+                "last_changed": "2021-10-07T05:13:54.845823+00:00",
+                "last_updated": "2021-10-07T05:13:54.845823+00:00",
+                "context": {
+                    "id": "c3cbd6e6daba516e7599237e137c19f1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.1f_woshi_switch_on_double_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-04T09:38:37.514891+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "1f woshi switch on double press"
+                },
+                "last_changed": "2021-10-07T05:13:54.846367+00:00",
+                "last_updated": "2021-10-07T05:13:54.846367+00:00",
+                "context": {
+                    "id": "c43bd1bfec3aa3821b36cba934067103",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.1f_woshi_switch_on_single_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-08-31T13:12:00.812616+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "1f woshi switch on single press"
+                },
+                "last_changed": "2021-10-07T05:13:54.846826+00:00",
+                "last_updated": "2021-10-07T05:13:54.846826+00:00",
+                "context": {
+                    "id": "5fe54f037b1ed441c809747470886857",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_keting_switch_on_single_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f keting switch on single press"
+                },
+                "last_changed": "2021-10-07T05:13:54.847214+00:00",
+                "last_updated": "2021-10-07T05:13:54.847214+00:00",
+                "context": {
+                    "id": "199ce93d95b916af8a9794958bc3a7db",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_keting_switch_on_long_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-18T13:14:17.195472+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f keting switch on long press"
+                },
+                "last_changed": "2021-10-07T05:13:54.847633+00:00",
+                "last_updated": "2021-10-07T05:13:54.847633+00:00",
+                "context": {
+                    "id": "ef45861b59b643e710c807a44057f6c0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_keting_switch_on_double_press",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-18T12:28:39.874070+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f keting switch on double press"
+                },
+                "last_changed": "2021-10-07T05:13:54.848016+00:00",
+                "last_updated": "2021-10-07T05:13:54.848016+00:00",
+                "context": {
+                    "id": "1e0a507ef24729f13a0e751df0cbf60b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_keting_motion_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-01T13:01:03.143798+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f keting motion on"
+                },
+                "last_changed": "2021-10-07T05:13:54.848372+00:00",
+                "last_updated": "2021-10-07T05:13:54.848372+00:00",
+                "context": {
+                    "id": "bc33ff4aeb32cc14c32545c133ec8614",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_keting_motion_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-02T01:27:17.533431+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f keting motion off"
+                },
+                "last_changed": "2021-10-07T05:13:54.848747+00:00",
+                "last_updated": "2021-10-07T05:13:54.848747+00:00",
+                "context": {
+                    "id": "8df6295a1c1f200d92ed7574c0cbd13d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_woshi_motion_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-08-28T11:26:39.765956+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f woshi motion on"
+                },
+                "last_changed": "2021-10-07T05:13:54.849124+00:00",
+                "last_updated": "2021-10-07T05:13:54.849124+00:00",
+                "context": {
+                    "id": "a2277b764b77719731ef6267a6b4e996",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.2f_woshi_motion_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-01T10:21:32.998161+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "2f woshi motion off"
+                },
+                "last_changed": "2021-10-07T05:13:54.849480+00:00",
+                "last_updated": "2021-10-07T05:13:54.849480+00:00",
+                "context": {
+                    "id": "5065f13a143ae065ee2df8f53fa7a6c6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.1f_woshi_motion_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-01T15:42:46.744705+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "1f woshi motion on"
+                },
+                "last_changed": "2021-10-07T05:13:54.849861+00:00",
+                "last_updated": "2021-10-07T05:13:54.849861+00:00",
+                "context": {
+                    "id": "17eefb2237a6f51bfb9d480e791ad748",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.1f_woshi_motion_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-02T02:13:49.799546+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "1f woshi motion off"
+                },
+                "last_changed": "2021-10-07T05:13:54.850209+00:00",
+                "last_updated": "2021-10-07T05:13:54.850209+00:00",
+                "context": {
+                    "id": "d2fcc0035c54a86194f34ad15670c102",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.if_turn_off_1f_woshi_light_than_turn_on_mi_light",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-01T12:40:54.635917+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IF TURN OFF 1F WOSHI LIGHT THAN TURN ON MI LIGHT"
+                },
+                "last_changed": "2021-10-07T05:13:54.850700+00:00",
+                "last_updated": "2021-10-07T05:13:54.850700+00:00",
+                "context": {
+                    "id": "68e68c2960f8d3fb9ae7b0d93ff9693b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.turn_off_all_light",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-02T01:00:00.003596+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "turn off all light"
+                },
+                "last_changed": "2021-10-07T05:13:54.851103+00:00",
+                "last_updated": "2021-10-07T05:13:54.851103+00:00",
+                "context": {
+                    "id": "c267c5bf19d60323c995ac4bde1b1ca1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.hourly_chime",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-02T02:00:01.002789+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Hourly Chime"
+                },
+                "last_changed": "2021-10-07T05:13:54.851496+00:00",
+                "last_updated": "2021-10-07T05:13:54.851496+00:00",
+                "context": {
+                    "id": "0094c8c953402de2743385574c3d4526",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.spmini2_switch_control",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-04T09:30:00.003133+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "spmini2 switch control"
+                },
+                "last_changed": "2021-10-07T05:13:54.851939+00:00",
+                "last_updated": "2021-10-07T05:13:54.851939+00:00",
+                "context": {
+                    "id": "f336c43327ceea7367d14c9a59d1f7cb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_battery_level",
+                "state": "23",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Battery Level",
+                    "icon": "mdi:battery-20",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-10-07T05:13:55.713572+00:00",
+                "last_updated": "2021-10-07T05:13:55.713572+00:00",
+                "context": {
+                    "id": "f9dbc3d203d9785c66040f6e4fff98c8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_battery_state",
+                "state": "Not Charging",
+                "attributes": {
+                    "Low Power Mode": false,
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Battery State",
+                    "icon": "mdi:battery-20",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-10-07T05:13:55.713959+00:00",
+                "last_updated": "2021-10-07T05:13:55.713959+00:00",
+                "context": {
+                    "id": "c1463e00aef0218a46da6695396b1bd1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_storage",
+                "state": "49.23",
+                "attributes": {
+                    "Available": "51.50 GB",
+                    "Available (Important)": "64.28 GB",
+                    "Available (Opportunistic)": "63.00 GB",
+                    "Total": "127.97 GB",
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-10-07T05:13:55.714283+00:00",
+                "last_updated": "2021-10-07T05:13:55.714283+00:00",
+                "context": {
+                    "id": "1f8494da62faba987b1746bdc9e6ca54",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_connection_type",
+                "state": "Wi-Fi",
+                "attributes": {
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Connection Type",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-10-07T05:13:55.714606+00:00",
+                "last_updated": "2021-10-07T05:13:55.714606+00:00",
+                "context": {
+                    "id": "eeaf63228c26fbdeee750768822091c0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_sim_1",
+                "state": "\u4e2d\u56fd\u8054\u901a",
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "\u4e2d\u56fd\u8054\u901a",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "cn",
+                    "Mobile Country Code": "460",
+                    "Mobile Network Code": "01",
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-10-07T05:13:55.714903+00:00",
+                "last_updated": "2021-10-07T05:13:55.714903+00:00",
+                "context": {
+                    "id": "c032aa51c8450889ba7117ef06563db2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_bssid",
+                "state": "Not Connected",
+                "attributes": {
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.715197+00:00",
+                "last_updated": "2021-10-07T05:13:55.715197+00:00",
+                "context": {
+                    "id": "b62279a5810218ce1e8382432219dd61",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_geocoded_location",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-10-07T05:13:55.715470+00:00",
+                "last_updated": "2021-10-07T05:13:55.715470+00:00",
+                "context": {
+                    "id": "5b33b1d2549bcbd818d5047bfb889f91",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_last_update_trigger",
+                "state": "Launch",
+                "attributes": {
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-10-07T05:13:55.715770+00:00",
+                "last_updated": "2021-10-07T05:13:55.715770+00:00",
+                "context": {
+                    "id": "e3a080444a1fdc4820fdfd99a2e06fef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.miao_yang_de_iphone_ssid",
+                "state": "Not Connected",
+                "attributes": {
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.716047+00:00",
+                "last_updated": "2021-10-07T05:13:55.716047+00:00",
+                "context": {
+                    "id": "db6039696dfd8876c601b0a85da69165",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_storage",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "paul\u7684MacBook Pro Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-10-07T05:13:55.716315+00:00",
+                "last_updated": "2021-10-07T05:13:55.716315+00:00",
+                "context": {
+                    "id": "85e76a3504b623de461592d5e82a7362",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_connection_type",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Connection Type",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-10-07T05:13:55.716627+00:00",
+                "last_updated": "2021-10-07T05:13:55.716627+00:00",
+                "context": {
+                    "id": "38681f7bfa5bb81f2f67620537a96bd3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_internal_battery_state",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Internal Battery State",
+                    "icon": "mdi:battery-80"
+                },
+                "last_changed": "2021-10-07T05:13:55.716923+00:00",
+                "last_updated": "2021-10-07T05:13:55.716923+00:00",
+                "context": {
+                    "id": "58caa016b9303fe7228a97e140f10583",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_ssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.717199+00:00",
+                "last_updated": "2021-10-07T05:13:55.717199+00:00",
+                "context": {
+                    "id": "b3b96259846e4b21964c08484334b75e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_internal_battery_level",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "paul\u7684MacBook Pro Internal Battery Level",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-10-07T05:13:55.717470+00:00",
+                "last_updated": "2021-10-07T05:13:55.717470+00:00",
+                "context": {
+                    "id": "5e916d39d243783f9102c0299a7aa317",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_bssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.717815+00:00",
+                "last_updated": "2021-10-07T05:13:55.717815+00:00",
+                "context": {
+                    "id": "86910eafb8ac768f0cb76dd27c40af1e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_geocoded_location",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-10-07T05:13:55.718092+00:00",
+                "last_updated": "2021-10-07T05:13:55.718092+00:00",
+                "context": {
+                    "id": "9b12c1188d405ef707f862f9f98030cd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_active_camera",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Active Camera",
+                    "icon": "mdi:camera-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.718365+00:00",
+                "last_updated": "2021-10-07T05:13:55.718365+00:00",
+                "context": {
+                    "id": "4d86bf173c875789cdf957089c4c6881",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_active_microphone",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Active Microphone",
+                    "icon": "mdi:microphone"
+                },
+                "last_changed": "2021-10-07T05:13:55.718669+00:00",
+                "last_updated": "2021-10-07T05:13:55.718669+00:00",
+                "context": {
+                    "id": "cb0bdc4206eb79e18dc3f703fcc8ea7d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_displays",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Displays",
+                    "icon": "mdi:monitor-multiple"
+                },
+                "last_changed": "2021-10-07T05:13:55.718952+00:00",
+                "last_updated": "2021-10-07T05:13:55.718952+00:00",
+                "context": {
+                    "id": "a4dcdd4134db147b5ff2a2973da6da3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_primary_display_name",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Primary Display Name",
+                    "icon": "mdi:monitor-star"
+                },
+                "last_changed": "2021-10-07T05:13:55.719215+00:00",
+                "last_updated": "2021-10-07T05:13:55.719215+00:00",
+                "context": {
+                    "id": "3166115fc566287c0457c49c73ae66ae",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_primary_display_id",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Primary Display ID",
+                    "icon": "mdi:monitor-star"
+                },
+                "last_changed": "2021-10-07T05:13:55.719477+00:00",
+                "last_updated": "2021-10-07T05:13:55.719477+00:00",
+                "context": {
+                    "id": "c0dd8897a613a6dfe8bc6524be312966",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_frontmost_app",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Frontmost App",
+                    "icon": "mdi:traffic-light"
+                },
+                "last_changed": "2021-10-07T05:13:55.719764+00:00",
+                "last_updated": "2021-10-07T05:13:55.719764+00:00",
+                "context": {
+                    "id": "72cebdfd65007afc97fb99a0a2599ee2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.paulde_macbook_pro_last_update_trigger",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Last Update Trigger",
+                    "icon": "mdi:laptop-mac"
+                },
+                "last_changed": "2021-10-07T05:13:55.720038+00:00",
+                "last_updated": "2021-10-07T05:13:55.720038+00:00",
+                "context": {
+                    "id": "cc9de6ab9436bb5e7239d7e0adc48553",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.paulde_macbook_pro_camera_in_use",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Camera In Use",
+                    "icon": "mdi:camera-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.720335+00:00",
+                "last_updated": "2021-10-07T05:13:55.720335+00:00",
+                "context": {
+                    "id": "f243447c629cb02d9280c5998d41469e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.paulde_macbook_pro_microphone_in_use",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Microphone In Use",
+                    "icon": "mdi:microphone"
+                },
+                "last_changed": "2021-10-07T05:13:55.720612+00:00",
+                "last_updated": "2021-10-07T05:13:55.720612+00:00",
+                "context": {
+                    "id": "cb34dc0b715c0bb2b9a8358ebbe1904d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.paulde_macbook_pro_active",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "paul\u7684MacBook Pro Active",
+                    "icon": "mdi:monitor-off"
+                },
+                "last_changed": "2021-10-07T05:13:55.720873+00:00",
+                "last_updated": "2021-10-07T05:13:55.720873+00:00",
+                "context": {
+                    "id": "1de5490f074170ccf9cf58ae26e74b23",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.miao_yang_de_iphone",
+                "state": "unknown",
+                "attributes": {
+                    "source_type": "gps",
+                    "friendly_name": "\u82d7\u6d0b\u7684iPhone"
+                },
+                "last_changed": "2021-10-07T05:13:55.744087+00:00",
+                "last_updated": "2021-10-07T05:13:55.744087+00:00",
+                "context": {
+                    "id": "9822e9451dc5fcc3519d749f7dbf3475",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.paulde_macbook_pro",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 90,
+                    "latitude": 38.007624854324646,
+                    "longitude": 112.44117222690514,
+                    "gps_accuracy": 65,
+                    "altitude": 818.0,
+                    "vertical_accuracy": 10,
+                    "friendly_name": "paul\u7684MacBook Pro"
+                },
+                "last_changed": "2021-10-07T05:13:55.744721+00:00",
+                "last_updated": "2021-10-07T05:13:55.744721+00:00",
+                "context": {
+                    "id": "6a20b2a1ebdcfcdb5fcfcbb9612b8704",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_ping",
+                "state": "25.804",
+                "attributes": {
+                    "state_class": "measurement",
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "unit_of_measurement": "ms",
+                    "friendly_name": "\u5ef6\u8fdf",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-10-07T05:13:56.309938+00:00",
+                "last_updated": "2021-10-07T05:13:56.309938+00:00",
+                "context": {
+                    "id": "14952e959aa22e5c32edc48162a93582",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_download",
+                "state": "323.9",
+                "attributes": {
+                    "state_class": "measurement",
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "\u4e0b\u8f7d",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-10-07T05:13:56.310214+00:00",
+                "last_updated": "2021-10-07T05:13:56.310214+00:00",
+                "context": {
+                    "id": "d3a22ac21fb92e938d11ab716b9bcfb5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_upload",
+                "state": "42.67",
+                "attributes": {
+                    "state_class": "measurement",
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "\u4e0a\u4f20",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-10-07T05:13:56.310411+00:00",
+                "last_updated": "2021-10-07T05:13:56.310411+00:00",
+                "context": {
+                    "id": "9263575d0352fc7f5c0768956dbe8cfe",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot1_s1",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Slot1 S1",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:14:59.153640+00:00",
+                "last_updated": "2021-10-07T05:14:59.153640+00:00",
+                "context": {
+                    "id": "6ae9522746e6d855eda88d9c01439203",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot1_s2",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u5c0f\u7231\u540c\u5b66",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:14:59.153917+00:00",
+                "last_updated": "2021-10-07T05:14:59.153917+00:00",
+                "context": {
+                    "id": "5563116fc9977ca19ec8e731f0a625c4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot1_s3",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u4e66\u684c\u53f0\u706f",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:14:59.154075+00:00",
+                "last_updated": "2021-10-07T05:14:59.154075+00:00",
+                "context": {
+                    "id": "be2c0e73711c41874c81fcc50616b0c9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot1_s4",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u5c0f\u7c73\u63d2\u7ebf\u677f",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:14:59.154218+00:00",
+                "last_updated": "2021-10-07T05:14:59.154218+00:00",
+                "context": {
+                    "id": "22c7f3098fb4b116ad5665fd2c91f1c3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot2_s1",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u673a\u9876\u76d2",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.571485+00:00",
+                "last_updated": "2021-10-07T05:13:59.571485+00:00",
+                "context": {
+                    "id": "7872caed40efb299ef4ffee9ca2434a2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot2_s2",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u7535\u89c6\u673a",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.571711+00:00",
+                "last_updated": "2021-10-07T05:13:59.571711+00:00",
+                "context": {
+                    "id": "6b4180c3bd532738e5cd26076bb34dbb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot2_s3",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Slot2 S3",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.571902+00:00",
+                "last_updated": "2021-10-07T05:13:59.571902+00:00",
+                "context": {
+                    "id": "782fc7419de308550c0e23d74c269ce3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.slot2_s4",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Slot2 S4",
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.572098+00:00",
+                "last_updated": "2021-10-07T05:13:59.572098+00:00",
+                "context": {
+                    "id": "1c5fea7bebf852a86bf617e02fe0342b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.er_lou_wo_shi_deng",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u4e8c\u697c\u5367\u5ba4\u706f",
+                    "assumed_state": true,
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.572362+00:00",
+                "last_updated": "2021-10-07T05:13:59.572362+00:00",
+                "context": {
+                    "id": "f61c67cd252dedd6480d9cd3efd0a22a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.er_lou_ke_ting_deng",
+                "state": "on",
+                "attributes": {
+                    "friendly_name": "\u4e8c\u697c\u5ba2\u5385\u706f",
+                    "assumed_state": true,
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.572582+00:00",
+                "last_updated": "2021-10-07T05:13:59.572582+00:00",
+                "context": {
+                    "id": "3ab9b3076f73399d6591fa3d2f11b484",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.yi_lou_wo_shi_deng",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "\u4e00\u697c\u5367\u5ba4\u706f",
+                    "assumed_state": true,
+                    "device_class": "switch"
+                },
+                "last_changed": "2021-10-07T05:13:59.572778+00:00",
+                "last_updated": "2021-10-07T05:13:59.572778+00:00",
+                "context": {
+                    "id": "5d330763ef7a69206fba2239dadf4540",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "remote.zhi_neng_yao_kong_remote",
+                "state": "on",
+                "attributes": {
+                    "friendly_name": "\u667a\u80fd\u9065\u63a7 Remote",
+                    "supported_features": 3
+                },
+                "last_changed": "2021-10-07T05:13:59.572984+00:00",
+                "last_updated": "2021-10-07T05:13:59.572984+00:00",
+                "context": {
+                    "id": "484e1ea7bd8642c9315e86528b1a7b44",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-07T05:15:14.291681+00:00"
+        }
+    ]
+}
