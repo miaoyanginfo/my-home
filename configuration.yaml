@@ -40,6 +40,11 @@ xiaomi_aqara:
   discovery_retry: 5
   gateways:
     - key: 9A62A0F6915A483C
+device_tracker:
+  - platform: ubus
+    host: 192.168.1.2
+    username: root
+    password: miaoyanginfo
 
 # molobot:
   # phone: 15513084760  # 天猫精灵绑定的手机号

@@ -122,23 +122,31 @@
     - switch.1ftv_s3
     - switch.1ftv_s4
   id: 95c5c5b603e3488a8a69f868d1a6c6d1
-- alias: 2f keting switch on double press
+- id: 98793dbe43b34726980ea32199242f0c
+  alias: 二楼客厅双击
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0000fd0ac2
       click_type: double
   action:
   - service: switch.turn_on
-    entity_id: switch.1ftv_s2
+    data: {}
+    target:
+      entity_id:
+      - switch.s1_s2
   - service: switch.turn_off
-    entity_id: switch.1ftv_s4
+    data: {}
+    target:
+      entity_id: switch.s1_s4
   - delay:
       seconds: 5
   - service: switch.turn_on
-    entity_id: switch.1ftv_s1
-  id: 98793dbe43b34726980ea32199242f0c
+    data: {}
+    target:
+      entity_id:
+      - switch.s1_s1
 - alias: 2f keting motion on
   initial_state: 'on'
   trigger:
@@ -290,9 +298,10 @@
   - platform: time_pattern
     hours: /6
   action:
-  - service: switch.toggle
-    entity_id:
-    - switch.bing_ju_switch
+  - type: toggle
+    device_id: c328276ceb9720cfa6fa03810af142b9
+    entity_id: switch.bingui
+    domain: switch
   initial_state: 'on'
   mode: single
 - id: '1640338073135'

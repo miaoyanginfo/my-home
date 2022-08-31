@@ -1,0 +1,70 @@
+2021-10-07 13:13:51 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2021-10-07 13:13:59 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SAP-MINI2' for broadlink integration not ready yet: [Errno -4000] Network timeout; Retrying in background
+2021-10-07 13:13:59 WARNING (MainThread) [homeassistant.components.broadlink.switch] Your configuration for the switch platform is deprecated. Please refer to the Broadlink documentation to catch up
+2021-10-07 13:13:59 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade. Schema version: 16
+2021-10-07 13:14:00 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=23 from 2021-09-04 09:57:06.905391)
+2021-10-07 13:15:18 ERROR (Thread-3) [root] Uncaught thread exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/site-packages/xiaomi_gateway/__init__.py", line 180, in _listen_to_msg
+    data, (ip_add, _) = self._mcastsocket.recvfrom(SOCKET_BUFSIZE)
+OSError: [Errno 9] Bad file descriptor
+2021-10-07 13:15:18 WARNING (Thread-5) [homeassistant.util.executor] Thread[SyncWorker_5] is still running at shutdown: File "/usr/local/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 77, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/speedtestdotnet/__init__.py", line 118, in update_data
+    best_server = self.api.get_best_server()
+  File "/usr/local/lib/python3.9/site-packages/speedtest.py", line 1473, in get_best_server
+    h.request("GET", path, headers=headers)
+  File "/usr/local/lib/python3.9/http/client.py", line 1279, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1325, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1274, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1034, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/speedtest.py", line 426, in connect
+    self.sock = socket.create_connection(
+  File "/usr/local/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+2021-10-07 13:15:19 WARNING (Thread-5) [homeassistant.util.executor] Thread[SyncWorker_5] is still running at shutdown: File "/usr/local/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 77, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/speedtestdotnet/__init__.py", line 118, in update_data
+    best_server = self.api.get_best_server()
+  File "/usr/local/lib/python3.9/site-packages/speedtest.py", line 1473, in get_best_server
+    h.request("GET", path, headers=headers)
+  File "/usr/local/lib/python3.9/http/client.py", line 1279, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1325, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1274, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1034, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/speedtest.py", line 426, in connect
+    self.sock = socket.create_connection(
+  File "/usr/local/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)

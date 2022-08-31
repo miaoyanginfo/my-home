@@ -1,275 +1,283 @@
 {
-    "version": 1,
-    "minor_version": 1,
-    "key": "lovelace",
-    "data": {
-        "config": {
-            "title": "\u6211\u7684\u5bb6",
-            "views": [
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "我的家",
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "path": "default_view",
+          "title": "首页",
+          "badges": [
+            {
+              "entity": "binary_sensor.d191g"
+            },
+            {
+              "entity": "binary_sensor.nas"
+            },
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015dbaec"
+            },
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015d5c57"
+            },
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015d2507"
+            },
+            {
+              "entity": "binary_sensor.switch_158d0001839247"
+            },
+            {
+              "entity": "binary_sensor.switch_158d0001a21774"
+            },
+            {
+              "entity": "binary_sensor.door_window_sensor_158d0001a64708"
+            },
+            {
+              "entity": "binary_sensor.switch_158d0000fd0ac2"
+            }
+          ],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
                 {
-                    "path": "default_view",
-                    "title": "Home",
-                    "badges": [
-                        {
-                            "entity": "binary_sensor.d191g"
-                        },
-                        {
-                            "entity": "binary_sensor.nas"
-                        },
-                        {
-                            "entity": "binary_sensor.motion_sensor_158d00015dbaec"
-                        },
-                        {
-                            "entity": "binary_sensor.motion_sensor_158d00015d5c57"
-                        },
-                        {
-                            "entity": "binary_sensor.motion_sensor_158d00015d2507"
-                        },
-                        {
-                            "entity": "binary_sensor.switch_158d0001839247"
-                        },
-                        {
-                            "entity": "binary_sensor.switch_158d0001a21774"
-                        },
-                        {
-                            "entity": "binary_sensor.door_window_sensor_158d0001a64708"
-                        },
-                        {
-                            "entity": "binary_sensor.switch_158d0000fd0ac2"
-                        }
-                    ],
-                    "cards": [
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "sun.sun"
-                                },
-                                {
-                                    "entity": "sensor.date"
-                                },
-                                {
-                                    "entity": "sensor.time"
-                                }
-                            ],
-                            "title": "\u65f6\u95f4\u65e5\u671f"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "light.gateway_light_286c07f0c4e5"
-                                },
-                                {
-                                    "entity": "switch.yi_lou_wo_shi_deng"
-                                },
-                                {
-                                    "entity": "switch.er_lou_wo_shi_deng"
-                                },
-                                {
-                                    "entity": "switch.plug_158d00015d1bf5"
-                                },
-                                {
-                                    "entity": "switch.men_kou_deng_long_switch"
-                                },
-                                {
-                                    "entity": "switch.er_lou_ke_ting_deng"
-                                }
-                            ],
-                            "title": "\u706f\u5149"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "sensor.speedtest_download"
-                                },
-                                {
-                                    "entity": "sensor.speedtest_upload"
-                                },
-                                {
-                                    "entity": "sensor.speedtest_ping"
-                                },
-                                {
-                                    "entity": "sensor.processor_use"
-                                },
-                                {
-                                    "entity": "sensor.memory_use_percent"
-                                },
-                                {
-                                    "entity": "sensor.last_boot"
-                                }
-                            ],
-                            "title": "\u7cfb\u7edf\u7f51\u7edc\u76d1\u6d4b"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "sensor.humidity_158d0001e80ca7"
-                                },
-                                {
-                                    "entity": "sensor.temperature_158d0001e80ca7"
-                                },
-                                {
-                                    "entity": "sensor.illumination_286c07f0c4e5"
-                                },
-                                {
-                                    "entity": "sensor.zhi_neng_yao_kong_rmpro_temperature"
-                                }
-                            ],
-                            "title": "\u5367\u5ba4\u73af\u5883"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "switch.tv_s1"
-                                },
-                                {
-                                    "entity": "switch.tv_s2"
-                                },
-                                {
-                                    "entity": "switch.tv_s3"
-                                },
-                                {
-                                    "entity": "switch.tv_s4"
-                                },
-                                {
-                                    "entity": "switch.my_nas"
-                                },
-                                {
-                                    "entity": "switch.bing_ju_switch"
-                                }
-                            ],
-                            "title": "\u5bb6\u5ead\u5f71\u9662"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "switch.desk_s1"
-                                },
-                                {
-                                    "entity": "switch.desk_s2"
-                                },
-                                {
-                                    "entity": "switch.desk_s3"
-                                },
-                                {
-                                    "entity": "switch.desk_s4"
-                                }
-                            ],
-                            "title": "\u4e66\u684c\u8bbe\u5907"
-                        },
-                        {
-                            "type": "gauge",
-                            "entity": "sensor.memory_use_percent",
-                            "min": 0,
-                            "max": 100,
-                            "name": "\u7cfb\u7edf\u5185\u5b58"
-                        },
-                        {
-                            "type": "gauge",
-                            "entity": "sensor.processor_use",
-                            "min": 0,
-                            "max": 100,
-                            "name": "CPU\u5360\u7528\u7387"
-                        },
-                        {
-                            "type": "entities",
-                            "entities": [
-                                {
-                                    "entity": "switch.1ftv_s1"
-                                },
-                                {
-                                    "entity": "switch.1ftv_s2"
-                                },
-                                {
-                                    "entity": "switch.1ftv_s3"
-                                },
-                                {
-                                    "entity": "switch.1ftv_s4"
-                                }
-                            ],
-                            "title": "\u4e00\u697c\u7535\u89c6\u6392\u63d2"
-                        }
-                    ]
+                  "entity": "sun.sun"
                 },
                 {
-                    "title": "\u5367\u5ba4\u73af\u5883\u76d1\u6d4b",
-                    "path": "",
-                    "badges": [
-                        {
-                            "entity": "binary_sensor.motion_sensor_158d00015d2507"
-                        }
-                    ],
-                    "cards": [
-                        {
-                            "type": "gauge",
-                            "min": 0,
-                            "max": 100,
-                            "entity": "sensor.temperature_158d0001e80ca7",
-                            "severity": {
-                                "green": 20,
-                                "yellow": 15,
-                                "red": 30
-                            }
-                        },
-                        {
-                            "type": "gauge",
-                            "min": 0,
-                            "max": 100,
-                            "entity": "sensor.illumination_286c07f0c4e5",
-                            "severity": {
-                                "green": 900,
-                                "yellow": 500,
-                                "red": 200
-                            }
-                        },
-                        {
-                            "type": "gauge",
-                            "min": 0,
-                            "max": 100,
-                            "entity": "sensor.humidity_158d0001e80ca7",
-                            "severity": {
-                                "green": 60,
-                                "yellow": 50,
-                                "red": 90
-                            }
-                        }
-                    ]
+                  "entity": "sensor.date"
                 },
                 {
-                    "title": "\u7cfb\u7edf\u72b6\u6001\u76d1\u6d4b",
-                    "path": "",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "gauge",
-                            "min": 0,
-                            "max": 100,
-                            "entity": "sensor.processor_use",
-                            "severity": {
-                                "green": 0,
-                                "yellow": 50,
-                                "red": 80
-                            }
-                        },
-                        {
-                            "type": "gauge",
-                            "min": 0,
-                            "max": 100,
-                            "entity": "sensor.memory_use_percent",
-                            "severity": {
-                                "green": 10,
-                                "yellow": 30,
-                                "red": 80
-                            }
-                        }
-                    ]
+                  "entity": "sensor.time"
                 }
-            ]
+              ],
+              "title": "时间日期"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.gateway_light_286c07f0c4e5"
+                },
+                {
+                  "entity": "switch.1f_woshi"
+                },
+                {
+                  "entity": "switch.woshi_light"
+                }
+              ],
+              "title": "灯光"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.speedtest_download"
+                },
+                {
+                  "entity": "sensor.speedtest_upload"
+                },
+                {
+                  "entity": "sensor.speedtest_ping"
+                },
+                {
+                  "entity": "switch.my_nas"
+                },
+                {
+                  "entity": "sensor.processor_use_percent"
+                },
+                {
+                  "entity": "sensor.memory_use_percent"
+                },
+                {
+                  "entity": "sensor.last_boot"
+                }
+              ],
+              "title": "系统网络监测"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.humidity_158d0001e80ca7"
+                },
+                {
+                  "entity": "sensor.temperature_158d0001e80ca7"
+                },
+                {
+                  "entity": "sensor.illumination_286c07f0c4e5"
+                },
+                {
+                  "entity": "sensor.zhi_neng_yao_kong_temperature"
+                }
+              ],
+              "title": "卧室环境"
+            },
+            {
+              "type": "gauge",
+              "entity": "sensor.memory_use_percent",
+              "min": 0,
+              "max": 100,
+              "name": "系统内存"
+            },
+            {
+              "type": "gauge",
+              "entity": "sensor.processor_use_percent",
+              "min": 0,
+              "max": 100,
+              "name": "CPU占用率"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "switch.bingui"
+              ],
+              "title": "Wi-Fi智能插座"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.s1_s1",
+                  "name": "S1"
+                },
+                {
+                  "entity": "switch.s1_s2",
+                  "name": "S2"
+                },
+                {
+                  "entity": "switch.s1_s3",
+                  "name": "S3"
+                },
+                {
+                  "entity": "switch.s1_s4",
+                  "name": "S4"
+                }
+              ],
+              "title": "二楼电视插排S1"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.s2_s1",
+                  "name": "S1"
+                },
+                {
+                  "entity": "switch.s2_s2",
+                  "name": "S2"
+                },
+                {
+                  "entity": "switch.s2_s3",
+                  "name": "S3"
+                },
+                {
+                  "entity": "switch.s2_s4",
+                  "name": "S4"
+                }
+              ],
+              "title": "书桌插排S2"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.s3_s1",
+                  "name": "S1"
+                },
+                {
+                  "entity": "switch.s3_s2",
+                  "name": "S2"
+                },
+                {
+                  "entity": "switch.s3_s3",
+                  "name": "S3"
+                },
+                {
+                  "entity": "switch.s3_s4",
+                  "name": "S4"
+                }
+              ],
+              "title": "一楼电视插排S3"
+            }
+          ]
+        },
+        {
+          "title": "卧室环境监测",
+          "path": "",
+          "badges": [
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015d2507"
+            }
+          ],
+          "cards": [
+            {
+              "type": "gauge",
+              "min": 0,
+              "max": 100,
+              "entity": "sensor.temperature_158d0001e80ca7",
+              "severity": {
+                "green": 20,
+                "yellow": 15,
+                "red": 30
+              }
+            },
+            {
+              "type": "gauge",
+              "min": 0,
+              "max": 100,
+              "entity": "sensor.illumination_286c07f0c4e5",
+              "severity": {
+                "green": 900,
+                "yellow": 500,
+                "red": 200
+              }
+            },
+            {
+              "type": "gauge",
+              "min": 0,
+              "max": 100,
+              "entity": "sensor.humidity_158d0001e80ca7",
+              "severity": {
+                "green": 60,
+                "yellow": 50,
+                "red": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "系统状态监测",
+          "path": "",
+          "badges": [],
+          "cards": [
+            {
+              "type": "gauge",
+              "min": 0,
+              "max": 100,
+              "entity": "sensor.processor_use_percent",
+              "severity": {
+                "green": 0,
+                "yellow": 50,
+                "red": 80
+              }
+            },
+            {
+              "type": "gauge",
+              "min": 0,
+              "max": 100,
+              "entity": "sensor.memory_use_percent",
+              "severity": {
+                "green": 10,
+                "yellow": 30,
+                "red": 80
+              }
+            }
+          ]
         }
+      ]
     }
+  }
 }

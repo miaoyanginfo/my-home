@@ -1,17 +1,28 @@
 {
-    "version": 2,
-    "minor_version": 1,
-    "key": "person",
-    "data": {
-        "items": [
-            {
-                "name": "miaoyang",
-                "user_id": "433a3bf93cd84d03af54e66e817c202a",
-                "device_trackers": [
-                    "device_tracker.iphone"
-                ],
-                "id": "miaoyang"
-            }
-        ]
-    }
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "苗洋",
+        "user_id": "7caef1731d1a49c990cfa5810f239d11",
+        "device_trackers": [
+          "device_tracker.miao_yang_de_iphone",
+          "device_tracker.iphone"
+        ],
+        "id": "miao_yang",
+        "picture": null
+      },
+      {
+        "name": "薛秋燕",
+        "device_trackers": [
+          "device_tracker.iphoneqiu_qiu"
+        ],
+        "user_id": "666134958c784a25a09212fe7d727088",
+        "picture": null,
+        "id": "xie_qiu_yan"
+      }
+    ]
+  }
 }
