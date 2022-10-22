@@ -1,0 +1,147 @@
+
+broadlink_oem_t1_c9_82_3d:
+  name: BroadLink_OEM-T1-c9-82-3d
+  mac: 34:EA:34:C9:82:3D
+  icon:
+  picture:
+  track: false
+
+broadlink_rmproplus_e9_ba_18:
+  name: Broadlink_RMPROPLUS-e9-ba-18
+  mac: 34:EA:34:E9:BA:18
+  icon:
+  picture:
+  track: false
+
+mi5x_xiaomiaomiaojin:
+  name: MI5X-xiaomiaoMiaoJin
+  mac: E4:46:DA:FB:19:BF
+  icon:
+  picture:
+  track: true
+
+spmini2:
+  name: spmini2
+  mac: 78:0F:77:CB:7D:CF
+  icon:
+  picture:
+  track: false
+
+lenovo_beijing_limited:
+  name: Lenovo (Beijing) Limited.
+  mac: 20:76:93:26:8F:78
+  icon:
+  picture:
+  track: false
+
+lumi_gateway_v3_miio54969428:
+  name: lumi-gateway-v3_miio54969428
+  mac: 28:6C:07:F0:C4:E5
+  icon:
+  picture:
+  track: false
+
+synology:
+  name: Synology
+  mac: 00:E0:70:86:C7:BA
+  icon:
+  picture:
+  track: false
+
+miaisoundbox:
+  name: MiAiSoundbox
+  mac: 00:9E:C8:E7:67:1D
+  icon:
+  picture:
+  track: false
+
+openwrt:
+  name: OPENWRT
+  mac: D6:25:7B:54:79:B7
+  icon:
+  picture:
+  track: false
+
+iphone12_2:
+  name: iPhone12-2
+  mac: D2:1B:A9:1F:27:78
+  icon:
+  picture:
+  track: true
+
+iphone7:
+  name: iPhone7
+  mac: AE:3F:DC:D6:42:35
+  icon:
+  picture:
+  track: true
+
+x13:
+  name: X13
+  mac: CC:F9:E4:CB:BA:65
+  icon:
+  picture:
+  track: false
+
+redminote9:
+  name: RedmiNote9
+  mac: BC:6A:D1:17:5C:9A
+  icon:
+  picture:
+  track: true
+
+broadlink_oem_t1_c7_19_15:
+  name: BroadLink_OEM-T1-c7-19-15
+  mac: 34:EA:34:C7:19:15
+  icon:
+  picture:
+  track: false
+
+iphone11:
+  name: iPhone11
+  mac: 8E:F3:E0:2B:66:1E
+  icon:
+  picture:
+  track: true
+
+broadlink_oem_t1_c9_95_75:
+  name: BroadLink_OEM-T1-c9-95-75
+  mac: 34:EA:34:C9:95:75
+  icon:
+  picture:
+  track: false
+
+34_46_ec_3c_d5_2f:
+  name: 34_46_ec_3c_d5_2f
+  mac: 34:46:EC:3C:D5:2F
+  icon:
+  picture:
+  track: false
+
+d2_35_39_d7_b4_3f:
+  name: d2_35_39_d7_b4_3f
+  mac: D2:35:39:D7:B4:3F
+  icon:
+  picture:
+  track: false
+
+iphone12_3:
+  name: iphone12_3
+  mac: E6:83:4F:89:5F:D9
+  icon:
+  picture:
+  track: true
+
+34_46_ec_3c_d5_2e:
+  name: 34_46_ec_3c_d5_2e
+  mac: 34:46:EC:3C:D5:2E
+  icon:
+  picture:
+  track: false
+
+fc_7c_02_8a_7c_95:
+  name: fc_7c_02_8a_7c_95
+  mac: FC:7C:02:8A:7C:95
+  icon:
+  picture:
+  track: false

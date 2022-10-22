@@ -1,5 +1,5 @@
 - id: 2dcca1bf281e4be28bb9b75868ddb268
-  alias: 长按一楼卧室灯
+  alias: 一楼卧室灯长按
   trigger:
   - platform: event
     event_type: xiaomi_aqara.click
@@ -12,7 +12,7 @@
     - switch.1f_woshi
     - light.gateway_light_286c07f0c4e5
 - id: 6bd06c56a1c0494182fae79da740c359
-  alias: 双击一楼卧室灯
+  alias: 一楼卧室灯双击
   trigger:
   - platform: event
     event_type: xiaomi_aqara.click
@@ -30,7 +30,7 @@
     entity_id:
     - light.gateway_light_286c07f0c4e5
 - id: 31579a77b0434d168e0a3dabe253baab
-  alias: 单击一楼卧室灯
+  alias: 一楼卧室灯单击
   trigger:
   - platform: event
     event_type: xiaomi_aqara.click
@@ -43,37 +43,40 @@
     entity_id:
     - switch.1f_woshi
   mode: single
-- alias: 2f keting switch on single press
+- id: 87e8359fc63f4f3c87795b35f5cfb92f
+  alias: 二楼客厅单击
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0001a21774
       click_type: single
   condition:
-    condition: sun
+  - condition: sun
     after: sunset
   action:
-    service: switch.toggle
+  - service: switch.toggle
     entity_id:
     - switch.er_lou_ke_ting_deng
-  id: 87e8359fc63f4f3c87795b35f5cfb92f
-- alias: 2f keting switch on long press
+- id: 472ca4d9882d41ef959d502be515ea77
+  alias: 二楼客厅长按
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0001a21774
       click_type: long_click_press
   action:
-    service: switch.turn_off
-    entity_id:
-    - switch.tv_s1
-    - switch.tv_s2
-  id: 472ca4d9882d41ef959d502be515ea77
-- alias: 2f keting switch on double press
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id:
+      - switch.s1_s1
+      - switch.s1_s2
+- id: 358de3ff81c64768af53aec9a9cbab74
+  alias: 二楼客厅双击
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0001a21774
@@ -84,46 +87,61 @@
   - delay:
       seconds: 5
   - service: switch.turn_on
-    entity_id: switch.tv_s1
+    data: {}
+    target:
+      entity_id:
+      - switch.s1_s1
   - delay:
       seconds: 5
   - service: switch.turn_on
-    entity_id: switch.tv_s2
-  id: 358de3ff81c64768af53aec9a9cbab74
-- alias: 2f keting switch on single press
+    data: {}
+    target:
+      entity_id:
+      - switch.s1_s2
+- id: 8717ade3b50d4d9986d0411bbd0c40b5
+  alias: 一楼客厅单击
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0000fd0ac2
       click_type: single
   action:
   - service: switch.turn_on
-    entity_id: switch.1ftv_s4
+    data: {}
+    target:
+      entity_id:
+      - switch.s3_s4
   - service: switch.turn_off
-    entity_id: switch.1ftv_s2
+    data: {}
+    target:
+      entity_id:
+      - switch.s3_s2
   - delay:
       seconds: 5
   - service: switch.turn_on
-    entity_id: switch.1ftv_s1
-  id: 8717ade3b50d4d9986d0411bbd0c40b5
-- alias: 2f keting switch on long press
+    data: {}
+    target:
+      entity_id: switch.s3_s1
+- id: 95c5c5b603e3488a8a69f868d1a6c6d1
+  alias: 一楼客厅长按
   trigger:
-    platform: event
+  - platform: event
     event_type: xiaomi_aqara.click
     event_data:
       entity_id: binary_sensor.switch_158d0000fd0ac2
       click_type: long_click_press
   action:
-    service: switch.turn_off
-    entity_id:
-    - switch.1ftv_s1
-    - switch.1ftv_s2
-    - switch.1ftv_s3
-    - switch.1ftv_s4
-  id: 95c5c5b603e3488a8a69f868d1a6c6d1
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id:
+      - switch.s3_s1
+      - switch.s3_s2
+      - switch.s3_s3
+      - switch.s3_s4
 - id: 98793dbe43b34726980ea32199242f0c
-  alias: 二楼客厅双击
+  alias: 一楼客厅双击
   trigger:
   - platform: event
     event_type: xiaomi_aqara.click
@@ -134,19 +152,23 @@
   - service: switch.turn_on
     data: {}
     target:
+      entity_id: switch.my_nas
+  - service: switch.turn_on
+    data: {}
+    target:
       entity_id:
-      - switch.s1_s2
+      - switch.s3_s2
   - service: switch.turn_off
     data: {}
     target:
-      entity_id: switch.s1_s4
+      entity_id:
+      - switch.s3_s4
   - delay:
       seconds: 5
   - service: switch.turn_on
     data: {}
     target:
-      entity_id:
-      - switch.s1_s1
+      entity_id: switch.s3_s1
 - alias: 2f keting motion on
   initial_state: 'on'
   trigger:
@@ -298,10 +320,10 @@
   - platform: time_pattern
     hours: /6
   action:
-  - type: toggle
-    device_id: c328276ceb9720cfa6fa03810af142b9
-    entity_id: switch.bingui
-    domain: switch
+  - service: switch.toggle
+    data: {}
+    target:
+      entity_id: switch.bingui
   initial_state: 'on'
   mode: single
 - id: '1640338073135'
@@ -344,4 +366,45 @@
       device_id:
       - cdfee5b5c3de20f51b5c596e260e8af2
       - 2afe8ac73286f15ad3e8828245ec8b9b
+  mode: single
+- id: '1664266774375'
+  alias: 回家响铃
+  description: ''
+  trigger:
+  - platform: zone
+    entity_id: person.xie_qiu_yan
+    zone: zone.home
+    event: enter
+  - platform: zone
+    entity_id: person.miao_yang
+    zone: zone.home
+    event: enter
+  condition: []
+  action:
+  - service: xiaomi_aqara.play_ringtone
+    data:
+      gw_mac: 28:6C:07:F0:C4:E5
+      ringtone_vol: 15
+      ringtone_id: '11'
+  mode: single
+- id: '1664267352005'
+  alias: 回家响铃测试
+  description: ''
+  trigger:
+  - platform: zone
+    entity_id: device_tracker.iphoneqiu_qiu
+    zone: zone.home
+    event: enter
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  - service: xiaomi_aqara.play_ringtone
+    data:
+      gw_mac: 28:6C:07:F0:C4:E5
+      ringtone_id: '12'
+      ringtone_vol: 10
   mode: single

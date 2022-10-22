@@ -36,15 +36,38 @@ binary_sensor:
   - platform: ping
     host: 192.168.1.3
     name: D191G
+  - platform: ping
+    host: 192.168.1.34
+    name: XM5X
+  - platform: ping
+    host: 192.168.1.30
+    name: IP11
+  - platform: ping
+    host: 192.168.1.36
+    name: IP12
+  - platform: ping
+    host: 192.168.1.35
+    name: IP122
+  - platform: ping
+    host: 192.168.1.33
+    name: XMN9
+
+
+
+
+
 xiaomi_aqara:
   discovery_retry: 5
   gateways:
     - key: 9A62A0F6915A483C
 device_tracker:
-  - platform: ubus
-    host: 192.168.1.2
-    username: root
+  - platform: xiaomi
+    host: 192.168.1.1
     password: miaoyanginfo
+    interval_seconds: 10
+    consider_home: 180
+    new_device_defaults:
+      track_new_devices: true
 
 # molobot:
   # phone: 15513084760  # 天猫精灵绑定的手机号
