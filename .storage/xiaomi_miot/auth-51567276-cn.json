@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "xiaomi_miot/auth-51567276-cn.json",
+  "data": {
+    "username": "15513084760",
+    "server_country": "cn",
+    "user_id": "51567276",
+    "service_token": "43L+u1B395jRQLxlFsU0KhrKbicghd0hG9IJF5TlfYwly6/UVNLR600W2AWMdqbuKciErU/fJkjktWtcURtPl8y1oPEIs1AvQsWk7UHtTmLdae2gYzrv1RLX7wbxWZL3Yqb+kzYKdOv5qkL9LYGD6TNoC4Ei4tftyNLmSew9z3w=",
+    "ssecurity": "qVFBznBZwx8+QOIrmPmWuQ==",
+    "sid": "xiaomiio",
+    "device_id": "ZNLNWA30UGB5P5DF",
+    "update_at": "2023-02-09 19:32:40"
+  }
+}

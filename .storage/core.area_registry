@@ -1,20 +1,39 @@
 {
-    "version": 1,
-    "key": "core.area_registry",
-    "data": {
-        "areas": [
-            {
-                "name": "\u5ba2\u5385",
-                "id": "ke_ting"
-            },
-            {
-                "name": "\u53a8\u623f",
-                "id": "chu_fang"
-            },
-            {
-                "name": "\u5367\u5ba4",
-                "id": "wo_shi"
-            }
-        ]
-    }
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "客厅",
+        "id": "ke_ting",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "厨房",
+        "id": "chu_fang",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "卧室",
+        "id": "wo_shi",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "一楼卧室",
+        "id": "yi_lou_wo_shi",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "一楼客厅",
+        "id": "yi_lou_ke_ting",
+        "picture": null
+      }
+    ]
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "domain": "hasslife",
+  "name": "hasslife",
+  "version": "1.8",
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "documentation": "https://github.com/Blear/HassLife",
+  "issue_tracker": "https://github.com/Blear/HassLife/issues",
+  "dependencies": [],
+  "codeowners": ["@Blear"],
+  "requirements": ["aiohttp"]
+}

@@ -7,3 +7,12 @@
     - type: memory_use_percent
     - type: processor_use
     - type: last_boot
+- platform: heweather_hourlyforecast
+  location: 101100106    # 填写你所在区域代码Location_ID,https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv
+  key: a4de9580a88d4411bef9344b37273e2a             # api平台申请的key
+  options:
+      - remind      #小时天气预警
+      - 1hour       #1小时天气预报
+      - 3hour       #3小时天气预报
+      - 6hour       #6小时天气预报
+      - 9hour     

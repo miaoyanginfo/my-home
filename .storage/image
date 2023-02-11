@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "image",
+  "data": {
+    "items": [
+      {
+        "id": "a2e9280e3f1e813c933e487312ccb12b",
+        "filesize": 34002,
+        "content_type": "image/jpeg",
+        "name": "IMG_20190220_211308.jpg",
+        "uploaded_at": "2022-10-27T07:04:10.826589+00:00"
+      },
+      {
+        "id": "e3382eb5f5a0aea88b2f5e87d7c73f4c",
+        "filesize": 36634,
+        "content_type": "image/jpeg",
+        "name": "IMG_20200415_163925.jpg",
+        "uploaded_at": "2022-10-27T07:04:28.602216+00:00"
+      },
+      {
+        "id": "ccb05912da8de898cb738667de0a7369",
+        "filesize": 68968,
+        "content_type": "image/jpeg",
+        "name": "IMG_20170709_194727.JPG",
+        "uploaded_at": "2022-10-27T08:48:59.783453+00:00"
+      },
+      {
+        "id": "4125464550c5bea05f555ad34ac7f50c",
+        "filesize": 18512,
+        "content_type": "image/jpeg",
+        "name": "2013-09-14 170749.jpg",
+        "uploaded_at": "2022-10-27T09:15:11.409147+00:00"
+      },
+      {
+        "id": "00a5f4857c2d12c5b95c18eab3ada4ee",
+        "filesize": 83350,
+        "content_type": "image/jpeg",
+        "name": "MTXX_20190205165837.jpg",
+        "uploaded_at": "2022-10-27T09:15:23.568222+00:00"
+      }
+    ]
+  }
+}

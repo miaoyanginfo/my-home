@@ -37,7 +37,10 @@
     event_data:
       entity_id: binary_sensor.switch_158d0001839247
       click_type: single
-  condition: []
+  condition:
+  - condition: sun
+    before: sunrise
+    after: sunset
   action:
   - service: switch.toggle
     entity_id:
@@ -149,10 +152,6 @@
       entity_id: binary_sensor.switch_158d0000fd0ac2
       click_type: double
   action:
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id: switch.my_nas
   - service: switch.turn_on
     data: {}
     target:
@@ -322,8 +321,6 @@
   action:
   - service: switch.toggle
     data: {}
-    target:
-      entity_id: switch.bingui
   initial_state: 'on'
   mode: single
 - id: '1640338073135'
@@ -351,21 +348,25 @@
     target:
       device_id:
       - 2afe8ac73286f15ad3e8828245ec8b9b
-      - cdfee5b5c3de20f51b5c596e260e8af2
+      - c328276ceb9720cfa6fa03810af142b9
+      - 69e53f6a3c73290e8f4343fcefcb4353
+    data: {}
   mode: single
 - id: '1642993799404'
   alias: 灯笼关闭控制
   description: ''
   trigger:
   - platform: time
-    at: 04:00
+    at: 00:00:00
   condition: []
   action:
   - service: switch.turn_off
     target:
       device_id:
-      - cdfee5b5c3de20f51b5c596e260e8af2
       - 2afe8ac73286f15ad3e8828245ec8b9b
+      - c328276ceb9720cfa6fa03810af142b9
+      - 69e53f6a3c73290e8f4343fcefcb4353
+    data: {}
   mode: single
 - id: '1664266774375'
   alias: 回家响铃
@@ -379,32 +380,336 @@
     entity_id: person.miao_yang
     zone: zone.home
     event: enter
-  condition: []
+  - platform: state
+    entity_id:
+    - person.miao_jing_ji
+    - person.ba_ba
+    - person.ma_ma
+    - person.xie_qiu_yan
+    - person.miao_yang
+    to: home
+  - platform: zone
+    entity_id: person.ma_ma
+    zone: zone.home
+    event: enter
+  condition:
+  - condition: time
+    after: 08:00:00
+    before: '22:00:00'
   action:
   - service: xiaomi_aqara.play_ringtone
     data:
       gw_mac: 28:6C:07:F0:C4:E5
       ringtone_vol: 15
       ringtone_id: '11'
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 我回来了！
   mode: single
-- id: '1664267352005'
-  alias: 回家响铃测试
+- id: '1673235364879'
+  alias: 开播放器开NAS
   description: ''
   trigger:
-  - platform: zone
-    entity_id: device_tracker.iphoneqiu_qiu
-    zone: zone.home
-    event: enter
+  - platform: state
+    entity_id:
+    - switch.s3_s2
+    - switch.s1_s1
+    from: 'off'
+    to: 'on'
   condition: []
   action:
-  - delay:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.my_nas
+  mode: single
+- id: '1674892061972'
+  alias: 播放器关闭之后关NAS
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.s1_s1
+    - switch.s3_s2
+    from: 'on'
+    to: 'off'
+    for:
       hours: 0
       minutes: 5
       seconds: 0
-      milliseconds: 0
-  - service: xiaomi_aqara.play_ringtone
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: switch.s1_s1
+      state: 'off'
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: switch.s3_s2
+        state: 'off'
+  action:
+  - service: button.press
+    data: {}
+    target:
+      entity_id: button.my_nas_shutdown
+  mode: single
+- id: '1675738139771'
+  alias: 小爱tts
+  description: ''
+  trigger:
+  - platform: time
+    at: '11:11:00'
+  condition: []
+  action:
+  - service: xiaomi_miot.intelligent_speaker
     data:
-      gw_mac: 28:6C:07:F0:C4:E5
-      ringtone_id: '12'
-      ringtone_vol: 10
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 豆丁你在干什么？
+  mode: single
+- id: '1675905152914'
+  alias: edge_tts测试
+  description: ''
+  trigger:
+  - platform: time
+    at: '12:00:00'
+  condition: []
+  action:
+  - service: tts.edge_tts_say
+    data:
+      cache: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      message: 豆丁和布丁，你们好！
+  mode: single
+- id: '1675905645784'
+  alias: hello_miai测试
+  description: ''
+  trigger:
+  - platform: time
+    at: '15:00:00'
+  condition: []
+  action:
+  - service: hello_miai.add2msgqueue
+    data:
+      wait_time: 0
+      miai_num: 0
+      message: 你好天睿tera，我不是小爱。
+  mode: single
+- id: '1675992728846'
+  alias: 小爱播放天气预报
+  description: ''
+  trigger:
+  - platform: time
+    at: 08:00:00
+  condition: []
+  action:
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 'message: 现在播报天气信息。温度，{{states(''sensor.hourly_forcast_6'')}}'
+  mode: single
+- id: '1675993703234'
+  alias: 小爱回家通知苗洋
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.miao_yang
+    to: home
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: '22:00:00'
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.5
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 苗洋回来了！
+  mode: single
+- id: '1675993760516'
+  alias: 小爱回家通知爸爸
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.ba_ba
+    to: home
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: '22:00:00'
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.5
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 爸爸回来了！
+  mode: single
+- id: '1675993833501'
+  alias: 小爱回家通知妈妈
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.ma_ma
+    to: home
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: '22:00:00'
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.5
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 妈妈回来了！
+  mode: single
+- id: '1675993861509'
+  alias: 小爱回家通知秋燕
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.xie_qiu_yan
+    to: home
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: '22:00:00'
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.5
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 秋燕回来了！
+  mode: single
+- id: '1675993908636'
+  alias: 小爱回家通知苗菁洁
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.miao_jing_ji
+    to: home
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: '22:00:00'
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.5
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 毛妮儿回来了！
   mode: single

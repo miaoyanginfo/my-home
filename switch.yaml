@@ -15,7 +15,7 @@
     - name: 1f_woshi
       command_on: 'shI0AAobHAoKHBwJChscCQobHAkKGx0JChwcCQocHAoKHAocChwKGxwJHAkKHAocCgABGRwKHAkAAAAA'
       command_off: 'sgs0AAoAARUcCRwJChscCQobHAkKGxwJChscCQobHAkKGxwJChscCRwJHAkKGwobChsKGwobChsAAAAA'
-      
+   
 ####博联SPMINI####
 
 ####SONOFF-BASIC####

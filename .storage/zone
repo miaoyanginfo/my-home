@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "zone",
+  "data": {
+    "items": [
+      {
+        "latitude": 37.887413563575876,
+        "longitude": 112.50511534676008,
+        "name": "美特好",
+        "icon": "mdi:shopping",
+        "passive": false,
+        "radius": 178.7384339546774,
+        "id": "mei_te_hao"
+      },
+      {
+        "latitude": 37.86864716224025,
+        "longitude": 112.56682769117342,
+        "name": "五加五",
+        "icon": "mdi:map-marker",
+        "passive": false,
+        "radius": 160.0,
+        "id": "wu_jia_wu"
+      }
+    ]
+  }
+}

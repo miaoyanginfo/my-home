@@ -1,0 +1,38 @@
+{
+  "version": "6",
+  "minor_version": 1,
+  "key": "hacs.hacs",
+  "data": {
+    "archived_repositories": [
+      "marcomow/ble-bulb-card",
+      "DavidMStraub/homeassistant-homeconnect",
+      "spycle/microbot_push",
+      "Sholofly/arrisdcx960",
+      "lukich48/hass_mqtt_template_switch",
+      "marrobHD/firetv-card",
+      "clayauld/lovelace-darksky-card",
+      "NemesisRE/lovelace-swipe-navigation",
+      "frenck/home-assistant-theme-outline",
+      "natekspencer/hacs-litterrobot",
+      "gjohansson-ST/stl",
+      "custom-components/sensor.untappd",
+      "jessevl/homeassistant-greenchoice"
+    ],
+    "renamed_repositories": {
+      "9a4gl/hass-peltec": "9a4gl/hass-centrometal-boiler",
+      "DarkSir23/sensor.mylar": "WillowMist/sensor.mylar",
+      "dmitry-k/yandex_smart_home": "dext0r/yandex_smart_home",
+      "jadson179/controlid": "gtjadsonsantos/controlid",
+      "jadson179/consul": "gtjadsonsantos/consul",
+      "jadson179/vapix": "gtjadsonsantos/vapix",
+      "nbogojevic/homeassistant-midea-dehumidifier-lan": "nbogojevic/homeassistant-midea-air-appliances-lan",
+      "nikrolls/homeassistant-goldair-climate": "nicole-ashley/homeassistant-goldair-climate",
+      "rj175/home-assistant-aws-codepipeline": "ohheyrj/home-assistant-aws-codepipeline",
+      "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
+      "wills106/homsassistant-solax-modbus": "wills106/homeassistant-solax-modbus",
+      "78wesley/Darkish-Theme": "78wesley/Home-Assistant-Darkish-Theme",
+      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo"
+    },
+    "ignored_repositories": []
+  }
+}

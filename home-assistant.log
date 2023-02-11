@@ -1,6 +1,764 @@
-2022-10-22 14:37:00.828 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-10-22 14:37:10.829 WARNING (MainThread) [homeassistant.components.switch] Platform broadlink not ready yet: None; Retrying in background in 30 seconds
-2022-10-22 14:37:24.239 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
-2022-10-22 14:37:24.250 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
-2022-10-22 14:37:40.990 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Timeout fetching homeassistant_alerts data
-2022-10-22 14:37:45.389 ERROR (MainThread) [custom_components.hacs] <QueueManager> <Plugin ljmerza/reddit-card> Repository structure for 1.0.1 is not compliant
+2023-02-10 09:38:38.802 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hello_miai which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.806 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miot_raw which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.809 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration colorfulclouds which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.812 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.816 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration heweather_hourlyforecast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.821 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration edge_tts which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.825 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.828 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration huawei_mesh_router which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.831 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration lifesuggestion which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.834 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_gateway3 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.838 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration heweather which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.841 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration heweather_forecast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:38.845 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hasslife which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-02-10 09:38:47.158 WARNING (MainThread) [homeassistant.components.weather] custom_components.heweather_forecast.weather::LocalWeather is overriding deprecated methods on an instance of WeatherEntity, this is not valid and will be unsupported from Home Assistant 2023.1. Please report it to the custom integration author.
+2023-02-10 09:38:50.973 WARNING (MainThread) [homeassistant.components.switch] Platform broadlink not ready yet: None; Retrying in background in 30 seconds
+2023-02-10 09:38:56.243 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Wi-Fi智能插座' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 5s; Retrying in background
+2023-02-10 09:39:00.287 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SP-MINI' for broadlink integration not ready yet: [Errno -4000] Network timeout: No response received within 10s; Retrying in background
+2023-02-10 09:39:08.792 ERROR (MainThread) [homeassistant.components.homekit.util] media_player.xiao_ai_yin_xiang_5219 does not support any media_player features
+2023-02-10 09:39:08.944 ERROR (MainThread) [homeassistant.components.homekit.util] media_player.plex_plex_for_kodi_kodi1 does not support any media_player features
+2023-02-10 09:39:08.958 ERROR (MainThread) [homeassistant.components.homekit.util] media_player.plex_plex_web_microsoft_edge_windows does not support any media_player features
+2023-02-10 09:39:08.971 ERROR (MainThread) [homeassistant.components.homekit.util] media_player.plex_plex_for_windows_x13 does not support any media_player features
+2023-02-10 09:39:21.337 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Timeout fetching homeassistant_alerts data
+2023-02-10 09:39:21.612 WARNING (MainThread) [homeassistant.components.media_player] Updating kodi media_player took longer than the scheduled update interval 0:00:10
+2023-02-10 09:39:21.658 WARNING (MainThread) [homeassistant.components.media_player] Updating kodi media_player took longer than the scheduled update interval 0:00:10
+2023-02-10 11:02:40.983 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 11:02:40.993 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 11:02:41.010 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 11:10:17.912 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:10:18.654 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:10:30.677 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:10:31.661 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:18:54.548 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:18:58.339 WARNING (MainThread) [homeassistant.components.automation.2f_keting_switch_on_single_press_2] 一楼客厅单击: Already running
+2023-02-10 11:37:41.099 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 11:37:41.109 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 11:37:41.112 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 11:43:11.117 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 11:43:11.126 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 11:43:11.133 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:00:00.073 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] 二楼冰柜每隔六小时执行开关: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id.
+2023-02-10 12:00:00.089 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] Error while executing automation automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan: must contain at least one of entity_id, device_id, area_id.
+2023-02-10 12:00:00.179 ERROR (MainThread) [homeassistant.components.automation.edge_ttsce_shi] edge_tts测试: Error executing script. Error for call_service at pos 1: Entity media_player.xiaomi_s12_671d_play_control does not support this service.
+2023-02-10 12:00:00.197 ERROR (MainThread) [homeassistant.components.automation.edge_ttsce_shi] Error while executing automation automation.edge_ttsce_shi: Entity media_player.xiaomi_s12_671d_play_control does not support this service.
+2023-02-10 12:10:43.184 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:10:43.193 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:10:43.196 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:11:13.069 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:11:13.077 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:11:13.103 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:11:13.104 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:11:13.114 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:11:13.119 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:11:43.070 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:11:43.078 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:11:43.096 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:11:43.097 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:11:43.106 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:11:43.113 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:11:53.121 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:11:53.134 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:11:53.177 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:12:13.070 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:12:13.074 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:12:13.079 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:12:13.081 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:12:13.089 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:12:13.097 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:12:43.070 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:12:43.079 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:12:43.085 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:14:13.078 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:14:13.122 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:14:13.130 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:14:43.080 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:14:43.100 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:14:43.103 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:15:43.078 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:15:43.087 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:15:43.089 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:15:43.090 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:15:43.097 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:15:43.103 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:16:13.086 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:16:13.106 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:16:13.109 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:16:13.156 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:16:13.176 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:16:13.180 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:18:13.087 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:18:13.096 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:18:13.116 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:18:13.122 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:18:13.124 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:18:13.179 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:18:43.087 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:18:43.099 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:18:43.105 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:20:13.093 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:20:13.115 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:20:13.125 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:21:43.103 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:21:43.123 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:21:43.159 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:21:53.182 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:21:53.192 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:21:53.201 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:23:13.105 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:23:13.132 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:23:13.171 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:23:13.191 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:23:13.209 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:23:13.215 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:23:43.110 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:23:43.155 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:23:43.173 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:23:43.199 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:23:43.216 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:23:43.220 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:24:43.114 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:24:43.123 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:24:43.153 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:24:43.161 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:24:43.181 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:24:43.186 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:25:43.120 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 12:25:43.149 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:25:43.180 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:25:43.230 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:25:43.239 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:25:43.243 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:27:13.138 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 12:27:13.162 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:27:13.179 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:27:23.187 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:27:23.196 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:27:23.201 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 12:59:43.524 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 12:59:43.542 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 12:59:43.549 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 13:00:43.264 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 13:00:43.272 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 13:00:43.276 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 13:01:13.239 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 13:01:13.249 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 13:01:13.256 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 13:01:13.266 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 13:01:13.272 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 13:01:13.278 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 13:12:02.965 ERROR (MainThread) [plexwebsocket] Websocket connection failed, retrying in 15s: Cannot connect to host 192.168.1.8:32400 ssl:default [Connect call failed ('192.168.1.8', 32400)]
+2023-02-10 13:12:17.988 ERROR (MainThread) [plexwebsocket] Websocket connection failed, retrying in 30s: Cannot connect to host 192.168.1.8:32400 ssl:default [Connect call failed ('192.168.1.8', 32400)]
+2023-02-10 13:12:48.000 ERROR (MainThread) [plexwebsocket] Websocket connection failed, retrying in 60s: Cannot connect to host 192.168.1.8:32400 ssl:default [Connect call failed ('192.168.1.8', 32400)]
+2023-02-10 13:13:51.067 ERROR (MainThread) [plexwebsocket] Websocket connection failed, retrying in 120s: Cannot connect to host 192.168.1.8:32400 ssl:default [Connect call failed ('192.168.1.8', 32400)]
+2023-02-10 13:15:54.109 ERROR (MainThread) [plexwebsocket] Websocket connection failed, retrying in 240s: Cannot connect to host 192.168.1.8:32400 ssl:default [Connect call failed ('192.168.1.8', 32400)]
+2023-02-10 13:16:56.174 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 13:19:00.246 ERROR (MainThread) [homeassistant.components.plex.server] Could not connect to Plex server: MY-NAS (HTTPConnectionPool(host='192.168.1.8', port=32400): Max retries exceeded with url: /clients (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8057ea10>: Failed to establish a new connection: [Errno 113] Host is unreachable')))
+2023-02-10 13:19:01.174 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 13:19:54.963 ERROR (MainThread) [homeassistant.components.plex] Websocket to MY-NAS failed, aborting [Error: Too many retries]
+2023-02-10 13:19:58.002 WARNING (MainThread) [homeassistant.config_entries] Config entry 'http://192.168.1.8:32400' for plex integration not ready yet: HTTPConnectionPool(host='192.168.1.8', port=32400): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4e236080>: Failed to establish a new connection: [Errno 113] Host is unreachable')); Retrying in background
+2023-02-10 13:23:59.583 ERROR (MainThread) [homeassistant.components.plex] Login to MY-NAS failed, verify token and SSL settings: [(503) service_unavailable; http://192.168.1.8:32400/ <?xml version="1.0" encoding="utf-8"?><Response code="503" title="Maintenance" status="Plex Media Server is currently running startup maintenance tasks."/>]
+2023-02-10 13:35:30.910 ERROR (MainThread) [plexwebsocket] AIOHTTP websocket error
+2023-02-10 13:39:00.192 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s3 (MP1-1K4S at 192.168.1.35) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 13:48:35.515 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 13:48:35.549 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 13:48:35.552 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 13:49:05.520 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 13:49:05.545 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 13:49:05.552 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 14:27:05.691 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 14:27:05.699 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 14:27:05.705 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 14:27:35.690 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 14:27:35.698 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 14:27:35.701 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 14:29:05.695 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 14:29:05.705 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 14:29:05.708 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 14:29:35.694 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 14:29:35.702 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 14:29:35.709 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 14:43:35.768 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 14:43:35.792 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 14:43:35.795 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 15:09:05.796 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 15:09:05.805 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 15:09:05.808 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 15:34:06.174 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 15:50:24.900 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng or it is/they are currently not available
+2023-02-10 17:56:11.173 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 18:00:00.073 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] 二楼冰柜每隔六小时执行开关: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id.
+2023-02-10 18:00:00.089 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] Error while executing automation automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan: must contain at least one of entity_id, device_id, area_id.
+2023-02-10 18:00:32.808 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:32.820 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:32.842 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:32.852 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:32.981 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:32.988 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:33.014 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:33.036 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:33.222 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:33.249 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:34.736 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:00:34.764 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:25:51.189 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 18:41:06.417 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 18:41:06.450 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:41:06.457 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 18:41:36.400 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 18:41:36.434 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:41:36.440 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 18:42:06.422 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 18:42:06.444 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:42:06.450 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 18:44:06.514 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 18:44:06.537 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:44:06.544 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 18:45:06.445 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 18:45:06.453 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:45:06.456 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 18:45:36.426 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 18:45:36.435 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 18:45:36.441 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 19:15:31.656 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-10 19:17:06.501 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 19:17:06.507 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 19:17:06.514 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 19:41:46.455 WARNING (MainThread) [homeassistant.components.automation.hui_jia_xiang_ling] 回家响铃: Already running
+2023-02-10 19:53:06.611 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 19:53:06.620 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 19:53:06.624 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 20:50:11.355 WARNING (MainThread) [homeassistant.components.automation.hui_jia_xiang_ling] 回家响铃: Already running
+2023-02-10 20:57:06.763 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 20:57:06.770 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 20:57:06.777 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:06:06.782 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:06:06.793 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:06:06.800 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:13:06.832 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:13:06.839 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:13:06.846 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:13:36.867 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:13:36.873 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:13:36.878 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:15:05.195 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s3 (MP1-1K4S at 192.168.1.35) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 21:15:06.804 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:15:06.813 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:15:06.819 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:15:06.834 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:15:06.843 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:15:06.849 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:21:06.847 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:21:06.853 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:21:06.862 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:21:36.823 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:21:36.833 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:21:36.839 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:21:36.848 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:21:36.856 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:21:36.861 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:21:46.871 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:21:46.880 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:21:46.883 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:22:36.826 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:22:36.832 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:22:36.836 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:26:36.836 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:26:36.842 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:26:36.846 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:26:37.004 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:26:37.013 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:26:37.017 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:28:36.839 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:28:36.846 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:28:36.854 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:28:36.862 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:28:36.873 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:28:36.879 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:31:06.869 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:31:06.878 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:31:06.885 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:34:36.879 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:34:36.886 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:34:36.893 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:35:06.902 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:35:06.909 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:35:06.913 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:35:36.857 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:35:36.866 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:35:36.871 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:35:36.879 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:35:36.886 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:35:36.892 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:36:06.859 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:36:06.866 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:36:06.869 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:36:06.880 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:36:06.889 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:36:06.893 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:39:06.888 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:39:06.896 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:39:06.899 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:43:06.895 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:43:06.904 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:43:06.910 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:45:36.885 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:45:36.892 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:45:36.895 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:45:36.905 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:45:36.912 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:45:36.918 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:47:06.890 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:47:06.896 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:47:06.900 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:47:06.907 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:47:06.914 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:47:06.920 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:54:06.908 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:54:06.916 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:54:06.919 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:54:07.250 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:54:07.259 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:54:07.264 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:55:06.908 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 21:55:06.917 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:55:06.922 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:55:06.924 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 21:55:06.932 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:55:06.939 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 21:55:16.950 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 21:55:16.959 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 21:55:16.965 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:02:36.928 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:02:36.936 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:02:36.942 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:02:37.086 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:02:37.099 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:02:37.105 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:03:06.930 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:03:06.939 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:03:06.944 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:03:06.951 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:03:06.954 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:03:06.961 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:03:36.932 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:03:36.939 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:03:36.942 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:03:37.111 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:03:37.119 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:03:37.122 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:04:36.936 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:04:36.943 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:04:36.947 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:04:36.950 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:04:36.956 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:04:36.965 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:08:06.971 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:08:06.979 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:08:06.985 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:15:36.962 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:15:36.972 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:15:36.974 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:15:36.983 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:15:36.990 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:15:36.995 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:16:16.174 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 22:16:36.966 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:16:36.976 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:16:36.980 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:16:37.038 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:16:37.045 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:16:37.051 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:19:05.261 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s1 (MP1-1K4S at 192.168.1.33) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 22:22:06.985 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:22:06.994 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:22:06.999 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:22:36.984 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:22:36.989 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:22:36.993 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:24:36.993 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:24:36.999 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:24:37.003 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:24:47.011 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:24:47.019 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:24:47.024 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:25:06.987 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:25:06.996 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:25:06.998 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:25:07.004 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:25:07.009 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:25:07.012 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:26:06.997 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:26:07.003 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:26:07.011 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:26:17.018 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:26:17.025 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:26:17.028 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:26:36.992 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:26:36.999 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:26:37.002 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:26:37.050 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:26:37.059 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:26:37.066 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:28:06.994 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:28:07.012 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:28:07.019 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:28:07.028 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:28:07.035 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:28:07.041 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:28:36.994 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:28:37.003 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:28:37.005 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:28:37.008 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:28:37.019 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:28:37.025 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:31:37.002 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:31:37.007 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:31:37.009 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:31:37.016 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:31:37.022 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:31:37.028 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:33:07.009 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:33:07.016 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:33:07.025 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:36:37.017 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:36:37.027 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:36:37.029 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:36:37.030 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:36:37.038 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:36:37.042 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:36:47.051 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:36:47.059 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:36:47.065 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:37:07.017 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:37:07.027 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:37:07.030 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:37:07.032 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:37:07.041 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:37:07.044 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:37:37.021 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:37:37.030 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:37:37.033 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:37:47.040 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:37:47.049 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:37:47.054 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:39:07.123 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:39:07.152 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:39:07.155 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:39:37.026 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:39:37.036 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:39:37.042 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:40:07.026 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:40:07.035 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:40:07.038 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:40:07.075 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:40:07.082 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:40:07.088 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:40:37.029 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:40:37.038 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:40:37.042 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:40:37.043 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:40:37.049 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:40:37.053 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:40:47.069 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:40:47.075 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:40:47.082 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:41:07.029 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:41:07.034 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:41:07.039 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:41:07.040 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:41:07.052 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:41:07.056 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:41:37.029 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:41:37.033 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:41:37.039 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:41:37.041 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:41:37.050 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:41:37.057 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:41:47.066 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:41:47.073 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:41:47.078 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:42:07.031 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:42:07.042 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:42:07.045 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:42:37.030 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:42:37.040 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:42:37.047 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:43:37.157 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:43:37.175 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:43:37.181 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:46:10.261 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s1 (MP1-1K4S at 192.168.1.33) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-10 22:49:37.054 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:49:37.062 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:49:37.069 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:51:07.057 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:51:07.065 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:51:07.072 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:52:37.062 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:52:37.066 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:52:37.072 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:52:37.076 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:52:37.080 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:52:37.082 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:55:07.069 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:55:07.079 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:55:07.082 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:55:37.067 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 22:55:37.073 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:55:37.077 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:55:37.078 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:55:37.089 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:55:37.092 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:55:47.106 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:55:47.115 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:55:47.123 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:56:37.073 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 22:56:37.082 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:56:37.085 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 22:59:37.125 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 22:59:37.136 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 22:59:37.166 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:00:37.085 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 23:00:37.089 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 23:00:37.092 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:00:37.093 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:00:37.100 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:00:37.105 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:00:47.117 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 23:00:47.126 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:00:47.151 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:05:07.098 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 23:05:07.107 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 23:05:07.111 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:05:07.113 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:05:07.119 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:05:07.123 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:06:07.101 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 23:06:07.108 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:06:07.115 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:12:07.118 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 23:12:07.123 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 23:12:07.126 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:12:07.127 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:12:07.154 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:12:07.161 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:13:07.122 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 23:13:07.133 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:13:07.158 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 23:13:07.160 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:13:07.166 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:13:07.175 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:14:07.124 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-10 23:14:07.133 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:14:07.154 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:33:07.449 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 23:33:07.465 ERROR (SyncWorker_1) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:33:07.471 ERROR (SyncWorker_1) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:34:37.205 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-10 23:34:37.212 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:34:37.217 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:38:37.228 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-10 23:38:37.237 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-10 23:38:37.240 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-10 23:53:21.172 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-11 00:00:00.069 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] 二楼冰柜每隔六小时执行开关: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id.
+2023-02-11 00:00:00.077 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] Error while executing automation automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan: must contain at least one of entity_id, device_id, area_id.
+2023-02-11 00:02:37.275 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 00:02:37.285 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 00:02:37.288 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-11 00:18:07.315 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-11 00:18:07.321 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 00:18:07.325 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
+2023-02-11 01:09:57.590 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 02:04:00.705 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 02:37:10.195 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s3 (MP1-1K4S at 192.168.1.35) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-11 03:24:07.828 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 03:24:07.834 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 03:24:07.843 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-11 03:56:26.173 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s2 (MP1-1K4S at 192.168.1.34) data: [Errno -4000] Network timeout: No response received within 5s
+2023-02-11 06:00:00.075 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] 二楼冰柜每隔六小时执行开关: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id.
+2023-02-11 06:00:00.083 ERROR (MainThread) [homeassistant.components.automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan] Error while executing automation automation.er_lou_bing_ju_mei_ge_liu_xiao_shi_zhi_xing_kai_guan: must contain at least one of entity_id, device_id, area_id.
+2023-02-11 07:17:25.833 WARNING (SyncWorker_8) [custom_components.xiaomi_miot.media_player] Mi AI Speaker(xiaomi.wifispeaker.s12): Set miot property {'did': '58145830', 'siid': 2, 'piid': 1, 'value': 50} failed, result: {'did': '58145830', 'iid': '0.2.1', 'siid': 2, 'piid': 1, 'code': -704042011, 'exe_time': 0}
+2023-02-11 07:49:55.804 WARNING (SyncWorker_8) [custom_components.xiaomi_miot.media_player] Mi AI Speaker(xiaomi.wifispeaker.s12): Set miot property {'did': '58145830', 'siid': 2, 'piid': 1, 'value': 50} failed, result: {'did': '58145830', 'iid': '0.2.1', 'siid': 2, 'piid': 1, 'code': -704042011, 'exe_time': 0}
+2023-02-11 07:56:38.589 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 07:56:38.599 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 07:56:38.606 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:21:40.299 WARNING (SyncWorker_4) [custom_components.xiaomi_miot.core.xiaomi_cloud] Unauthorized while executing request to https://userprofile.mina.mi.com/device_profile/v2/conversation, logged out.
+2023-02-11 08:21:40.311 WARNING (SyncWorker_4) [custom_components.xiaomi_miot.core.xiaomi_cloud] Request xiaomi api: https://userprofile.mina.mi.com/device_profile/v2/conversation {'hardware': 'S12', 'timestamp': 1676074900126, 'limit': 3} failed, response: <!doctype html><html lang="en"><head><title>HTTP Status 401 – Unauthorized</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 401 – Unauthorized</h1></body></html>
+2023-02-11 08:28:08.747 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-11 08:28:08.769 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:28:08.776 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:28:38.710 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-11 08:28:38.718 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:28:38.724 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:39:08.754 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-11 08:39:08.789 ERROR (SyncWorker_0) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:39:08.793 ERROR (SyncWorker_0) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:44:38.776 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 08:44:38.789 ERROR (SyncWorker_2) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:44:38.795 ERROR (SyncWorker_2) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:54:47.367 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.379 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.448 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.458 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.495 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.503 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.538 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.548 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.720 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:47.765 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:49.430 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:54:49.465 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2023-02-11 08:55:08.805 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 08:55:08.813 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d0001a64708 is taking over 10 seconds
+2023-02-11 08:55:08.825 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:55:08.829 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2023-02-11 08:55:08.839 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 08:55:08.845 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-11 09:00:00.227 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities switch.er_lou_wo_shi_deng, switch.yi_lou_wo_shi_deng or it is/they are currently not available
+2023-02-11 09:27:08.932 WARNING (MainThread) [homeassistant.helpers.entity] Update of switch.plug_158d00015d1bf5 is taking over 10 seconds
+2023-02-11 09:27:08.965 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 09:27:08.971 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2023-02-11 09:35:39.013 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.door_window_sensor_158d000128fa46 is taking over 10 seconds
+2023-02-11 09:35:39.028 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to gateway 286c07f0c4e5
+2023-02-11 09:35:39.035 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
+2023-02-11 09:42:15.193 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching s3 (MP1-1K4S at 192.168.1.35) data: [Errno -4000] Network timeout: No response received within 5s

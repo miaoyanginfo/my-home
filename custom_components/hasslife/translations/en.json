@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Only a single configuration of HassLife is allowed."
+        },
+        "error": {
+        	"server_error": "sever error",
+            "login_error": "username or password incorrect"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "username": "username",
+                    "password": "password"
+                },
+                "description": "please login use HassLife account",
+                "title": "login"
+            }
+        }
+    }
+}

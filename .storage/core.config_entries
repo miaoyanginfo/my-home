@@ -5,39 +5,6 @@
   "data": {
     "entries": [
       {
-        "entry_id": "f5640bc483f8236e409d1a97d8eec2af",
-        "version": 1,
-        "domain": "homekit",
-        "title": "Home Assistant Bridge:21063",
-        "data": {
-          "port": 21063,
-          "name": "Home Assistant Bridge"
-        },
-        "options": {
-          "filter": {
-            "include_domains": [
-              "switch",
-              "light",
-              "media_player",
-              "sensor",
-              "binary_sensor"
-            ],
-            "exclude_domains": [],
-            "include_entity_globs": [],
-            "include_entities": [],
-            "exclude_entities": [],
-            "exclude_entity_globs": []
-          },
-          "entity_config": {},
-          "mode": "bridge"
-        },
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "import",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
         "entry_id": "7acf5be2a49e4b80346126240efa09c5",
         "version": 1,
         "domain": "speedtestdotnet",
@@ -55,35 +22,16 @@
         "disabled_by": null
       },
       {
-        "entry_id": "633cf0bd7653a13a2dbc147fc9e73916",
-        "version": 1,
-        "domain": "xiaomi_aqara",
-        "title": "Xiaomi Aqara Gateway",
-        "data": {
-          "host": "192.168.1.21",
-          "port": 9898,
-          "mac": "28:6c:07:f0:c4:e5",
-          "interface": "any",
-          "protocol": "1.1.2",
-          "key": "9A62A0F6915A483C",
-          "sid": "286c07f0c4e5"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "zeroconf",
-        "unique_id": "28:6c:07:f0:c4:e5",
-        "disabled_by": null
-      },
-      {
         "entry_id": "a77363e3e460d37db0874083bdd7f14d",
         "version": 1,
         "domain": "upnp",
         "title": "华为路由AX3",
         "data": {
           "hostname": "192.168.1.1",
-          "mac_address": "34:46:ec:3c:d5:2e",
-          "location": "http://192.168.1.1:37215/e8bbed61-14ba-556f-4602-af8c4d7f0425/upnpdev.xml"
+          "mac_address": null,
+          "location": "http://192.168.1.1:37215/e8bbed61-14ba-556f-4602-af8c4d7f0425/upnpdev.xml",
+          "host": "192.168.1.1",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -111,41 +59,13 @@
         "domain": "xiaomi_miio",
         "title": "Xiaomi Miio: Gateway 192.168.1.9",
         "data": {
-          "host": "192.168.1.21"
+          "host": "192.168.1.31"
         },
         "options": {},
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
         "source": "ignore",
         "unique_id": "28:6c:07:f0:c4:e5",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "b579b2c783aabbf0de81f13cebd0a1cb",
-        "version": 1,
-        "domain": "mobile_app",
-        "title": "iPhone秋秋",
-        "data": {
-          "os_version": "14.6",
-          "manufacturer": "Apple",
-          "app_name": "Home Assistant",
-          "app_version": "2021.8 (2021.216)",
-          "model": "iPhone13,2",
-          "app_id": "io.robbie.HomeAssistant",
-          "device_name": "iPhone秋秋",
-          "os_name": "iOS",
-          "device_id": "12C697A9-57DA-4CD4-AE47-EB23254CBCCF",
-          "supports_encryption": true,
-          "app_data": {},
-          "webhook_id": "69b9655404cadbcc6b0d927c4905aaf53cf753407b9e21ae2b3d85cd60b5c209",
-          "secret": "3a5df19e7e7ce6b92a610e0528f8074040438b6b19a07ac7a46a7ad1ab020163",
-          "user_id": "666134958c784a25a09212fe7d727088"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.robbie.HomeAssistant-12C697A9-57DA-4CD4-AE47-EB23254CBCCF",
         "disabled_by": null
       },
       {
@@ -167,7 +87,7 @@
         "domain": "broadlink",
         "title": "Wi-Fi智能插座",
         "data": {
-          "host": "192.168.1.17",
+          "host": "192.168.1.38",
           "mac": "780f77cb7dcf",
           "type": 32013,
           "timeout": 5
@@ -185,7 +105,7 @@
         "domain": "broadlink",
         "title": "智能遥控",
         "data": {
-          "host": "192.168.1.19",
+          "host": "192.168.1.39",
           "mac": "34ea34e9ba18",
           "type": 10026,
           "timeout": 5
@@ -198,75 +118,12 @@
         "disabled_by": null
       },
       {
-        "entry_id": "6380814726f60c29c31aec93929d191e",
-        "version": 1,
-        "domain": "mobile_app",
-        "title": "苗洋的iPhone",
-        "data": {
-          "device_name": "苗洋的iPhone",
-          "model": "iPhone12,1",
-          "device_id": "17590EED-B460-454F-9268-6E3B9C1E5D23",
-          "app_name": "Home Assistant",
-          "app_data": {
-            "push_token": "dqQzMA0yaEq1gsGf0Zqqmc:APA91bGE57k-6YpdeY8YewHud7vPRy9Yr3Ejq4FZ1fvPOk12OCVIocncoz30lTmvbRUb_hY7l0_t2-02mxJoixI8BdgXrveepf6bH-csB5SynLsIJs28pfnnuRkF0oMgl9jBpNiWWqEs",
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
-          },
-          "supports_encryption": true,
-          "os_version": "15.3.1",
-          "os_name": "iOS",
-          "app_version": "2022.8 (2022.387)",
-          "manufacturer": "Apple",
-          "app_id": "io.robbie.HomeAssistant",
-          "webhook_id": "54ca69a887e49ac6c0550defcd0ca2b946c3384ebb615f40b8da510282630a20",
-          "secret": "f07628787e9edff9ee612526ea4a884a3845e95526e2f855e49fa4749ed4da99",
-          "user_id": "7caef1731d1a49c990cfa5810f239d11",
-          "no_legacy_encryption": true
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.robbie.HomeAssistant-17590EED-B460-454F-9268-6E3B9C1E5D23",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "0c18dde835350c2b14fa31b01d912715",
-        "version": 1,
-        "domain": "mobile_app",
-        "title": "iPhone",
-        "data": {
-          "app_data": {
-            "push_token": "f8TRLxi_90UYqPwmxhZVRQ:APA91bEIVL27-z5HZ0bSthDPLxAltyLWp0x4sJVHZrXRZF27rS_MB6wUIdCXKUDMMO2LVLbcIPWT6kJeamcudZz54pRgmyFkm0kFRBPNONy8VPfmBgY5gVSmto-hsJ3bEjdB7xe87qsW",
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
-          },
-          "os_name": "iOS",
-          "device_name": "iPhone",
-          "os_version": "14.2",
-          "app_name": "Home Assistant",
-          "manufacturer": "Apple",
-          "supports_encryption": true,
-          "model": "iPhone9,1",
-          "app_id": "io.robbie.HomeAssistant",
-          "device_id": "9157A31E-ABEC-4F50-9EA4-93BD776039B7",
-          "app_version": "2022.3 (2022.358)",
-          "webhook_id": "9b0498ae77a1d23480c82ad3bbb094012dce4d241edffca80f9e50fa6e89be44",
-          "secret": "eb8f798adc15327bfa14bc913382e97a917fadf8dd679e2ece71d4a4b8a08e21",
-          "user_id": "7caef1731d1a49c990cfa5810f239d11"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.robbie.HomeAssistant-9157A31E-ABEC-4F50-9EA4-93BD776039B7",
-        "disabled_by": null
-      },
-      {
         "entry_id": "3e2c651393614d06d4dae1606368ae05",
         "version": 1,
         "domain": "broadlink",
         "title": "s1",
         "data": {
-          "host": "192.168.1.14",
+          "host": "192.168.1.33",
           "mac": "34ea34c9823d",
           "type": 20149,
           "timeout": 5
@@ -284,7 +141,7 @@
         "domain": "broadlink",
         "title": "s2",
         "data": {
-          "host": "192.168.1.15",
+          "host": "192.168.1.34",
           "mac": "34ea34c99575",
           "type": 20149,
           "timeout": 5
@@ -302,7 +159,7 @@
         "domain": "broadlink",
         "title": "s3",
         "data": {
-          "host": "192.168.1.16",
+          "host": "192.168.1.35",
           "mac": "34ea34c71915",
           "type": 20149,
           "timeout": 5
@@ -312,6 +169,425 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "34ea34c71915",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "35b55c40107f3572fac1cad585a609a0",
+        "version": 1,
+        "domain": "kodi",
+        "title": "192.168.1.6",
+        "data": {
+          "name": null,
+          "host": "192.168.1.6",
+          "port": 8081,
+          "ws_port": null,
+          "username": "kodi",
+          "password": "1234",
+          "ssl": false,
+          "timeout": 5
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d5e4273d1f140d698bd9da2a5813e28f",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "苗洋的iPhone",
+        "data": {
+          "supports_encryption": true,
+          "app_id": "io.robbie.HomeAssistant",
+          "app_version": "2023.2 (2023.444)",
+          "app_name": "Home Assistant",
+          "model": "iPhone12,1",
+          "device_id": "17590EED-B460-454F-9268-6E3B9C1E5D23",
+          "os_name": "iOS",
+          "os_version": "16.2",
+          "manufacturer": "Apple",
+          "device_name": "苗洋的iPhone",
+          "app_data": {
+            "push_token": "dqQzMA0yaEq1gsGf0Zqqmc:APA91bGE57k-6YpdeY8YewHud7vPRy9Yr3Ejq4FZ1fvPOk12OCVIocncoz30lTmvbRUb_hY7l0_t2-02mxJoixI8BdgXrveepf6bH-csB5SynLsIJs28pfnnuRkF0oMgl9jBpNiWWqEs",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "webhook_id": "168a3f4c9b18a35eff100a3e87f64584a006674b1631ddb0c6574970882bbaeb",
+          "secret": "023feff54ff8321fa8cdfd78417993cfd2541bca66d336682b716f2668a3c7c1",
+          "user_id": "9898ab9e606943da88f09f58dcd9778f",
+          "no_legacy_encryption": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-17590EED-B460-454F-9268-6E3B9C1E5D23",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "b66644e07d7f2fbf9876a16052baabe6",
+        "version": 1,
+        "domain": "homekit",
+        "title": "HASS Bridge:21064",
+        "data": {
+          "name": "HASS Bridge",
+          "exclude_accessory_mode": true,
+          "port": 21064
+        },
+        "options": {
+          "filter": {
+            "include_domains": [
+              "light",
+              "switch"
+            ],
+            "exclude_domains": [],
+            "include_entities": [],
+            "exclude_entities": []
+          },
+          "mode": "bridge"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "15ec85eb714b287cb3396c78ff3e5034",
+        "version": 1,
+        "domain": "homekit",
+        "title": "Home Assistant Bridge:21063",
+        "data": {
+          "port": 21063,
+          "name": "Home Assistant Bridge"
+        },
+        "options": {
+          "filter": {
+            "include_domains": [
+              "switch",
+              "light",
+              "media_player",
+              "sensor",
+              "binary_sensor"
+            ],
+            "exclude_entities": [],
+            "include_entity_globs": [],
+            "exclude_entity_globs": [],
+            "include_entities": [],
+            "exclude_domains": []
+          },
+          "entity_config": {},
+          "mode": "bridge"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0f0ef295817d9db2adb481c811ef0dc4",
+        "version": 1,
+        "domain": "kodi",
+        "title": "192.168.1.7",
+        "data": {
+          "name": null,
+          "host": "192.168.1.7",
+          "port": 8082,
+          "ws_port": null,
+          "username": "kodi",
+          "password": "1234",
+          "ssl": false,
+          "timeout": 5
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "32f0d3182a3ff26fb70da15c73785a5e",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "iPhone秋秋",
+        "data": {
+          "manufacturer": "Apple",
+          "device_name": "iPhone秋秋",
+          "device_id": "12C697A9-57DA-4CD4-AE47-EB23254CBCCF",
+          "app_name": "Home Assistant",
+          "app_version": "2023.2 (2023.444)",
+          "os_version": "16.2",
+          "app_id": "io.robbie.HomeAssistant",
+          "supports_encryption": true,
+          "model": "iPhone13,2",
+          "os_name": "iOS",
+          "app_data": {},
+          "webhook_id": "47a62bd92072188de1a2313e624159ffc4bd38ce2e8a7efb30f14a9e151ed4b9",
+          "secret": "22a3adfa727c7e4cc7f4931931f9acf918cc4c11c5b9160ea63cab52211f231e",
+          "user_id": "f70006a0740540258f1d40d0c83ab79a",
+          "no_legacy_encryption": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-12C697A9-57DA-4CD4-AE47-EB23254CBCCF",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "5b1da6743d796040831b09b2087992b8",
+        "version": 1,
+        "domain": "synology_dsm",
+        "title": "192.168.1.8",
+        "data": {
+          "host": "192.168.1.8",
+          "port": "5000",
+          "ssl": false,
+          "verify_ssl": false,
+          "username": "paul",
+          "password": "My64269264,,,",
+          "mac": [
+            "00-E0-70-86-C7-BA"
+          ]
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "1450PDN002734",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ccaa24f2fdd6dc5fd7afe4a9019a1453",
+        "version": 1,
+        "domain": "hacs",
+        "title": "",
+        "data": {
+          "token": "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"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a6bcdbafaeebeeff82ed4306339e4736",
+        "version": 1,
+        "domain": "upnp",
+        "title": "ASUS RT-AC54U Wireless Router",
+        "data": {
+          "mac_address": null,
+          "location": "http://192.168.1.3:22979/rootDesc.xml",
+          "host": "192.168.1.3",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "uuid:75802409-bccb-40e7-8e6c-207693268f78::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1f7e2981185361481660a2592ada3ca4",
+        "version": 1,
+        "domain": "xiaomi_aqara",
+        "title": "Xiaomi Aqara Gateway",
+        "data": {
+          "host": "192.168.1.31",
+          "port": 9898,
+          "mac": "28:6c:07:f0:c4:e5",
+          "interface": "any",
+          "protocol": "1.1.2",
+          "key": "1510C516FBD4464F",
+          "sid": "286c07f0c4e5"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "28:6c:07:f0:c4:e5",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "49fae8c0db2cd77e8b528423a9c53a19",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "iPhone7",
+        "data": {
+          "model": "iPhone9,1",
+          "os_name": "iOS",
+          "supports_encryption": true,
+          "app_name": "Home Assistant",
+          "app_data": {
+            "push_token": "f8TRLxi_90UYqPwmxhZVRQ:APA91bEIVL27-z5HZ0bSthDPLxAltyLWp0x4sJVHZrXRZF27rS_MB6wUIdCXKUDMMO2LVLbcIPWT6kJeamcudZz54pRgmyFkm0kFRBPNONy8VPfmBgY5gVSmto-hsJ3bEjdB7xe87qsW",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "os_version": "14.2",
+          "manufacturer": "Apple",
+          "device_name": "iPhone7",
+          "app_id": "io.robbie.HomeAssistant",
+          "app_version": "2022.3 (2022.358)",
+          "device_id": "9157A31E-ABEC-4F50-9EA4-93BD776039B7",
+          "webhook_id": "f3f16516c20189be71b57da89c35e99aaa36ed24d61f2aa32b798bca5f8a097b",
+          "secret": "e61119899d1e4130b1fb6fda64fe69c0ca859886dd6187c21db1cecbfe26ae1e",
+          "user_id": "9898ab9e606943da88f09f58dcd9778f"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-9157A31E-ABEC-4F50-9EA4-93BD776039B7",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "4e6e1879b4167ee510956dca9349e717",
+        "version": 1,
+        "domain": "broadlink",
+        "title": "SP-MINI",
+        "data": {
+          "host": "192.168.1.32",
+          "mac": "34ea34f1c033",
+          "type": 10024,
+          "timeout": 10
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "dhcp",
+        "unique_id": "34ea34f1c033",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c404322f71648aec8fb9f1298b616ebf",
+        "version": 3,
+        "domain": "huawei_mesh_router",
+        "title": "Huawei Router",
+        "data": {
+          "name": "Huawei Router",
+          "host": "192.168.1.1",
+          "username": "admin",
+          "password": "miaoyanginfo",
+          "port": 80,
+          "ssl": false,
+          "verify_ssl": false
+        },
+        "options": {
+          "scan_interval": 30,
+          "wifi_access_switches": false,
+          "router_clients_sensors": false,
+          "devices_tags": false,
+          "device_tracker": true,
+          "device_tracker_zones": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "54c4c6d1a8a415ac2c3177ab5e2e27eb",
+        "version": 3,
+        "domain": "huawei_lte",
+        "title": "华为路由AX3",
+        "data": {
+          "url": "http://192.168.1.1/"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "27fee77d71aac84c",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d5c7c945f29e10c5559a083c8df7e81d",
+        "version": 1,
+        "domain": "plex",
+        "title": "http://192.168.1.8:32400",
+        "data": {
+          "server": "MY-NAS",
+          "server_id": "0f0ad0467b141f8ba0c708ba35e2bf47b4e9ae4e",
+          "server_config": {
+            "url": "http://192.168.1.8:32400",
+            "client_id": "aea75d9f-cc39-4fb1-8353-d61dca0a76ba",
+            "token": "hF7cqjXxsXEvbzHivzY9"
+          }
+        },
+        "options": {
+          "media_player": {}
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "0f0ad0467b141f8ba0c708ba35e2bf47b4e9ae4e",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "7eeeb19f2d0b74fa2da53cf80e04f4f1",
+        "version": 1,
+        "domain": "local_calendar",
+        "title": "日历",
+        "data": {
+          "calendar_name": "日历"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1032ec51f607b57868849c07cc8e123d",
+        "version": 1,
+        "domain": "dlna_dmr",
+        "title": "小爱音箱-5219",
+        "data": {
+          "url": "http://192.168.1.30:9999/5bcb6966-980a-4960-ab54-dba7b8a15b24.xml",
+          "device_id": "uuid:5bcb6966-980a-4960-ab54-dba7b8a15b24",
+          "type": "urn:schemas-upnp-org:device:MediaRenderer:1",
+          "mac": null
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:5bcb6966-980a-4960-ab54-dba7b8a15b24",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "cafbec01cb5eae6543be67a32aa5125f",
+        "version": 1,
+        "domain": "xiaomi_miot",
+        "title": "Xiaomi: 51567276",
+        "data": {
+          "username": "15513084760",
+          "password": "Xm64269264",
+          "server_country": "cn",
+          "user_id": "51567276",
+          "service_token": "43L+u1B395jRQLxlFsU0KhrKbicghd0hG9IJF5TlfYwly6/UVNLR600W2AWMdqbuKciErU/fJkjktWtcURtPl8y1oPEIs1AvQsWk7UHtTmLdae2gYzrv1RLX7wbxWZL3Yqb+kzYKdOv5qkL9LYGD6TNoC4Ei4tftyNLmSew9z3w=",
+          "ssecurity": "qVFBznBZwx8+QOIrmPmWuQ==",
+          "sid": "xiaomiio",
+          "device_id": "ZNLNWA30UGB5P5DF",
+          "conn_mode": "auto",
+          "filter_did": "include",
+          "did_list": [
+            "58145830"
+          ],
+          "config_version": 0.3
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
         "disabled_by": null
       }
     ]

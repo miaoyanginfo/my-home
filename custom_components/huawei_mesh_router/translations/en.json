@@ -1,0 +1,48 @@
+{
+    "config": {
+        "title": "Huawei Mesh Router",
+        "step": {
+            "user": {
+                "description": "Huawei mesh router setup.",
+                "data": {
+                    "name": "Integration name",
+                    "host": "Host",
+                    "port": "Port",
+                    "username": "Username",
+                    "password": "Password",
+                    "ssl": "Use SSL",
+                    "verify_ssl": "Verify SSL cert"
+                }
+            }
+        },
+        "error": {
+            "name_exists": "The name already used.",
+            "auth_general": "Can not authenticate.",
+            "auth_invalid_csrf": "CSRF error, try again.",
+            "auth_too_many_users": "Too many users, wait some time before retry.",
+            "auth_invalid_credentials": "Invalid username or password."
+        }
+    },
+    "options": {
+        "step": {
+            "basic_options": {
+                "data": {
+                    "scan_interval": "Update interval"
+                },
+                "title": "Huawei mesh router setup (1\/2)",
+                "description": "Basic options"
+            },
+            "features_select": {
+                "data": {
+                    "wifi_access_switches": "Device Wi-Fi Access switches",
+                    "router_clients_sensors": "Number of connected devices for each router",
+                    "devices_tags": "Device tags",
+                    "device_tracker": "Devices tracking",
+                    "device_tracker_zones": "Router-specific zones for tracked devices"
+                },
+                "title": "Huawei mesh router setup (2\/2)",
+                "description": "Additional features"
+            }
+        }
+    }
+}

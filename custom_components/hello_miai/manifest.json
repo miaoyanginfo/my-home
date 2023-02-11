@@ -1,0 +1,9 @@
+{
+    "domain": "hello_miai",
+    "name": "小米网络tts",
+    "documentation": "https://github.com/5high/mi_tts",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "version": "1.0.0"
+  }
