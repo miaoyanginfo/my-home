@@ -424,6 +424,14 @@
                 "sensor.hourly_forcast_9"
               ],
               "title": "小时内天气预报"
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.xiaomi_s12_671d_play_control"
+            },
+            {
+              "type": "alarm-panel",
+              "entity": "alarm_control_panel.home_alarm"
             }
           ]
         },

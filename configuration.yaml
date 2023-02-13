@@ -41,6 +41,24 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 switch: !include switch.yaml
 sensor: !include sensor.yaml
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    #填写node-red的地址
+    url: 'http://miaoyang.iok.la:1880/'
+alarm_control_panel:
+  - platform: manual
+    name: Home Alarm
+    code: "1234"
+    arming_time: 30
+    delay_time: 20
+    trigger_time: 4
+    disarmed:
+      trigger_time: 0
+    armed_home:
+      arming_time: 0
+      delay_time: 0
 
 homekit:
   - filter:

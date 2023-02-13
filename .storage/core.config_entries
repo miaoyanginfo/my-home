@@ -366,7 +366,7 @@
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "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"
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -382,7 +382,7 @@
         "title": "ASUS RT-AC54U Wireless Router",
         "data": {
           "mac_address": null,
-          "location": "http://192.168.1.3:22979/rootDesc.xml",
+          "location": "http://192.168.1.3:5453/rootDesc.xml",
           "host": "192.168.1.3",
           "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
         },
@@ -582,6 +582,37 @@
             "58145830"
           ],
           "config_version": 0.3
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ccecee52d785afadd2574461cdde63c8",
+        "version": 1,
+        "domain": "nodered",
+        "title": "name",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "2e83ddf4d37643afc2952c8c9ed711dd",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "192.168.1.2",
+        "data": {
+          "broker": "192.168.1.2",
+          "port": 1883,
+          "discovery": true,
+          "discovery_prefix": "homeassistant"
         },
         "options": {},
         "pref_disable_new_entities": false,

@@ -3,7 +3,7 @@
   "minor_version": 1,
   "key": "xiaomi_miot/devices-51567276-cn.json",
   "data": {
-    "update_time": 1675942360.2178085,
+    "update_time": 1676204412.6097844,
     "devices": [
       {
         "did": "54969428",
@@ -83,7 +83,7 @@
           "event.open": "{\"timestamp\":1498206239,\"value\":[]}",
           "prop.close": "0",
           "prop.fw_ver": "10",
-          "prop.lqi": "19",
+          "prop.lqi": "43",
           "prop.no_close": "1",
           "prop.open": "1",
           "prop.s_auth_config": "{\"privacyAuthed\":true}",
@@ -139,7 +139,7 @@
           "prop.close": "0",
           "prop.device_log": "[1675860299,[\"event.open\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "49",
+          "prop.lqi": "22",
           "prop.no_close": "1",
           "prop.open": "1",
           "prop.open_status": "60",
@@ -191,7 +191,7 @@
           "event.no_motion": "{\"timestamp\":1674909761,\"value\":[1800]}",
           "prop.device_log": "[1674907964,[\"event.motion\",[]]]",
           "prop.fw_ver": "11",
-          "prop.lqi": "154",
+          "prop.lqi": "151",
           "prop.motion": "0",
           "prop.no_motion": "1800",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
@@ -226,7 +226,7 @@
         "desc": "Motion detected ",
         "desc_new": "%s Motion detected",
         "desc_time": [
-          1675942025
+          1676199771
         ],
         "extra": {
           "isSetPincode": 0,
@@ -236,15 +236,15 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.2.1": "{\"timestamp\":1675942026,\"value\":[]}",
+          "event.2.1": "{\"timestamp\":1676199771,\"value\":[]}",
           "event.iam": "{\"timestamp\":1601111554,\"value\":[]}",
-          "event.motion": "{\"timestamp\":1675942025,\"value\":[]}",
-          "event.no_motion": "{\"timestamp\":1675942325,\"value\":[300]}",
-          "prop.device_log": "[1675942025,[\"event.motion\",[]]]",
+          "event.motion": "{\"timestamp\":1676199771,\"value\":[]}",
+          "event.no_motion": "{\"timestamp\":1676201568,\"value\":[1800]}",
+          "prop.device_log": "[1676199771,[\"event.motion\",[]]]",
           "prop.fw_ver": "11",
-          "prop.lqi": "37",
+          "prop.lqi": "31",
           "prop.motion": "0",
-          "prop.no_motion": "300",
+          "prop.no_motion": "1800",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -277,7 +277,7 @@
         "desc": "Motion detected ",
         "desc_new": "%s Motion detected",
         "desc_time": [
-          1675932089
+          1676165097
         ],
         "extra": {
           "isSetPincode": 0,
@@ -287,12 +287,12 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.2.1": "{\"timestamp\":1675932089,\"value\":[]}",
-          "event.motion": "{\"timestamp\":1675932089,\"value\":[]}",
-          "event.no_motion": "{\"timestamp\":1675933885,\"value\":[1800]}",
-          "prop.device_log": "[1675932089,[\"event.motion\",[]]]",
+          "event.2.1": "{\"timestamp\":1676165097,\"value\":[]}",
+          "event.motion": "{\"timestamp\":1676165097,\"value\":[]}",
+          "event.no_motion": "{\"timestamp\":1676166894,\"value\":[1800]}",
+          "prop.device_log": "[1676165096,[\"event.motion\",[]]]",
           "prop.fw_ver": "11",
-          "prop.lqi": "13",
+          "prop.lqi": "46",
           "prop.motion": "0",
           "prop.no_motion": "1800",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
@@ -327,21 +327,21 @@
         "desc": "Long press ",
         "desc_new": "%s Long press",
         "desc_time": [
-          1675941427
+          1676203899
         ],
         "extra": {
           "isSetPincode": 0,
           "pincodeType": 0
         },
         "event": {
-          "event.click": "{\"timestamp\":1675935928,\"value\":[]}",
-          "event.double_click": "{\"timestamp\":1675758563,\"value\":[]}",
-          "event.long_click_press": "{\"timestamp\":1675941427,\"value\":[]}",
-          "event.long_click_release": "{\"timestamp\":1675941429,\"value\":[]}",
+          "event.click": "{\"timestamp\":1676198285,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1676171192,\"value\":[]}",
+          "event.long_click_press": "{\"timestamp\":1676203899,\"value\":[]}",
+          "event.long_click_release": "{\"timestamp\":1676203900,\"value\":[]}",
           "miot_bind_time": "1632285240",
-          "prop.device_log": "[1675941427,[\"event.long_click_press\",[]]]",
+          "prop.device_log": "[1676203899,[\"event.long_click_press\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "103",
+          "prop.lqi": "55",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -371,10 +371,10 @@
         "shareFlag": 0,
         "permitLevel": 16,
         "isOnline": true,
-        "desc": "Single click ",
-        "desc_new": "%s Single click",
+        "desc": "Long press ",
+        "desc_new": "%s Long press",
         "desc_time": [
-          1675940825
+          1676123051
         ],
         "extra": {
           "isSetPincode": 0,
@@ -384,17 +384,17 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.click": "{\"timestamp\":1675940825,\"value\":[]}",
-          "event.double_click": "{\"timestamp\":1675811180,\"value\":[]}",
+          "event.click": "{\"timestamp\":1676119553,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1676071431,\"value\":[]}",
           "event.iam": "{\"timestamp\":1494407851,\"value\":[]}",
-          "event.long_click_press": "{\"timestamp\":1675858677,\"value\":[]}",
-          "event.long_click_release": "{\"timestamp\":1675858678,\"value\":[]}",
+          "event.long_click_press": "{\"timestamp\":1676123051,\"value\":[]}",
+          "event.long_click_release": "{\"timestamp\":1676123052,\"value\":[]}",
           "prop.click": "0",
-          "prop.device_log": "[1675940825,[\"event.click\",[]]]",
+          "prop.device_log": "[1676123051,[\"event.long_click_press\",[]]]",
           "prop.double_click": "0",
           "prop.fw_ver": "10",
           "prop.long_click_press": "0",
-          "prop.lqi": "175",
+          "prop.lqi": "172",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -443,7 +443,7 @@
           "event.long_click_release": "{\"timestamp\":1674203861,\"value\":[]}",
           "prop.device_log": "[1675581189,[\"event.double_click\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "22",
+          "prop.lqi": "10",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -493,7 +493,7 @@
         "localip": "192.168.1.30",
         "mac": "00:9E:C8:E7:67:1D",
         "ssid": "NEWIFI",
-        "bssid": "34:98:B5:20:B4:CE",
+        "bssid": "34:98:B5:20:B4:CD",
         "parent_id": "",
         "parent_model": "",
         "show_mode": 1,
@@ -624,7 +624,7 @@
         "shareFlag": 0,
         "permitLevel": 16,
         "isOnline": true,
-        "desc": "Temperature: 13℃ Humidity:64% ",
+        "desc": "Temperature: 15℃ Humidity:74% ",
         "extra": {
           "isSetPincode": 0,
           "pincodeType": 0,
@@ -633,8 +633,8 @@
           "isPasswordEncrypt": 0
         },
         "prop": {
-          "humidity": "6390",
-          "temperature": "1336"
+          "humidity": "7374",
+          "temperature": "1510"
         },
         "uid": 51567276,
         "pd_id": 98,
@@ -651,16 +651,16 @@
         "name": "PAUL的家",
         "bssid": "",
         "dids": [
-          "lumi.158d0001a64708",
-          "lumi.158d00015d1bf5",
-          "lumi.158d00015d5c57",
-          "lumi.158d00015dbaec",
-          "lumi.158d0001839247",
-          "lumi.158d0001a21774",
-          "54969428",
           "lumi.158d0000fd0ac2",
           "lumi.158d000128fa46",
+          "lumi.158d00015d1bf5",
           "lumi.158d00015d2507",
+          "lumi.158d00015d5c57",
+          "lumi.158d00015dbaec",
+          "54969428",
+          "lumi.158d0001a21774",
+          "lumi.158d0001839247",
+          "lumi.158d0001a64708",
           "lumi.158d0001e80ca7"
         ],
         "temp_dids": null,

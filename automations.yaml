@@ -311,6 +311,23 @@
       gw_mac: 28:6C:07:F0:C4:E5
       ringtone_id: 10001
       ringtone_vol: 10
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.15
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: 现在是北京时间{{states('sensor.time')}}
   initial_state: 'on'
   mode: single
 - id: 3e9065926f364a9a99fd65edc7d7cb7d
@@ -485,7 +502,7 @@
   - service: tts.edge_tts_say
     data:
       cache: false
-      entity_id: media_player.xiaomi_s12_671d_play_control
+      entity_id: media_player.plex_plex_for_android_tv_p2301
       message: 豆丁和布丁，你们好！
   mode: single
 - id: '1675905645784'
@@ -506,9 +523,12 @@
   alias: 小爱播放天气预报
   description: ''
   trigger:
-  - platform: time
-    at: 08:00:00
-  condition: []
+  - platform: time_pattern
+    minutes: '30'
+  condition:
+  - condition: time
+    after: 08:00:00
+    before: '20:00:00'
   action:
   - service: xiaomi_miot.intelligent_speaker
     data:
@@ -516,7 +536,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 'message: 现在播报天气信息。温度，{{states(''sensor.hourly_forcast_6'')}}'
+      text: 现在时间{{states('sensor.time')}} ，现在播报天气信息。未来三小时内，太原地区{{states('sensor.hourly_forcast_3')}}。
   mode: single
 - id: '1675993703234'
   alias: 小爱回家通知苗洋
@@ -541,7 +561,7 @@
   action:
   - service: media_player.volume_set
     data:
-      volume_level: 0.5
+      volume_level: 0.3
     target:
       entity_id: media_player.xiaomi_s12_671d_play_control
   - delay:
@@ -555,7 +575,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 苗洋回来了！
+      text: 爸爸回来了！
   mode: single
 - id: '1675993760516'
   alias: 小爱回家通知爸爸
@@ -580,7 +600,7 @@
   action:
   - service: media_player.volume_set
     data:
-      volume_level: 0.5
+      volume_level: 0.3
     target:
       entity_id: media_player.xiaomi_s12_671d_play_control
   - delay:
@@ -594,7 +614,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 爸爸回来了！
+      text: 爷爷回来了！
   mode: single
 - id: '1675993833501'
   alias: 小爱回家通知妈妈
@@ -619,7 +639,7 @@
   action:
   - service: media_player.volume_set
     data:
-      volume_level: 0.5
+      volume_level: 0.3
     target:
       entity_id: media_player.xiaomi_s12_671d_play_control
   - delay:
@@ -633,7 +653,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 妈妈回来了！
+      text: 奶奶回来了！
   mode: single
 - id: '1675993861509'
   alias: 小爱回家通知秋燕
@@ -658,7 +678,7 @@
   action:
   - service: media_player.volume_set
     data:
-      volume_level: 0.5
+      volume_level: 0.3
     target:
       entity_id: media_player.xiaomi_s12_671d_play_control
   - delay:
@@ -672,7 +692,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 秋燕回来了！
+      text: 妈妈回来了！
   mode: single
 - id: '1675993908636'
   alias: 小爱回家通知苗菁洁
@@ -697,7 +717,7 @@
   action:
   - service: media_player.volume_set
     data:
-      volume_level: 0.5
+      volume_level: 0.3
     target:
       entity_id: media_player.xiaomi_s12_671d_play_control
   - delay:
@@ -712,4 +732,20 @@
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
       text: 毛妮儿回来了！
+  mode: single
+- id: '1676113967726'
+  alias: 警报面板
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - zone.home
+    to: '0'
+  condition: []
+  action:
+  - service: alarm_control_panel.alarm_trigger
+    data:
+      code: '1234'
+    target:
+      entity_id: alarm_control_panel.home_alarm
   mode: single

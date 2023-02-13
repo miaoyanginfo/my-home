@@ -19,10 +19,10 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 69275,
-      "etag_repository": "W/\"eb15dcac9054b5113304ba76cf67e2a867f2015bb71e42051e0f638bdc55e82e\"",
-      "last_updated": "2023-02-06T07:42:31Z",
-      "stargazers_count": 3328,
+      "downloads": 78277,
+      "etag_repository": "W/\"62ff512ab985b30e9be2d3ada9f0821fe84ca50b679d2170b26b03ca09c5a449\"",
+      "last_updated": "2023-02-11T10:32:22Z",
+      "stargazers_count": 3334,
       "topics": [
         "community",
         "package-manager"
@@ -31,10 +31,10 @@
       "default_branch": "main",
       "installed_commit": "6e5d46d",
       "installed": true,
-      "last_commit": "89e5648",
+      "last_commit": "74934c3",
       "last_version": "1.30.1",
       "manifest_name": "HACS",
-      "open_issues": 3,
+      "open_issues": 4,
       "published_tags": [
         "1.30.1",
         "1.30.0",
@@ -44,7 +44,7 @@
       ],
       "releases": true,
       "version_installed": "1.30.1",
-      "last_fetched": 1675964368.921047
+      "last_fetched": 1676175641.856926
     },
     "491303842": {
       "repository_manifest": {
@@ -3614,10 +3614,10 @@
       "full_name": "piitaya/lovelace-mushroom",
       "category": "plugin",
       "description": "Mushroom Cards - Build a beautiful dashboard easily 🍄",
-      "downloads": 21327,
-      "etag_repository": "W/\"e2990447b25ea9c239d503df42366e946a3b8b08f13c901b55f55f2cb1a9bab7\"",
-      "last_updated": "2023-02-05T15:00:33Z",
-      "stargazers_count": 2037,
+      "downloads": 24386,
+      "etag_repository": "W/\"3d8cbabafaaa396a11ea72446135a1c3ed8809e387393157ffdc4d1553793cc0\"",
+      "last_updated": "2023-02-10T22:08:58Z",
+      "stargazers_count": 2040,
       "topics": [
         "card",
         "mushroom"
@@ -3625,9 +3625,9 @@
       "default_branch": "main",
       "installed_commit": "81c096d",
       "installed": true,
-      "last_commit": "81c096d",
+      "last_commit": "c5d1c15",
       "last_version": "v2.5.3",
-      "open_issues": 224,
+      "open_issues": 226,
       "published_tags": [
         "v2.5.3",
         "v2.5.2",
@@ -3637,7 +3637,7 @@
       ],
       "releases": true,
       "version_installed": "v2.5.3",
-      "last_fetched": 1675964370.133278
+      "last_fetched": 1676175641.283454
     },
     "197759180": {
       "repository_manifest": {},
@@ -4946,10 +4946,10 @@
       "category": "integration",
       "description": "Automatic integrate all Xiaomi devices to HomeAssistant via miot-spec, support Wi-Fi, BLE, ZigBee devices. 小米米家智能家居设备接入Hass集成",
       "domain": "xiaomi_miot",
-      "downloads": 18887,
-      "etag_repository": "W/\"38c7e90f3ad0c827df707b21b8c74f2a92b350028117b42bdfeab43ec811b740\"",
-      "last_updated": "2023-02-09T17:52:56Z",
-      "stargazers_count": 2117,
+      "downloads": 19974,
+      "etag_repository": "W/\"d7c8bafb8a176b450b51d7e5e79366d02771da4c4326be4600781011f41728d4\"",
+      "last_updated": "2023-02-10T14:06:23Z",
+      "stargazers_count": 2126,
       "topics": [
         "iot",
         "miio",
@@ -4963,10 +4963,10 @@
       "default_branch": "master",
       "installed_commit": "0cd71ff",
       "installed": true,
-      "last_commit": "cc17cef",
+      "last_commit": "bf77cd3",
       "last_version": "v0.7.5",
       "manifest_name": "Xiaomi Miot Auto",
-      "open_issues": 118,
+      "open_issues": 117,
       "published_tags": [
         "v0.7.5",
         "v0.7.4",
@@ -4976,7 +4976,7 @@
       ],
       "releases": true,
       "version_installed": "v0.7.5",
-      "last_fetched": 1675964369.051834
+      "last_fetched": 1676175640.821255
     },
     "512213802": {
       "repository_manifest": {
@@ -10376,7 +10376,7 @@
       ],
       "releases": true,
       "version_installed": "v1.2.8",
-      "last_fetched": 1675964368.998975
+      "last_fetched": 1676175640.877179
     },
     "237880993": {
       "repository_manifest": {
@@ -11454,7 +11454,7 @@
       "last_commit": "44f8d50",
       "manifest_name": "Microsoft Edge TTS",
       "open_issues": 8,
-      "last_fetched": 1675964369.137606
+      "last_fetched": 1676175641.558768
     },
     "342427139": {
       "repository_manifest": {
@@ -21078,13 +21078,30 @@
       "category": "integration",
       "description": "Companion Component for node-red-contrib-home-assistant-websocket to help integrate Node-RED with Home Assistant Core",
       "domain": "nodered",
-      "etag_repository": "W/\"db6aa656a3d91bc3b0fb97ba98204352fabfd5449a16a0faa8c43d30e4ab6ea0\"",
+      "etag_repository": "W/\"03bc73ca4f9e72158fa484570ce9adc460b5a02db6455c85029aa0830195eb64\"",
       "last_updated": "2023-01-20T06:36:12Z",
-      "stargazers_count": 316,
+      "stargazers_count": 319,
       "topics": [
         "node-red"
       ],
-      "last_fetched": 1675374703.289244
+      "config_flow": true,
+      "default_branch": "main",
+      "installed_commit": "d4c6ad2",
+      "installed": true,
+      "last_commit": "d4c6ad2",
+      "last_version": "v1.1.2",
+      "manifest_name": "Node-RED Companion",
+      "open_issues": 4,
+      "published_tags": [
+        "v1.1.2",
+        "v1.1.1",
+        "v1.1.0",
+        "v1.0.9",
+        "v1.0.8"
+      ],
+      "releases": true,
+      "version_installed": "v1.1.2",
+      "last_fetched": 1676175641.030322
     },
     "253311340": {
       "repository_manifest": {
@@ -21166,9 +21183,9 @@
       "full_name": "basnijholt/lovelace-ios-dark-mode-theme",
       "category": "theme",
       "description": "🏠🤖 Theme by @basnijholt based on iOS Dark Mode for Lovelace Home Assistant ",
-      "etag_repository": "W/\"48aa2750120058afca0a2147ed17ea9a04c8682c0fc3f7e0c06c7bb40ed027d0\"",
+      "etag_repository": "W/\"92cf934aaac1c33c025af5e866c1954e2fe3dbba9dac659c20a250745bd98bec\"",
       "last_updated": "2022-11-03T15:53:32Z",
-      "stargazers_count": 402,
+      "stargazers_count": 401,
       "topics": [
         "dark-mode",
         "darkmode",
@@ -21179,7 +21196,7 @@
       "installed": true,
       "last_commit": "2805f18",
       "open_issues": 30,
-      "last_fetched": 1675964369.612621
+      "last_fetched": 1676175640.668931
     },
     "255366214": {
       "repository_manifest": {
@@ -21253,9 +21270,9 @@
       "full_name": "basnijholt/lovelace-ios-themes",
       "category": "theme",
       "description": "❤️📱🏠🤖 Themes inspired by iOS Dark ⬛️ and Light ◻️ Mode for Lovelace Home Assistant with different backgrounds by @basnijholt",
-      "etag_repository": "W/\"ed3145d5b68091084f7bd185dcb109674b5282fd12c798da5854a3d35f1e39d5\"",
+      "etag_repository": "W/\"befa37492dd98682582304ac849fe92034440170055eed23d71f6c811a321743\"",
       "last_updated": "2022-11-20T20:05:49Z",
-      "stargazers_count": 398,
+      "stargazers_count": 400,
       "default_branch": "master",
       "installed_commit": "30fdac5",
       "installed": true,
@@ -21271,7 +21288,7 @@
       ],
       "releases": true,
       "version_installed": "v2.11.0",
-      "last_fetched": 1675964369.254175
+      "last_fetched": 1676175640.951459
     },
     "470262899": {
       "repository_manifest": {
@@ -23158,7 +23175,7 @@
       "last_commit": "7357018",
       "last_version": "v0.8.5",
       "manifest_name": "Huawei Mesh Router",
-      "open_issues": 4,
+      "open_issues": 3,
       "published_tags": [
         "v0.8.5",
         "v0.8.4.1",
@@ -23168,7 +23185,7 @@
       ],
       "releases": true,
       "version_installed": "v0.8.5",
-      "last_fetched": 1675964369.164668
+      "last_fetched": 1676175641.360409
     },
     "525954717": {
       "repository_manifest": {
@@ -24241,6 +24258,217 @@
       "last_updated": "2023-01-15T13:11:07Z",
       "stargazers_count": 2,
       "last_fetched": 1674744803.574734
+    },
+    "587494301": {
+      "repository_manifest": {
+        "name": "TimBox Remote Control Card",
+        "filename": "timbox-remote-control-card.js",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "czz/timbox-remote-control-card",
+      "category": "plugin",
+      "description": "TimBox Remote Control card for Home Assistant",
+      "etag_repository": "W/\"3887a2741efa8fc22af964eaabeaa80234e5c85d5e0d04b2e18844d5627bd2b1\"",
+      "last_updated": "2023-01-11T13:51:06Z",
+      "topics": [
+        "remote-control",
+        "tim",
+        "timbox"
+      ],
+      "last_fetched": 1676197822.754123
+    },
+    "577080457": {
+      "repository_manifest": {
+        "name": "Sensi",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "iprak/sensi",
+      "authors": [
+        "@iprak"
+      ],
+      "category": "integration",
+      "description": "HomeAssistant integration for Sensi thermostat",
+      "domain": "sensi",
+      "etag_repository": "W/\"717bb95446826e01d705e7aa2b54abc43bbe4e68f3ffe0c4b28269c2e007c95d\"",
+      "last_updated": "2023-02-02T13:25:03Z",
+      "topics": [
+        "sensi"
+      ],
+      "last_fetched": 1676197823.482886
+    },
+    "232299868": {
+      "repository_manifest": {
+        "name": "Sentio",
+        "render_readme": true,
+        "homeassistant": "2023.1.0",
+        "zip_release": true,
+        "filename": "sentio.zip"
+      },
+      "new": true,
+      "full_name": "astrandb/sentio",
+      "authors": [
+        "@astrandb"
+      ],
+      "category": "integration",
+      "description": "Custom component for Sentiotec sauna controller",
+      "domain": "sentio",
+      "downloads": 4,
+      "etag_repository": "W/\"a3ac5d6f1d86e6144bc9bac05319700a4cf84eefb0b6e6e3e7bc6cd6d5d82b30\"",
+      "last_updated": "2023-01-31T08:56:11Z",
+      "stargazers_count": 2,
+      "topics": [
+        "sentio",
+        "sentiotec"
+      ],
+      "last_fetched": 1676197823.495736
+    },
+    "420701401": {
+      "repository_manifest": {
+        "name": "Water heater CLAGE DSX Touch",
+        "render_readme": true,
+        "country": [
+          "DE"
+        ],
+        "homeassistant": "2021.11.0"
+      },
+      "new": true,
+      "full_name": "klacol/homeassistant-clage_homeserver",
+      "authors": [
+        "@klacol"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for the water heater CLAGE DSX Touch connected through a Clage Homeserver",
+      "domain": "clage_homeserver",
+      "etag_repository": "W/\"689681986a4c77393a1bfab491c0eefe38692c917641385d2fa00e79840c8d94\"",
+      "last_updated": "2023-01-13T18:09:59Z",
+      "stargazers_count": 1,
+      "topics": [
+        "clage",
+        "waterheater"
+      ],
+      "last_fetched": 1676197823.523585
+    },
+    "585689945": {
+      "repository_manifest": {
+        "name": "Temperatur.nu",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "temperaturnu.zip"
+      },
+      "new": true,
+      "full_name": "popeen/Home-Assistant-Custom-Component-Temperatur-Nu",
+      "authors": [
+        "@popeen"
+      ],
+      "category": "integration",
+      "description": "A sensor for temperatur.nu and a service for reporting your current temperature",
+      "domain": "temperatur_nu",
+      "downloads": 6,
+      "etag_repository": "W/\"2d44f1d9a961102b75ce4e255e2d0fca9a33a91a81e74ad793d4f20f41afc45d\"",
+      "last_updated": "2023-02-12T17:57:11Z",
+      "topics": [
+        "temperature"
+      ],
+      "last_fetched": 1676197823.539092
+    },
+    "548554162": {
+      "repository_manifest": {
+        "name": "Waste Management",
+        "render_readme": true,
+        "country": [
+          "CA",
+          "US",
+          "PR"
+        ]
+      },
+      "new": true,
+      "full_name": "dcmeglio/homeassistant-waste_management",
+      "authors": [
+        "@dcmeglio"
+      ],
+      "category": "integration",
+      "description": "Determines your next Waste Management (https://www.wm.com) pickup times for use in Home Assistant.",
+      "domain": "waste_management",
+      "etag_repository": "W/\"e95772327a771e72a0a8839172a628c983068c2dc93943528608780d63e29b5d\"",
+      "last_updated": "2023-01-22T22:46:04Z",
+      "topics": [
+        "garbage",
+        "recycle",
+        "waste-management"
+      ],
+      "last_fetched": 1676219423.533106
+    },
+    "566598076": {
+      "repository_manifest": {
+        "name": "ikuai",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "dscao/ikuai",
+      "authors": [
+        "@dscao"
+      ],
+      "category": "integration",
+      "description": "About Home Assistant integration for iKuai Router",
+      "domain": "ikuai",
+      "etag_repository": "W/\"53d90501649b8ea9fa0e4bb26f8a6537eafffa2823a4a259348e008af389d7f1\"",
+      "last_updated": "2023-01-16T06:47:01Z",
+      "stargazers_count": 7,
+      "topics": [
+        "homeassistant-custom-component",
+        "ikuai"
+      ],
+      "last_fetched": 1676219423.650095
+    },
+    "348835574": {
+      "repository_manifest": {
+        "name": "Motala Vatten & Avfall - Garbage collection sensor",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "motalavattenavfall.zip"
+      },
+      "new": true,
+      "full_name": "popeen/Home-Assistant-Custom-Component-MotalaVattenAvfall",
+      "authors": [
+        "@popeen"
+      ],
+      "category": "integration",
+      "description": "A sensor for getting collection date for garbage and sludge from Motala Vatten & Avfall.",
+      "domain": "motalavattenavfall",
+      "downloads": 10,
+      "etag_repository": "W/\"f39eb938bcc9dfbcdc552ff0acbc3164ff4ab6c47cbdc5738994c83bee4cb4af\"",
+      "last_updated": "2023-02-12T19:17:53Z",
+      "topics": [
+        "garbage-collection",
+        "motala"
+      ],
+      "last_fetched": 1676219423.678573
+    },
+    "584497784": {
+      "repository_manifest": {
+        "name": "FreeAir Connect",
+        "render_readme": true,
+        "homeassistant": "2023.2.0"
+      },
+      "new": true,
+      "full_name": "mampfes/ha_freeair_connect",
+      "authors": [
+        "@mampfes"
+      ],
+      "category": "integration",
+      "description": "Adds data from FreeAir-Connect to Home Assistant",
+      "domain": "freeair_connect",
+      "etag_repository": "W/\"67fd986cb0a46a7de9ea8f3b0ced80149057b8c081a08651e4cab144eed6e003\"",
+      "last_updated": "2023-02-02T18:49:54Z",
+      "stargazers_count": 5,
+      "topics": [
+        "blumartin",
+        "freeair",
+        "freeair-connect"
+      ],
+      "last_fetched": 1676219423.782793
     }
   }
 }
