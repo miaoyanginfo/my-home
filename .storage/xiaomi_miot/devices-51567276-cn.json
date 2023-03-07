@@ -3,14 +3,53 @@
   "minor_version": 1,
   "key": "xiaomi_miot/devices-51567276-cn.json",
   "data": {
-    "update_time": 1676204412.6097844,
+    "update_time": 1677893976.5540626,
     "devices": [
       {
-        "did": "54969428",
-        "token": "2969529315b9cbe238ebe56f34f85eb4",
+        "did": "499140090",
+        "token": "446e326f747a736f3542716161513878",
         "longitude": "0.0",
         "latitude": "0.0",
-        "name": "网关",
+        "name": "Xiaomi Smart Home Hub 2",
+        "pid": "0",
+        "localip": "192.168.1.26",
+        "mac": "54:EF:44:43:2F:79",
+        "ssid": "NEWIFI",
+        "bssid": "34:46:EC:3C:D5:2E",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "lumi.gateway.mcn001",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Device online ",
+        "extra": {
+          "isSetPincode": 0,
+          "pincodeType": 0,
+          "fw_version": "1.0.6_0016",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0
+        },
+        "uid": 51567276,
+        "pd_id": 5338,
+        "password": "",
+        "p2p_id": "",
+        "rssi": -24,
+        "family_id": 0,
+        "reset_flag": 0,
+        "home_id": "765001001003",
+        "room_id": "765001342597",
+        "home_name": "PAUL的家",
+        "room_name": "一楼客厅"
+      },
+      {
+        "did": "54969428",
+        "token": "f895d77c151b78b545dc1f5bbddad8ba",
+        "longitude": "0.0",
+        "latitude": "0.0",
+        "name": "Mi Control Hub",
         "pid": "0",
         "localip": "192.168.1.31",
         "mac": "28:6C:07:F0:C4:E5",
@@ -45,6 +84,51 @@
         "rssi": -72,
         "family_id": 0,
         "reset_flag": 0
+      },
+      {
+        "did": "87475741",
+        "token": "ee1fea02b1c8a357e8c3ef92cf7f890c",
+        "longitude": "0.0",
+        "latitude": "0.0",
+        "name": "网关2",
+        "pid": "0",
+        "localip": "192.168.1.28",
+        "mac": "7C:49:EB:1A:67:30",
+        "ssid": "MIWIFI",
+        "bssid": "34:46:EC:3C:D5:34",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "lumi.gateway.v3",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Alarming Off Light Off FM:Pause ",
+        "extra": {
+          "isSetPincode": 0,
+          "pincodeType": 0,
+          "fw_version": "1.4.1_176",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0,
+          "mcu_version": "0220"
+        },
+        "prop": {
+          "arming": "off",
+          "fm_current_status": "pause",
+          "light": "off"
+        },
+        "uid": 51567276,
+        "pd_id": 109,
+        "password": "",
+        "p2p_id": "",
+        "rssi": -53,
+        "family_id": 0,
+        "reset_flag": 0,
+        "home_id": "765001001003",
+        "room_id": "765001342597",
+        "home_name": "PAUL的家",
+        "room_name": "一楼客厅"
       },
       {
         "did": "lumi.158d000128fa46",
@@ -83,7 +167,7 @@
           "event.open": "{\"timestamp\":1498206239,\"value\":[]}",
           "prop.close": "0",
           "prop.fw_ver": "10",
-          "prop.lqi": "43",
+          "prop.lqi": "49",
           "prop.no_close": "1",
           "prop.open": "1",
           "prop.s_auth_config": "{\"privacyAuthed\":true}",
@@ -119,7 +203,7 @@
         "desc": "Open ",
         "desc_new": "%s Open",
         "desc_time": [
-          1675860300
+          1676296808
         ],
         "extra": {
           "isSetPincode": 0,
@@ -129,17 +213,17 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.2.1": "{\"timestamp\":1675738021,\"value\":[]}",
-          "event.2.2": "{\"timestamp\":1675860300,\"value\":[]}",
-          "event.2.3": "{\"timestamp\":1675860600,\"value\":[]}",
-          "event.close": "{\"timestamp\":1675738020,\"value\":[]}",
-          "event.no_close": "{\"timestamp\":1675860600,\"value\":[300]}",
-          "event.open": "{\"timestamp\":1675860300,\"value\":[]}",
+          "event.2.1": "{\"timestamp\":1676269713,\"value\":[]}",
+          "event.2.2": "{\"timestamp\":1676296808,\"value\":[]}",
+          "event.2.3": "{\"timestamp\":1676297108,\"value\":[]}",
+          "event.close": "{\"timestamp\":1676269712,\"value\":[]}",
+          "event.no_close": "{\"timestamp\":1676297108,\"value\":[300]}",
+          "event.open": "{\"timestamp\":1676296808,\"value\":[]}",
           "prop.2.1": "false",
           "prop.close": "0",
-          "prop.device_log": "[1675860299,[\"event.open\",[]]]",
+          "prop.device_log": "[1676296807,[\"event.open\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "22",
+          "prop.lqi": "40",
           "prop.no_close": "1",
           "prop.open": "1",
           "prop.open_status": "60",
@@ -226,7 +310,7 @@
         "desc": "Motion detected ",
         "desc_new": "%s Motion detected",
         "desc_time": [
-          1676199771
+          1677845714
         ],
         "extra": {
           "isSetPincode": 0,
@@ -236,13 +320,13 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.2.1": "{\"timestamp\":1676199771,\"value\":[]}",
+          "event.2.1": "{\"timestamp\":1677845715,\"value\":[]}",
           "event.iam": "{\"timestamp\":1601111554,\"value\":[]}",
-          "event.motion": "{\"timestamp\":1676199771,\"value\":[]}",
-          "event.no_motion": "{\"timestamp\":1676201568,\"value\":[1800]}",
-          "prop.device_log": "[1676199771,[\"event.motion\",[]]]",
+          "event.motion": "{\"timestamp\":1677845714,\"value\":[]}",
+          "event.no_motion": "{\"timestamp\":1677847511,\"value\":[1800]}",
+          "prop.device_log": "[1677845714,[\"event.motion\",[]]]",
           "prop.fw_ver": "11",
-          "prop.lqi": "31",
+          "prop.lqi": "28",
           "prop.motion": "0",
           "prop.no_motion": "1800",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
@@ -277,7 +361,7 @@
         "desc": "Motion detected ",
         "desc_new": "%s Motion detected",
         "desc_time": [
-          1676165097
+          1677845722
         ],
         "extra": {
           "isSetPincode": 0,
@@ -287,12 +371,12 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.2.1": "{\"timestamp\":1676165097,\"value\":[]}",
-          "event.motion": "{\"timestamp\":1676165097,\"value\":[]}",
-          "event.no_motion": "{\"timestamp\":1676166894,\"value\":[1800]}",
-          "prop.device_log": "[1676165096,[\"event.motion\",[]]]",
+          "event.2.1": "{\"timestamp\":1677845723,\"value\":[]}",
+          "event.motion": "{\"timestamp\":1677845722,\"value\":[]}",
+          "event.no_motion": "{\"timestamp\":1677847520,\"value\":[1800]}",
+          "prop.device_log": "[1677845722,[\"event.motion\",[]]]",
           "prop.fw_ver": "11",
-          "prop.lqi": "46",
+          "prop.lqi": "40",
           "prop.motion": "0",
           "prop.no_motion": "1800",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
@@ -306,11 +390,11 @@
         "reset_flag": 0
       },
       {
-        "did": "lumi.158d0000fd0ac2",
+        "did": "lumi.158d0000e6c590",
         "token": "",
         "longitude": "0.0",
         "latitude": "0.0",
-        "name": "无线开关",
+        "name": "一楼次卧无线开关",
         "pid": "3",
         "localip": "",
         "mac": "",
@@ -324,24 +408,74 @@
         "shareFlag": 0,
         "permitLevel": 16,
         "isOnline": true,
-        "desc": "Long press ",
-        "desc_new": "%s Long press",
+        "desc": "Double click ",
+        "desc_new": "%s Double click",
         "desc_time": [
-          1676203899
+          1676978435
         ],
         "extra": {
           "isSetPincode": 0,
           "pincodeType": 0
         },
         "event": {
-          "event.click": "{\"timestamp\":1676198285,\"value\":[]}",
-          "event.double_click": "{\"timestamp\":1676171192,\"value\":[]}",
-          "event.long_click_press": "{\"timestamp\":1676203899,\"value\":[]}",
-          "event.long_click_release": "{\"timestamp\":1676203900,\"value\":[]}",
+          "event.click": "{\"timestamp\":1676978433,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1676978435,\"value\":[]}",
+          "event.long_click_press": "{\"timestamp\":1676702684,\"value\":[]}",
+          "event.long_click_release": "{\"timestamp\":1676702685,\"value\":[]}",
+          "miot_bind_time": "1676702540",
+          "prop.device_log": "[1676978435,[\"event.double_click\",[]]]",
+          "prop.lqi": "160",
+          "prop.s_auth_config": "{\"privacyAuthed\":true}"
+        },
+        "uid": 51567276,
+        "pd_id": 62,
+        "password": "",
+        "p2p_id": "",
+        "rssi": 0,
+        "family_id": 0,
+        "reset_flag": 0,
+        "home_id": "765001001003",
+        "room_id": "765001523960",
+        "home_name": "PAUL的家",
+        "room_name": "一楼次卧"
+      },
+      {
+        "did": "lumi.158d0000fd0ac2",
+        "token": "",
+        "longitude": "0.0",
+        "latitude": "0.0",
+        "name": "一楼客厅无线开关",
+        "pid": "3",
+        "localip": "",
+        "mac": "",
+        "ssid": "MIWIFI",
+        "bssid": "34:46:EC:3C:D5:34",
+        "parent_id": "54969428",
+        "parent_model": "lumi.gateway.v3",
+        "show_mode": 0,
+        "model": "lumi.sensor_switch.v2",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Single click ",
+        "desc_new": "%s Single click",
+        "desc_time": [
+          1677888905
+        ],
+        "extra": {
+          "isSetPincode": 0,
+          "pincodeType": 0
+        },
+        "event": {
+          "event.click": "{\"timestamp\":1677888905,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1677404436,\"value\":[]}",
+          "event.long_click_press": "{\"timestamp\":1677846666,\"value\":[]}",
+          "event.long_click_release": "{\"timestamp\":1677846666,\"value\":[]}",
           "miot_bind_time": "1632285240",
-          "prop.device_log": "[1676203899,[\"event.long_click_press\",[]]]",
+          "prop.device_log": "[1677888905,[\"event.click\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "55",
+          "prop.lqi": "109",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -371,10 +505,10 @@
         "shareFlag": 0,
         "permitLevel": 16,
         "isOnline": true,
-        "desc": "Long press ",
-        "desc_new": "%s Long press",
+        "desc": "Double click ",
+        "desc_new": "%s Double click",
         "desc_time": [
-          1676123051
+          1677882604
         ],
         "extra": {
           "isSetPincode": 0,
@@ -384,17 +518,17 @@
           "isPasswordEncrypt": 0
         },
         "event": {
-          "event.click": "{\"timestamp\":1676119553,\"value\":[]}",
-          "event.double_click": "{\"timestamp\":1676071431,\"value\":[]}",
+          "event.click": "{\"timestamp\":1677846254,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1677882604,\"value\":[]}",
           "event.iam": "{\"timestamp\":1494407851,\"value\":[]}",
-          "event.long_click_press": "{\"timestamp\":1676123051,\"value\":[]}",
-          "event.long_click_release": "{\"timestamp\":1676123052,\"value\":[]}",
+          "event.long_click_press": "{\"timestamp\":1677851249,\"value\":[]}",
+          "event.long_click_release": "{\"timestamp\":1677851249,\"value\":[]}",
           "prop.click": "0",
-          "prop.device_log": "[1676123051,[\"event.long_click_press\",[]]]",
+          "prop.device_log": "[1677882605,[\"event.double_click\",[]]]",
           "prop.double_click": "0",
           "prop.fw_ver": "10",
           "prop.long_click_press": "0",
-          "prop.lqi": "172",
+          "prop.lqi": "160",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -410,7 +544,7 @@
         "token": "",
         "longitude": "0.0",
         "latitude": "0.0",
-        "name": "小米无线开关",
+        "name": "二楼客厅小米无线开关",
         "pid": "3",
         "localip": "",
         "mac": "",
@@ -427,7 +561,7 @@
         "desc": "Double click ",
         "desc_new": "%s Double click",
         "desc_time": [
-          1675581189
+          1676793973
         ],
         "extra": {
           "isSetPincode": 0,
@@ -438,12 +572,12 @@
         },
         "event": {
           "event.click": "{\"timestamp\":1675581187,\"value\":[]}",
-          "event.double_click": "{\"timestamp\":1675581189,\"value\":[]}",
+          "event.double_click": "{\"timestamp\":1676793973,\"value\":[]}",
           "event.long_click_press": "{\"timestamp\":1674203861,\"value\":[]}",
           "event.long_click_release": "{\"timestamp\":1674203861,\"value\":[]}",
-          "prop.device_log": "[1675581189,[\"event.double_click\",[]]]",
+          "prop.device_log": "[1676793972,[\"event.double_click\",[]]]",
           "prop.fw_ver": "10",
-          "prop.lqi": "10",
+          "prop.lqi": "31",
           "prop.s_auth_config": "{\"privacyAuthed\":true}"
         },
         "uid": 51567276,
@@ -482,6 +616,45 @@
         "rssi": 0,
         "family_id": 0,
         "reset_flag": 0
+      },
+      {
+        "did": "1038066825",
+        "token": "3c3f32c0241c06f9f0083a2f4940588a",
+        "longitude": "0.0",
+        "latitude": "0.0",
+        "name": "Mi Smart Dual One Way  Wall Switch",
+        "pid": "16",
+        "localip": "",
+        "mac": "94:F8:27:83:65:73",
+        "ssid": "",
+        "bssid": "",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "zimi.switch.dhkg02",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Device online ",
+        "extra": {
+          "isSetPincode": 0,
+          "pincodeType": 0,
+          "fw_version": "2.1.1_0118",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0
+        },
+        "uid": 51567276,
+        "pd_id": 1946,
+        "password": "",
+        "p2p_id": "",
+        "rssi": 0,
+        "family_id": 0,
+        "reset_flag": 0,
+        "home_id": "765001001003",
+        "room_id": "765001107336",
+        "home_name": "PAUL的家",
+        "room_name": "二楼客厅"
       },
       {
         "did": "58145830",
@@ -562,6 +735,45 @@
         "room_name": "一楼卧室"
       },
       {
+        "did": "blt.3.1d5jt23qcec00",
+        "token": "1b6c69e790da9abca2839210",
+        "longitude": "0.0",
+        "latitude": "0.0",
+        "name": "温湿度计",
+        "pid": "6",
+        "localip": "",
+        "mac": "A4:C1:38:DE:CB:8C",
+        "ssid": "",
+        "bssid": "",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "miaomiaoce.sensor_ht.t2",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Device online ",
+        "extra": {
+          "isSetPincode": 0,
+          "pincodeType": 0,
+          "fw_version": "1.0.0_0130",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0
+        },
+        "uid": 51567276,
+        "pd_id": 1371,
+        "password": "",
+        "p2p_id": "",
+        "rssi": 0,
+        "family_id": 0,
+        "reset_flag": 0,
+        "home_id": "765001001003",
+        "room_id": "765001107338",
+        "home_name": "PAUL的家",
+        "room_name": "一楼卧室"
+      },
+      {
         "did": "lumi.158d00015d1bf5",
         "token": "",
         "longitude": "0.0",
@@ -624,7 +836,7 @@
         "shareFlag": 0,
         "permitLevel": 16,
         "isOnline": true,
-        "desc": "Temperature: 15℃ Humidity:74% ",
+        "desc": "Temperature: 16℃ Humidity:62% ",
         "extra": {
           "isSetPincode": 0,
           "pincodeType": 0,
@@ -633,8 +845,8 @@
           "isPasswordEncrypt": 0
         },
         "prop": {
-          "humidity": "7374",
-          "temperature": "1510"
+          "humidity": "6234",
+          "temperature": "1601"
         },
         "uid": 51567276,
         "pd_id": 98,
@@ -651,15 +863,15 @@
         "name": "PAUL的家",
         "bssid": "",
         "dids": [
+          "54969428",
           "lumi.158d0000fd0ac2",
           "lumi.158d000128fa46",
           "lumi.158d00015d1bf5",
           "lumi.158d00015d2507",
           "lumi.158d00015d5c57",
           "lumi.158d00015dbaec",
-          "54969428",
-          "lumi.158d0001a21774",
           "lumi.158d0001839247",
+          "lumi.158d0001a21774",
           "lumi.158d0001a64708",
           "lumi.158d0001e80ca7"
         ],
@@ -682,7 +894,8 @@
             "bssid": "",
             "parentid": "765001001003",
             "dids": [
-              "59654876"
+              "59654876",
+              "blt.3.1d5jt23qcec00"
             ],
             "icon": "more_1",
             "background": "style_1_favorites",
@@ -695,12 +908,27 @@
             "bssid": "",
             "parentid": "765001001003",
             "dids": [
-              "58145830"
+              "499140090",
+              "58145830",
+              "87475741"
             ],
             "icon": "livingroom_1",
             "background": "style_1_favorites",
             "shareflag": 0,
             "create_time": 1632285255
+          },
+          {
+            "id": "765001523960",
+            "name": "一楼次卧",
+            "bssid": "",
+            "parentid": "765001001003",
+            "dids": [
+              "lumi.158d0000e6c590"
+            ],
+            "icon": "bedroom_1",
+            "background": "style_1_favorites",
+            "shareflag": 0,
+            "create_time": 1676702556
           },
           {
             "id": "765001107337",
@@ -718,7 +946,11 @@
             "name": "二楼客厅",
             "bssid": "",
             "parentid": "765001001003",
-            "dids": [],
+            "dids": [
+              "1038066825",
+              "1038066825.s2",
+              "1038066825.s3"
+            ],
             "icon": "more_1",
             "background": "style_1_favorites",
             "shareflag": 0,
@@ -734,6 +966,17 @@
             "background": "style_1_favorites",
             "shareflag": 0,
             "create_time": 1501048808
+          },
+          {
+            "id": "765001522789",
+            "name": "客厅",
+            "bssid": "",
+            "parentid": "765001001003",
+            "dids": [],
+            "icon": "livingroom_1",
+            "background": "style_1_favorites",
+            "shareflag": 0,
+            "create_time": 1676257945
           },
           {
             "id": "765001001005",

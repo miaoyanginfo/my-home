@@ -17,8 +17,9 @@
       {
         "name": "薛秋燕",
         "device_trackers": [
+          "device_tracker.wei_zhi_she_bei_2778",
           "device_tracker.iphoneqiu_qiu",
-          "device_tracker.wei_zhi_she_bei_2778"
+          "device_tracker.pdyt20"
         ],
         "user_id": "666134958c784a25a09212fe7d727088",
         "picture": "/api/image/serve/00a5f4857c2d12c5b95c18eab3ada4ee/512x512",

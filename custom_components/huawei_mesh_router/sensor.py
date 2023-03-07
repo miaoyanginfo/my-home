@@ -19,7 +19,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .classes import DEVICE_TAG, ConnectedDevice, HuaweiInterfaceType
 from .client.classes import MAC_ADDR
-from .client.huaweiapi import CONNECTED_VIA_ID_PRIMARY
+from .client.const import CONNECTED_VIA_ID_PRIMARY
 from .helpers import (
     generate_entity_id,
     generate_entity_name,
@@ -170,7 +170,7 @@ def watch_for_additional_routers(
     integration_options: HuaweiIntegrationOptions,
     async_add_entities: AddEntitiesCallback,
 ):
-    watcher: ActiveRoutersWatcher = ActiveRoutersWatcher()
+    watcher: ActiveRoutersWatcher = ActiveRoutersWatcher(coordinator)
     known_client_sensors: dict[MAC_ADDR, HuaweiConnectedDevicesSensor] = {}
     known_uptime_sensors: dict[MAC_ADDR, HuaweiUptimeSensor] = {}
 
@@ -227,7 +227,7 @@ def watch_for_additional_routers(
     @callback
     def coordinator_updated() -> None:
         """Update the status of the device."""
-        watcher.look_for_changes(coordinator, on_router_added)
+        watcher.look_for_changes(on_router_added)
 
     config_entry.async_on_unload(coordinator.async_add_listener(coordinator_updated))
     coordinator_updated()

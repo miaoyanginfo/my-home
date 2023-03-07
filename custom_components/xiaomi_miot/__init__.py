@@ -664,6 +664,7 @@ class BaseEntity(Entity):
     _model = None
     _attr_device_class = None
     _attr_entity_category = None
+    _attr_translation_key = None
 
     async def async_added_to_hass(self):
         await super().async_added_to_hass()
@@ -1131,7 +1132,11 @@ class MiotEntity(MiioEntity):
                     self._state_attrs['exclude_miot_services'] = ems
                 if eps := self.custom_config_list('exclude_miot_properties') or []:
                     self._state_attrs['exclude_miot_properties'] = eps
-                self._miot_mapping = miot_service.mapping(excludes=eps) or {}
+                urp = self.custom_config_bool('unreadable_properties')
+                self._miot_mapping = miot_service.mapping(
+                    excludes=eps,
+                    unreadable_properties=urp,
+                ) or {}
                 ism = True
                 if mms := self.custom_config_list('main_miot_services') or []:
                     if self._miot_service.in_list(mms):
@@ -1143,12 +1148,14 @@ class MiotEntity(MiioEntity):
                     ext = self._miot_service.spec.services_mapping(
                         excludes=ems,
                         exclude_properties=eps,
+                        unreadable_properties=urp,
                     ) or {}
                     self._miot_mapping = {**self._miot_mapping, **ext, **self._miot_mapping}
                 self._vars['is_main_entity'] = ism
             self._unique_id = f'{self._unique_id}-{self._miot_service.iid}'
             self.entity_id = self._miot_service.generate_entity_id(self)
             self._state_attrs['miot_type'] = self._miot_service.spec.type
+            self._attr_translation_key = self._miot_service.name
         if not self.entity_id and self._model:
             mls = f'{self._model}..'.split('.')
             mac = re.sub(r'[\W_]+', '', self.unique_mac)
@@ -1163,6 +1170,7 @@ class MiotEntity(MiioEntity):
         if not self._miot_service:
             return
         self._vars['ignore_offline'] = self.custom_config_bool('ignore_offline')
+        self.logger.debug('%s: Added to hass: %s', self.name_model, [self.custom_config()])
 
     @property
     def miot_device(self):
@@ -1324,6 +1332,8 @@ class MiotEntity(MiioEntity):
         elif not self.miot_device:
             use_local = False
         use_cloud = not use_local and self.miot_cloud
+        if not self.miot_device:
+            use_cloud = self.xiaomi_cloud
         if not (mapping or local_mapping):
             use_local = False
             use_cloud = False
@@ -2264,8 +2274,9 @@ class BaseSubEntity(BaseEntity):
         self._option['domain'] = kwargs.get('domain')
         self.generate_entity_id()
         self._supported_features = int(self._option.get('supported_features', 0))
-        self._attr_entity_category = self._option.get('entity_category')
+        self._attr_entity_category = self.custom_config('entity_category', self._option.get('entity_category'))
         self._attr_native_unit_of_measurement = self._option.get('unit')
+        self._attr_translation_key = self.custom_config('translation_key') or attr
         self._extra_attrs = {
             'entity_class': self.__class__.__name__,
             'parent_entity_id': parent.entity_id,
@@ -2384,8 +2395,6 @@ class BaseSubEntity(BaseEntity):
         self._option['device_class'] = self.custom_config('device_class', self.device_class)
         if uom := self.custom_config('unit_of_measurement'):
             self._attr_native_unit_of_measurement = uom
-        if hasattr(self, 'entity_category'):
-            self._attr_entity_category = self.custom_config('entity_category', self.entity_category)
 
     def update_from_parent(self):
         self.update()
@@ -2474,6 +2483,7 @@ class MiotPropertySubEntity(BaseSubEntity):
             self._attr_native_unit_of_measurement = miot_property.unit_of_measurement
         if self._attr_entity_category is None:
             self._attr_entity_category = miot_property.entity_category
+        self._attr_translation_key = self.custom_config('translation_key') or miot_property.friendly_name
         self._extra_attrs.update({
             'service_description': miot_property.service.description or miot_property.service.name,
             'property_description': miot_property.description or miot_property.name,

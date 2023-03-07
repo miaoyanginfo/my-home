@@ -38,9 +38,9 @@
       entity_id: binary_sensor.switch_158d0001839247
       click_type: single
   condition:
-  - condition: sun
-    before: sunrise
-    after: sunset
+  - condition: numeric_state
+    entity_id: sensor.illumination_286c07f0c4e5
+    below: 500
   action:
   - service: switch.toggle
     entity_id:
@@ -168,24 +168,26 @@
     data: {}
     target:
       entity_id: switch.s3_s1
-- alias: 2f keting motion on
-  initial_state: 'on'
+- id: f2165091e27b4502aaa2c4772530a46f
+  alias: 2f keting motion on
   trigger:
-    platform: state
+  - platform: state
     entity_id: binary_sensor.motion_sensor_158d00015d5c57
     from: 'off'
     to: 'on'
   condition:
-    condition: sun
+  - condition: sun
     after: sunset
   action:
-    service: switch.turn_on
-    entity_id: switch.keting_light
-  id: f2165091e27b4502aaa2c4772530a46f
-- alias: 2f keting motion off
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.ke_ting_deng
   initial_state: 'on'
+- id: 9ae95e4c70c84ae684096ffbaccb7340
+  alias: 2f keting motion off
   trigger:
-    platform: state
+  - platform: state
     entity_id: binary_sensor.motion_sensor_158d00015d5c57
     from: 'on'
     to: 'off'
@@ -194,9 +196,11 @@
       minutes: 10
       seconds: 30
   action:
-    service: switch.turn_off
-    entity_id: switch.keting_light
-  id: 9ae95e4c70c84ae684096ffbaccb7340
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.ke_ting_deng
+  initial_state: 'on'
 - alias: 2f woshi motion on
   initial_state: 'on'
   trigger:
@@ -289,11 +293,15 @@
     at: '9:00'
   action:
   - service: homeassistant.turn_off
-    entity_id:
-    - switch.yi_lou_wo_shi_deng
-    - switch.er_lou_wo_shi_deng
-    - switch.keting_light
-    - light.gateway_light_286c07f0c4e5
+    data: {}
+    target:
+      entity_id:
+      - light.gateway_light_286c07f0c4e5
+      - switch.ciwo_light
+      - switch.woshi_light
+      - switch.1f_woshi
+      - light.yang_tai_deng
+      - light.ke_ting_deng
   initial_state: 'on'
   mode: single
 - id: fffacf1e89ae439ba638bea5deea126f
@@ -419,13 +427,6 @@
       gw_mac: 28:6C:07:F0:C4:E5
       ringtone_vol: 15
       ringtone_id: '11'
-  - service: xiaomi_miot.intelligent_speaker
-    data:
-      execute: false
-      silent: false
-      throw: false
-      entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 我回来了！
   mode: single
 - id: '1673235364879'
   alias: 开播放器开NAS
@@ -502,7 +503,7 @@
   - service: tts.edge_tts_say
     data:
       cache: false
-      entity_id: media_player.plex_plex_for_android_tv_p2301
+      entity_id: media_player.xiaomi_s12_671d_play_control
       message: 豆丁和布丁，你们好！
   mode: single
 - id: '1675905645784'
@@ -525,6 +526,7 @@
   trigger:
   - platform: time_pattern
     minutes: '30'
+    hours: /2
   condition:
   - condition: time
     after: 08:00:00
@@ -748,4 +750,74 @@
       code: '1234'
     target:
       entity_id: alarm_control_panel.home_alarm
+  mode: single
+- &id001
+  id: '1676852568010'
+  alias: 一楼次卧无线开关长按
+  description: ''
+  trigger:
+  - platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0000e6c590
+      click_type: long_click_press
+  condition: []
+  action:
+  - service: homeassistant.turn_off
+    entity_id:
+    - switch.ciwo_light
+  mode: single
+- *id001
+- id: '1676852727485'
+  alias: 一楼次卧双击
+  description: ''
+  trigger:
+  - platform: event
+    event_type: xiaomi_aqara.click
+    event_data:
+      entity_id: binary_sensor.switch_158d0000e6c590
+      click_type: double
+  condition: []
+  action:
+  - service: switch.toggle
+    data: {}
+    target:
+      entity_id: switch.ciwo_light
+  mode: single
+- id: '1677055688375'
+  alias: 测试手机通知
+  description: ''
+  trigger:
+  - platform: zone
+    entity_id: person.miao_yang
+    zone: zone.mei_te_hao
+    event: leave
+  - platform: zone
+    entity_id: person.xie_qiu_yan
+    zone: zone.wu_jia_wu
+    event: leave
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      title: 收到通知
+      message: 苗洋位置"{{states('device_tracker.miao_yang_de_iphone')}}",秋燕位置"{{states('device_tracker.iphoneqiu_qiu')}}"
+  mode: single
+- id: '1677130600928'
+  alias: 手动发送手机通知
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_button.message
+    - input_text.text1
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      title: 收到通知
+      message: '{{states(''input_text.text1'')}}'
+  - service: notify.persistent_notification
+    data:
+      message: baocun
   mode: single

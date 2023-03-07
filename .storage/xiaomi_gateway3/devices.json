@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "xiaomi_gateway3/devices.json",
+  "data": {
+    "54ef44432f79": {
+      "decode_ts": 1677932098.2977815
+    },
+    "94f827836573": {
+      "decode_ts": 1677932068.472273
+    },
+    "a4c138decb8c": {
+      "decode_ts": 1677931346.1150312
+    }
+  }
+}

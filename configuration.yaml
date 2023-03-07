@@ -1,22 +1,27 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+switch: !include switch.yaml
+sensor: !include sensor.yaml
+mobile_app:
+wake_on_lan:
 homeassistant:
   customize:
     # Add an entry for each entity that you want to overwrite.
     switch.1f_woshi:
-      icon: mdi:kettle
+      icon: mdi:ceiling-light-outline
       friendly_name: 一楼卧室灯
     switch.woshi_light:
       friendly_name: 二楼卧室灯
-      icon: mdi:kettle
-    switch.keting_light:
-      friendly_name: 二楼客厅灯
-      icon: mdi:kettle
+      icon: mdi:outdoor-lamp
+    switch.ciwo_light:
+      friendly_name: 一楼次卧灯
+      icon: mdi:lightbulb-variant-outline
     climate.haier: 
       friendly_name: 客厅空调
       icon: mdi:air-conditioner
-    switch.rfxtrx_switch:
-      assumed_state: false
     media_player.my_media_player:
       source_list:
         - Channel/input from my available sources
@@ -36,16 +41,20 @@ homeassistant:
 #   base_url: example.duckdns.org:8123
 
 # Text to speech
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
-switch: !include switch.yaml
-sensor: !include sensor.yaml
+
+input_text: 
+  text1:
+    name: 发送通知文本
+input_button:
+  message:
+    name: 点击发送
+    icon: mdi:cellphone-message
+frontend: 
+  themes: !include_dir_merge_named themes
 panel_iframe:
   nodered:
     title: 'Node-Red'
     icon: 'mdi:shuffle-variant'
-    #填写node-red的地址
     url: 'http://miaoyang.iok.la:1880/'
 alarm_control_panel:
   - platform: manual
@@ -59,18 +68,6 @@ alarm_control_panel:
     armed_home:
       arming_time: 0
       delay_time: 0
-
-homekit:
-  - filter:
-      include_domains:
-        - switch
-        - light
-        - media_player
-        - sensor
-        - binary_sensor
-mobile_app:
-#discovery:
-wake_on_lan:
 speedtestdotnet:
   scan_interval:
     minutes: 30
@@ -85,42 +82,17 @@ binary_sensor:
   - platform: ping
     host: 192.168.1.3
     name: newifi
-frontend: 
-  themes: !include_dir_merge_named themes
-
-
 tts:
   - platform: edge_tts
     service_name: edge_tts_say # service: tts.xiaomo_say
     language: zh-CN-XiaoxiaoNeural
     volume: +10%
-# hello_miai:
-  # miid: '15513084760'
-  # password: 'Xm64269264'
 weather:
   - platform: heweather_forecast
     location: 101100106    # 填写你所在区域代码Location_ID,https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv
     key: a4de9580a88d4411bef9344b37273e2a             # api平台申请的key
-
 xiaomi_aqara:
   discovery_retry: 5
   gateways:
     - key: 1510C516FBD4464F
-# device_tracker:
-  # - platform: xiaomi
-    # host: 192.168.1.1
-    # password: miaoyanginfo
-    # interval_seconds: 10
-    # consider_home: 180
-    # new_device_defaults:
-      # track_new_devices: true
-
-# molobot:
-  # phone: 15513084760  # 天猫精灵绑定的手机号
-  # password: 19890612
-#recorder:
- # purge_interval: 7
-  #purge_keep_days: 7
-  #db_url: mysql://hass:159753000@127.0.0.1/hassdatabase?charset=utf8
-
-  
+    - key: qewnth1ff3byk4rf

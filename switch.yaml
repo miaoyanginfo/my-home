@@ -8,7 +8,7 @@
       command_on: 'sg40AAocHQkKHB0JChwdCgocHQkKHAobChwKHAobChsdCR0JCgABGwocHQkKHBwKChwdCQocHAkAAAAA'
       command_off: 'shQ0ABwKChscCQobHAoKGxwJChscCgocHAkKGxwJChsKHBwJHAoKGwocChsKGwoAARgKHBwKChsAAAAA'    
      
-    - name: keting_light
+    - name: ciwo_light
       command_on: 'shA0AAocHAkKHBwJChwcCQocHAkKHBwKChscCQocHAkKHAocChwKGxwJHAkKHAobCgABGQobHAoAAAAA'
       command_off: 'sgs0AAobHAkKGxwJChscCRwJHAkKGwobChwKGwobChsKAAEVChscCQobHAkKHBwJChscCQobHAkAAAAA'
       

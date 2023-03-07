@@ -67,7 +67,22 @@
       "huawei_mesh_router.switch.c404322f71648aec8fb9f1298b616ebf_switch_wifi_twt_5jn7s20416020152": 2518355842,
       "xiaomi_miot.switch.34:ce:00:e6:b3:d3-4ce5b01ecedd012e1faf5651ba23923a-camera_control-2.on-1": 1052985848,
       "xiaomi_miot.switch.00:9e:c8:e7:67:1d-4ce5b01ecedd012e1faf5651ba23923a-intelligent_speaker-5.sleep_mode-3": 2487283282,
-      "xiaomi_miot.switch.00:9e:c8:e7:67:1d-cafbec01cb5eae6543be67a32aa5125f-intelligent_speaker-5.sleep_mode-3": 1087029412
+      "xiaomi_miot.switch.00:9e:c8:e7:67:1d-cafbec01cb5eae6543be67a32aa5125f-intelligent_speaker-5.sleep_mode-3": 1087029412,
+      "xiaomi_miot.light.28:6c:07:f0:c4:e5-cafbec01cb5eae6543be67a32aa5125f-4": 3095676734,
+      "xiaomi_miot.switch.lumi.158d00015d1bf5-cafbec01cb5eae6543be67a32aa5125f-2": 4022643986,
+      "xiaomi_miot.switch.34:ce:00:e6:b3:d3-cafbec01cb5eae6543be67a32aa5125f-camera_control-2.on-1": 1979270898,
+      "xiaomi_miot.switch.94:f8:27:83:65:73-cafbec01cb5eae6543be67a32aa5125f-2": 975720641,
+      "xiaomi_miot.switch.94:f8:27:83:65:73-cafbec01cb5eae6543be67a32aa5125f-3": 958943022,
+      "xiaomi_miot.light.94:f8:27:83:65:73-cafbec01cb5eae6543be67a32aa5125f-10": 4021676444,
+      "switch.ciwo_light": 1306864436,
+      "xiaomi_gateway3.switch.94f827836573_channel 1": 3756276763,
+      "xiaomi_gateway3.switch.94f827836573_channel 2": 3773054382,
+      "person.person.miao_yang": 217359243,
+      "person.person.xie_qiu_yan": 1812930898,
+      "person.person.ba_ba": 3499993590,
+      "person.person.ma_ma": 2265409988,
+      "person.person.miao_jing_ji": 571693032,
+      "dlna_dmr.media_player.uuid:5bcb6966-980a-4960-ab54-dba7b8a15b24": 2775323678
     }
   }
 }

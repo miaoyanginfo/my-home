@@ -1,0 +1,70 @@
+#
+# Main arguments, all optional
+#
+title: MY Panel
+widget_dimensions: [120, 120]
+widget_margins: [6, 5]
+columns: 10
+
+label:
+    widget_type: label
+    text: MYHOME
+layout:
+    - clock(2x1), weather(2x2), side_temperature(1x1), side_humidity(1x1), miaoyang_presence(1x1), qiuyan_presence(1x1)
+    - mode(2x1), light_level(2x1), porch_motion(1x1), garage(1x1)
+miaoyang_presence:
+    widget_type: device_tracker
+    title: 苗洋
+    device: miao_yang_de_iphone
+
+clock:
+    widget_type: clock
+
+garage:
+    widget_type: switch
+    title: 一楼卧室灯开关
+    entity: switch.1f_woshi
+    icon_on: fas-car
+    icon_off: fas-car
+    warn: 1
+
+light_level:
+    widget_type: sensor
+    title: 卧室亮度
+    units: "lux"
+    precision: 0
+    shorten: 1
+    entity: sensor.illumination_286c07f0c4e5
+
+mode:
+    widget_type: sensor
+    title: 路由器连接数
+    entity: sensor.huawei_router_total_clients
+
+porch_motion:
+    widget_type: binary_sensor
+    title: 一楼卧室 人体感应
+    entity: binary_sensor.motion_sensor_158d00015d2507
+
+side_temperature:
+    widget_type: sensor
+    title: 一楼卧室温度
+    units: "&deg;F"
+    precision: 0
+    entity: sensor.temperature_158d0001e80ca7
+
+side_humidity:
+    widget_type: sensor
+    title: 一楼卧室湿度
+    units: "%"
+    precision: 0
+    entity: sensor.humidity_158d0001e80ca7
+
+weather:
+    widget_type: weather
+    units: "&deg;F"
+
+qiuyan_presence:
+    widget_type: device_tracker
+    title: 秋燕
+    device: iphoneqiu_qiu

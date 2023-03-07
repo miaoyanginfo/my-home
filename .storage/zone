@@ -17,7 +17,7 @@
         "latitude": 37.86864716224025,
         "longitude": 112.56682769117342,
         "name": "五加五",
-        "icon": "mdi:map-marker",
+        "icon": "mdi:camera",
         "passive": false,
         "radius": 160.0,
         "id": "wu_jia_wu"

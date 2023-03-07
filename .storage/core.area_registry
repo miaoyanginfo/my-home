@@ -6,33 +6,39 @@
     "areas": [
       {
         "aliases": [],
-        "name": "客厅",
-        "id": "ke_ting",
-        "picture": null
-      },
-      {
-        "aliases": [],
-        "name": "厨房",
+        "name": "一楼次卧",
         "id": "chu_fang",
-        "picture": null
+        "picture": "/api/image/serve/520dcd513703f48cb9029e20445ebd27/512x512"
       },
       {
         "aliases": [],
-        "name": "卧室",
+        "name": "二楼卧室",
         "id": "wo_shi",
-        "picture": null
+        "picture": "/api/image/serve/d441104210b0dd50d883da99330616d5/512x512"
       },
       {
         "aliases": [],
         "name": "一楼卧室",
         "id": "yi_lou_wo_shi",
-        "picture": null
+        "picture": "/api/image/serve/10768c544332251059c52de86712afaa/512x512"
       },
       {
         "aliases": [],
         "name": "一楼客厅",
         "id": "yi_lou_ke_ting",
-        "picture": null
+        "picture": "/api/image/serve/f6173e7a1909883fe564d6ed29332785/512x512"
+      },
+      {
+        "aliases": [],
+        "name": "二楼客厅",
+        "id": "er_lou_ke_ting",
+        "picture": "/api/image/serve/f2d3ad792fb1a2f472fee259664c4a46/512x512"
+      },
+      {
+        "aliases": [],
+        "name": "厨房",
+        "id": "chu_fang_2",
+        "picture": "/api/image/serve/d89a092ac8887938b0ac6db310d410fc/512x512"
       }
     ]
   }

@@ -19,32 +19,32 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 78277,
-      "etag_repository": "W/\"62ff512ab985b30e9be2d3ada9f0821fe84ca50b679d2170b26b03ca09c5a449\"",
-      "last_updated": "2023-02-11T10:32:22Z",
-      "stargazers_count": 3334,
+      "downloads": 44797,
+      "etag_repository": "W/\"7fc4ec620574a761712820abd406e3e468f97994894d975aeec565c2b6b07479\"",
+      "last_updated": "2023-03-06T03:20:46Z",
+      "stargazers_count": 3406,
       "topics": [
         "community",
         "package-manager"
       ],
       "config_flow": true,
       "default_branch": "main",
-      "installed_commit": "6e5d46d",
+      "installed_commit": "723b88a",
       "installed": true,
-      "last_commit": "74934c3",
-      "last_version": "1.30.1",
+      "last_commit": "723b88a",
+      "last_version": "1.31.0",
       "manifest_name": "HACS",
-      "open_issues": 4,
+      "open_issues": 3,
       "published_tags": [
+        "1.31.0",
         "1.30.1",
         "1.30.0",
         "1.29.1",
-        "1.29.0",
-        "1.28.4"
+        "1.29.0"
       ],
       "releases": true,
-      "version_installed": "1.30.1",
-      "last_fetched": 1676175641.856926
+      "version_installed": "1.31.0",
+      "last_fetched": 1678076198.499659
     },
     "491303842": {
       "repository_manifest": {
@@ -3614,30 +3614,30 @@
       "full_name": "piitaya/lovelace-mushroom",
       "category": "plugin",
       "description": "Mushroom Cards - Build a beautiful dashboard easily 🍄",
-      "downloads": 24386,
-      "etag_repository": "W/\"3d8cbabafaaa396a11ea72446135a1c3ed8809e387393157ffdc4d1553793cc0\"",
-      "last_updated": "2023-02-10T22:08:58Z",
-      "stargazers_count": 2040,
+      "downloads": 16258,
+      "etag_repository": "W/\"476a6c740f1f495bf14ff287a67d0b00308ee2a7b3f9f3b343f136923ec2e1e7\"",
+      "last_updated": "2023-03-04T13:29:55Z",
+      "stargazers_count": 2106,
       "topics": [
         "card",
         "mushroom"
       ],
       "default_branch": "main",
-      "installed_commit": "81c096d",
+      "installed_commit": "71596bc",
       "installed": true,
-      "last_commit": "c5d1c15",
-      "last_version": "v2.5.3",
-      "open_issues": 226,
+      "last_commit": "7855ed5",
+      "last_version": "v2.6.1",
+      "open_issues": 233,
       "published_tags": [
+        "v2.6.1",
+        "v2.6.0",
         "v2.5.3",
         "v2.5.2",
-        "v2.5.1",
-        "v2.4.1",
-        "v2.4.0"
+        "v2.5.1"
       ],
       "releases": true,
-      "version_installed": "v2.5.3",
-      "last_fetched": 1676175641.283454
+      "version_installed": "v2.6.1",
+      "last_fetched": 1678076198.738372
     },
     "197759180": {
       "repository_manifest": {},
@@ -4946,10 +4946,10 @@
       "category": "integration",
       "description": "Automatic integrate all Xiaomi devices to HomeAssistant via miot-spec, support Wi-Fi, BLE, ZigBee devices. 小米米家智能家居设备接入Hass集成",
       "domain": "xiaomi_miot",
-      "downloads": 19974,
-      "etag_repository": "W/\"d7c8bafb8a176b450b51d7e5e79366d02771da4c4326be4600781011f41728d4\"",
-      "last_updated": "2023-02-10T14:06:23Z",
-      "stargazers_count": 2126,
+      "downloads": 6359,
+      "etag_repository": "W/\"511682adcdbe3bdbec13ec70bf314e5129af99aff2e1941aca09ed82b9ccf02d\"",
+      "last_updated": "2023-03-04T16:18:40Z",
+      "stargazers_count": 2225,
       "topics": [
         "iot",
         "miio",
@@ -4961,22 +4961,22 @@
       ],
       "config_flow": true,
       "default_branch": "master",
-      "installed_commit": "0cd71ff",
+      "installed_commit": "28881ec",
       "installed": true,
-      "last_commit": "bf77cd3",
-      "last_version": "v0.7.5",
+      "last_commit": "2c68688",
+      "last_version": "v0.7.7",
       "manifest_name": "Xiaomi Miot Auto",
-      "open_issues": 117,
+      "open_issues": 122,
       "published_tags": [
+        "v0.7.7",
         "v0.7.5",
         "v0.7.4",
         "v0.7.3",
-        "v0.7.2",
-        "v0.7.1"
+        "v0.7.2"
       ],
       "releases": true,
-      "version_installed": "v0.7.5",
-      "last_fetched": 1676175640.821255
+      "version_installed": "v0.7.7",
+      "last_fetched": 1678076198.49086
     },
     "512213802": {
       "repository_manifest": {
@@ -5080,9 +5080,9 @@
       "category": "integration",
       "description": "Control Zigbee, BLE and Mesh devices from Home Assistant with Xiaomi Gateway 3 on original firmware",
       "domain": "xiaomi_gateway3",
-      "etag_repository": "W/\"44be214fadd917ca0407cd198aa15824d1c48d8fdb4571602eaf0ccbea1a7721\"",
-      "last_updated": "2023-02-03T13:16:07Z",
-      "stargazers_count": 1783,
+      "etag_repository": "W/\"ea969e1f8dafe9fe56634ce1dbcc5190739cf08fc4d2b701cc643c1c796fd523\"",
+      "last_updated": "2023-03-02T09:59:35Z",
+      "stargazers_count": 1831,
       "topics": [
         "aqara",
         "ble",
@@ -5090,7 +5090,24 @@
         "xiaomi",
         "zigbee"
       ],
-      "last_fetched": 1675807606.467497
+      "config_flow": true,
+      "default_branch": "master",
+      "installed_commit": "7596fc1",
+      "installed": true,
+      "last_commit": "7596fc1",
+      "last_version": "v3.1.0",
+      "manifest_name": "Xiaomi Gateway 3",
+      "open_issues": 179,
+      "published_tags": [
+        "v3.1.0",
+        "v3.0.1",
+        "v3.0.0",
+        "v2.1.2",
+        "v2.1.1"
+      ],
+      "releases": true,
+      "version_installed": "v3.1.0",
+      "last_fetched": 1678076198.449829
     },
     "222118751": {
       "repository_manifest": {
@@ -8064,28 +8081,6 @@
       "stargazers_count": 18,
       "last_fetched": 1666268066.976182
     },
-    "140146868": {
-      "repository_manifest": {},
-      "full_name": "custom-components/sensor.untappd",
-      "authors": [
-        "@iantrich",
-        "@swetoast"
-      ],
-      "category": "integration",
-      "description": "🍻 Untappd Integration",
-      "domain": "untappd",
-      "etag_repository": "W/\"2fb2891cd7e927f1742427097d2a96e8a05914e217a80d544f43389ea3940c93\"",
-      "last_updated": "2022-04-28T11:17:02Z",
-      "stargazers_count": 35,
-      "topics": [
-        "automations",
-        "badges",
-        "beer",
-        "untappd",
-        "untappd-api"
-      ],
-      "last_fetched": 1666969266.710793
-    },
     "146379582": {
       "repository_manifest": {
         "name": "Trakt",
@@ -9713,28 +9708,6 @@
       ],
       "last_fetched": 1669018281.581193
     },
-    "157980832": {
-      "repository_manifest": {
-        "name": "Nobø Hub / Nobø Energy Control",
-        "country": "NO",
-        "render_readme": true
-      },
-      "full_name": "echoromeo/hanobo",
-      "authors": [
-        "@echoromeo"
-      ],
-      "category": "integration",
-      "description": "Home Assistant implementation of pynobo - to control Nobø / Glen Dimplex heaters",
-      "domain": "nobo_hub",
-      "etag_repository": "W/\"e1702fa5eda3f53df5e814ccf27bbd23ceccf6354e0880f008f27e189b76ca0f\"",
-      "stargazers_count": 28,
-      "topics": [
-        "glen-dimplex",
-        "heaters",
-        "hvac",
-        "nobo"
-      ]
-    },
     "348464316": {
       "repository_manifest": {
         "name": "Magic Switchbot",
@@ -10353,9 +10326,9 @@
       "category": "integration",
       "description": "用于HASS的彩云天气组件",
       "domain": "colorfulclouds",
-      "etag_repository": "W/\"b2d666e6aa18bc8bf6b5b5cd1e13fee7fb90fe05c218ba3f6b2f7f356bb5499c\"",
+      "etag_repository": "W/\"7563f4b324bbf2a8150359e420f945a9558740d2fc6323d59b724c346e1c75a7\"",
       "last_updated": "2023-01-19T14:48:19Z",
-      "stargazers_count": 81,
+      "stargazers_count": 82,
       "topics": [
         "weather"
       ],
@@ -10366,7 +10339,7 @@
       "last_commit": "36247f2",
       "last_version": "v1.2.8",
       "manifest_name": "colorfulclouds",
-      "open_issues": 5,
+      "open_issues": 6,
       "published_tags": [
         "v1.2.8",
         "v1.2.7",
@@ -10376,7 +10349,7 @@
       ],
       "releases": true,
       "version_installed": "v1.2.8",
-      "last_fetched": 1676175640.877179
+      "last_fetched": 1678076198.105062
     },
     "237880993": {
       "repository_manifest": {
@@ -11442,9 +11415,9 @@
       "category": "integration",
       "description": "🗣️ Microsoft Edge TTS for Home Assistant, no need for app_key",
       "domain": "edge_tts",
-      "etag_repository": "W/\"4c417552c33ee2af2ee73ac48b7824e6713bc5fa5eb28871374fc15326e9e08d\"",
+      "etag_repository": "W/\"9fc2f03cd02b1a847df1a8903d641668427240ecc3644991f84e0cf10d3f678e\"",
       "last_updated": "2023-01-27T04:54:19Z",
-      "stargazers_count": 164,
+      "stargazers_count": 173,
       "topics": [
         "tts"
       ],
@@ -11454,7 +11427,7 @@
       "last_commit": "44f8d50",
       "manifest_name": "Microsoft Edge TTS",
       "open_issues": 8,
-      "last_fetched": 1676175641.558768
+      "last_fetched": 1678076198.570285
     },
     "342427139": {
       "repository_manifest": {
@@ -12500,27 +12473,6 @@
         "nissan"
       ],
       "last_fetched": 1668362247.628304
-    },
-    "199399946": {
-      "repository_manifest": {
-        "name": "Greenchoice",
-        "country": "NL",
-        "render_readme": true
-      },
-      "full_name": "jessevl/homeassistant-greenchoice",
-      "authors": [
-        "@jessevl"
-      ],
-      "category": "integration",
-      "description": "This is a Home Assistant custom component that connects to the Greenchoice API",
-      "domain": "greenchoice",
-      "etag_repository": "W/\"8e6e1f31cf93c3d0c50f0cca1069be8b8b50137dee4e4854ab695059aade6d57\"",
-      "last_updated": "2021-04-08T13:40:36Z",
-      "stargazers_count": 28,
-      "topics": [
-        "greenchoice"
-      ],
-      "last_fetched": 1668542256.17917
     },
     "187201747": {
       "repository_manifest": {},
@@ -21078,30 +21030,30 @@
       "category": "integration",
       "description": "Companion Component for node-red-contrib-home-assistant-websocket to help integrate Node-RED with Home Assistant Core",
       "domain": "nodered",
-      "etag_repository": "W/\"03bc73ca4f9e72158fa484570ce9adc460b5a02db6455c85029aa0830195eb64\"",
-      "last_updated": "2023-01-20T06:36:12Z",
-      "stargazers_count": 319,
+      "etag_repository": "W/\"62646b8a151a6727984e61917cb6eb956e05fa2d6be2479692e82d52e66bd651\"",
+      "last_updated": "2023-03-01T19:23:21Z",
+      "stargazers_count": 329,
       "topics": [
         "node-red"
       ],
       "config_flow": true,
       "default_branch": "main",
-      "installed_commit": "d4c6ad2",
+      "installed_commit": "67e8e08",
       "installed": true,
-      "last_commit": "d4c6ad2",
-      "last_version": "v1.1.2",
+      "last_commit": "67e8e08",
+      "last_version": "v1.1.3",
       "manifest_name": "Node-RED Companion",
-      "open_issues": 4,
+      "open_issues": 2,
       "published_tags": [
+        "v1.1.3",
         "v1.1.2",
         "v1.1.1",
         "v1.1.0",
-        "v1.0.9",
-        "v1.0.8"
+        "v1.0.9"
       ],
       "releases": true,
-      "version_installed": "v1.1.2",
-      "last_fetched": 1676175641.030322
+      "version_installed": "v1.1.3",
+      "last_fetched": 1678076198.80992
     },
     "253311340": {
       "repository_manifest": {
@@ -21183,7 +21135,7 @@
       "full_name": "basnijholt/lovelace-ios-dark-mode-theme",
       "category": "theme",
       "description": "🏠🤖 Theme by @basnijholt based on iOS Dark Mode for Lovelace Home Assistant ",
-      "etag_repository": "W/\"92cf934aaac1c33c025af5e866c1954e2fe3dbba9dac659c20a250745bd98bec\"",
+      "etag_repository": "W/\"3f8a84eb0454273371a089ec8f0cf436c906b047dca7664dfbf3a6f57306f95a\"",
       "last_updated": "2022-11-03T15:53:32Z",
       "stargazers_count": 401,
       "topics": [
@@ -21196,7 +21148,7 @@
       "installed": true,
       "last_commit": "2805f18",
       "open_issues": 30,
-      "last_fetched": 1676175640.668931
+      "last_fetched": 1678076198.696682
     },
     "255366214": {
       "repository_manifest": {
@@ -21270,15 +21222,15 @@
       "full_name": "basnijholt/lovelace-ios-themes",
       "category": "theme",
       "description": "❤️📱🏠🤖 Themes inspired by iOS Dark ⬛️ and Light ◻️ Mode for Lovelace Home Assistant with different backgrounds by @basnijholt",
-      "etag_repository": "W/\"befa37492dd98682582304ac849fe92034440170055eed23d71f6c811a321743\"",
+      "etag_repository": "W/\"fb5b6be5f7fd21e6ffc557c15ee88211d60ef742356c2d9f68fd88f818ce54a5\"",
       "last_updated": "2022-11-20T20:05:49Z",
-      "stargazers_count": 400,
+      "stargazers_count": 405,
       "default_branch": "master",
       "installed_commit": "30fdac5",
       "installed": true,
       "last_commit": "30fdac5",
       "last_version": "v2.11.0",
-      "open_issues": 28,
+      "open_issues": 29,
       "published_tags": [
         "v2.11.0",
         "v2.10.0",
@@ -21288,7 +21240,7 @@
       ],
       "releases": true,
       "version_installed": "v2.11.0",
-      "last_fetched": 1676175640.951459
+      "last_fetched": 1678076198.716919
     },
     "470262899": {
       "repository_manifest": {
@@ -23160,32 +23112,32 @@
       "category": "integration",
       "description": "Huawei mesh router component for Home Assistant",
       "domain": "huawei_mesh_router",
-      "downloads": 7,
-      "etag_repository": "W/\"957c6b0b63825f98f6487cca58283b811db04acb90c477615f69ae601cb30c69\"",
-      "last_updated": "2023-02-03T15:38:24Z",
-      "stargazers_count": 13,
+      "downloads": 3,
+      "etag_repository": "W/\"779c007fecba96f17dc6034f85db8d8545de12bc56fe0139e4039c582e451eac\"",
+      "last_updated": "2023-03-02T05:53:41Z",
+      "stargazers_count": 16,
       "topics": [
         "huawei-router",
         "huawei-routers"
       ],
       "config_flow": true,
       "default_branch": "master",
-      "installed_commit": "6490acc",
+      "installed_commit": "509d9ec",
       "installed": true,
-      "last_commit": "7357018",
-      "last_version": "v0.8.5",
+      "last_commit": "509d9ec",
+      "last_version": "v0.8.7",
       "manifest_name": "Huawei Mesh Router",
-      "open_issues": 3,
+      "open_issues": 2,
       "published_tags": [
+        "v0.8.7",
+        "v0.8.6",
         "v0.8.5",
         "v0.8.4.1",
-        "v0.8.4",
-        "v0.8.3",
-        "v0.8.2"
+        "v0.8.4"
       ],
       "releases": true,
-      "version_installed": "v0.8.5",
-      "last_fetched": 1676175641.360409
+      "version_installed": "v0.8.7",
+      "last_fetched": 1678076198.796079
     },
     "525954717": {
       "repository_manifest": {
@@ -24469,6 +24421,2195 @@
         "freeair-connect"
       ],
       "last_fetched": 1676219423.782793
+    },
+    "580152298": {
+      "repository_manifest": {
+        "name": "Polar",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "Aohzan/hass-polar",
+      "authors": [
+        "@Aohzan"
+      ],
+      "category": "integration",
+      "description": "Polar integration for Home Assistant",
+      "domain": "polar",
+      "etag_repository": "W/\"773ec5eb11173686c9e6a551d8e9a93da1a5afc73017d4a67f9a6188646be7b8\"",
+      "last_updated": "2023-01-01T18:06:11Z",
+      "stargazers_count": 4,
+      "topics": [
+        "home-assistant-integration",
+        "polar",
+        "polar-accesslink",
+        "polar-electro"
+      ],
+      "last_fetched": 1676305419.112668
+    },
+    "397776105": {
+      "repository_manifest": {
+        "name": "Hildebrand Glow (DCC)",
+        "render_readme": true,
+        "country": [
+          "GB"
+        ],
+        "homeassistant": "2022.12.0"
+      },
+      "new": true,
+      "full_name": "HandyHat/ha-hildebrandglow-dcc",
+      "authors": [
+        "@HandyHat"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for UK SMETS (Smart) meters pulling data from the DCC via the Hildebrand Glow API ",
+      "domain": "hildebrandglow_dcc",
+      "etag_repository": "W/\"8786cb1d5b958928bf97c8dd5f156665dc1ba7521eec79e265d7e3ad84cb542c\"",
+      "last_updated": "2023-02-13T23:03:11Z",
+      "stargazers_count": 175,
+      "topics": [
+        "electricity",
+        "electricity-consumption",
+        "energy",
+        "energy-consumption",
+        "gas",
+        "glow",
+        "hildebrand",
+        "smart-meter",
+        "smart-meters",
+        "smartmeter",
+        "smets",
+        "smets2",
+        "uk"
+      ],
+      "last_fetched": 1676305419.163081
+    },
+    "193181086": {
+      "repository_manifest": {},
+      "new": true,
+      "full_name": "apop880/White-Noise",
+      "category": "appdaemon",
+      "description": "A white noise machine for a media_player entity.",
+      "etag_repository": "W/\"bdc9bba1b7168f732b9b85a5bbfc78bb319d108457d0aedae58660b95c4f2981\"",
+      "last_updated": "2019-07-20T04:49:30Z",
+      "stargazers_count": 8,
+      "last_fetched": 1676398472.778206
+    },
+    "193186453": {
+      "repository_manifest": {},
+      "full_name": "apop880/Night-Mode",
+      "category": "appdaemon",
+      "description": "An app to set the default brightness of lights during the night.",
+      "etag_repository": "W/\"414ebabae3113d958476fa07c884a86d23668729eba0412ea7623e2b83ba9a6f\"",
+      "last_updated": "2019-07-20T04:49:39Z",
+      "stargazers_count": 8,
+      "last_fetched": 1677007153.661521
+    },
+    "197867243": {
+      "repository_manifest": {},
+      "new": true,
+      "full_name": "apop880/config-check",
+      "category": "appdaemon",
+      "description": "Check your Home Assistant configuration from the frontend, or automatically when the configuration is updated, and optionally restart HASS automatically!",
+      "etag_repository": "W/\"86faf3780c03358c15c2aaee6cdf66131e73d1e21f78b342241da0678a3365b2\"",
+      "last_updated": "2020-01-26T06:56:03Z",
+      "stargazers_count": 13,
+      "last_fetched": 1676398472.800543
+    },
+    "199884854": {
+      "repository_manifest": {
+        "name": "🏥 Healthcheck",
+        "country": "DE",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "benleb/ad-healthcheck",
+      "category": "appdaemon",
+      "description": "🏥 AppDaemon healthcheck app. Can be used as a docker-compose healthcheck.",
+      "etag_repository": "W/\"e0b1b9bea218971863e57da8c7a1c8d8f4d30f14b29efc725cb860a0bdbdb636\"",
+      "last_updated": "2020-11-01T16:19:53Z",
+      "stargazers_count": 2,
+      "topics": [
+        "healthcheck"
+      ],
+      "last_fetched": 1676398473.221966
+    },
+    "234527343": {
+      "repository_manifest": {
+        "name": "Sonos Alarm Automation"
+      },
+      "new": true,
+      "full_name": "AaronDavidSchneider/SonosAlarmAutomation",
+      "category": "appdaemon",
+      "description": "App that brings alarm snoozing to SONOS using the custom component SonosAlarm",
+      "etag_repository": "W/\"badb60db56a352ef596e69227a2b61f202dee096c6f8ea888979e24d48073300\"",
+      "last_updated": "2020-01-20T09:34:52Z",
+      "stargazers_count": 3,
+      "last_fetched": 1676398473.249017
+    },
+    "228037599": {
+      "repository_manifest": {
+        "name": "Follow Me",
+        "country": "US",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "aneisch/follow_me_appdaemon",
+      "category": "appdaemon",
+      "description": "🚶🚶AppDaemon app to loosely couple entities",
+      "etag_repository": "W/\"b1d76a8d7a26939f23b6794fe7e2ad14803b5981ce592a615e82898cc85723f0\"",
+      "last_updated": "2021-12-13T16:13:39Z",
+      "stargazers_count": 6,
+      "last_fetched": 1676398473.259038
+    },
+    "245704242": {
+      "repository_manifest": {
+        "name": "Octoblock 🐙",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "badguy99/octoblock",
+      "category": "appdaemon",
+      "description": "Octoblock is an app which works under AppDaemon within Home Assistant which finds the cheapest “n” hour block for import or the most expensive “n” hour block for export, and works out the price of that block, for the Octopus Energy, Agile Octopus / Agile Outgoing Octopus tariffs.",
+      "etag_repository": "W/\"afb59484fbf94bfdffe1869614704d9891788f44210fc6feb438564262475447\"",
+      "last_updated": "2022-12-17T15:55:59Z",
+      "stargazers_count": 19,
+      "topics": [
+        "energy",
+        "octopus",
+        "octopus-energy"
+      ],
+      "last_fetched": 1676398473.298456
+    },
+    "211308341": {
+      "repository_manifest": {
+        "name": "👩‍⚕️ EnCh - Entity Checker",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "benleb/ad-ench",
+      "category": "appdaemon",
+      "description": "👩‍⚕️🔋 AppDaemon entity check app. Currently supports battery level, unknown/unavailable states, stale entities",
+      "etag_repository": "W/\"e4f96ade6e6cafdbd1f5436780a029c043618fc3771aa78769923bc5cdd2d3dc\"",
+      "last_updated": "2021-07-24T05:43:36Z",
+      "stargazers_count": 27,
+      "topics": [
+        "assistant-entities",
+        "battery-levels",
+        "ench",
+        "entity-check",
+        "stale-entities"
+      ],
+      "last_fetched": 1676398473.303485
+    },
+    "192933458": {
+      "repository_manifest": {},
+      "new": true,
+      "full_name": "apop880/SmartThings-Button",
+      "category": "appdaemon",
+      "description": "An app to handle SmartThings buttons in Home Assistant, through ZHA or the SmartThings integration.",
+      "etag_repository": "W/\"2c27ab3da27e61d6e01b5f5890711566db6dc92e5223121b190c161c20f8d10c\"",
+      "last_updated": "2020-01-26T06:58:30Z",
+      "stargazers_count": 7,
+      "last_fetched": 1676398473.30778
+    },
+    "200470972": {
+      "repository_manifest": {
+        "name": "💡 AutoMoLi - Auto Motion Lights",
+        "country": "DE",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "benleb/ad-automoli",
+      "category": "appdaemon",
+      "description": "💡 Fully automatic light management based on conditions like motion, illuminance, humidity, and other clever features",
+      "etag_repository": "W/\"2ebf463b8938a4598f2db51ea6afbba069ff9b680f55f380e84225da7ca51db4\"",
+      "last_updated": "2022-10-05T14:08:19Z",
+      "stargazers_count": 106,
+      "topics": [
+        "auto-discovery",
+        "automoli",
+        "docker",
+        "hue",
+        "humidity",
+        "lights",
+        "motion-sensors",
+        "room",
+        "scenes"
+      ],
+      "last_fetched": 1676398473.337901
+    },
+    "226944869": {
+      "repository_manifest": {
+        "name": "Hue Dimmer Switch Deconz",
+        "country": "CH",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Burningstone91/Hue_Dimmer_Deconz",
+      "category": "appdaemon",
+      "description": "AppDaemon app for controlling a Hue Dimmer Switch integrated through Deconz",
+      "etag_repository": "W/\"6c1f513a707c69f0425149358f85cefd83f13fbdcdd341ea04d8da46c3cf9e8b\"",
+      "last_updated": "2020-11-26T17:06:24Z",
+      "stargazers_count": 21,
+      "topics": [
+        "deconz",
+        "hue-dimmer-switch"
+      ],
+      "last_fetched": 1676398477.060161
+    },
+    "194545176": {
+      "repository_manifest": {
+        "name": "Thermostats Update"
+      },
+      "new": true,
+      "full_name": "bieniu/ha-ad-thermostats-update",
+      "category": "appdaemon",
+      "description": "This app updates Z-Wave thermostats entities state and current temperature from external sensors",
+      "etag_repository": "W/\"1327abcbee9e54a9c484baa968abb163fcbee305a27d8a356374084857088eb9\"",
+      "last_updated": "2021-12-15T18:49:17Z",
+      "stargazers_count": 6,
+      "topics": [
+        "thermostat",
+        "z-wave"
+      ],
+      "last_fetched": 1676398477.086283
+    },
+    "202701988": {
+      "repository_manifest": {},
+      "new": true,
+      "full_name": "eifinger/appdaemon-deconz-xiaomi-button",
+      "category": "appdaemon",
+      "description": "Appdaemon App which toggles entities for single/double/hold presses of Xiaomi buttons connected via deconz",
+      "etag_repository": "W/\"4329393df8fc921f18caae584f1c7b4565d0a05ed228fac0d73d36f74f64445d\"",
+      "last_updated": "2019-10-13T16:48:52Z",
+      "stargazers_count": 4,
+      "last_fetched": 1676398477.111846
+    },
+    "200034955": {
+      "repository_manifest": {
+        "name": "❄️ NotiFreeze",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "benleb/ad-notifreeze",
+      "category": "appdaemon",
+      "description": "❄️ AppDaemon app which reminds to close windows if temperature difference inside/outside exceeds a specified threshold",
+      "etag_repository": "W/\"71666240355f3a79774bcd10a80fd0b55643642426483fff07fff795a688d657\"",
+      "last_updated": "2022-11-08T14:08:58Z",
+      "stargazers_count": 14,
+      "topics": [
+        "close-windows",
+        "door",
+        "notifreeze",
+        "room",
+        "temperature",
+        "temperature-difference"
+      ],
+      "last_fetched": 1676398477.336982
+    },
+    "558550898": {
+      "repository_manifest": {
+        "name": "🔥 Hive TRV Boost Mode",
+        "country": "GB",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "dwardu89/hive-trv-appdaemon",
+      "category": "appdaemon",
+      "description": "AppDaemon script for Hive's TRV Boost Mode",
+      "etag_repository": "W/\"ac9bce3fffe0fe159434ec596697e048e46f0593e56559ba1096ab6d32379710\"",
+      "last_updated": "2023-01-20T19:57:32Z",
+      "stargazers_count": 1,
+      "topics": [
+        "hive-heating",
+        "zigbee2mqtt"
+      ],
+      "last_fetched": 1676398477.48845
+    },
+    "266504072": {
+      "repository_manifest": {
+        "filename": "home_alarm.zip",
+        "hide_default_branch": true,
+        "name": "Home Alarm",
+        "render_readme": true,
+        "zip_release": true
+      },
+      "new": true,
+      "full_name": "crserran/home-alarm",
+      "category": "appdaemon",
+      "description": "Alexa & Google Home alarm integrations and notifications system for your home security.",
+      "downloads": 559,
+      "etag_repository": "W/\"03b0ee986b542b2ae79a5aa6664e8b84f10f66509a1ec96e9592ac2bd0fab75f\"",
+      "last_updated": "2023-01-29T17:50:35Z",
+      "stargazers_count": 20,
+      "topics": [
+        "alarm",
+        "alexa",
+        "googlehome",
+        "notifications"
+      ],
+      "last_fetched": 1676398477.550389
+    },
+    "242432895": {
+      "repository_manifest": {
+        "name": "Periodic lights",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "haberda/update_lights",
+      "category": "appdaemon",
+      "description": "This AppDaemon app progressively changes the brightness and color temperature of lights over the course of the day. This app also uses change thresholds to ignore lights that have been manually adjusted.",
+      "etag_repository": "W/\"d3e5a27f89b1646441d9611d4dcc48d023607415a6a185ab8cce74b64a0b847b\"",
+      "last_updated": "2021-11-14T21:48:20Z",
+      "stargazers_count": 16,
+      "topics": [
+        "appdeamon",
+        "brightness",
+        "color-temperature",
+        "lights"
+      ],
+      "last_fetched": 1676398477.851134
+    },
+    "249033464": {
+      "repository_manifest": {
+        "name": "Light automation",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "haberda/light_automation",
+      "category": "appdaemon",
+      "description": "This appdaemon app fully automates your lights, with multiple on/off times, regular service data, and constraint options.",
+      "etag_repository": "W/\"3a104fab8c37766cb90279ea7dcb08810c61ad9436e2e76e7cfb3fcf93750b97\"",
+      "last_updated": "2021-11-12T00:44:05Z",
+      "stargazers_count": 9,
+      "last_fetched": 1676398477.854826
+    },
+    "241233825": {
+      "repository_manifest": {
+        "name": "Tradfri remotes",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "haberda/tradfri_remotes",
+      "category": "appdaemon",
+      "description": "AppDaemon app to control Tradfri remotes",
+      "etag_repository": "W/\"d4539fe38a259787f154b2a9280a7bcfc07991303e3ead4140d0413e5e4435bd\"",
+      "last_updated": "2021-01-30T18:21:46Z",
+      "stargazers_count": 5,
+      "topics": [
+        "lights",
+        "tradfri",
+        "tradfri-ikea-gateway",
+        "tradfri-remotes"
+      ],
+      "last_fetched": 1676398477.895816
+    },
+    "251298857": {
+      "repository_manifest": {
+        "name": "Media Player Lights Sync",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "ericmatte/ad-media-lights-sync",
+      "category": "appdaemon",
+      "description": "💡 AppDaemon App that synchronize RGB lights with the thumbnail of a media player in Home Assistant. Be sure to ⭐️ my repo!",
+      "etag_repository": "W/\"abd8a043d7086a3ee84187fd180d0c1d6bcb18ef783168f43146b93914ecbdbd\"",
+      "last_updated": "2023-01-09T14:16:45Z",
+      "stargazers_count": 68,
+      "topics": [
+        "media-lights-sync",
+        "rgb-lights"
+      ],
+      "last_fetched": 1676398477.949657
+    },
+    "267696690": {
+      "repository_manifest": {
+        "name": "Goodnight timer",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "hechi/GoodnightT",
+      "category": "appdaemon",
+      "description": "Appdaemon script for Home-Assistant to dim light until it is off in X minutes.",
+      "etag_repository": "W/\"356d9c68a2c6ee30d01223dcf363cc123bcc94069ab54c7586f8e8f7c771f9de\"",
+      "last_updated": "2020-05-28T21:22:42Z",
+      "stargazers_count": 2,
+      "topics": [
+        "xiaomi",
+        "xiaomi-button"
+      ],
+      "last_fetched": 1676398481.01484
+    },
+    "267325736": {
+      "repository_manifest": {
+        "name": "Home Assistant entity state cache",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "jbouwh/ha-entity-cache",
+      "category": "appdaemon",
+      "description": "AppDaemon based entity cache application for Home Assistant",
+      "etag_repository": "W/\"d6d8318d13accd13331ef1f0899ddf24005d1be64e198bb8e1090bc280c199b7\"",
+      "last_updated": "2021-08-03T07:42:28Z",
+      "stargazers_count": 1,
+      "topics": [
+        "chache",
+        "helper-tool",
+        "input-select",
+        "states"
+      ],
+      "last_fetched": 1676398481.055224
+    },
+    "195525107": {
+      "repository_manifest": {},
+      "new": true,
+      "full_name": "ludeeus/ad-watchdog",
+      "category": "appdaemon",
+      "description": "Watchdog App for AppDaemon.",
+      "etag_repository": "W/\"eea62176f49f9a064acfca22a9f1a77c22e3691480f26ad96dcb8e1ef43998be\"",
+      "last_updated": "2019-07-07T13:01:58Z",
+      "stargazers_count": 4,
+      "last_fetched": 1676398481.390135
+    },
+    "230623251": {
+      "repository_manifest": {
+        "name": "EUROTRONIC TRV Valve position helper",
+        "render_readme": true,
+        "homeassistant": "0.103.0"
+      },
+      "new": true,
+      "full_name": "jmarsik/ad-eurotronic-trv-valvepos",
+      "category": "appdaemon",
+      "description": "EUROTRONIC TRV Valve position helper is an AppDaemon app that allows access to valve position (%) value from Z-Wave TRVs in Home Assistant",
+      "etag_repository": "W/\"0e4c9cb3520b0db9447d6544d8752185cb3f4d09a0061c342fc1ad0f6c5c5d13\"",
+      "last_updated": "2020-05-02T11:29:39Z",
+      "stargazers_count": 4,
+      "topics": [
+        "eurotronic",
+        "trv",
+        "zwave"
+      ],
+      "last_fetched": 1676398481.395968
+    },
+    "338827116": {
+      "repository_manifest": {
+        "name": "appdaemon-climate"
+      },
+      "new": true,
+      "full_name": "kprestel/appdaemon-climate",
+      "category": "appdaemon",
+      "description": "appdaemon app to control your home's climate",
+      "etag_repository": "W/\"02db2ff8fb6815d7b6818f57b3cea53ecda40a35f6ac03a070028d685671ac89\"",
+      "last_updated": "2022-07-17T13:55:31Z",
+      "stargazers_count": 8,
+      "last_fetched": 1676398481.471633
+    },
+    "445477700": {
+      "repository_manifest": {
+        "name": "NSPanel Lovelace UI Backend"
+      },
+      "new": true,
+      "full_name": "joBr99/nspanel-lovelace-ui",
+      "category": "appdaemon",
+      "description": "Custom Firmware for NsPanel with the design of HomeAssistant's lovelace UI in mind, works with Tasmota.",
+      "etag_repository": "W/\"c15ec8260e06e443cc318bd762e83f7d9bd2d80265257faf231d0e45f7f0d40f\"",
+      "last_updated": "2023-02-14T22:03:15Z",
+      "stargazers_count": 564,
+      "topics": [
+        "appdeamon",
+        "iobroker",
+        "mqtt",
+        "nspanel",
+        "sonoff",
+        "tasmota"
+      ],
+      "last_fetched": 1676398481.499694
+    },
+    "302770368": {
+      "repository_manifest": {
+        "name": "Ring Doorbell Automations",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "nickneos/Appdaemon-Ring-Doorbell-Automations",
+      "category": "appdaemon",
+      "description": "Trigger automations when a Ring Doorbell button is pressed",
+      "etag_repository": "W/\"8e3d9356e231106d5de5b228e7aeb0823860a5ee6093bffabbc1b59a547baee4\"",
+      "last_updated": "2020-10-10T05:46:26Z",
+      "stargazers_count": 2,
+      "topics": [
+        "ring"
+      ],
+      "last_fetched": 1676398481.764175
+    },
+    "231832381": {
+      "repository_manifest": {
+        "name": "Replay lights history",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "Mohlsson/ReplayLightsHistory",
+      "category": "appdaemon",
+      "description": "AppDaemon App for Home Assistant to replay light switch history when no one is home.",
+      "etag_repository": "W/\"d9801f7287b0244d2d14ace593607b6430bc953b2d2366d45f9a6700a7d2d655\"",
+      "last_updated": "2022-10-15T21:35:55Z",
+      "stargazers_count": 25,
+      "topics": [
+        "lights",
+        "replay",
+        "vacation"
+      ],
+      "last_fetched": 1676398481.815481
+    },
+    "566038918": {
+      "repository_manifest": {
+        "name": "EnergiaPro gas consumption",
+        "content_in_root": true,
+        "country": [
+          "CH"
+        ],
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "madchap/energiapro_gas_consumption",
+      "category": "appdaemon",
+      "description": "HACS AppDaemon to get daily gas readings from EnergiaPro customer portal (CH)",
+      "etag_repository": "W/\"7cb9a725bbd2b1cd6ae373ca09d69874840944bf79433b666c355307fab67657\"",
+      "last_updated": "2023-01-04T23:00:48Z",
+      "stargazers_count": 2,
+      "topics": [
+        "energiapro"
+      ],
+      "last_fetched": 1676398481.824339
+    },
+    "369204881": {
+      "repository_manifest": {
+        "name": "Omnik Data Logger (using portal or direct logging)"
+      },
+      "new": true,
+      "full_name": "jbouwh/omnikdatalogger",
+      "category": "appdaemon",
+      "description": "Datalogger for Omnik solar power inverters with DSMR integration  and output to Home Assistant, PVOUTPUT, InfluxDB and MQTT",
+      "etag_repository": "W/\"90b3428688e660c1934010f01c2b6e54963c424ae7dd0852019c78530669d48c\"",
+      "last_updated": "2022-09-09T07:44:02Z",
+      "stargazers_count": 8,
+      "topics": [
+        "automation",
+        "dsmr-reader",
+        "influxdb",
+        "mqtt",
+        "mqtt-smarthome",
+        "pvoutput",
+        "solar-energy",
+        "solarman",
+        "solarmanpv"
+      ],
+      "last_fetched": 1676398482.052431
+    },
+    "293521853": {
+      "repository_manifest": {
+        "name": "Hue Dimmer Switch ZHA",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "nickneos/Appdaemon-ZHA-Hue-Dimmer-Switch",
+      "category": "appdaemon",
+      "description": "Customize the buttons on a ZHA controlled Hue Dimmer Switch",
+      "etag_repository": "W/\"0a4468db09dd1a45d4380e72f221e1d5a0d0fa94e958c2b7f751ad684a22cb60\"",
+      "last_updated": "2021-07-18T13:23:58Z",
+      "stargazers_count": 5,
+      "topics": [
+        "dimmer",
+        "hue"
+      ],
+      "last_fetched": 1676398484.946078
+    },
+    "234713855": {
+      "repository_manifest": {
+        "name": "Bring Back group.all_x",
+        "homeassistant": "0.104.0",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "nickneos/Bring-Back-group.all_x",
+      "category": "appdaemon",
+      "description": "Brings back group.all_* for desired domains (light, device_tracker, etc)",
+      "etag_repository": "W/\"503a31d32cb9f99e4fa644cf0c0aa3e682419c78bf703ab7fa629ab3d319ff9e\"",
+      "last_updated": "2022-11-28T18:42:57Z",
+      "stargazers_count": 7,
+      "topics": [
+        "group"
+      ],
+      "last_fetched": 1676398484.953782
+    },
+    "560310393": {
+      "repository_manifest": {
+        "name": "Calremind"
+      },
+      "new": true,
+      "full_name": "nra4ever/calremind",
+      "category": "appdaemon",
+      "description": "Reminder system to process and display upcoming HA calendar events",
+      "etag_repository": "W/\"fe89ab4340ff9ceeccffd804f8386eb1bf0638da8ebfa9309a239f4088096ab9\"",
+      "last_updated": "2022-11-21T18:23:05Z",
+      "last_fetched": 1676398485.359576
+    },
+    "188970295": {
+      "repository_manifest": {
+        "name": "Monitor-App",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Odianosen25/Monitor-App",
+      "category": "appdaemon",
+      "description": "Appdaemon App for Andrew's Monitor Presence Detection System",
+      "etag_repository": "W/\"659f4e752af51459335c739687efb602974220d1cb6db2a62f69fef511edf56d\"",
+      "last_updated": "2021-11-28T08:47:23Z",
+      "stargazers_count": 66,
+      "last_fetched": 1676398485.364938
+    },
+    "331696949": {
+      "repository_manifest": {
+        "name": "Spotify Mood Lights Sync",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "NiklasReiche/ad-spotify-mood-lights-sync",
+      "category": "appdaemon",
+      "description": "AppDaemon app that synchronizes rgb lights to the mood of the currently playing spotify song in Home Assistant.",
+      "etag_repository": "W/\"faf349b6f0768ac8cabc87548170382175e69d858f704b37b1d15b4d827fc31f\"",
+      "last_updated": "2022-03-17T20:45:59Z",
+      "stargazers_count": 21,
+      "topics": [
+        "rgb-lights",
+        "spotify"
+      ],
+      "last_fetched": 1676398485.383498
+    },
+    "236119263": {
+      "repository_manifest": {
+        "name": "Convert Media Player Volume",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_convert_media_volume",
+      "category": "appdaemon",
+      "description": "Appdaemon App that converts Home Assistants volume into a sensor that matches your devices volume.",
+      "etag_repository": "W/\"31d7a18ca23c597682134a27b8a04f2aee0a1556e886c9f6b286d0ca0a7bb85e\"",
+      "last_updated": "2020-01-25T03:41:16Z",
+      "stargazers_count": 3,
+      "last_fetched": 1676398485.441384
+    },
+    "262373887": {
+      "repository_manifest": {
+        "name": "Count Domain Entities",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_count_entities",
+      "category": "appdaemon",
+      "description": "Creates sensors that count the number of entities in a specific domain.",
+      "etag_repository": "W/\"ceaf2480377d70d9970d5fbb6e161c5b7d103a3d32e9a8d6ab2b44a9ddec30e0\"",
+      "last_updated": "2020-05-08T19:15:33Z",
+      "last_fetched": 1676398485.46643
+    },
+    "234938282": {
+      "repository_manifest": {
+        "name": "Add Domain Group (group.all_*)",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_group_all",
+      "category": "appdaemon",
+      "description": "Adds all legacy group.all_* groups that were removed in Home Asisstant 0.104.",
+      "etag_repository": "W/\"e58ee3117cf8e936372c61d7a5fe9cd9a68111bdfe6146f52e0519094c0c0147\"",
+      "last_updated": "2020-10-02T05:30:09Z",
+      "stargazers_count": 15,
+      "last_fetched": 1676398485.718551
+    },
+    "233418481": {
+      "repository_manifest": {
+        "name": "Event Monitor",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_monitor_events",
+      "category": "appdaemon",
+      "description": "Appdaemon app to monitor events.",
+      "etag_repository": "W/\"94915d1138e727f4743ffd316b9b3bdd151bf1032131f82ffab5ddb9f134ccb4\"",
+      "last_updated": "2020-01-15T02:55:20Z",
+      "stargazers_count": 3,
+      "last_fetched": 1676398485.83464
+    },
+    "234210346": {
+      "repository_manifest": {
+        "name": "People Tracker",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_people_tracker",
+      "category": "appdaemon",
+      "description": "Deprecated - Tracks the number of people at home",
+      "etag_repository": "W/\"e2b1fc63e0668c230cc56f38bdd55b2cd17aa7875038ddeafefb67e335c32816\"",
+      "last_updated": "2022-02-13T15:26:53Z",
+      "stargazers_count": 6,
+      "topics": [
+        "archived",
+        "deprecated",
+        "obsolete"
+      ],
+      "last_fetched": 1676398485.837935
+    },
+    "237800470": {
+      "repository_manifest": {
+        "name": "Seasonal Lights",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_seasonal_lights",
+      "category": "appdaemon",
+      "description": "Creates a binary_sensor that represents a season between 2 dates.  Turns on/off entities at specific times inside the season.",
+      "etag_repository": "W/\"71cfcb81f6ab025190ada580da7669a357a22d0d62525f83504ef86a530bf102\"",
+      "last_updated": "2020-02-02T17:22:35Z",
+      "stargazers_count": 2,
+      "last_fetched": 1676398488.920419
+    },
+    "237294804": {
+      "repository_manifest": {
+        "name": "Simple Door Bell Automation",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_simple_door_bell",
+      "category": "appdaemon",
+      "description": "Doorbell automation that notifies you and announces via TTS",
+      "etag_repository": "W/\"9e4c7345d4613b7c2b20ff92cd5b386b3ad93bac93790e4d2e5a338680ea4120\"",
+      "last_updated": "2020-01-30T22:00:02Z",
+      "stargazers_count": 2,
+      "last_fetched": 1676398488.970783
+    },
+    "237328349": {
+      "repository_manifest": {
+        "name": "Lights On at Sundown Automation",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_sunset_lights",
+      "category": "appdaemon",
+      "description": "Automation to turn lights on at sunset",
+      "etag_repository": "W/\"7e68bfa6c12de25e520be42d70475fc27bcfbed9ba7e4d68d47bd551c7671700\"",
+      "last_updated": "2020-01-31T00:34:20Z",
+      "stargazers_count": 2,
+      "last_fetched": 1676398489.363589
+    },
+    "236656081": {
+      "repository_manifest": {
+        "name": "Who Used the Door?",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_who_used_the_door",
+      "category": "appdaemon",
+      "description": "An Appdaemon automation that creates useful door sensors and door notifications.",
+      "etag_repository": "W/\"d7a1451161421a1c9bf7c2cd426091bfedb8d8392fb609dfb4cdb9708af17e5c\"",
+      "last_updated": "2020-02-14T01:18:46Z",
+      "stargazers_count": 2,
+      "last_fetched": 1676398489.37708
+    },
+    "237324626": {
+      "repository_manifest": {
+        "name": "Toggle Light Automation",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/ad_toggle_light",
+      "category": "appdaemon",
+      "description": "Simply toggles a light based on another light.",
+      "etag_repository": "W/\"9dc769ad3621711341162616513fdcd010fae7f11e032a05b41fbb58951ea3ad\"",
+      "last_updated": "2020-01-31T00:54:10Z",
+      "stargazers_count": 8,
+      "last_fetched": 1676398489.439298
+    },
+    "233389688": {
+      "repository_manifest": {
+        "name": "Illuminate Door",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "Petro31/IlluminateDoor",
+      "category": "appdaemon",
+      "description": "Appdaemon App to Illuminate a door entrance when the door has opened.",
+      "etag_repository": "W/\"dbe0835f57a5dfcdba6d9c2954f9a3ea3d1236186e7793b1591ec8687fd69fa4\"",
+      "last_updated": "2020-01-30T22:22:45Z",
+      "stargazers_count": 2,
+      "last_fetched": 1676398489.615362
+    },
+    "354149479": {
+      "repository_manifest": {
+        "name": "AppDaemon Client for Qolsys",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "roopesh/ad-qolsys",
+      "category": "appdaemon",
+      "description": "AppDaemon app for Qolsys IQ Panel 2",
+      "etag_repository": "W/\"bb79dba64b70cfc1f0301c773b1db229d3252bbd2520bafdf935fda2e1ec5083\"",
+      "last_updated": "2022-05-16T20:36:31Z",
+      "stargazers_count": 18,
+      "topics": [
+        "alarm",
+        "alarm-control",
+        "alarm-control-panel",
+        "alarm-panel",
+        "qolsys"
+      ],
+      "last_fetched": 1676398489.700847
+    },
+    "260599208": {
+      "repository_manifest": {
+        "name": "accu_weather",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/accu_allergies",
+      "category": "appdaemon",
+      "description": "HA allergy sensors from AccuWeather",
+      "etag_repository": "W/\"484b85dc231ca92dc79ffcee6c25429b07de463d2309201a28c65fa27d91985f\"",
+      "last_updated": "2022-04-24T22:12:23Z",
+      "stargazers_count": 13,
+      "topics": [
+        "accuweather",
+        "accuweather-allergies",
+        "allergies-information"
+      ],
+      "last_fetched": 1676398489.730286
+    },
+    "262519869": {
+      "repository_manifest": {
+        "name": "act_garbage",
+        "country": "AU",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/act_garbage",
+      "category": "appdaemon",
+      "description": "HA Sensors for the ACT next bin pickup date information for suburbs",
+      "etag_repository": "W/\"338dbe7c6dc70ec34c15161f37402b3d3f2347db29b2689e099dbdaf6e99eabc\"",
+      "last_updated": "2020-05-26T22:01:45Z",
+      "stargazers_count": 3,
+      "topics": [
+        "creates-sensors",
+        "entity",
+        "garbage",
+        "suburb"
+      ],
+      "last_fetched": 1676398489.798681
+    },
+    "288827256": {
+      "repository_manifest": {
+        "name": "asx_portfolio",
+        "country": "AU",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/asx_portfolio",
+      "category": "appdaemon",
+      "description": "HA sensor for a set of ASX stocks and the number you own",
+      "etag_repository": "W/\"ca7b5facf38b71c1c1a10d6e96ba964e12894af494af91606427ecd0723719e4\"",
+      "last_updated": "2020-08-20T22:01:31Z",
+      "stargazers_count": 1,
+      "topics": [
+        "asx",
+        "asx-portfolio"
+      ],
+      "last_fetched": 1676398489.896638
+    },
+    "287476555": {
+      "repository_manifest": {
+        "name": "asx_sensor",
+        "country": "AU",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/asx_sensor",
+      "category": "appdaemon",
+      "description": "get ASX information in home assistant",
+      "etag_repository": "W/\"fb4e22e81e8a28deefeff8721d28a87377591eae5c22d4472b03aafbfb6d0ff7\"",
+      "last_updated": "2021-01-23T06:11:34Z",
+      "stargazers_count": 3,
+      "topics": [
+        "asx",
+        "asx-sensor"
+      ],
+      "last_fetched": 1676398493.125392
+    },
+    "230346810": {
+      "repository_manifest": {
+        "name": "Clean-GTFS"
+      },
+      "new": true,
+      "full_name": "simonhq/Clean-GTFS",
+      "category": "appdaemon",
+      "description": "An appdaemon app for cleaning up a GTFS database for use in Home Assistant",
+      "etag_repository": "W/\"6c307b6684e6c6aafa15d2e2ae3c1ea8e38a0064d16a60941f05d462a3791a17\"",
+      "last_updated": "2020-10-14T19:47:34Z",
+      "stargazers_count": 3,
+      "topics": [
+        "gtfs",
+        "gtfs-database"
+      ],
+      "last_fetched": 1676398493.279461
+    },
+    "233937451": {
+      "repository_manifest": {
+        "name": "canberradams",
+        "country": "AU",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/canberradams",
+      "category": "appdaemon",
+      "description": "A Home Assistant Appdaemon app for creating a sensor with the ACT Dam level information",
+      "etag_repository": "W/\"4d3adbb5ea0ade5400a518f21a82f740c16d5db7144c3521c1b20524fbbf5cc3\"",
+      "last_updated": "2020-08-31T07:00:34Z",
+      "topics": [
+        "creates-sensors",
+        "dam",
+        "entity"
+      ],
+      "last_fetched": 1676398493.326215
+    },
+    "262440646": {
+      "repository_manifest": {
+        "name": "snowydams",
+        "country": "AU",
+        "render_readme": "True"
+      },
+      "new": true,
+      "full_name": "simonhq/snowydams",
+      "category": "appdaemon",
+      "description": "HA Appdaemon app for the levels in the Snowy Hydro reservoirs",
+      "etag_repository": "W/\"51ed0324a6d398c3316fb9c1496d71d01c2569926d32266543740c67ce3a2e7a\"",
+      "last_updated": "2020-05-23T07:48:43Z",
+      "topics": [
+        "creates-sensors",
+        "entity",
+        "snowy-dams",
+        "snowy-hydro-reservoirs"
+      ],
+      "last_fetched": 1676398493.400176
+    },
+    "258680733": {
+      "repository_manifest": {
+        "name": "Alexa (& Friends) Doorbell 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-alexadoorbell",
+      "category": "appdaemon",
+      "description": "Notify your home, and greet your guests on arrival with your Smart Speaker. Please :star: if you like this app :)",
+      "etag_repository": "W/\"bb43f1f413d116905b481240f2c36587ec414b2c470846928ed42161bca28903\"",
+      "last_updated": "2020-06-01T16:54:27Z",
+      "stargazers_count": 12,
+      "topics": [
+        "alexa",
+        "alexa-media-player",
+        "alexa-voice-service",
+        "amazon-alexa",
+        "apps",
+        "assistant",
+        "doorbell",
+        "greeting"
+      ],
+      "last_fetched": 1676398493.431079
+    },
+    "258980164": {
+      "repository_manifest": {
+        "name": "Alexa (& Friends) Talking Thermostat 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-alexasmarttalkingthermostat",
+      "category": "appdaemon",
+      "description": "Set temp limits, enforce fan modes, door/window and daily shut-off, and air cycling makes your thermostat a genius with a voice using your Smart Speaker! Please :star: if you like the app :)",
+      "etag_repository": "W/\"37bca95ae8ca18670cb8e1a8168049eb4744cbac114c32b595a8c4e24025ab6f\"",
+      "last_updated": "2020-08-18T20:55:19Z",
+      "stargazers_count": 11,
+      "topics": [
+        "alexa",
+        "alexa-media-player",
+        "alexa-voice-service",
+        "amazon-alexa",
+        "cooling",
+        "heating",
+        "hvac",
+        "hvac-control",
+        "temperature",
+        "thermostat"
+      ],
+      "last_fetched": 1676398493.833326
+    },
+    "225791156": {
+      "repository_manifest": {
+        "name": "Alexa (& Friends) Reminders & Talking Clock 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-alexatalkingclock",
+      "category": "appdaemon",
+      "description": "Alexa (or other Smart Speakers) tell you the time without asking every hour. Please ⭐️if you like my app :)",
+      "etag_repository": "W/\"ad18eb699e6aa15fe30c88e3834094718f70c36dc85bdf7ea07625aa14758269\"",
+      "last_updated": "2020-07-19T20:48:45Z",
+      "stargazers_count": 34,
+      "topics": [
+        "alexa",
+        "alexa-media-player",
+        "alexa-voice-service",
+        "amazon-alexa",
+        "apps",
+        "assistant",
+        "time",
+        "time-tracker"
+      ],
+      "last_fetched": 1676398493.8515
+    },
+    "258858024": {
+      "repository_manifest": {
+        "name": "Alexa (& Friends) Door Announce 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-alexadoorwindowannounce",
+      "category": "appdaemon",
+      "description": "Announce your doors/windows opening and closing through your Smart Speaker. Handy for garage/side/main exits for homes and shops. Please :star: if you like this app :)",
+      "etag_repository": "W/\"4be5cbd1045d40807d969873dc71ada060e1a005cea2724f74d0c04c40986779\"",
+      "last_updated": "2021-03-11T22:21:18Z",
+      "stargazers_count": 6,
+      "topics": [
+        "alexa",
+        "alexa-media-player",
+        "alexa-voice-service",
+        "amazon-alexa",
+        "apps",
+        "assistant",
+        "doorbell",
+        "python3"
+      ],
+      "last_fetched": 1676398493.885195
+    },
+    "267943249": {
+      "repository_manifest": {
+        "name": "Auto 'Fan Speed' Controller 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-autofanspeed",
+      "category": "appdaemon",
+      "description": "Automatically control a room fan's speed based on a temperature sensor. Please :star: if you like this app :)",
+      "etag_repository": "W/\"ff050dcda2be9698f01e2ac9b1dc6007c7c91ccb26218275dca368c1976cad24\"",
+      "last_updated": "2022-06-02T14:54:48Z",
+      "stargazers_count": 16,
+      "topics": [
+        "apps",
+        "assistant",
+        "automated",
+        "automation",
+        "fan",
+        "fan-speed",
+        "fan-speed-control",
+        "sunrise"
+      ],
+      "last_fetched": 1676398493.891296
+    },
+    "259132481": {
+      "repository_manifest": {
+        "name": "Auto 'Crappy Internet' Rebooter :rocket:",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-autointernetrebooter",
+      "category": "appdaemon",
+      "description": "Automatically reboot your crappy internet if you have a zwave, zigbee, or bluetooth switch/socket powering your internet modem. Please :star: if you like this app :)",
+      "etag_repository": "W/\"9215a60e7233ef4b2faef96e718d880ccdfd7fa9dee12bf0f77d18454fabf604\"",
+      "last_updated": "2022-09-21T02:31:05Z",
+      "stargazers_count": 7,
+      "topics": [
+        "alexa-media-player",
+        "amazon-alexa",
+        "apps",
+        "fibaro",
+        "internet",
+        "modem",
+        "router",
+        "smartthings",
+        "speedtest",
+        "speedtest-net",
+        "vera",
+        "wink"
+      ],
+      "last_fetched": 1676398493.900105
+    },
+    "284749777": {
+      "repository_manifest": {
+        "name": "Aqara Motion Sensors",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "wernerhp/ha.appdaemon.aqara_motion_sensors",
+      "category": "appdaemon",
+      "description": "An AppDaemon app to reset Xiaomi Aqara motion sensors after a given timeout.",
+      "etag_repository": "W/\"8b8005bf11af8a31e9fcdf0718029ee0133e67e0479c8f32752b8ff5411a84dc\"",
+      "last_updated": "2022-05-13T11:39:14Z",
+      "stargazers_count": 33,
+      "last_fetched": 1676398497.486783
+    },
+    "282440474": {
+      "repository_manifest": {
+        "name": "Wasp in a Box",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "wernerhp/ha.appdaemon.wasp",
+      "category": "appdaemon",
+      "description": "An AppDaemon app for detecting occupancy using door and motions sensors.",
+      "etag_repository": "W/\"b564a0121844751aa453929a2230251826610bc516b9bc5180a283a6f81d79d7\"",
+      "last_updated": "2020-08-22T11:49:19Z",
+      "stargazers_count": 30,
+      "last_fetched": 1676398497.489873
+    },
+    "288563520": {
+      "repository_manifest": {
+        "name": "Calendar TV Reminders 🐔",
+        "content_in_root": "false",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "UbhiTS/ad-calendartvreminders",
+      "category": "appdaemon",
+      "description": "Your TV notifies you of the next upcoming event from you calendar every time it turns on. Please :star: my repo if you like like the app, it will encourage me a lot. ",
+      "etag_repository": "W/\"93380db395513a404060a4b03758f5f2827fce216d1e30ddae61db70f835dcac\"",
+      "last_updated": "2020-08-18T22:31:49Z",
+      "stargazers_count": 6,
+      "topics": [
+        "google",
+        "google-calendar",
+        "google-calendar-api",
+        "lg",
+        "smart-tv",
+        "smarttv",
+        "webos"
+      ],
+      "last_fetched": 1676398497.513169
+    },
+    "234988006": {
+      "repository_manifest": {
+        "name": "NetHassmo",
+        "render_readme": "true"
+      },
+      "new": true,
+      "full_name": "vash3d/nethassmo",
+      "category": "appdaemon",
+      "description": "Automate Welcome Camera presence and monitoring.",
+      "etag_repository": "W/\"6d97f7b17c3cfca12b8f094b583a5b60fad31bff6f5f11091652922eb8c21d69\"",
+      "last_updated": "2022-01-07T15:20:40Z",
+      "stargazers_count": 1,
+      "last_fetched": 1676398497.531351
+    },
+    "432938956": {
+      "repository_manifest": {
+        "name": "Qolsys Gateway"
+      },
+      "new": true,
+      "full_name": "XaF/qolsysgw",
+      "category": "appdaemon",
+      "description": "Qolsys IQ Panel 2+ gateway to an Home Assistant Alarm Control Panel",
+      "etag_repository": "W/\"dd71e1f695400e9d035d59fb3ed3e4214cb8670c8c1db16f1d895c4c2cc071fe\"",
+      "last_updated": "2023-01-31T17:03:39Z",
+      "stargazers_count": 40,
+      "topics": [
+        "automation",
+        "qolsys"
+      ],
+      "last_fetched": 1676398497.928586
+    },
+    "222056780": {
+      "repository_manifest": {
+        "filename": "controllerx.zip",
+        "hide_default_branch": true,
+        "name": "🎮 ControllerX",
+        "render_readme": true,
+        "zip_release": true
+      },
+      "new": true,
+      "full_name": "xaviml/controllerx",
+      "category": "appdaemon",
+      "description": "Create controller-based automations with ease to control your home devices and scenes.",
+      "downloads": 2119,
+      "etag_repository": "W/\"f3c3341ae85af0b951d7cba7913e830205ebb039cd2ef84d2cc3f3a9eeaf8a2b\"",
+      "last_updated": "2023-02-14T12:07:04Z",
+      "stargazers_count": 268,
+      "topics": [
+        "automation",
+        "color-lights",
+        "controller",
+        "covers",
+        "ikea",
+        "light",
+        "remote",
+        "switch"
+      ],
+      "last_fetched": 1676398498.550782
+    },
+    "582955421": {
+      "repository_manifest": {
+        "name": "SmartEVSE",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "dingo35/ha-SmartEVSEv3",
+      "authors": [
+        "@dingo35"
+      ],
+      "category": "integration",
+      "description": "Integrate SmartEVSEv3 with HomeAssistant through custom component ",
+      "domain": "smartevse",
+      "etag_repository": "W/\"bee154f4fe54c431e86e6b0dc702d3d6cfcec19be82f6740ca00db17264da28d\"",
+      "last_updated": "2023-02-15T21:07:00Z",
+      "stargazers_count": 5,
+      "topics": [
+        "evse"
+      ],
+      "last_fetched": 1676478940.86216
+    },
+    "585709486": {
+      "repository_manifest": {
+        "name": "Remeha Home",
+        "homeassistant": "2022.12.0",
+        "render_readme": true,
+        "country": "NL"
+      },
+      "new": true,
+      "full_name": "msvisser/remeha_home",
+      "authors": [
+        "@msvisser"
+      ],
+      "category": "integration",
+      "description": "Remeha Home integration for Home Assistant",
+      "domain": "remeha_home",
+      "etag_repository": "W/\"4f2ca20009b834868e0ace7b5d494d3a4f911facd04d999eb883b56e658ebcd0\"",
+      "last_updated": "2023-02-10T10:49:37Z",
+      "stargazers_count": 13,
+      "topics": [
+        "home-assistant-component",
+        "home-assistant-integration",
+        "remeha",
+        "remeha-home"
+      ],
+      "last_fetched": 1676478940.893962
+    },
+    "587057164": {
+      "repository_manifest": {
+        "name": "Magic Home Party Card",
+        "filename": "magic-home-party-card.js",
+        "homeassistant": "2022.11.0",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "kizza/magic-home-party-card",
+      "category": "plugin",
+      "description": "A Home Assistant custom card for managing Magic Home lighting effects",
+      "downloads": 20,
+      "etag_repository": "W/\"896559fb033ecf46d4226ad9037cbc2613577c50a156cc367fdf2e6f008f0b0b\"",
+      "last_updated": "2023-01-16T08:19:14Z",
+      "topics": [
+        "magic-home"
+      ],
+      "last_fetched": 1676787692.065752
+    },
+    "577071460": {
+      "repository_manifest": {
+        "name": "pH meter",
+        "content_in_root": true,
+        "filename": "ph_meter.js",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "madmicio/ph-meter-temperature",
+      "category": "plugin",
+      "description": "Ph meter, temperature, tds, ec cl & salinity for fish tank and swimming pool",
+      "etag_repository": "W/\"ba664f822ba7a8cbc76366b564d5448c9b96c9724b63e867885136e9f1788945\"",
+      "last_updated": "2023-02-02T12:38:56Z",
+      "stargazers_count": 3,
+      "topics": [
+        "ph-meter"
+      ],
+      "last_fetched": 1676787692.195806
+    },
+    "590806135": {
+      "repository_manifest": {
+        "name": "Home Assistant Registry",
+        "hacs": "1.6.0",
+        "homeassistant": "2023.1.0",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "amosyuen/ha-registry",
+      "authors": [
+        "@amosyuen"
+      ],
+      "category": "integration",
+      "description": "Adds services for home assistant registry operations",
+      "domain": "ha_registry",
+      "etag_repository": "W/\"036a6aac468bbd91534cc9644d6ababdce6f974b921e42399388df83e20aaef2\"",
+      "last_updated": "2023-02-16T16:46:31Z",
+      "stargazers_count": 1,
+      "topics": [
+        "homeassistant-custom-component"
+      ],
+      "last_fetched": 1676787692.646812
+    },
+    "582464471": {
+      "repository_manifest": {
+        "name": "OralB_ble",
+        "homeassistant": "2022.11.0"
+      },
+      "new": true,
+      "full_name": "bkbilly/oralb_ble",
+      "authors": [
+        "@bkbilly"
+      ],
+      "category": "integration",
+      "description": "Integrates OralB Bluetooth Toothbrushes",
+      "domain": "oralb_ble",
+      "etag_repository": "W/\"c3f5ca7da667c7d48055e757dbeb887636b3b5a54e002eda6a1402ba281c21fd\"",
+      "last_updated": "2023-01-06T07:45:15Z",
+      "topics": [
+        "bluetooth",
+        "oralb"
+      ],
+      "last_fetched": 1676787692.73882
+    },
+    "124688531": {
+      "repository_manifest": {
+        "name": "UPnP Availability",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "rytilahti/homeassistant-upnp-availability",
+      "authors": [
+        "@rytilahti"
+      ],
+      "category": "integration",
+      "description": "UPnP Availability sensor for Home Assistant",
+      "domain": "upnp_availability",
+      "etag_repository": "W/\"30e9b6a780efe91f08c8d6cb48d37265d89262a4e9107b4a0c950bc595500f34\"",
+      "last_updated": "2023-02-19T13:43:49Z",
+      "stargazers_count": 14,
+      "topics": [
+        "ssdp",
+        "upnp"
+      ],
+      "last_fetched": 1676787692.785528
+    },
+    "589430688": {
+      "repository_manifest": {
+        "name": "GNE PV Monitoring",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "gne_pv_monitoring.zip"
+      },
+      "new": true,
+      "full_name": "PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring",
+      "authors": [
+        "@PiotrMachowski"
+      ],
+      "category": "integration",
+      "description": "This sensor uses official API to get data from GNE",
+      "domain": "gne_pv_monitoring",
+      "downloads": 3,
+      "etag_repository": "W/\"e9b0dee7ef9d119e6aa281de62b4ac41283fec59f6b043ea5ddceb32a6f09456\"",
+      "last_updated": "2023-02-19T11:35:39Z",
+      "topics": [
+        "gne",
+        "photovoltaic"
+      ],
+      "last_fetched": 1676787692.816047
+    },
+    "587122619": {
+      "repository_manifest": {
+        "name": "Carrier Infinity Thermostat",
+        "render_readme": true,
+        "country": [
+          "US"
+        ],
+        "homeassistant": "2022.01.0b0"
+      },
+      "new": true,
+      "full_name": "dahlb/ha_carrier",
+      "authors": [
+        "@dahlb"
+      ],
+      "category": "integration",
+      "description": "Carrier Infinity Integration for Home Assistant",
+      "domain": "ha_carrier",
+      "etag_repository": "W/\"c3242b8e781067191cce810166a9f1c253ab07e51af1820c8c8b453ccdfdaa43\"",
+      "last_updated": "2023-02-12T19:08:43Z",
+      "stargazers_count": 1,
+      "topics": [
+        "carrier-integration"
+      ],
+      "last_fetched": 1676787692.925757
+    },
+    "445977563": {
+      "repository_manifest": {
+        "name": "Plum ecoMAX boiler controller integration",
+        "homeassistant": "2023.2.0"
+      },
+      "new": true,
+      "full_name": "denpamusic/homeassistant-plum-ecomax",
+      "authors": [
+        "@denpamusic"
+      ],
+      "category": "integration",
+      "description": "Plum ecoMAX boiler controller integration for Home Assistant.",
+      "domain": "plum_ecomax",
+      "etag_repository": "W/\"b9fa066b30e6435fd0e0da8076f1eba15002de4ea27b907b5a8ea32b770a6f1f\"",
+      "last_updated": "2023-02-17T23:46:12Z",
+      "stargazers_count": 13,
+      "topics": [
+        "ecomax",
+        "econet",
+        "heating-controller",
+        "heating-monitoring",
+        "python3"
+      ],
+      "last_fetched": 1676787692.9421
+    },
+    "533014913": {
+      "repository_manifest": {
+        "name": "EV Smart Charging",
+        "homeassistant": "2022.7.0",
+        "zip_release": true,
+        "filename": "ev_smart_charging.zip",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "jonasbkarlsson/ev_smart_charging",
+      "authors": [
+        "@jonasbkarlsson"
+      ],
+      "category": "integration",
+      "description": "Electric vehicle smart charging for Home Assistant.",
+      "domain": "ev_smart_charging",
+      "downloads": 228,
+      "etag_repository": "W/\"31d22b4a04056d23d35811cf58acefb30c6043941858012621acec3e23015bea\"",
+      "last_updated": "2023-02-19T08:08:28Z",
+      "stargazers_count": 40,
+      "topics": [
+        "ev-charging"
+      ],
+      "last_fetched": 1676787693.157613
+    },
+    "568186049": {
+      "repository_manifest": {
+        "name": "Aigües de Barcelona",
+        "render_readme": true,
+        "country": "ES",
+        "homeassistant": "2021.11.0"
+      },
+      "new": true,
+      "full_name": "duhow/hass-aigues-barcelona",
+      "authors": [
+        "@duhow"
+      ],
+      "category": "integration",
+      "description": "Custom component for Home Assistant to integrate data from Aigues de Barcelona",
+      "domain": "aigues_barcelona",
+      "etag_repository": "W/\"82a2ef65607dab384793e41e32d6db403c825bfde3de357e3c6d255e4b528b31\"",
+      "last_updated": "2023-01-30T21:55:43Z",
+      "stargazers_count": 11,
+      "topics": [
+        "barcelona",
+        "water-meter",
+        "water-monitoring"
+      ],
+      "last_fetched": 1676787693.160929
+    },
+    "543068603": {
+      "repository_manifest": {
+        "name": "Philips TV Remote",
+        "content_in_root": true,
+        "filename": "philips-tv-remote.js",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "abualy/philips-tv-remote-card",
+      "category": "plugin",
+      "description": "philips tv remote card for for home assistant ",
+      "etag_repository": "W/\"69636caacd7b6c3b77d2319012eb1ccc9f815fd8e53bded1b294b4ce258c5b1f\"",
+      "last_updated": "2022-09-30T20:59:35Z",
+      "stargazers_count": 2,
+      "topics": [
+        "hacs-custom",
+        "philips",
+        "remote",
+        "remote-control"
+      ],
+      "last_fetched": 1677237324.761527
+    },
+    "596085141": {
+      "repository_manifest": {
+        "name": "octopus-energy-rates-card",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "lozzd/octopus-energy-rates-card",
+      "category": "plugin",
+      "description": "This lovelace card for Home Assistant displays the Octopus Energy rate prices per each 30 minute slot",
+      "etag_repository": "W/\"79176c5ae1f270286b3672c256e94bde3b5b66733285a48b6a508d69dde54aff\"",
+      "last_updated": "2023-02-05T16:59:42Z",
+      "stargazers_count": 3,
+      "topics": [
+        "electricity",
+        "energy",
+        "octopus",
+        "octopus-energy",
+        "octopus-energy-agile",
+        "octopusenergy",
+        "rates"
+      ],
+      "last_fetched": 1677237325.214233
+    },
+    "599334003": {
+      "repository_manifest": {
+        "name": "simple-weather-clock",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "pkscout/simple-weather-clock",
+      "category": "plugin",
+      "description": "A card for Home Assistant designed to display a digital clock with six slots below for various numeric environmental sensor data.",
+      "etag_repository": "W/\"cfd00faa0f0e8998778bb9b9c804148bfbb5674c7948953463b264ba941a20a2\"",
+      "last_updated": "2023-02-09T10:55:21Z",
+      "topics": [
+        "clock",
+        "weather"
+      ],
+      "last_fetched": 1677237325.245816
+    },
+    "593780777": {
+      "repository_manifest": {
+        "name": "52PI UPS Integration",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "archef2000/homeassistant-upsplus",
+      "authors": [
+        "@Archef2000"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for the 52PI UPS",
+      "domain": "upsplus",
+      "etag_repository": "W/\"74d571093e54a830cc97196d4e64069771a60e6c34bd6aef9b20d499fa529036\"",
+      "last_updated": "2023-02-23T19:28:37Z",
+      "stargazers_count": 1,
+      "topics": [
+        "52pi",
+        "custom-integration",
+        "upsplus"
+      ],
+      "last_fetched": 1677237325.530741
+    },
+    "534848317": {
+      "repository_manifest": {
+        "name": "Redback Technologies",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "juicejuice/homeassistant_redback",
+      "authors": [
+        "@juicejuice"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for inverter and battery systems from Redback Technologies",
+      "domain": "redback",
+      "etag_repository": "W/\"35d16d20a51806c23630fc1e8920cbef48eddfeb41717113c0e7a1683fbb105a\"",
+      "last_updated": "2023-02-23T09:56:49Z",
+      "stargazers_count": 2,
+      "topics": [
+        "inverter",
+        "redback-technologies"
+      ],
+      "last_fetched": 1677237325.759245
+    },
+    "573737078": {
+      "repository_manifest": {
+        "name": "SAJ eSolar Air",
+        "homeassistant": "2022.11.1",
+        "render_readme": true,
+        "country": [
+          "ALL"
+        ]
+      },
+      "new": true,
+      "full_name": "faanskit/ha-esolar",
+      "authors": [
+        "@faanskit"
+      ],
+      "category": "integration",
+      "description": "Custom Integration of SAJ eSOLAR",
+      "domain": "saj_esolar_air",
+      "etag_repository": "W/\"27a845a90af128b57e1582572fe6e072c368dab3071ac1f11994ee6b57217cd5\"",
+      "last_updated": "2023-02-24T06:14:52Z",
+      "stargazers_count": 1,
+      "topics": [
+        "esolar",
+        "esolar-air",
+        "homeassistant-config",
+        "homeassistant-custom-component",
+        "saj",
+        "saj-h1",
+        "saj-inverters",
+        "saj-r5",
+        "solar"
+      ],
+      "last_fetched": 1677258655.662021
+    },
+    "581264508": {
+      "repository_manifest": {
+        "name": "Ökofen Pellematic Compact",
+        "render_readme": true,
+        "homeassistant": "2022.11.0"
+      },
+      "new": true,
+      "full_name": "dominikamann/oekofen-pellematic-compact",
+      "authors": [
+        "@dominikamann"
+      ],
+      "category": "integration",
+      "description": "A Ökofen Pellematic Compact Integration based on JSON/TCP-Inteface for Home Assistant.",
+      "domain": "oekofen_pellematic_compact",
+      "etag_repository": "W/\"dfcefbc627351eff4080c04d12e21365753e08f43cc3fac293c77c5aedd9117d\"",
+      "last_updated": "2023-02-25T10:57:35Z",
+      "stargazers_count": 7,
+      "topics": [
+        "oekofen",
+        "oekofen-pellematic-compact"
+      ],
+      "last_fetched": 1677330159.469181
+    },
+    "520791578": {
+      "repository_manifest": {
+        "name": "SolarEdge Optimizers Data"
+      },
+      "new": true,
+      "full_name": "ProudElm/solaredgeoptimizers",
+      "authors": [
+        "@proudelm"
+      ],
+      "category": "integration",
+      "description": "Intergration to get optimizers information from the SolarEdge portal",
+      "domain": "solaredgeoptimizers",
+      "etag_repository": "W/\"d8e131349f1049dbea597e54c8c4993082e3090a99818d817972216377862152\"",
+      "last_updated": "2023-02-25T08:35:08Z",
+      "stargazers_count": 14,
+      "topics": [
+        "optimizers",
+        "solaredge-api"
+      ],
+      "last_fetched": 1677330159.782689
+    },
+    "601894276": {
+      "repository_manifest": {
+        "name": "general_link",
+        "render_readme": true,
+        "country": "CN"
+      },
+      "new": true,
+      "full_name": "leonardlcl/general_link",
+      "authors": [
+        "@leonardlcl"
+      ],
+      "category": "integration",
+      "description": "GeneralLink custom component for Home Assistant",
+      "domain": "general_link",
+      "etag_repository": "W/\"21c408b0097560bb7ae7d5f48c9e62ae400a6c856959426064cd9cd10a22edec\"",
+      "last_updated": "2023-02-24T06:00:39Z",
+      "topics": [
+        "custom-integration",
+        "general",
+        "general-link",
+        "generallink",
+        "link"
+      ],
+      "last_fetched": 1677330159.858484
+    },
+    "605635573": {
+      "repository_manifest": {
+        "name": "Spook - Not your homie",
+        "render_readme": true,
+        "homeassistant": "2023.0.0b0",
+        "country": "NL"
+      },
+      "new": true,
+      "full_name": "frenck/spook",
+      "authors": [
+        "@frenck"
+      ],
+      "category": "integration",
+      "description": "Spook 👻 Not your homie",
+      "domain": "spook",
+      "etag_repository": "W/\"deb954970abced5188f3a3d829c22d399f2eeedd41000c0540949ff061aeaac3\"",
+      "last_updated": "2023-02-25T20:41:39Z",
+      "stargazers_count": 15,
+      "topics": [
+        "do-not-use",
+        "home-assistant-component",
+        "home-assistant-config",
+        "home-assistant-configuration",
+        "home-assistant-integration",
+        "home-destruction",
+        "homey",
+        "passive-agressive",
+        "random",
+        "self-destruct",
+        "spooky"
+      ],
+      "last_fetched": 1677330159.874414
+    },
+    "578872078": {
+      "repository_manifest": {
+        "name": "Bouncie",
+        "country": "US",
+        "homeassistant": "2022.11.0"
+      },
+      "new": true,
+      "full_name": "mandarons/ha-bouncie",
+      "authors": [
+        "@mandarons"
+      ],
+      "category": "integration",
+      "description": "Home Assistant custom integration for Bouncie.com - track your car stuff in Home Assistant",
+      "domain": "bouncie",
+      "etag_repository": "W/\"1daaade46efc05aa33a861bfe90b9c04bd5b87b07f7bf8167bc46fa21fb83cad\"",
+      "last_updated": "2023-02-23T04:58:46Z",
+      "stargazers_count": 10,
+      "topics": [
+        "car",
+        "car-metrics",
+        "home-assistant-custom-component"
+      ],
+      "last_fetched": 1677330159.957781
+    },
+    "374314958": {
+      "repository_manifest": {
+        "name": "ABB Power-One PVI SunSpec",
+        "render_readme": true,
+        "homeassistant": "2023.2.0"
+      },
+      "new": true,
+      "full_name": "alexdelprete/ha-abb-powerone-pvi-sunspec",
+      "authors": [
+        "@alexdelprete"
+      ],
+      "category": "integration",
+      "description": "HA Custom Component to integrate data from ABB/Power-One/FIMER PV Inverters that support SunSpec Modbus (Sunspec M1, M101, M103, M160), natively or through the VSN300 wifi logger card.",
+      "domain": "abb_powerone_pvi_sunspec",
+      "etag_repository": "W/\"3bec71295439f0610bd991263238c9c257fdff5a09ade82d93165b81517136b9\"",
+      "last_updated": "2023-02-26T20:48:49Z",
+      "stargazers_count": 15,
+      "topics": [
+        "abb",
+        "fimer",
+        "home-assistant-component",
+        "inverter",
+        "modbus",
+        "modbus-tcp",
+        "power-one",
+        "sunspec"
+      ],
+      "last_fetched": 1677416560.51931
+    },
+    "583896361": {
+      "repository_manifest": {
+        "name": "ESA NASK Air Quality Sensor",
+        "render_readme": true,
+        "country": [
+          "PL"
+        ]
+      },
+      "new": true,
+      "full_name": "Mr-Groch/HA-ESA-NASK-Air-Quality",
+      "authors": [
+        "@Mr-Groch"
+      ],
+      "category": "integration",
+      "description": "Home Assistant component for scrapping data from ESA NASK stations",
+      "domain": "esa_nask",
+      "etag_repository": "W/\"676fcb0edab3dd77680a2b74040d3bd82c83416d630b37ea56b8ff52897efd77\"",
+      "last_updated": "2023-02-23T07:11:25Z",
+      "topics": [
+        "air-quality",
+        "esa",
+        "nask"
+      ],
+      "last_fetched": 1677416561.427026
+    },
+    "598381225": {
+      "repository_manifest": {
+        "name": "Fronius_Solarweb",
+        "homeassistant": "2023.2.0",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "solarweb.zip"
+      },
+      "new": true,
+      "full_name": "drc38/Fronius_solarweb",
+      "authors": [
+        "@drc38"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for cloud-based Fronius Solar.web api",
+      "domain": "solarweb",
+      "downloads": 8,
+      "etag_repository": "W/\"95be0ad70de3975e7269bc3121b49947688bdb79b9be5a7926088931fb71a9ba\"",
+      "last_updated": "2023-02-26T07:58:04Z",
+      "topics": [
+        "fronius",
+        "fronius-solar-api"
+      ],
+      "last_fetched": 1677416561.48717
+    },
+    "584473299": {
+      "repository_manifest": {
+        "name": "Jablotron Cloud",
+        "render_readme": true,
+        "homeassistant": "2022.9.0"
+      },
+      "new": true,
+      "full_name": "Pigotka/ha-cc-jablotron-cloud",
+      "authors": [
+        "@pigotka"
+      ],
+      "category": "integration",
+      "description": "HACS custom component for jablotron cloud integration",
+      "domain": "jablotron_cloud",
+      "etag_repository": "W/\"72575179831b907a332dabd96d8d96dbd8438f730b4f5d57d28bbfd052243a6c\"",
+      "last_updated": "2023-02-26T20:39:40Z",
+      "stargazers_count": 3,
+      "last_fetched": 1677416561.59959
+    },
+    "579801670": {
+      "repository_manifest": {
+        "name": "JellyFish Lighting",
+        "zip_release": true,
+        "filename": "hass-jellyfish-lighting.zip"
+      },
+      "new": true,
+      "full_name": "bdunn44/hass-jellyfish-lighting",
+      "authors": [
+        "@bdunn44"
+      ],
+      "category": "integration",
+      "description": "A Jellyfish Lighting integration for Home Assistant",
+      "domain": "jellyfish_lighting",
+      "downloads": 5,
+      "etag_repository": "W/\"c1fab344514b9538fcb5679762582e169e5d8861100a2fa7dfaed0fd9fb3706f\"",
+      "last_updated": "2023-02-25T22:40:08Z",
+      "stargazers_count": 5,
+      "topics": [
+        "assistant",
+        "home",
+        "jellyfish",
+        "led",
+        "led-controller",
+        "led-strips",
+        "lighting"
+      ],
+      "last_fetched": 1677416561.606385
+    },
+    "586345918": {
+      "repository_manifest": {
+        "name": "Binance Integration for Home Assistant",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "Kartax/home-assistant-binance",
+      "authors": [
+        "@Kartax"
+      ],
+      "category": "integration",
+      "description": "A Home Assistant Integration for the cryptocurrency trading platform Binance.",
+      "domain": "binance",
+      "etag_repository": "W/\"33df45436cade6942e6e9614e88713358805eb4a07b506257a9b25e6513c37ce\"",
+      "last_updated": "2023-02-23T12:05:32Z",
+      "stargazers_count": 1,
+      "topics": [
+        "binance",
+        "bitcoin",
+        "crypto",
+        "cryptocurrency",
+        "dogecoin",
+        "ethereum",
+        "home-assistant-integration",
+        "ripp"
+      ],
+      "last_fetched": 1677416561.617274
+    },
+    "594007512": {
+      "repository_manifest": {
+        "name": "Moonraker",
+        "hacs": "1.6.0",
+        "homeassistant": "0.118.0"
+      },
+      "new": true,
+      "full_name": "marcolivierarsenault/moonraker-home-assistant",
+      "authors": [
+        "@marcolivierarsenault",
+        "@cashew22"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for Moonraker, Klipper, mainsail",
+      "domain": "moonraker",
+      "etag_repository": "W/\"5fb4e9d028615f087f2b3d898884e203dc34dd58ba777ce7364cb786b06ad527\"",
+      "last_updated": "2023-02-23T02:27:55Z",
+      "stargazers_count": 1,
+      "topics": [
+        "klipper",
+        "moonraker"
+      ],
+      "last_fetched": 1677416561.713872
+    },
+    "591644026": {
+      "repository_manifest": {
+        "name": "Google Photos",
+        "hacs": "1.6.0",
+        "homeassistant": "2022.6.0",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "google_photos.zip",
+        "hide_default_branch": true
+      },
+      "new": true,
+      "full_name": "Daanoz/ha-google-photos",
+      "authors": [
+        "@Daanoz"
+      ],
+      "category": "integration",
+      "description": "Home Assistant Google Photos integration",
+      "domain": "google_photos",
+      "downloads": 7,
+      "etag_repository": "W/\"f45fdca8a0b21255636072daabe6694592af69574529c35a18a0221087f472d3\"",
+      "last_updated": "2023-02-24T19:57:26Z",
+      "stargazers_count": 3,
+      "topics": [
+        "google-photos",
+        "home-assistant-integration"
+      ],
+      "last_fetched": 1677416561.81369
+    },
+    "477001098": {
+      "repository_manifest": {
+        "name": "Philips AirPurifier (with CoAP)",
+        "render_readme": true,
+        "homeassistant": "2021.11.0b0"
+      },
+      "new": true,
+      "full_name": "kongo09/philips-airpurifier-coap",
+      "authors": [
+        "@kongo09"
+      ],
+      "category": "integration",
+      "description": "💨 Philips AirPurifier custom component for Home Assistant. Supports local CoAP protocol.",
+      "domain": "philips_airpurifier_coap",
+      "etag_repository": "W/\"d8545551de0ff4881461ec7a0ef7aadfcbc76b6f6ff7c7258b43d0a268b7e127\"",
+      "last_updated": "2023-02-24T21:48:39Z",
+      "stargazers_count": 75,
+      "topics": [
+        "air-purifier",
+        "philips"
+      ],
+      "last_fetched": 1677416561.829272
+    },
+    "585145942": {
+      "repository_manifest": {
+        "name": "iRTrans",
+        "hacs": "1.6.0",
+        "homeassistant": "0.118.0",
+        "render_readme": true,
+        "zip_release": true,
+        "filename": "irtrans.zip"
+      },
+      "new": true,
+      "full_name": "schwarzenbergf/irtrans",
+      "authors": [
+        "@schwarzenbergf"
+      ],
+      "category": "integration",
+      "description": "Integration for IRTrans Ethernet devices (LAN DB)",
+      "domain": "irtrans",
+      "downloads": 3,
+      "etag_repository": "W/\"393f617f85933443027e61a8d69a99bc9123b7ab9fbc62f9d72872b205611870\"",
+      "last_updated": "2023-02-26T13:16:10Z",
+      "topics": [
+        "infrared-blaster",
+        "infrared-control"
+      ],
+      "last_fetched": 1677416561.911443
+    },
+    "600885053": {
+      "repository_manifest": {
+        "name": "MyVaillant",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "signalkraft/mypyllant-component",
+      "authors": [
+        "@signalkraft"
+      ],
+      "category": "integration",
+      "description": "Home Assistant component that interfacts with the myVAILLANT API",
+      "domain": "mypyllant",
+      "etag_repository": "W/\"38bdccca4e517dca2bcd130278ba78a77eb5e3e715a00f15b8ffaa1288b91104\"",
+      "last_updated": "2023-02-25T11:19:11Z",
+      "stargazers_count": 2,
+      "topics": [
+        "home-assistant-component",
+        "vaillant"
+      ],
+      "last_fetched": 1677416563.410776
+    },
+    "332589148": {
+      "repository_manifest": {
+        "name": "Big Slider Card",
+        "render_readme": true,
+        "filename": "big-slider-card.js"
+      },
+      "new": true,
+      "full_name": "nicufarmache/lovelace-big-slider-card",
+      "category": "plugin",
+      "description": "A card with a big slider for light entities in Home Assistant",
+      "downloads": 130,
+      "etag_repository": "W/\"87bb1d694b92ccaa5353cf0b72069e51819ec54dd6597dc862a3f15d7fbab03c\"",
+      "last_updated": "2023-01-27T21:50:20Z",
+      "topics": [
+        "big-slider",
+        "card",
+        "light",
+        "lovelace-card",
+        "lovelace-custom-card",
+        "lovelace-slider",
+        "slider",
+        "slider-card"
+      ],
+      "last_fetched": 1677416564.001611
+    },
+    "586363416": {
+      "repository_manifest": {
+        "name": "Mushroom - Better Sliders",
+        "filename": "mushroom.js",
+        "homeassistant": "2022.11.0",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "phischdev/lovelace-mushroom-better-sliders",
+      "category": "plugin",
+      "description": "Fork of Mushroom Cards - For better touch control of light sliders 🍄",
+      "downloads": 79,
+      "etag_repository": "W/\"23e92ab515ef990d0efe7e42cf9219ee78551ae7fc7f246d01eb795687e109cc\"",
+      "last_updated": "2023-02-24T13:57:21Z",
+      "topics": [
+        "card",
+        "mushroom",
+        "sliders",
+        "touch"
+      ],
+      "last_fetched": 1677416564.122806
+    },
+    "594389396": {
+      "repository_manifest": {
+        "name": "Energy Overview Card",
+        "render_readme": true,
+        "filename": "energy-overview-card.js"
+      },
+      "new": true,
+      "full_name": "Sese-Schneider/ha-energy-overview-card",
+      "category": "plugin",
+      "description": "Current energy consumption overview card.",
+      "downloads": 205,
+      "etag_repository": "W/\"181e314cef6eec83084e54668b73c86935f52b68443847de1915620eb752ba3e\"",
+      "last_updated": "2023-02-09T16:34:25Z",
+      "stargazers_count": 17,
+      "topics": [
+        "energy",
+        "energy-monitor",
+        "hacs-custom",
+        "power",
+        "shelly-3em"
+      ],
+      "last_fetched": 1677416564.130978
+    },
+    "583449944": {
+      "repository_manifest": {
+        "name": "Silent remotes card",
+        "filename": "silent-remotes-card.js",
+        "render_readme": true,
+        "homeassistant": "0.95.4"
+      },
+      "new": true,
+      "full_name": "silentbil/silent-remotes-card",
+      "category": "plugin",
+      "description": "Remotes control card for home assistant",
+      "etag_repository": "W/\"1ebee9aa6d60a58d43daf620bc79da9d4407451e8f9853c5f6d157589e479c09\"",
+      "last_updated": "2022-12-31T19:49:31Z",
+      "stargazers_count": 2,
+      "topics": [
+        "broadlink",
+        "card",
+        "remote",
+        "remote-control",
+        "smartir"
+      ],
+      "last_fetched": 1677416564.184867
+    },
+    "324913968": {
+      "repository_manifest": {
+        "name": "Deutscher Wetterdienst (by hg1337)",
+        "homeassistant": "2022.12.0",
+        "render_readme": true
+      },
+      "new": true,
+      "full_name": "hg1337/homeassistant-dwd",
+      "authors": [
+        "@hg1337"
+      ],
+      "category": "integration",
+      "description": "Custom component for Home Assistant that integrates weather data (measurements and forecasts) of Deutscher Wetterdienst (DWD).",
+      "domain": "dwd",
+      "etag_repository": "W/\"ce44da32ed11d1a4c996d84b9568993f36812b3d6337930715ef2e5f210fccaf\"",
+      "last_updated": "2023-02-23T23:06:49Z",
+      "stargazers_count": 28,
+      "topics": [
+        "deutscher-wetterdienst",
+        "dwd",
+        "hacs-custom",
+        "home-assistant-component",
+        "home-assistant-custom-component",
+        "home-assistant-integration",
+        "home-assistant-weather",
+        "homeassistant-component",
+        "homeassistant-custom-component",
+        "homeassistant-weather",
+        "weather",
+        "wetter"
+      ],
+      "last_fetched": 1678011997.622248
     }
   }
 }

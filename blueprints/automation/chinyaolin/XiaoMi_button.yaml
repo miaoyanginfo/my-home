@@ -1,0 +1,69 @@
+blueprint:
+  name: Xiaomi Mijia Wireless Switch (WXKG01LM)
+  description: '利用 zigbee2mqtt 接入米家無線開關 控制設備開關
+
+    透過 zigbee2mqtt 接入, 支援 單擊/雙擊/三連擊/四連擊/多連擊 以及 「長按」 '
+  domain: automation
+  input:
+    mijia_button:
+      name: 小米米家無線開關
+      description: 選擇無線開關的 entity_id, 通常為 sensor.0x00158d0000000000_action
+      default: []
+      selector:
+        entity:
+          domain: sensor
+          multiple: false
+    mijia_button_single:
+      name: 單擊(single)
+      default: []
+      selector:
+        action: {}
+    mijia_button_hold:
+      name: 長按(hold)
+      default: []
+      selector:
+        action: {}
+    mijia_button_double:
+      name: 雙擊(double)
+      default: []
+      selector:
+        action: {}
+    mijia_button_triple:
+      name: 三連擊(triple)
+      default: []
+      selector:
+        action: {}
+    mijia_button_quadruple:
+      name: 四連擊(quadruple)
+      default: []
+      selector:
+        action: {}
+    mijia_button_many:
+      name: 多連擊(many)
+      default: []
+      selector:
+        action: {}
+      description: 連續點擊超過四次即觸發這個動作
+  source_url: https://github.com/chinyaolin/hass_blueprint/blob/main/XiaoMi_button.yaml
+variables:
+  button_action: '{{ trigger.to_state.state }}'
+mode: single
+max_exceeded: silent
+trigger:
+- platform: state
+  entity_id: !input mijia_button
+condition: []
+action:
+- choose:
+  - conditions: '{{ button_action == "single" }}'
+    sequence: !input mijia_button_single
+  - conditions: '{{ button_action == "hold" }}'
+    sequence: !input mijia_button_hold
+  - conditions: '{{ button_action == "double" }}'
+    sequence: !input mijia_button_double
+  - conditions: '{{ button_action == "triple" }}'
+    sequence: !input mijia_button_triple
+  - conditions: '{{ button_action == "quadruple" }}'
+    sequence: !input mijia_button_quadruple
+  - conditions: '{{ button_action == "single" }}'
+    sequence: !input mijia_button_single
