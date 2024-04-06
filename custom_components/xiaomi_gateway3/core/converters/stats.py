@@ -1,4 +1,3 @@
-import re
 from datetime import datetime, timezone
 from typing import TYPE_CHECKING
 
@@ -7,8 +6,6 @@ from .const import GATEWAY, ZIGBEE, BLE, MESH
 
 if TYPE_CHECKING:
     from ..device import XDevice
-
-RE_SERIAL = re.compile(r"(tx|rx|oe|fe|brk):(\d+)")
 
 ZIGBEE_CLUSTERS = {
     0x0000: "Basic",
@@ -76,18 +73,14 @@ class GatewayStatsConverter(Converter):
         "load_avg",
         "rssi",
         "uptime",
-        "bluetooth_tx",
-        "bluetooth_rx",
-        "bluetooth_oe",
-        "zigbee_tx",
-        "zigbee_rx",
-        "zigbee_oe",
+        "gateway",
+        "miio",
+        "openmiio",
+        "serial",
+        "zigbee",
     }
 
     def decode(self, device: "XDevice", payload: dict, value: dict):
-        if self.attr in value:
-            payload[self.attr] = value[self.attr]
-
         if "networkUp" in value:
             payload.update(
                 {
@@ -103,21 +96,19 @@ class GatewayStatsConverter(Converter):
             h = s % (3600 * 24) // 3600
             m = s % 3600 // 60
             s = s % 60
+            # fw 1.5.4 has negative (right rssi), lower fw - don't
+            rssi = value["rssi"] if value["rssi"] <= 0 else value["rssi"] - 100
             payload.update(
                 {
                     "free_mem": value["free_mem"],
                     "load_avg": value["load_avg"],
-                    "rssi": value["rssi"] - 100,
+                    "rssi": rssi,
                     "uptime": f"{d} days, {h:02}:{m:02}:{s:02}",
                 }
             )
 
-        if "serial" in value:
-            lines = value["serial"].split("\n")
-            for k, v in RE_SERIAL.findall(lines[2]):
-                payload[f"bluetooth_{k}"] = int(v)
-            for k, v in RE_SERIAL.findall(lines[3]):
-                payload[f"zigbee_{k}"] = int(v)
+        if "openmiio" in value:
+            payload.update(value)
 
 
 class ZigbeeStatsConverter(Converter):
@@ -158,7 +149,7 @@ class ZigbeeStatsConverter(Converter):
                     )
                     # sometimes device repeat message, skip this situation:
                     # 0xF6 > 0xF7 > 0xF8 > 0xF7 > 0xF8 > 0xF9
-                    if 0 < miss < 254:
+                    if 0 < miss < 240:
                         device.extra["msg_missed"] += miss
 
                 device.extra["last_seq1"] = new_seq1

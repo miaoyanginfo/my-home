@@ -8,8 +8,7 @@
         "name": "苗洋",
         "user_id": "7caef1731d1a49c990cfa5810f239d11",
         "device_trackers": [
-          "device_tracker.miao_yang_de_iphone",
-          "device_tracker.wei_zhi_she_bei_1afa"
+          "device_tracker.harmony_os"
         ],
         "id": "miao_yang",
         "picture": "/api/image/serve/4125464550c5bea05f555ad34ac7f50c/512x512"
@@ -17,9 +16,7 @@
       {
         "name": "薛秋燕",
         "device_trackers": [
-          "device_tracker.wei_zhi_she_bei_2778",
-          "device_tracker.iphoneqiu_qiu",
-          "device_tracker.pdyt20"
+          "device_tracker.iphoneqiu_qiu"
         ],
         "user_id": "666134958c784a25a09212fe7d727088",
         "picture": "/api/image/serve/00a5f4857c2d12c5b95c18eab3ada4ee/512x512",
@@ -28,7 +25,7 @@
       {
         "name": "爸爸",
         "device_trackers": [
-          "device_tracker.xiao_mi_5x"
+          "device_tracker.redmi_note_12_turbo"
         ],
         "user_id": "72044c74bc8345aeb9a633392fff1cbb",
         "picture": "/api/image/serve/e3382eb5f5a0aea88b2f5e87d7c73f4c/512x512",
@@ -46,11 +43,20 @@
       {
         "name": "苗菁洁",
         "device_trackers": [
-          "device_tracker.wei_zhi_she_bei_5fd9"
+          "device_tracker.iphone12_2"
         ],
         "user_id": null,
         "picture": "/api/image/serve/ccb05912da8de898cb738667de0a7369/512x512",
         "id": "miao_jing_ji"
+      },
+      {
+        "id": "android",
+        "name": "android",
+        "device_trackers": [
+          "device_tracker.miss"
+        ],
+        "user_id": "5ab1548f106f4c1cb91db0505c786e62",
+        "picture": "/api/image/serve/56d49c3297ab664740269da8a2ae0ca0/512x512"
       }
     ]
   }

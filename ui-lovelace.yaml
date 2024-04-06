@@ -1,0 +1,3 @@
+resources:
+  - type: module
+    url: /local/custom-lovelace/ch_calendar-card/ch_calendar-card.js

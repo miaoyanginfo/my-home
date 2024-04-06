@@ -7,13 +7,17 @@ from .const import (
     DEFAULT_DEVICE_TRACKER,
     DEFAULT_DEVICE_TRACKER_ZONES,
     DEFAULT_DEVICES_TAGS,
+    DEFAULT_PORT_MAPPING_SWITCHES,
     DEFAULT_ROUTER_CLIENTS_SENSORS,
+    DEFAULT_EVENT_ENTITIES,
     DEFAULT_SCAN_INTERVAL,
     DEFAULT_URL_FILTER_SWITCHES,
     DEFAULT_WIFI_ACCESS_SWITCHES,
     OPT_DEVICE_TRACKER,
     OPT_DEVICE_TRACKER_ZONES,
     OPT_DEVICES_TAGS,
+    OPT_EVENT_ENTITIES,
+    OPT_PORT_MAPPING_SWITCHES,
     OPT_ROUTER_CLIENTS_SENSORS,
     OPT_URL_FILTER_SWITCHES,
     OPT_WIFI_ACCESS_SWITCHES,
@@ -76,10 +80,26 @@ class HuaweiIntegrationOptions:
         )
 
     @property
+    def port_mapping_switches(self) -> bool:
+        """Return option 'port mapping switches' value"""
+        return get_option(
+            self._config_entry, OPT_PORT_MAPPING_SWITCHES, DEFAULT_PORT_MAPPING_SWITCHES
+        )
+
+    @property
     def router_clients_sensors(self) -> bool:
         """Return option 'router clients sensors' value"""
         return get_option(
             self._config_entry,
             OPT_ROUTER_CLIENTS_SENSORS,
             DEFAULT_ROUTER_CLIENTS_SENSORS,
+        )
+
+    @property
+    def event_entities(self) -> bool:
+        """Return option 'event entities' value"""
+        return get_option(
+            self._config_entry,
+            OPT_EVENT_ENTITIES,
+            DEFAULT_EVENT_ENTITIES,
         )

@@ -9,8 +9,12 @@
   action:
   - service: homeassistant.turn_off
     entity_id:
-    - switch.1f_woshi
+    - switch.6cd3eec78641_switch
     - light.gateway_light_286c07f0c4e5
+  - service: switch.toggle
+    data: {}
+    target:
+      entity_id: switch.s2_s3
 - id: 6bd06c56a1c0494182fae79da740c359
   alias: 一楼卧室灯双击
   trigger:
@@ -44,7 +48,7 @@
   action:
   - service: switch.toggle
     entity_id:
-    - switch.1f_woshi
+    - switch.6cd3eec78641_switch
   mode: single
 - id: 87e8359fc63f4f3c87795b35f5cfb92f
   alias: 二楼客厅单击
@@ -59,8 +63,10 @@
     after: sunset
   action:
   - service: switch.toggle
-    entity_id:
-    - switch.er_lou_ke_ting_deng
+    metadata: {}
+    data: {}
+    target:
+      entity_id: switch.94f827836573_channel_2
 - id: 472ca4d9882d41ef959d502be515ea77
   alias: 二楼客厅长按
   trigger:
@@ -86,20 +92,10 @@
       click_type: double
   action:
   - service: switch.turn_on
-    entity_id: switch.my_nas
-  - delay:
-      seconds: 5
-  - service: switch.turn_on
     data: {}
     target:
       entity_id:
       - switch.s1_s1
-  - delay:
-      seconds: 5
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id:
       - switch.s1_s2
 - id: 8717ade3b50d4d9986d0411bbd0c40b5
   alias: 一楼客厅单击
@@ -114,18 +110,12 @@
     data: {}
     target:
       entity_id:
-      - switch.s3_s4
+      - switch.s3_s1
+      - switch.s3_s2
   - service: switch.turn_off
     data: {}
     target:
-      entity_id:
-      - switch.s3_s2
-  - delay:
-      seconds: 5
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id: switch.s3_s1
+      entity_id: switch.s3_s4
 - id: 95c5c5b603e3488a8a69f868d1a6c6d1
   alias: 一楼客厅长按
   trigger:
@@ -140,9 +130,9 @@
     target:
       entity_id:
       - switch.s3_s1
-      - switch.s3_s2
       - switch.s3_s3
       - switch.s3_s4
+      - switch.s3_s2
 - id: 98793dbe43b34726980ea32199242f0c
   alias: 一楼客厅双击
   trigger:
@@ -156,18 +146,12 @@
     data: {}
     target:
       entity_id:
-      - switch.s3_s2
+      - switch.s3_s1
+      - switch.s3_s4
   - service: switch.turn_off
     data: {}
     target:
-      entity_id:
-      - switch.s3_s4
-  - delay:
-      seconds: 5
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id: switch.s3_s1
+      entity_id: switch.s3_s2
 - id: f2165091e27b4502aaa2c4772530a46f
   alias: 2f keting motion on
   trigger:
@@ -179,10 +163,10 @@
   - condition: sun
     after: sunset
   action:
-  - service: light.turn_on
-    data: {}
+  - service: switch.turn_on
     target:
-      entity_id: light.ke_ting_deng
+      entity_id: switch.94f827836573_channel_2
+    data: {}
   initial_state: 'on'
 - id: 9ae95e4c70c84ae684096ffbaccb7340
   alias: 2f keting motion off
@@ -196,29 +180,31 @@
       minutes: 10
       seconds: 30
   action:
-  - service: light.turn_off
-    data: {}
+  - service: switch.turn_off
     target:
-      entity_id: light.ke_ting_deng
+      entity_id: switch.94f827836573_channel_2
+    data: {}
   initial_state: 'on'
-- alias: 2f woshi motion on
-  initial_state: 'on'
+- id: 928a33b5f230476d94b9b8b9382ba399
+  alias: 2f woshi motion on
   trigger:
-    platform: state
+  - platform: state
     entity_id: binary_sensor.motion_sensor_158d00015dbaec
     from: 'off'
     to: 'on'
   condition:
-    condition: sun
+  - condition: sun
     after: sunset
   action:
-    service: switch.turn_on
-    entity_id: switch.er_lou_wo_shi_deng
-  id: 928a33b5f230476d94b9b8b9382ba399
-- alias: 2f woshi motion off
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.woshi_light
   initial_state: 'on'
+- id: e1408b563f774e939625b31471878764
+  alias: 2f woshi motion off
   trigger:
-    platform: state
+  - platform: state
     entity_id: binary_sensor.motion_sensor_158d00015dbaec
     from: 'on'
     to: 'off'
@@ -227,9 +213,11 @@
       minutes: 10
       seconds: 30
   action:
-    service: switch.turn_off
-    entity_id: switch.er_lou_wo_shi_deng
-  id: e1408b563f774e939625b31471878764
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.woshi_light
+  initial_state: 'on'
 - id: a1654709416b4aa4bb94fbc18f4b0bae
   alias: 一楼卧室人体感应控制小米夜灯开关
   trigger:
@@ -272,7 +260,7 @@
   trigger:
   - platform: state
     entity_id:
-    - switch.1f_woshi
+    - switch.6cd3eec78641_switch
     from: 'on'
     to: 'off'
   condition: []
@@ -302,6 +290,11 @@
       - switch.1f_woshi
       - light.yang_tai_deng
       - light.ke_ting_deng
+      - light.lumi_v3_6730_light
+      - switch.zimi_dhkg01_8641_switch
+      - switch.94f827836573_channel_2
+      - switch.94f827836573_channel_1
+      - switch.6cd3eec78641_switch
   initial_state: 'on'
   mode: single
 - id: fffacf1e89ae439ba638bea5deea126f
@@ -311,14 +304,27 @@
     hours: /1
   condition:
   - condition: time
-    after: 06:00
+    after: 07:30:00
     before: '23:00'
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
   action:
   - service: xiaomi_aqara.play_ringtone
-    data_template:
-      gw_mac: 28:6C:07:F0:C4:E5
-      ringtone_id: 10001
+    data:
+      gw_mac: 7C:49:EB:1A:67:30
+      ringtone_id: '10'
       ringtone_vol: 10
+  - service: xiaomi_aqara.play_ringtone
+    data:
+      gw_mac: 28:6C:07:F0:C4:E5
+      ringtone_vol: 10
+      ringtone_id: '10'
   - service: media_player.volume_set
     data:
       volume_level: 0.15
@@ -372,7 +378,6 @@
   - service: switch.turn_on
     target:
       device_id:
-      - 2afe8ac73286f15ad3e8828245ec8b9b
       - c328276ceb9720cfa6fa03810af142b9
       - 69e53f6a3c73290e8f4343fcefcb4353
     data: {}
@@ -388,7 +393,6 @@
   - service: switch.turn_off
     target:
       device_id:
-      - 2afe8ac73286f15ad3e8828245ec8b9b
       - c328276ceb9720cfa6fa03810af142b9
       - 69e53f6a3c73290e8f4343fcefcb4353
     data: {}
@@ -425,8 +429,13 @@
   - service: xiaomi_aqara.play_ringtone
     data:
       gw_mac: 28:6C:07:F0:C4:E5
-      ringtone_vol: 15
+      ringtone_vol: 10
       ringtone_id: '11'
+  - service: xiaomi_aqara.play_ringtone
+    data:
+      gw_mac: 7C:49:EB:1A:67:30
+      ringtone_id: '11'
+      ringtone_vol: 10
   mode: single
 - id: '1673235364879'
   alias: 开播放器开NAS
@@ -526,7 +535,7 @@
   trigger:
   - platform: time_pattern
     minutes: '30'
-    hours: /2
+    hours: /3
   condition:
   - condition: time
     after: 08:00:00
@@ -538,7 +547,7 @@
       silent: false
       throw: false
       entity_id: media_player.xiaomi_s12_671d_play_control
-      text: 现在时间{{states('sensor.time')}} ，现在播报天气信息。未来三小时内，太原地区{{states('sensor.hourly_forcast_3')}}。
+      text: 现在时间{{states('sensor.time')}} ，现在播报天气信息,太原地区，{{states('sensor.tian_qi_miao_shu')}}室外温度{{states('sensor.shi_wai_wen_du')}}摄氏度。体感温度{{states('sensor.ti_gan_wen_du')}}摄氏度。
   mode: single
 - id: '1675993703234'
   alias: 小爱回家通知苗洋
@@ -785,7 +794,7 @@
       entity_id: switch.ciwo_light
   mode: single
 - id: '1677055688375'
-  alias: 测试手机通知
+  alias: 手机接收位置通知
   description: ''
   trigger:
   - platform: zone
@@ -795,6 +804,22 @@
   - platform: zone
     entity_id: person.xie_qiu_yan
     zone: zone.wu_jia_wu
+    event: leave
+  - platform: geo_location
+    source: ''
+    zone: zone.shi_yan_xiao_xue
+    event: enter
+  - platform: geo_location
+    source: ''
+    zone: zone.shi_yan_xiao_xue
+    event: leave
+  - platform: geo_location
+    source: ''
+    zone: zone.ling_hu_cun
+    event: enter
+  - platform: geo_location
+    source: ''
+    zone: zone.ling_hu_cun
     event: leave
   condition: []
   action:
@@ -821,3 +846,217 @@
     data:
       message: baocun
   mode: single
+- id: '1679105363676'
+  alias: 网关失联重启ha
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.gateway_light_286c07f0c4e5
+    - light.gateway_light_7c49eb1a6730
+    to: unavailable
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - service: homeassistant.restart
+    data: {}
+  mode: single
+- id: '1679390324079'
+  alias: 小爱讲话
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_text.text2
+    - input_button.xiaoai
+  condition: []
+  action:
+  - service: xiaomi_miot.intelligent_speaker
+    data:
+      execute: false
+      silent: false
+      throw: false
+      entity_id: media_player.xiaomi_s12_671d_play_control
+      text: '{{states(''input_text.text2'')}}'
+  mode: single
+- id: '1685715783546'
+  alias: 开蚊香液
+  description: ''
+  trigger:
+  - platform: time
+    at: '20:00:00'
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.s2_s2
+  mode: single
+- id: '1685715837055'
+  alias: 关蚊香液
+  description: ''
+  trigger:
+  - platform: time
+    at: 05:00:00
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.s2_s2
+  mode: single
+- id: '1689553574450'
+  alias: 晚0点关闭风扇
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:00:00
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.s2_s3
+  mode: single
+- id: '1693472705360'
+  alias: 闹铃设置
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.workday_alarm
+  condition:
+  - condition: state
+    entity_id: sensor.holiday
+    state: 工作日
+  action:
+  - repeat:
+      count: '5'
+      sequence:
+      - service: xiaomi_miot.intelligent_speaker
+        data:
+          execute: false
+          silent: false
+          throw: false
+          entity_id: media_player.xiaomi_s12_671d_play_control
+          text: 苗子渊快起床
+      - service: xiaomi_aqara.play_ringtone
+        data:
+          gw_mac: 28:6C:07:F0:C4:E5
+          ringtone_vol: 20
+          ringtone_id: '13'
+      - service: xiaomi_aqara.play_ringtone
+        data:
+          gw_mac: 7C:49:EB:1A:67:30
+          ringtone_vol: 20
+          ringtone_id: '13'
+  mode: single
+- id: '1693877264204'
+  alias: 小爱定时调低音量暂停
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  condition: []
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.1
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  - delay:
+      hours: 0
+      minutes: 15
+      seconds: 0
+      milliseconds: 0
+  - service: media_player.media_pause
+    data: {}
+    target:
+      entity_id: media_player.xiaomi_s12_671d_play_control
+  mode: single
+- id: '1711114556119'
+  alias: 二楼卧室无线开关单击
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.0x00158d0002241c3b_action
+    to: single
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  action:
+  - service: switch.toggle
+    metadata: {}
+    data: {}
+    target:
+      entity_id: switch.woshi_light
+  mode: single
+- id: '1711115023517'
+  alias: 二楼卧室无线开关长按
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.0x00158d0002241c3b_action
+    to: hold
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id:
+      - switch.woshi_light
+      - switch.94f827836573_channel_2
+      - switch.94f827836573_channel_1
+    data: {}
+  - service: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.gateway_light_7c49eb1a6730
+  mode: single
+- id: '1711795848221'
+  alias: 二楼卧室无线开关双击
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.0x00158d0002241c3b_action
+    to: double
+  condition: []
+  action:
+  - service: light.toggle
+    metadata: {}
+    data:
+      rgb_color:
+      - 18
+      - 214
+      - 217
+    target:
+      entity_id: light.gateway_light_7c49eb1a6730
+  mode: single
+- id: '1711796059465'
+  alias: 二楼卧室灯关，开夜灯
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.woshi_light
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      brightness: 100
+      rgb_color:
+      - 253
+      - 56
+      - 68
+    target:
+      entity_id: light.gateway_light_7c49eb1a6730
+  mode: single
+  initial_state: 'on'

@@ -160,9 +160,9 @@ class HacsCommon:
 
     categories: set[str] = field(default_factory=set)
     renamed_repositories: dict[str, str] = field(default_factory=dict)
-    archived_repositories: list[str] = field(default_factory=list)
-    ignored_repositories: list[str] = field(default_factory=list)
-    skip: list[str] = field(default_factory=list)
+    archived_repositories: set[str] = field(default_factory=set)
+    ignored_repositories: set[str] = field(default_factory=set)
+    skip: set[str] = field(default_factory=set)
 
 
 @dataclass
@@ -197,25 +197,32 @@ class HacsRepositories:
     """HACS Repositories."""
 
     _default_repositories: set[str] = field(default_factory=set)
-    _repositories: list[HacsRepository] = field(default_factory=list)
+    _repositories: set[HacsRepository] = field(default_factory=set)
     _repositories_by_full_name: dict[str, HacsRepository] = field(default_factory=dict)
     _repositories_by_id: dict[str, HacsRepository] = field(default_factory=dict)
-    _removed_repositories: list[RemovedRepository] = field(default_factory=list)
+    _removed_repositories_by_full_name: dict[str, RemovedRepository] = field(default_factory=dict)
 
     @property
     def list_all(self) -> list[HacsRepository]:
         """Return a list of repositories."""
-        return self._repositories
+        return list(self._repositories)
 
     @property
     def list_removed(self) -> list[RemovedRepository]:
         """Return a list of removed repositories."""
-        return self._removed_repositories
+        return list(self._removed_repositories_by_full_name.values())
 
     @property
     def list_downloaded(self) -> list[HacsRepository]:
         """Return a list of downloaded repositories."""
         return [repo for repo in self._repositories if repo.data.installed]
+
+    def category_downloaded(self, category: HacsCategory) -> bool:
+        """Check if a given category has been downloaded."""
+        for repository in self.list_downloaded:
+            if repository.data.category == category:
+                return True
+        return False
 
     def register(self, repository: HacsRepository, default: bool = False) -> None:
         """Register a repository."""
@@ -235,7 +242,7 @@ class HacsRepositories:
             repository = registered_repo
 
         if repository not in self._repositories:
-            self._repositories.append(repository)
+            self._repositories.add(repository)
 
         self._repositories_by_id[repo_id] = repository
         self._repositories_by_full_name[repository.data.full_name_lower] = repository
@@ -333,22 +340,15 @@ class HacsRepositories:
 
     def is_removed(self, repository_full_name: str) -> bool:
         """Check if a repository is removed."""
-        return repository_full_name in (
-            repository.repository for repository in self._removed_repositories
-        )
+        return repository_full_name in self._removed_repositories_by_full_name
 
     def removed_repository(self, repository_full_name: str) -> RemovedRepository:
         """Get repository by full name."""
-        if self.is_removed(repository_full_name):
-            if removed := [
-                repository
-                for repository in self._removed_repositories
-                if repository.repository == repository_full_name
-            ]:
-                return removed[0]
+        if removed := self._removed_repositories_by_full_name.get(repository_full_name):
+            return removed
 
         removed = RemovedRepository(repository=repository_full_name)
-        self._removed_repositories.append(removed)
+        self._removed_repositories_by_full_name[repository_full_name] = removed
         return removed
 
 
@@ -375,7 +375,7 @@ class HacsBase:
     status = HacsStatus()
     system = HacsSystem()
     validation: ValidationManager | None = None
-    version: str | None = None
+    version: AwesomeVersion | None = None
 
     @property
     def integration_dir(self) -> pathlib.Path:
@@ -553,7 +553,12 @@ class HacsBase:
             raise AddonRepositoryException()
 
         if category not in RERPOSITORY_CLASSES:
-            raise HacsException(f"{category} is not a valid repository category.")
+            self.log.warning(
+                "%s is not a valid repository category, %s will not be registered.",
+                category,
+                repository_full_name,
+            )
+            return
 
         if (renamed := self.common.renamed_repositories.get(repository_full_name)) is not None:
             repository_full_name = renamed
@@ -563,7 +568,7 @@ class HacsBase:
             try:
                 await repository.async_registration(ref)
                 if repository.validate.errors:
-                    self.common.skip.append(repository.data.full_name)
+                    self.common.skip.add(repository.data.full_name)
                     if not self.status.startup:
                         self.log.error("Validation for %s failed.", repository_full_name)
                     if self.system.action:
@@ -582,7 +587,7 @@ class HacsBase:
                     )
                 return
             except AIOGitHubAPIException as exception:
-                self.common.skip.append(repository.data.full_name)
+                self.common.skip.add(repository.data.full_name)
                 raise HacsException(
                     f"Validation for {repository_full_name} failed with {exception}."
                 ) from exception
@@ -594,7 +599,7 @@ class HacsBase:
             repository.data.id = repository_id
 
         else:
-            if self.hass is not None and ((check and repository.data.new) or self.status.new):
+            if self.hass is not None and check and repository.data.new:
                 self.async_dispatch(
                     HacsDispatchEvent.REPOSITORY,
                     {
@@ -691,15 +696,23 @@ class HacsBase:
 
         self.async_dispatch(HacsDispatchEvent.STATUS, {})
 
-    async def async_download_file(self, url: str, *, headers: dict | None = None) -> bytes | None:
+    async def async_download_file(
+        self,
+        url: str,
+        *,
+        headers: dict | None = None,
+        keep_url: bool = False,
+        nolog: bool = False,
+        **_,
+    ) -> bytes | None:
         """Download files, and return the content."""
         if url is None:
             return None
 
-        if "tags/" in url:
+        if not keep_url and "tags/" in url:
             url = url.replace("tags/", "")
 
-        self.log.debug("Downloading %s", url)
+        self.log.debug("Trying to download %s", url)
         timeouts = 0
 
         while timeouts < 5:
@@ -735,7 +748,8 @@ class HacsBase:
             except (
                 BaseException  # lgtm [py/catch-base-exception] pylint: disable=broad-except
             ) as exception:
-                self.log.exception("Download failed - %s", exception)
+                if not nolog:
+                    self.log.exception("Download failed - %s", exception)
 
             return None
 
@@ -765,21 +779,24 @@ class HacsBase:
         for category in (HacsCategory.INTEGRATION, HacsCategory.PLUGIN):
             self.enable_hacs_category(HacsCategory(category))
 
-        if HacsCategory.PYTHON_SCRIPT in self.hass.config.components:
+        if self.configuration.experimental:
+            self.enable_hacs_category(HacsCategory.TEMPLATE)
+
+        if (
+            HacsCategory.PYTHON_SCRIPT in self.hass.config.components
+            or self.repositories.category_downloaded(HacsCategory.PYTHON_SCRIPT)
+        ):
             self.enable_hacs_category(HacsCategory.PYTHON_SCRIPT)
 
-        if self.hass.services.has_service("frontend", "reload_themes"):
+        if self.hass.services.has_service(
+            "frontend", "reload_themes"
+        ) or self.repositories.category_downloaded(HacsCategory.THEME):
             self.enable_hacs_category(HacsCategory.THEME)
 
         if self.configuration.appdaemon:
             self.enable_hacs_category(HacsCategory.APPDAEMON)
         if self.configuration.netdaemon:
-            downloaded_netdaemon = [
-                x
-                for x in self.repositories.list_downloaded
-                if x.data.category == HacsCategory.NETDAEMON
-            ]
-            if len(downloaded_netdaemon) != 0:
+            if self.repositories.category_downloaded(HacsCategory.NETDAEMON):
                 self.log.warning(
                     "NetDaemon in HACS is deprectaded. It will stop working in the future. "
                     "Please remove all your current NetDaemon repositories from HACS "
@@ -870,15 +887,6 @@ class HacsBase:
                         repository.repository_manifest.update_data(
                             {**dict(HACS_MANIFEST_KEYS_TO_EXPORT), **manifest}
                         )
-                    self.async_dispatch(
-                        HacsDispatchEvent.REPOSITORY,
-                        {
-                            "id": 1337,
-                            "action": "update",
-                            "repository": repository.data.full_name,
-                            "repository_id": repository.data.id,
-                        },
-                    )
 
         if category == "integration":
             self.status.inital_fetch_done = True
@@ -894,6 +902,8 @@ class HacsBase:
                         "%s Unregister stale custom repository", repository.string
                     )
                     self.repositories.unregister(repository)
+
+        self.async_dispatch(HacsDispatchEvent.REPOSITORY, {})
 
     async def async_get_category_repositories(self, category: HacsCategory) -> None:
         """Get repositories from category."""

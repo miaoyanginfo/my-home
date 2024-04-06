@@ -1,0 +1,5 @@
+#LWP-Cookies-2.0
+Set-Cookie3: dslang="US-EN"; path="/"; domain=".apple.com"; path_spec; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: site=USA; path="/"; domain=".apple.com"; path_spec; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: acn01="kI54FGI8aamP48JvV7T9tpv0qhSIptoAN89XdsngNQ=="; path="/"; domain=".apple.com"; path_spec; secure; expires="2024-07-10 03:05:14Z"; HttpOnly=None; version=0
+Set-Cookie3: aasp=51C8BAA55339DD6587A22CFB8C50C0FE24D15A69FF81B5946D8CE550016D14AD000A94CD75C4E8F94C1591F55DB0058B7ED3DB2CEF983866C59DE7D8596BF4765B0F5B42676D58AA3202F9DF07F53DABE9988D90632B31566BDEAC67F46EF452618DCDF8FB5DCABE0D4B01D8659DDEF03E76D086813F2E71; path="/"; domain=".idmsa.apple.com"; path_spec; secure; discard; HttpOnly=None; version=0

@@ -9,6 +9,7 @@ from homeassistant.const import *
 from homeassistant.components.sensor import SensorDeviceClass, SensorStateClass
 from homeassistant.helpers.storage import Store
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.exceptions import HomeAssistantError
 
 from .const import (
     DOMAIN,
@@ -242,7 +243,7 @@ class MiotSpec(MiotSpecInstance):
         store = Store(hass, 1, fnm)
         try:
             cached = await store.async_load() or {}
-        except ValueError:
+        except (ValueError, HomeAssistantError):
             await store.async_remove()
             cached = {}
         now = int(time.time())
@@ -299,7 +300,7 @@ class MiotSpec(MiotSpecInstance):
         store = Store(hass, 1, fnm)
         try:
             cached = await store.async_load() or {}
-        except ValueError:
+        except (ValueError, HomeAssistantError):
             await store.async_remove()
             cached = {}
         dat = cached
@@ -724,6 +725,11 @@ class MiotProperty(MiotSpecInstance):
             return self.value_range[2]
         return None
 
+    @property
+    def is_bool(self):
+        return self.format == 'bool'
+
+    @property
     def is_integer(self):
         if self.format in [
             'int8', 'int16', 'int32', 'int64',
@@ -744,6 +750,8 @@ class MiotProperty(MiotSpecInstance):
             'kelvin': TEMP_KELVIN,
             'percentage': PERCENTAGE,
             'lux': LIGHT_LUX,
+            'watt': POWER_WATT,
+            'pascal': PRESSURE_PA,
             'μg/m3': CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
             'mg/m3': CONCENTRATION_MILLIGRAMS_PER_CUBIC_METER,
             'p/m3': CONCENTRATION_PARTS_PER_CUBIC_METER,
@@ -752,16 +760,18 @@ class MiotProperty(MiotSpecInstance):
             'current_step_count': 'steps',
             'heart_rate': 'bpm',
             'power_consumption': ENERGY_WATT_HOUR,
+            'electric_current': ELECTRIC_CURRENT_AMPERE,
+            'voltage': ELECTRIC_POTENTIAL_VOLT,
             'pm2_5_density': CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
             'tds_in': CONCENTRATION_PARTS_PER_MILLION,
             'tds_out': CONCENTRATION_PARTS_PER_MILLION,
         }
-        if name in names:
+        if unit in aliases:
+            unit = aliases[unit]
+        elif name in names:
             unit = names[name]
         elif not unit or unit in ['none', 'null']:
             unit = None
-        elif unit in aliases:
-            unit = aliases[unit]
         return unit
 
     @property
@@ -772,10 +782,12 @@ class MiotProperty(MiotSpecInstance):
             'electric_current': SensorStateClass.MEASUREMENT,
             'power_consumption': SensorStateClass.TOTAL_INCREASING,
             'temperature': SensorStateClass.MEASUREMENT,
+            'relative_humidity': SensorStateClass.MEASUREMENT,
             'humidity': SensorStateClass.MEASUREMENT,
             'co2_density': SensorStateClass.MEASUREMENT,
             'co_density': SensorStateClass.MEASUREMENT,
             'pm2_5_density': SensorStateClass.MEASUREMENT,
+            'tvoc_density': SensorStateClass.MEASUREMENT,
             'tds_in': SensorStateClass.MEASUREMENT,
             'tds_out': SensorStateClass.MEASUREMENT,
             'filter_used_flow': SensorStateClass.TOTAL_INCREASING,
@@ -789,24 +801,27 @@ class MiotProperty(MiotSpecInstance):
         ret = None
         name = self.full_name
         props = {
-            'atmospheric_pressure': SensorDeviceClass.PRESSURE,
-            'temperature': SensorDeviceClass.TEMPERATURE,
-            'relative_humidity': SensorDeviceClass.HUMIDITY,
-            'humidity': SensorDeviceClass.HUMIDITY,
             'charging_state': None,
-            'battery_level': SensorDeviceClass.BATTERY,
-            '.battery': SensorDeviceClass.BATTERY,
-            'illumination': SensorDeviceClass.ILLUMINANCE,
-            'voltage': SensorDeviceClass.VOLTAGE,
-            'electric_current': SensorDeviceClass.CURRENT,
-            'electric_power': SensorDeviceClass.POWER,
-            'co2_density': SensorDeviceClass.CO2,
-            'co_density': SensorDeviceClass.CO,
-            'co2': SensorDeviceClass.CO2,
-            'pm2_5_density': SensorDeviceClass.PM25,
-            'pm25': SensorDeviceClass.PM25,
-            'pm10': SensorDeviceClass.PM10,
         }
+        if self.value_range:
+            props.update({
+                'atmospheric_pressure': SensorDeviceClass.PRESSURE,
+                'temperature': SensorDeviceClass.TEMPERATURE,
+                'relative_humidity': SensorDeviceClass.HUMIDITY,
+                'humidity': SensorDeviceClass.HUMIDITY,
+                'battery_level': SensorDeviceClass.BATTERY,
+                '.battery': SensorDeviceClass.BATTERY,
+                'illumination': SensorDeviceClass.ILLUMINANCE,
+                'voltage': SensorDeviceClass.VOLTAGE,
+                'electric_current': SensorDeviceClass.CURRENT,
+                'electric_power': SensorDeviceClass.POWER,
+                'co2_density': SensorDeviceClass.CO2,
+                'co_density': SensorDeviceClass.CO,
+                'co2': SensorDeviceClass.CO2,
+                'pm2_5_density': SensorDeviceClass.PM25,
+                'pm25': SensorDeviceClass.PM25,
+                'pm10': SensorDeviceClass.PM10,
+            })
         if self.name in props:
             ret = props[self.name]
         else:

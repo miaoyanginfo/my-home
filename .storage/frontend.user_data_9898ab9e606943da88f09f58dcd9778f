@@ -7,7 +7,12 @@
       "language": "zh-Hans",
       "number_format": "language",
       "time_format": "language",
+      "date_format": "language",
+      "time_zone": "local",
       "first_weekday": "language"
+    },
+    "core": {
+      "showAdvanced": true
     }
   }
 }

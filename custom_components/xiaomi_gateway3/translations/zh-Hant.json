@@ -29,8 +29,7 @@
         "description": "可以透過 [雲端整合](https://github.com/AlexxIT/XiaomiGateway3#obtain-mi-home-device-token) 自動或 [手動](https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md) 取得米家智能家庭設備權杖 Token。",
         "data": {
           "host": "主機端",
-          "token": "權杖",
-          "telnet_cmd": "開啟 Telnet 指令"
+          "token": "權杖"
         }
       }
     }
@@ -52,12 +51,8 @@
           "telnet_cmd": "開啟 Telnet 指令",
           "ble": "支援藍芽裝置",
           "stats": "新增統計資料感測器",
-          "debug": "Debug logs",
-          "buzzer": "[DANGER] 關閉蜂鳴器",
-          "memory": "[DANGER] 使用記憶體空間",
-          "zha": "[DANGER] ZHA 或 zigbee2mqtt 模式"
-        },
-        "description": "僅於了解可能之風險後，才建議變更 **[DANGER]** 選項"
+          "debug": "偵錯日誌"
+        }
       }
     }
   },

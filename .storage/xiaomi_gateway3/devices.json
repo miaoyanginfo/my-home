@@ -3,14 +3,119 @@
   "minor_version": 1,
   "key": "xiaomi_gateway3/devices.json",
   "data": {
-    "54ef44432f79": {
-      "decode_ts": 1677932098.2977815
+    "lumi.158d00015d5c57": {
+      "cloud_name": "小米人体传感器",
+      "cloud_fw": "11"
     },
-    "94f827836573": {
-      "decode_ts": 1677932068.472273
+    "lumi.158d0001a64708": {
+      "cloud_name": "小米门窗传感器",
+      "cloud_fw": "10"
     },
-    "a4c138decb8c": {
-      "decode_ts": 1677931346.1150312
+    "lumi.158d0001e80ca7": {
+      "cloud_name": "小米温湿度传感器",
+      "cloud_fw": "2"
+    },
+    "lumi.158d00020177ff": {
+      "cloud_name": "二楼客厅温湿度传感器",
+      "uid": "0x00158d00020177ff",
+      "last_report_ts": 1712229864,
+      "last_seen": {
+        "54ef44432f79": 1712229864
+      }
+    },
+    "lumi.158d0002241c3b": {
+      "cloud_name": "二楼卧室无线开关",
+      "uid": "0x00158d0002241c3b",
+      "last_report_ts": 1712228336,
+      "last_seen": {
+        "54ef44432f79": 1712228336
+      }
+    },
+    "1034770208": {
+      "cloud_name": "一楼卧室灯",
+      "cloud_fw": "1.4.4_0087",
+      "uid": "6cd3eec78641",
+      "last_report_ts": 1712229460,
+      "last_seen": {
+        "54ef44432f79": 1712229665
+      }
+    },
+    "87475741": {
+      "cloud_name": "网关2",
+      "cloud_fw": "1.4.1_176"
+    },
+    "blt.3.1h7jfjm0scc01": {
+      "cloud_name": "温湿度计",
+      "cloud_fw": "1.0.0_0130",
+      "uid": "a4c138decb8c",
+      "last_report_ts": 1712229760,
+      "last_seen": {
+        "54ef44432f79": 1712229760
+      }
+    },
+    "79653664": {
+      "cloud_name": "客厅走廊",
+      "cloud_fw": "4.0.9_0420"
+    },
+    "lumi.158d00015d1bf5": {
+      "cloud_name": "电脑",
+      "cloud_fw": "90"
+    },
+    "lumi.158d000128fa46": {
+      "cloud_name": "小米门窗传感器",
+      "cloud_fw": "10"
+    },
+    "lumi.158d0001839247": {
+      "cloud_name": "一楼卧室小米无线开关",
+      "cloud_fw": "10"
+    },
+    "lumi.158d0001a21774": {
+      "cloud_name": "二楼客厅小米无线开关",
+      "cloud_fw": "10"
+    },
+    "58145830": {
+      "cloud_name": "Mi AI Speaker",
+      "cloud_fw": "1.74.18"
+    },
+    "73895184": {
+      "cloud_name": "一楼卧室",
+      "cloud_fw": "5.5.1_1025"
+    },
+    "huami.39872/AAABF23P905922": {
+      "cloud_name": "Xiaomi Smart Band 7"
+    },
+    "lumi.158d0000e6c590": {
+      "cloud_name": "一楼次卧无线开关"
+    },
+    "lumi.158d0000fd0ac2": {
+      "cloud_name": "一楼客厅无线开关"
+    },
+    "lumi.158d00015d2507": {
+      "cloud_name": "一楼卧室小米人体传感器",
+      "cloud_fw": "11"
+    },
+    "lumi.158d00015dbaec": {
+      "cloud_name": "小米人体传感器",
+      "cloud_fw": "11"
+    },
+    "1038066825": {
+      "cloud_name": "Mi Smart Dual One Way  Wall Switch",
+      "cloud_fw": "2.1.1_0118",
+      "uid": "94f827836573",
+      "last_report_ts": 1712229749,
+      "last_seen": {
+        "54ef44432f79": 1712229749
+      }
+    },
+    "499140090": {
+      "cloud_name": "Xiaomi Smart Home Hub 2",
+      "cloud_fw": "1.0.7_0021",
+      "uid": "54ef44432f79",
+      "last_report_ts": 1712229670
+    },
+    "54969428": {
+      "cloud_name": "Mi Control Hub",
+      "cloud_fw": "1.4.1_176"
     }
   }
 }

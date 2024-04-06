@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "huawei_mesh_bd135f78edcee2d6b3b5c8eaf3c6f8f4_tags",
+  "data": {
+    "homeowners": [
+      "place_mac_addresses_here"
+    ],
+    "visitors": [
+      "place_mac_addresses_here"
+    ]
+  }
+}

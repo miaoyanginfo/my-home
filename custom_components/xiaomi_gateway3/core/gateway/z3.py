@@ -22,7 +22,7 @@ class Z3Gateway(GatewayBase):
     z3_buffer: dict = None
 
     def z3_init(self):
-        if self.zha_mode or not self.stats_enable:
+        if not self.stats_enable:
             return
         self.dispatcher_connect(SIGNAL_PREPARE_GW, self.z3_prepare_gateway)
         self.dispatcher_connect(SIGNAL_MQTT_CON, self.z3_mqtt_connect)
@@ -77,7 +77,7 @@ class Z3Gateway(GatewayBase):
                 await self.z3_process_parent_scan()
 
         elif self.z3_buffer:
-            self.z3_buffer["buffer"] += payload
+            self.z3_buffer["buffer"] += payload + "\n"
 
     async def z3_process_parent_scan(self):
         self.debug("Process zigbee parent scan response")

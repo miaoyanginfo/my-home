@@ -1,0 +1,21 @@
+
+Mijia_Hub_V2-2F79 login: root
+~ # agetprop | grep miio
+[persist.app.miio_homeid]: [801001106439]
+[persist.app.miio_uid]: [51567276]
+[persist.app.miio_dtoken]: [8UQfM5oM2ukCWk77]
+[persist.app.miio_timezone]: [/usr/share/zoneinfo/Asia/Shangha...]
+[persist.sys.miio_mac]: [54:EF:44:43:2F:79]
+[persist.sys.miio_key]: [rVT1Dg7CimwILgWx]
+[persist.sys.miio_did]: [499140090]
+[persist.sys.miio_vendor]: [lumi]
+[sys.miio_pid]: [5338]
+~ #
+18:C2:3C:05:87:87
+
+
+xiaomi_aqara:
+  discovery_retry: 5
+  gateways:
+    - key: 1510C516FBD4464F
+    - key: qewnth1ff3byk4rf

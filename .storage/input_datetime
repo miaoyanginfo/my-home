@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_datetime",
+  "data": {
+    "items": [
+      {
+        "id": "workday_alarm",
+        "has_time": true,
+        "has_date": false,
+        "name": "workday_alarm"
+      }
+    ]
+  }
+}

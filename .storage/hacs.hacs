@@ -4,19 +4,30 @@
   "key": "hacs.hacs",
   "data": {
     "archived_repositories": [
-      "marcomow/ble-bulb-card",
-      "DavidMStraub/homeassistant-homeconnect",
-      "spycle/microbot_push",
+      "bieniu/ha-zadnego-ale",
       "Sholofly/arrisdcx960",
-      "lukich48/hass_mqtt_template_switch",
-      "marrobHD/firetv-card",
-      "clayauld/lovelace-darksky-card",
-      "NemesisRE/lovelace-swipe-navigation",
-      "frenck/home-assistant-theme-outline",
-      "natekspencer/hacs-litterrobot",
+      "DavidMStraub/homeassistant-homeconnect",
       "gjohansson-ST/stl",
+      "peternijssen/home-assistant-jumbo",
+      "robmarkcole/HASS-Deepstack-object",
+      "JuanMTech/amoled_blue",
+      "clayauld/lovelace-darksky-card",
+      "frenck/home-assistant-theme-outline",
+      "jessevl/homeassistant-greenchoice",
+      "JuanMTech/orange_light",
+      "natekspencer/hacs-litterrobot",
+      "robmarkcole/HASS-Deepstack-face",
+      "JuanMTech/green_dark_mode",
+      "JuanMTech/green_light_mode",
       "custom-components/sensor.untappd",
-      "jessevl/homeassistant-greenchoice"
+      "NemesisRE/lovelace-swipe-navigation",
+      "Petro31/ad_people_tracker",
+      "JuanMTech/orange_dark",
+      "lukich48/hass_mqtt_template_switch",
+      "cgarwood/homeassistant-fullykiosk",
+      "marrobHD/firetv-card",
+      "spycle/microbot_push",
+      "marcomow/ble-bulb-card"
     ],
     "renamed_repositories": {
       "9a4gl/hass-peltec": "9a4gl/hass-centrometal-boiler",
@@ -31,7 +42,9 @@
       "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
       "wills106/homsassistant-solax-modbus": "wills106/homeassistant-solax-modbus",
       "78wesley/Darkish-Theme": "78wesley/Home-Assistant-Darkish-Theme",
-      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo"
+      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo",
+      "JoshuaMulliken/ha-wyzeapi": "SecKatie/ha-wyzeapi",
+      "mtarjoianu/ha_lektrico": "Lektrico/ha_lektrico"
     },
     "ignored_repositories": []
   }

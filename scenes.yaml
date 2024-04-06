@@ -1,0 +1,14 @@
+- id: '1693720534889'
+  name: 测试
+  entities:
+    automation.wan_0dian_guan_bi_feng_shan:
+      id: '1689553574450'
+      last_triggered: '2023-09-02T16:00:00.472153+00:00'
+      mode: single
+      current: 0
+      friendly_name: 晚0点关闭风扇
+      state: 'on'
+  icon: mdi:globe-light
+  metadata:
+    automation.wan_0dian_guan_bi_feng_shan:
+      entity_only: true

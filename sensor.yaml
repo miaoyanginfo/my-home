@@ -2,17 +2,56 @@
   display_options:
     - 'time'
     - 'date'
-- platform: systemmonitor
-  resources:
-    - type: memory_use_percent
-    - type: processor_use
-    - type: last_boot
-- platform: heweather_hourlyforecast
+- platform: heweather
   location: 101100106    # 填写你所在区域代码Location_ID,https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv
-  key: a4de9580a88d4411bef9344b37273e2a             # api平台申请的key
-  options:
-      - remind      #小时天气预警
-      - 1hour       #1小时天气预报
-      - 3hour       #3小时天气预报
-      - 6hour       #6小时天气预报
-      - 9hour     
+  key: a4de9580a88d4411bef9344b37273e2a   # api平台申请的key
+  disasterlevel: 3
+  disastermsg: allmsg
+  # options:
+      # - remind      #小时天气预警
+      # - 1hour       #1小时天气预报
+      # - 3hour       #3小时天气预报
+      # - 6hour       #6小时天气预报
+      # - 9hour     
+
+- platform: chineseholiday
+  name: holiday
+  solar_anniversary:
+    # '20170107':
+      # - 苗子渊生日
+    # '20210716':
+      # - 苗子澄生日
+    '20151018': #这样配置会在显示的时候略有不一样，会以 bb生日(1岁) 的形式显示, 文案不包含 ‘生日’ 的统一显示为周年 xx纪念日（1周年）。
+      # - bb生日  #卡片前端aa生日(1岁)
+      - 苗洋和秋燕结婚纪念日 #卡片前端显示xx纪念日（1周年）
+  lunar_anniversary:
+    '0123':
+      - 妈妈农历生日
+    '0509':
+      - 苗洋农历生日
+    '0607':
+      - 布丁农历生日
+    '0803':
+      - 秋燕农历生日
+    '1125':
+      - 苗菁洁农历生日
+    '1211':
+      - 豆丁农历生日
+    '1223':
+      - 爸爸农历生日
+  # calculate_age: #通过配置一个 'aa和bb结婚周年' '2022-10-10 10:23:10'(过去的时间)，1. 自动生成未来的时间将近的周年纪念日, 2.计算这个时间已经过去了N年N月N天N小时N秒
+      # - date: '2015-10-18 12:00:00'
+        # name: '苗洋和秋燕结婚周年'
+  # notify_script_name: 'test' #调用脚本名字
+  # notify_times: #早上9点10分调用 13:00:00 下午1点调用
+      # - "09:10:00" 
+      # - "13:00:00"
+  # notify_principles: #调用脚本规则
+    # '14|7|1': #未来某个日期（下面每个date字段对应）离现在还有 14 天 7天 1天时调用脚本
+      # - date: "0101" #需要调用脚本的日期
+        # solar: False ##没填solar的默认为True 即阳历. false就是阴历, true是阳历 
+      # - date: "0102"  #需要调用脚本的日期 solar 不写 默认为True 即阳历
+    # '0': #0即为当天调用
+      # #*下面两种是特殊情况采用name，只有父亲节和母亲节 ，也就是填了name就不要填date，填name的只有这两种情况
+      # - name: "母亲节"
+      # - name: "父亲节"

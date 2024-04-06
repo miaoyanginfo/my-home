@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from enum import Enum, IntEnum
+from enum import Enum, IntEnum, StrEnum
 from typing import Any, Dict, Final, Iterable, TypeAlias
 
 VENDOR_CLASS_ID_ROUTER: Final = "router"
@@ -12,6 +12,48 @@ NODE_HILINK_TYPE_DEVICE: Final = "Device"
 NODE_HILINK_TYPE_NONE: Final = "None"
 
 MAC_ADDR: TypeAlias = str
+
+KILOBYTES_PER_SECOND: TypeAlias = int
+
+
+# ---------------------------
+#   Feature
+# ---------------------------
+class Feature(StrEnum):
+    NFC: Final = "feature_nfc"
+    URL_FILTER = "feature_url_filter"
+    WIFI_80211R = "feature_wifi_80211r"
+    WIFI_TWT = "feature_wifi_twt"
+    WLAN_FILTER = "feature_wlan_filter"
+    DEVICE_TOPOLOGY = "feature_device_topology"
+    GUEST_NETWORK = "feature_guest_network"
+    PORT_MAPPING = "feature_port_mapping"
+
+
+# ---------------------------
+#   Switch
+# ---------------------------
+class Switch(StrEnum):
+    NFC: Final = "nfc_switch"
+    WIFI_80211R = "wifi_80211r_switch"
+    WIFI_TWT = "wifi_twt_switch"
+    WLAN_FILTER = "wlan_filter_switch"
+    GUEST_NETWORK = "guest_network_switch"
+
+
+# ---------------------------
+#   Action
+# ---------------------------
+class Action(StrEnum):
+    REBOOT: Final = "reboot_action"
+
+
+# ---------------------------
+#   Frequency
+# ---------------------------
+class Frequency(StrEnum):
+    WIFI_2_4_GHZ = "2.4GHz"
+    WIFI_5_GHZ = "5GHz"
 
 
 # ---------------------------
@@ -85,6 +127,72 @@ class HuaweiUrlFilterInfo:
     enabled: bool
     dev_manual: bool
     devices: list[HuaweiFilterItem]
+
+
+# ---------------------------
+#   HuaweiPortMappingItem
+# ---------------------------
+class HuaweiPortMappingItem:
+    def __init__(
+        self,
+        id: str,
+        name: str,
+        enabled: bool,
+        host_ip: str,
+        host_mac: MAC_ADDR,
+        host_name: str,
+        application_id: str,
+    ) -> None:
+        self._id = id
+        self._name = name
+        self._enabled = enabled
+        self._host_ip = host_ip
+        self._host_name = host_name
+        self._host_mac = host_mac
+        self._application_id = application_id
+
+    @classmethod
+    def parse(cls, raw_data: dict[str, Any]) -> HuaweiPortMappingItem:
+        id = raw_data.get("ID")
+        if not id:
+            raise ValueError("Id can not be empty")
+
+        raw_enabled = raw_data.get("Enable")
+        enabled = isinstance(raw_enabled, bool) and raw_enabled
+
+        ip_address = raw_data.get("HostIPAddress", "")
+        mac_address = raw_data.get("InternalHost", "")
+        name = raw_data.get("Name", "")
+        host_name = raw_data.get("HostName", "")
+        application_id = raw_data.get("ApplicationID", "")
+
+        return HuaweiPortMappingItem(
+            id, name, enabled, ip_address, mac_address, host_name, application_id
+        )
+
+    @property
+    def id(self) -> str:
+        return self._id
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @property
+    def enabled(self) -> bool:
+        return self._enabled
+
+    @property
+    def host_name(self) -> str:
+        return self._host_name
+
+    @property
+    def host_ip(self) -> str:
+        return self._host_ip
+
+    @property
+    def host_mac(self) -> str:
+        return self._host_mac
 
 
 # ---------------------------
@@ -168,6 +276,8 @@ class HuaweiConnectionInfo:
     uptime: int
     connected: bool
     address: str | None
+    upload_rate: KILOBYTES_PER_SECOND
+    download_rate: KILOBYTES_PER_SECOND
 
 
 # ---------------------------
@@ -237,6 +347,16 @@ class HuaweiClientDevice:
     def interface_type(self) -> str | None:
         """Return the connection interface type."""
         return self._data.get("InterfaceType")
+
+    @property
+    def upload_rate(self) -> KILOBYTES_PER_SECOND:
+        """Return the upload rate in kilobytes per second."""
+        return self._data.get("UpRate", 0)
+
+    @property
+    def download_rate(self) -> KILOBYTES_PER_SECOND:
+        """Return the download rate in kilobytes per second."""
+        return self._data.get("DownRate", 0)
 
 
 # ---------------------------

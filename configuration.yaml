@@ -25,6 +25,17 @@ homeassistant:
     media_player.my_media_player:
       source_list:
         - Channel/input from my available sources
+mqtt:
+  switch:
+    - unique_id: mqtt_sonoff
+      name: "sonoff1"
+      state_topic: "stat/sonoff/POWER"
+      command_topic: "cmnd/sonoff/POWER"
+      qos: 1
+      payload_on: "ON"
+      payload_off: "OFF"
+      retain: true
+
 # http:
   # server_port: 8123  #可以不要
   # # base_url: https://home.miaoyang.info  # 你的阿里云域名
@@ -45,10 +56,15 @@ homeassistant:
 input_text: 
   text1:
     name: 发送通知文本
+  text2:
+    name: 发给小爱同学
 input_button:
   message:
     name: 点击发送
     icon: mdi:cellphone-message
+  xiaoai:
+    name: 小爱说话
+    icon: mdi:speaker
 frontend: 
   themes: !include_dir_merge_named themes
 panel_iframe:
@@ -68,27 +84,14 @@ alarm_control_panel:
     armed_home:
       arming_time: 0
       delay_time: 0
-speedtestdotnet:
-  scan_interval:
-    minutes: 30
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-binary_sensor:
-  - platform: ping
-    host: 192.168.1.8
-    name: NAS
-  - platform: ping
-    host: 192.168.1.3
-    name: newifi
+
 tts:
   - platform: edge_tts
     service_name: edge_tts_say # service: tts.xiaomo_say
     language: zh-CN-XiaoxiaoNeural
     volume: +10%
 weather:
-  - platform: heweather_forecast
+  - platform: heweather
     location: 101100106    # 填写你所在区域代码Location_ID,https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv
     key: a4de9580a88d4411bef9344b37273e2a             # api平台申请的key
 xiaomi_aqara:
@@ -96,3 +99,7 @@ xiaomi_aqara:
   gateways:
     - key: 1510C516FBD4464F
     - key: qewnth1ff3byk4rf
+logger:
+  default: warn
+  logs:
+    custom_components.haier: debug

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "assist_pipeline.pipelines",
+  "data": {
+    "items": [
+      {
+        "conversation_engine": "homeassistant",
+        "conversation_language": "zh-cn",
+        "id": "01gzjqzm8kspphj9nnatnkqbz7",
+        "language": "zh-Hans",
+        "name": "Home Assistant",
+        "stt_engine": null,
+        "stt_language": null,
+        "tts_engine": "edge_tts",
+        "tts_language": "zh-CN",
+        "tts_voice": null,
+        "wake_word_entity": null,
+        "wake_word_id": null
+      }
+    ],
+    "preferred_item": "01gzjqzm8kspphj9nnatnkqbz7"
+  }
+}

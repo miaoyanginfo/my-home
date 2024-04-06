@@ -1,86 +1,13 @@
 {
   "version": 1,
-  "minor_version": 3,
+  "minor_version": 5,
   "key": "core.device_registry",
   "data": {
     "devices": [
       {
         "area_id": null,
         "config_entries": [
-          "d5e4273d1f140d698bd9da2a5813e28f"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "a4134769ad716cba349519526de4dc7a",
-        "identifiers": [
-          [
-            "mobile_app",
-            "17590EED-B460-454F-9268-6E3B9C1E5D23"
-          ]
-        ],
-        "manufacturer": "Apple",
-        "model": "iPhone12,1",
-        "name_by_user": null,
-        "name": "苗洋的iPhone",
-        "sw_version": "16.2",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "fc4894d01ce7bd4b0439b0e6b296ac1f"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "fe5c517d590a384f94bdb3d23bd695ad",
-        "identifiers": [
-          [
-            "mobile_app",
-            "12C697A9-57DA-4CD4-AE47-EB23254CBCCF"
-          ]
-        ],
-        "manufacturer": "Apple",
-        "model": "iPhone13,2",
-        "name_by_user": null,
-        "name": "iPhone秋秋",
-        "sw_version": "16.2",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "7acf5be2a49e4b80346126240efa09c5"
-        ],
-        "configuration_url": "https://www.speedtest.net/",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "5883ffaf59294e3ca96d9129d9c3a814",
-        "identifiers": [
-          [
-            "speedtestdotnet",
-            "7acf5be2a49e4b80346126240efa09c5"
-          ]
-        ],
-        "manufacturer": null,
-        "model": null,
-        "name_by_user": null,
-        "name": "SpeedTest",
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "eddf264b0cce852d075e844459e5deea",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "eddf264b0cce852d075e844459e5deea"
         ],
         "configuration_url": null,
         "connections": [
@@ -89,7 +16,7 @@
             "78:0f:77:cb:7d:cf"
           ]
         ],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "c328276ceb9720cfa6fa03810af142b9",
@@ -99,10 +26,12 @@
             "780f77cb7dcf"
           ]
         ],
+        "labels": [],
         "manufacturer": "Broadlink (OEM)",
         "model": "SP mini 3",
         "name_by_user": null,
         "name": "Wi-Fi智能插座",
+        "serial_number": null,
         "sw_version": 41034,
         "via_device_id": null
       },
@@ -110,7 +39,7 @@
         "area_id": null,
         "config_entries": [
           "e8fdb15c1cd41acdb40ff54be0cdd1c3",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4"
         ],
         "configuration_url": null,
         "connections": [
@@ -129,42 +58,20 @@
             "34ea34e9ba18"
           ]
         ],
+        "labels": [],
         "manufacturer": "Broadlink",
         "model": "RM pro",
         "name_by_user": null,
         "name": "智能遥控",
+        "serial_number": null,
         "sw_version": 20028,
         "via_device_id": null
       },
       {
         "area_id": null,
         "config_entries": [
-          "49fae8c0db2cd77e8b528423a9c53a19"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "aa1406c248af8bfe45d788e2d39fb3d6",
-        "identifiers": [
-          [
-            "mobile_app",
-            "9157A31E-ABEC-4F50-9EA4-93BD776039B7"
-          ]
-        ],
-        "manufacturer": "Apple",
-        "model": "iPhone9,1",
-        "name_by_user": null,
-        "name": "iPhone7",
-        "sw_version": "14.2",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
           "3e2c651393614d06d4dae1606368ae05",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4"
         ],
         "configuration_url": null,
         "connections": [
@@ -183,10 +90,12 @@
             "34ea34c9823d"
           ]
         ],
+        "labels": [],
         "manufacturer": "Broadlink",
         "model": "MP1-1K4S",
         "name_by_user": null,
         "name": "s1",
+        "serial_number": null,
         "sw_version": 10028,
         "via_device_id": null
       },
@@ -194,7 +103,7 @@
         "area_id": null,
         "config_entries": [
           "fa2057ae407022422cc18a60448c4ad9",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4"
         ],
         "configuration_url": null,
         "connections": [
@@ -213,18 +122,20 @@
             "34ea34c99575"
           ]
         ],
+        "labels": [],
         "manufacturer": "Broadlink",
         "model": "MP1-1K4S",
-        "name_by_user": null,
+        "name_by_user": "蚊香液",
         "name": "s2",
+        "serial_number": null,
         "sw_version": 10024,
         "via_device_id": null
       },
       {
         "area_id": null,
         "config_entries": [
-          "16545a0d7406d15392fdb6cb28c889b3",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4",
+          "16545a0d7406d15392fdb6cb28c889b3"
         ],
         "configuration_url": null,
         "connections": [
@@ -243,35 +154,13 @@
             "34ea34c71915"
           ]
         ],
+        "labels": [],
         "manufacturer": "Broadlink",
         "model": "MP1-1K4S",
         "name_by_user": null,
         "name": "s3",
+        "serial_number": null,
         "sw_version": 10024,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "35b55c40107f3572fac1cad585a609a0"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "4c143c98e265930abbfa539edce15dc8",
-        "identifiers": [
-          [
-            "kodi",
-            "35b55c40107f3572fac1cad585a609a0"
-          ]
-        ],
-        "manufacturer": "Kodi",
-        "model": null,
-        "name_by_user": null,
-        "name": null,
-        "sw_version": null,
         "via_device_id": null
       },
       {
@@ -297,34 +186,12 @@
             "homekit.bridge"
           ]
         ],
+        "labels": [],
         "manufacturer": "Home Assistant",
-        "model": "HomeKit Bridge",
+        "model": "HomeBridge",
         "name_by_user": null,
         "name": "HASS Bridge:21064",
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "0f0ef295817d9db2adb481c811ef0dc4"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "2adf8dbe94e1293a92b66a123a9de4b3",
-        "identifiers": [
-          [
-            "kodi",
-            "0f0ef295817d9db2adb481c811ef0dc4"
-          ]
-        ],
-        "manufacturer": "Kodi",
-        "model": null,
-        "name_by_user": "一楼KODI",
-        "name": null,
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -345,10 +212,12 @@
             "1450PDN002734"
           ]
         ],
+        "labels": [],
         "manufacturer": "Synology",
         "model": "DS918+",
         "name_by_user": null,
         "name": "MY-NAS",
+        "serial_number": null,
         "sw_version": "DSM 7.0.1-42218",
         "via_device_id": null
       },
@@ -369,10 +238,12 @@
             "1450PDN002734_sda"
           ]
         ],
+        "labels": [],
         "manufacturer": "WDC     ",
         "model": "WD40PURX-89NZ6Y0",
         "name_by_user": null,
         "name": "MY-NAS (Drive 1)",
+        "serial_number": null,
         "sw_version": "01.04Q.2",
         "via_device_id": "aa6c6141efa54f67e61d78dcc6a490a5"
       },
@@ -393,10 +264,12 @@
             "1450PDN002734_volume_3"
           ]
         ],
+        "labels": [],
         "manufacturer": "Synology",
         "model": "DS918+",
         "name_by_user": null,
         "name": "MY-NAS (Volume 3)",
+        "serial_number": null,
         "sw_version": "DSM 7.0.1-42218",
         "via_device_id": "aa6c6141efa54f67e61d78dcc6a490a5"
       },
@@ -417,11 +290,13 @@
             "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
           ]
         ],
+        "labels": [],
         "manufacturer": "hacs.xyz",
         "model": "",
         "name_by_user": null,
         "name": "HACS",
-        "sw_version": "1.31.0",
+        "serial_number": null,
+        "sw_version": "1.34.0",
         "via_device_id": null
       },
       {
@@ -441,10 +316,12 @@
             "28:6c:07:f0:c4:e5"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "gateway",
         "name_by_user": null,
         "name": "Xiaomi Aqara Gateway",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": null
       },
@@ -470,10 +347,12 @@
             "158d00015d5c57"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "motion",
         "name_by_user": null,
         "name": "motion_158d00015d5c57",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -499,10 +378,12 @@
             "158d000121221d"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "magnet",
         "name_by_user": null,
         "name": "magnet_158d000121221d",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -528,10 +409,12 @@
             "158d0001839247"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "switch",
         "name_by_user": null,
         "name": "switch_158d0001839247",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -557,10 +440,12 @@
             "158d00015d2507"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "motion",
         "name_by_user": null,
         "name": "motion_158d00015d2507",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -586,10 +471,12 @@
             "158d0001a64708"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "magnet",
         "name_by_user": null,
         "name": "magnet_158d0001a64708",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -615,10 +502,12 @@
             "158d0001a21774"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "switch",
         "name_by_user": null,
         "name": "switch_158d0001a21774",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -644,10 +533,12 @@
             "158d000128fa46"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "magnet",
         "name_by_user": null,
         "name": "magnet_158d000128fa46",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -673,10 +564,12 @@
             "158d00015dbaec"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "motion",
         "name_by_user": null,
         "name": "motion_158d00015dbaec",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -702,10 +595,12 @@
             "158d0000fd0ac2"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "switch",
         "name_by_user": null,
         "name": "switch_158d0000fd0ac2",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
@@ -731,16 +626,19 @@
             "158d0001e80ca7"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "sensor_ht",
         "name_by_user": null,
         "name": "sensor_ht_158d0001e80ca7",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
       {
         "area_id": null,
         "config_entries": [
+          "8767285df1551ac2321bd793f9406d11",
           "1f7e2981185361481660a2592ada3ca4"
         ],
         "configuration_url": null,
@@ -760,18 +658,19 @@
             "158d00015d1bf5"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "plug",
         "name_by_user": null,
         "name": "plug_158d00015d1bf5",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
       },
       {
         "area_id": null,
         "config_entries": [
-          "4e6e1879b4167ee510956dca9349e717",
-          "c404322f71648aec8fb9f1298b616ebf"
+          "4e6e1879b4167ee510956dca9349e717"
         ],
         "configuration_url": null,
         "connections": [
@@ -780,7 +679,7 @@
             "34:ea:34:f1:c0:33"
           ]
         ],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "69e53f6a3c73290e8f4343fcefcb4353",
@@ -790,35 +689,13 @@
             "34ea34f1c033"
           ]
         ],
+        "labels": [],
         "manufacturer": "URANT",
         "model": "SP2-compatible",
         "name_by_user": null,
         "name": "SP-MINI",
+        "serial_number": null,
         "sw_version": 10029,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "c404322f71648aec8fb9f1298b616ebf"
-        ],
-        "configuration_url": "http://192.168.1.1:80/html/index.html",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": "VER.A",
-        "id": "239e746b310f756f0e433a2338144f71",
-        "identifiers": [
-          [
-            "huawei_mesh_router",
-            "5JN7S20416020152"
-          ]
-        ],
-        "manufacturer": "Huawei",
-        "model": "WS7100-10",
-        "name_by_user": null,
-        "name": "Primary router",
-        "sw_version": "2.1.0.206",
         "via_device_id": null
       },
       {
@@ -838,11 +715,13 @@
             "0f0ad0467b141f8ba0c708ba35e2bf47b4e9ae4e"
           ]
         ],
+        "labels": [],
         "manufacturer": "Plex",
         "model": "Plex Media Server",
         "name_by_user": null,
         "name": "MY-NAS",
-        "sw_version": "1.31.1.6733-bc0674160",
+        "serial_number": null,
+        "sw_version": "1.40.1.8227-c0dd5a73e",
         "via_device_id": null
       },
       {
@@ -862,11 +741,13 @@
             "BBC919C7-E364-4E00-91AA-D0F0D6AC926A"
           ]
         ],
-        "manufacturer": "Plex",
+        "labels": [],
+        "manufacturer": "iOS",
         "model": "Plex for iOS",
         "name_by_user": null,
         "name": "Plex (Plex for iOS - iPhone)",
-        "sw_version": "8.15",
+        "serial_number": null,
+        "sw_version": "8.18",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
       {
@@ -886,11 +767,13 @@
             "fa62be5b7830a723-com-plexapp-android"
           ]
         ],
-        "manufacturer": "Plex",
+        "labels": [],
+        "manufacturer": "Android",
         "model": "Plex for Android (TV)",
         "name_by_user": null,
         "name": "Plex (Plex for Android (TV) - p2301)",
-        "sw_version": "9.17.0.38861",
+        "serial_number": null,
+        "sw_version": "9.24.0.2105",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
       {
@@ -910,10 +793,12 @@
             "881cdff1-0386-4662-aea7-3acfab66ac78"
           ]
         ],
+        "labels": [],
         "manufacturer": "Kodi",
         "model": "Plex for Kodi",
         "name_by_user": null,
         "name": "Plex (Plex for Kodi - Kodi1)",
+        "serial_number": null,
         "sw_version": "0.3.5",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
@@ -934,10 +819,12 @@
             "plex.tv-clients"
           ]
         ],
+        "labels": [],
         "manufacturer": "Plex",
         "model": "Plex Clients",
         "name_by_user": null,
         "name": "Plex Client Service",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -958,11 +845,13 @@
             "rnq0xih79wm4n7umd654866k"
           ]
         ],
+        "labels": [],
         "manufacturer": "windows",
         "model": "Plex for Windows",
         "name_by_user": null,
         "name": "Plex (Plex for Windows - X13)",
-        "sw_version": "1.65.1.3596-7b1f6d97",
+        "serial_number": null,
+        "sw_version": "1.67.2.3705-db506a00",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
       {
@@ -982,11 +871,13 @@
             "00:9e:c8:e7:67:1d-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "xiaomi",
         "model": "xiaomi.wifispeaker.s12",
         "name_by_user": null,
         "name": "Mi AI Speaker",
-        "sw_version": "1.72.2",
+        "serial_number": null,
+        "sw_version": "1.74.18",
         "via_device_id": null
       },
       {
@@ -1006,10 +897,12 @@
             "f8:44:11:63:41:0c-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "xiaomi",
         "model": "xiaomi.watch.band2",
         "name_by_user": null,
         "name": "小米手环",
+        "serial_number": null,
         "sw_version": "",
         "via_device_id": null
       },
@@ -1030,10 +923,12 @@
             "lumi.158d0001e80ca7-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_ht.v1",
         "name_by_user": null,
         "name": "小米温湿度传感器",
+        "serial_number": null,
         "sw_version": "2",
         "via_device_id": null
       },
@@ -1054,10 +949,12 @@
             "34:ce:00:e6:b3:d3-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "isa",
         "model": "isa.camera.df3",
         "name_by_user": null,
         "name": "摄像机",
+        "serial_number": null,
         "sw_version": "5.5.1_1025",
         "via_device_id": null
       },
@@ -1078,10 +975,12 @@
             "28:6c:07:f0:c4:e5-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.gateway.v3",
         "name_by_user": null,
         "name": "Mi Control Hub",
+        "serial_number": null,
         "sw_version": "1.4.1_176",
         "via_device_id": null
       },
@@ -1102,10 +1001,12 @@
             "lumi.158d000128fa46-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_magnet.v2",
         "name_by_user": null,
         "name": "小米门窗传感器",
+        "serial_number": null,
         "sw_version": "10",
         "via_device_id": null
       },
@@ -1126,10 +1027,12 @@
             "lumi.158d0001a64708-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_magnet.v2",
         "name_by_user": null,
         "name": "小米门窗传感器",
+        "serial_number": null,
         "sw_version": "10",
         "via_device_id": null
       },
@@ -1150,10 +1053,12 @@
             "lumi.158d00015dbaec-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_motion.v2",
         "name_by_user": null,
         "name": "小米人体传感器",
+        "serial_number": null,
         "sw_version": "11",
         "via_device_id": null
       },
@@ -1174,10 +1079,12 @@
             "lumi.158d00015d5c57-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_motion.v2",
         "name_by_user": null,
         "name": "小米人体传感器",
+        "serial_number": null,
         "sw_version": "11",
         "via_device_id": null
       },
@@ -1198,10 +1105,12 @@
             "lumi.158d00015d2507-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.sensor_motion.v2",
         "name_by_user": null,
         "name": "一楼卧室小米人体传感器",
+        "serial_number": null,
         "sw_version": "11",
         "via_device_id": null
       },
@@ -1222,10 +1131,12 @@
             "lumi.158d00015d1bf5-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "lumi",
         "model": "lumi.plug.v1",
         "name_by_user": null,
         "name": "灯笼",
+        "serial_number": null,
         "sw_version": "90",
         "via_device_id": null
       },
@@ -1246,10 +1157,12 @@
             "94:f8:27:83:65:73-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "zimi",
         "model": "zimi.switch.dhkg02",
         "name_by_user": null,
         "name": "Mi Smart Dual One Way  Wall Switch",
+        "serial_number": null,
         "sw_version": "2.1.1_0118",
         "via_device_id": null
       },
@@ -1275,36 +1188,14 @@
             "158d0000e6c590"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "switch",
         "name_by_user": null,
         "name": "switch_158d0000e6c590",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "63fd1f0072677a9bbe4709862b10e593"
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "40e2ec915db145d91cfc6b65a141f518"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "037f6536e1dc83b3e8fc2510a2396023",
-        "identifiers": [
-          [
-            "mobile_app",
-            "CB54FF8D-854F-43CA-811C-FE93EBEEB2EE"
-          ]
-        ],
-        "manufacturer": "Apple",
-        "model": "iPad4,4",
-        "name_by_user": null,
-        "name": "“miaoy”的 iPad",
-        "sw_version": "12.4.8",
-        "via_device_id": null
       },
       {
         "area_id": null,
@@ -1323,42 +1214,14 @@
             "014dfcb6-0e64-4f4b-a2e1-c3437c638c00"
           ]
         ],
+        "labels": [],
         "manufacturer": "Kodi",
         "model": "Plex for Kodi",
         "name_by_user": null,
         "name": "Plex (Plex for Kodi - Kodi)",
+        "serial_number": null,
         "sw_version": "0.3.4",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
-      },
-      {
-        "area_id": "er_lou_ke_ting",
-        "config_entries": [
-          "13b0aed501f6961c990018948d7dced7",
-          "c404322f71648aec8fb9f1298b616ebf"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "mac",
-            "54:ef:44:43:2f:79"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "2e07e9aa04181e61a32f1875e59a57eb",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "54ef44432f79"
-          ]
-        ],
-        "manufacturer": "Xiaomi",
-        "model": "gateway DMWG03LM",
-        "name_by_user": null,
-        "name": "Xiaomi Smart Home Hub 2",
-        "sw_version": "1.0.6_0016",
-        "via_device_id": null
       },
       {
         "area_id": "yi_lou_wo_shi",
@@ -1377,35 +1240,13 @@
             "a4:c1:38:de:cb:8c-cafbec01cb5eae6543be67a32aa5125f"
           ]
         ],
+        "labels": [],
         "manufacturer": "miaomiaoce",
         "model": "miaomiaoce.sensor_ht.t2",
         "name_by_user": null,
         "name": "温湿度计",
+        "serial_number": null,
         "sw_version": "1.0.0_0130",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "13987804888f7f2f95633a41b984c18a"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "67fdf31f5a9d1e1ec48fa1770c88e182",
-        "identifiers": [
-          [
-            "mobile_app",
-            "629ad2427bed9ad3"
-          ]
-        ],
-        "manufacturer": "Xiaomi",
-        "model": "M2007J17C",
-        "name_by_user": null,
-        "name": "MINOTE",
-        "sw_version": "29",
         "via_device_id": null
       },
       {
@@ -1425,10 +1266,12 @@
             "7c:49:eb:1a:67:30"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "gateway",
         "name_by_user": null,
         "name": "Xiaomi Aqara Gateway",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": null
       },
@@ -1454,10 +1297,12 @@
             "158d00024ea638"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "plug",
         "name_by_user": null,
         "name": "plug_158d00024ea638",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "c3de1e71c450dce6213d7543061f0302"
       },
@@ -1483,72 +1328,14 @@
             "158d00024f2a83"
           ]
         ],
+        "labels": [],
         "manufacturer": "Xiaomi Aqara",
         "model": "plug",
         "name_by_user": null,
         "name": "plug_158d00024f2a83",
+        "serial_number": null,
         "sw_version": "1.1.2",
         "via_device_id": "c3de1e71c450dce6213d7543061f0302"
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "658e6ef381caef8af17a29ec13fbbddd",
-          "13b0aed501f6961c990018948d7dced7",
-          "3ffef4ce617939ac2d4678371c08c38d"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "mac",
-            "94:f8:27:83:65:73"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "ee72b8be85273a985670eb53feb2bfbd",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "94f827836573"
-          ]
-        ],
-        "manufacturer": "Xiaomi",
-        "model": "mesh DHKG02ZM",
-        "name_by_user": null,
-        "name": "Mi Smart Dual One Way  Wall Switch",
-        "sw_version": null,
-        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "13b0aed501f6961c990018948d7dced7"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "mac",
-            "a4:c1:38:de:cb:8c"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "060af716a90e69f64c5f8440742e419f",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "a4c138decb8c"
-          ]
-        ],
-        "manufacturer": "Xiaomi",
-        "model": "ble LYWSD03MMC",
-        "name_by_user": null,
-        "name": "温湿度计",
-        "sw_version": null,
-        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
       },
       {
         "area_id": null,
@@ -1567,10 +1354,12 @@
             "83b65cb2-53f1-4666-81a8-e9aca7fd6130"
           ]
         ],
+        "labels": [],
         "manufacturer": "Kodi",
         "model": "Plex for Kodi",
         "name_by_user": null,
         "name": "Plex (Plex for Kodi - Kodi)",
+        "serial_number": null,
         "sw_version": "0.3.5",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
@@ -1591,241 +1380,968 @@
             "346AABBF-E64B-43EF-BBAF-7B3A94909785"
           ]
         ],
+        "labels": [],
         "manufacturer": "iOS",
         "model": "Plex for iOS",
         "name_by_user": null,
         "name": "Plex (Plex for iOS - “miaoy”的 iPad)",
+        "serial_number": null,
         "sw_version": "7.29",
         "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
       },
       {
         "area_id": null,
         "config_entries": [
-          "b29d5bc65b61133ba4865ea9d1e4af14"
+          "4633d1b3689721f843f5c8598eb00f1b"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "1c5408ab140dde13f3b04b4dbb95c322",
+        "identifiers": [
+          [
+            "sun",
+            "4633d1b3689721f843f5c8598eb00f1b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d5c7c945f29e10c5559a083c8df7e81d"
         ],
         "configuration_url": null,
         "connections": [],
         "disabled_by": null,
         "entry_type": null,
         "hw_version": null,
-        "id": "b7da0a71208506d684806f7c60ae7693",
+        "id": "35f940ec6157378b99032a358cfb7338",
+        "identifiers": [
+          [
+            "plex",
+            "mlle4z66twtqv63ov3nytbdf"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "windows",
+        "model": "Plex for Windows",
+        "name_by_user": null,
+        "name": "Plex (Plex for Windows - X13)",
+        "serial_number": null,
+        "sw_version": "1.90.1.118-a4bc1429",
+        "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d5c7c945f29e10c5559a083c8df7e81d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "61e83e9b13fa5a920c5a5806f83b70d4",
+        "identifiers": [
+          [
+            "plex",
+            "2B9CE321-80A2-4448-BDDF-517F6457F3FF"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "tvOS",
+        "model": "Plex for Apple TV",
+        "name_by_user": null,
+        "name": "Plex (Plex for Apple TV - Apple TV)",
+        "serial_number": null,
+        "sw_version": "8.21",
+        "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
+      },
+      {
+        "area_id": "yi_lou_ke_ting",
+        "config_entries": [
+          "cafbec01cb5eae6543be67a32aa5125f"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/chuangmi.camera.v2",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "80dc79aa0e98028dfb5200fb3bfb37a5",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "78:11:dc:cd:bd:a0-cafbec01cb5eae6543be67a32aa5125f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "chuangmi",
+        "model": "chuangmi.camera.v2",
+        "name_by_user": null,
+        "name": "客厅走廊",
+        "serial_number": null,
+        "sw_version": "4.0.9_0420",
+        "via_device_id": null
+      },
+      {
+        "area_id": "yi_lou_wo_shi",
+        "config_entries": [
+          "cafbec01cb5eae6543be67a32aa5125f"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/isa.camera.df3",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "01a1ccbac3b880fa8577c54520fe0b4f",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "78:11:dc:79:4e:bb-cafbec01cb5eae6543be67a32aa5125f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "isa",
+        "model": "isa.camera.df3",
+        "name_by_user": null,
+        "name": "一楼卧室",
+        "serial_number": null,
+        "sw_version": "5.5.1_1025",
+        "via_device_id": null
+      },
+      {
+        "area_id": "yi_lou_wo_shi",
+        "config_entries": [
+          "cafbec01cb5eae6543be67a32aa5125f"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/zimi.switch.dhkg01",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2d74c268854651a20ccc892d8aa6d6b7",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "6c:d3:ee:c7:86:41-cafbec01cb5eae6543be67a32aa5125f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "zimi",
+        "model": "zimi.switch.dhkg01",
+        "name_by_user": null,
+        "name": "一楼卧室灯",
+        "serial_number": null,
+        "sw_version": "1.4.4_0087",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "5b1da6743d796040831b09b2087992b8"
+        ],
+        "configuration_url": "http://192.168.1.8:5000",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1827af8b31c98c9cbe1191bdcd6968ea",
+        "identifiers": [
+          [
+            "synology_dsm",
+            "1780PDN000867"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Synology",
+        "model": "DS918+",
+        "name_by_user": null,
+        "name": "MY-NAS",
+        "serial_number": null,
+        "sw_version": "DSM 7.1.1-42962 Update 6",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "5b1da6743d796040831b09b2087992b8"
+        ],
+        "configuration_url": "http://192.168.1.8:5000",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a67fad23a31f9e2c028a172cb3d7597d",
+        "identifiers": [
+          [
+            "synology_dsm",
+            "1780PDN000867_sda"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "WDC     ",
+        "model": "WD40PURX-89NZ6Y0",
+        "name_by_user": null,
+        "name": "MY-NAS (Drive 1)",
+        "serial_number": null,
+        "sw_version": "01.04Q.2",
+        "via_device_id": "1827af8b31c98c9cbe1191bdcd6968ea"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "5b1da6743d796040831b09b2087992b8"
+        ],
+        "configuration_url": "http://192.168.1.8:5000",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6cd4c1d8e7d7f747ffe19c37603000a4",
+        "identifiers": [
+          [
+            "synology_dsm",
+            "1780PDN000867_volume_3"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Synology",
+        "model": "DS918+",
+        "name_by_user": null,
+        "name": "MY-NAS (Volume 3)",
+        "serial_number": null,
+        "sw_version": "DSM 7.1.1-42962 Update 6",
+        "via_device_id": "1827af8b31c98c9cbe1191bdcd6968ea"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "17c6bae6cc4f59c5360f26f277702edd"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "211136ebaec2302f0b7c483d9c0dde23",
+        "identifiers": [
+          [
+            "systemmonitor",
+            "17c6bae6cc4f59c5360f26f277702edd"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "System Monitor",
+        "model": null,
+        "name_by_user": null,
+        "name": "System Monitor",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4"
+        ],
+        "configuration_url": "http://192.168.1.1:80/html/index.html",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "VER.A",
+        "id": "239e746b310f756f0e433a2338144f71",
+        "identifiers": [
+          [
+            "huawei_mesh_router",
+            "5JN7S20416020152"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Huawei",
+        "model": "WS7100-10",
+        "name_by_user": null,
+        "name": "Primary router",
+        "serial_number": null,
+        "sw_version": "4.0.0.16(V3R2)(patch01)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "251c69806c3d49e4fde7e0bf8d2832d9"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "38a3b055615238c6e44f4653ce80e9d4",
         "identifiers": [
           [
             "mobile_app",
-            "8dc123d77fb19387"
+            "402B8DD5-F0F7-4588-BDE6-8F9002489714"
           ]
         ],
-        "manufacturer": "OPPO",
-        "model": "PDYT20",
+        "labels": [],
+        "manufacturer": "Apple",
+        "model": "iPhone13,2",
         "name_by_user": null,
-        "name": "PDYT20",
-        "sw_version": "31",
+        "name": "Harmony OS",
+        "serial_number": null,
+        "sw_version": "17.3.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18be4d313dd95b39d829e34ed7e40ea7"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "85df806d3bb786e17c50d5b1902e1f92",
+        "identifiers": [
+          [
+            "moon",
+            "18be4d313dd95b39d829e34ed7e40ea7"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Moon",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "94:f8:27:83:65:73"
+          ],
+          [
+            "bluetooth",
+            "94:f8:27:83:65:73"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ee72b8be85273a985670eb53feb2bfbd",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "94f827836573"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "Mesh: DHKG02ZM, zimi.switch.dhkg02",
+        "name_by_user": null,
+        "name": "Mi Smart Dual One Way  Wall Switch",
+        "serial_number": null,
+        "sw_version": "2.1.1_0118",
+        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
+      },
+      {
+        "area_id": "yi_lou_wo_shi",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "6c:d3:ee:c7:86:41"
+          ],
+          [
+            "bluetooth",
+            "6c:d3:ee:c7:86:41"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "cc2b562ae0aa7f3a56d7842133d0980e",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "6cd3eec78641"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "Mesh: DHKG01ZM, zimi.switch.dhkg01",
+        "name_by_user": null,
+        "name": "一楼卧室灯",
+        "serial_number": null,
+        "sw_version": "1.4.4_0087",
+        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "0c4565624226fcb7d021c6f57397929f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "2a0f5682826d1a50adc7452a20981cfd",
+        "identifiers": [
+          [
+            "open_meteo",
+            "0c4565624226fcb7d021c6f57397929f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Open-Meteo",
+        "model": null,
+        "name_by_user": null,
+        "name": "我的家",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "96cceef48210bfa4775386cccb4b0d06"
+        ],
+        "configuration_url": "https://www.speedtest.net/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "cda9f16d5f7700f9afc6682f05e98ef5",
+        "identifiers": [
+          [
+            "speedtestdotnet",
+            "96cceef48210bfa4775386cccb4b0d06"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "SpeedTest",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:01:77:ff"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "a8851a1bf49dc8c94968afb189175c4e",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0x00158d00020177ff"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "Zigbee: WSDCGQ01LM, lumi.sensor_ht",
+        "name_by_user": null,
+        "name": "二楼客厅温湿度传感器",
+        "serial_number": null,
+        "sw_version": 2,
+        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
+      },
+      {
+        "area_id": "wo_shi",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:24:1c:3b"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "66dddeaa7f3b546a9d3db4f8cdce74cf",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0x00158d0002241c3b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "Zigbee: WXKG01LM, lumi.sensor_switch",
+        "name_by_user": null,
+        "name": "二楼卧室无线开关",
+        "serial_number": null,
+        "sw_version": 10,
+        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962",
+          "bd135f78edcee2d6b3b5c8eaf3c6f8f4"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "18:c2:3c:05:87:87"
+          ],
+          [
+            "mac",
+            "54:ef:44:43:2f:79"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2e07e9aa04181e61a32f1875e59a57eb",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "54ef44432f79"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "Gateway: DMWG03LM, lumi.gateway.mcn001",
+        "name_by_user": null,
+        "name": "Xiaomi Smart Home Hub 2",
+        "serial_number": null,
+        "sw_version": "1.0.7_0021",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c8401e2778c494a611d5f76fd436893b"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ac5d7c857cb8b9554e15b2be842831cc",
+        "identifiers": [
+          [
+            "mobile_app",
+            "F302568C-76F5-49C9-B73F-581481B7C456"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Apple",
+        "model": "iPhone15,4",
+        "name_by_user": null,
+        "name": "iPhone秋秋",
+        "serial_number": null,
+        "sw_version": "17.3.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "0e1331ade2054073d86189d746c56f22"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5e2755914d6f901509356d9d57c19a64",
+        "identifiers": [
+          [
+            "mobile_app",
+            "64b863fb61960907"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "22101316C",
+        "name_by_user": null,
+        "name": "22101316C",
+        "serial_number": null,
+        "sw_version": "34",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d5c7c945f29e10c5559a083c8df7e81d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0fe3313d974bb19eabef4da229b1b294",
+        "identifiers": [
+          [
+            "plex",
+            "C0DC364E-8AB2-437E-80CE-2390D1F4B2FD"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Plex",
+        "model": "Plex for iOS",
+        "name_by_user": null,
+        "name": "Plex (Plex for iOS - iPhone)",
+        "serial_number": null,
+        "sw_version": "8.33",
+        "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d5c7c945f29e10c5559a083c8df7e81d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a978da0ae3a2e84c32633a53209b1223",
+        "identifiers": [
+          [
+            "plex",
+            "7c578ee1e7484b4f-com-plexapp-android"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Android",
+        "model": "Plex for Android (TV)",
+        "name_by_user": null,
+        "name": "Plex (Plex for Android (TV) - p230)",
+        "serial_number": null,
+        "sw_version": "10.11.0.183",
+        "via_device_id": "86d2ea5349bd4a74cc8cb1b7243b3fbc"
+      },
+      {
+        "area_id": "wo_shi",
+        "config_entries": [
+          "cafbec01cb5eae6543be67a32aa5125f"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/lumi.sensor_ht.v1",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "17015ab5d266096c13b8f83400fa3922",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "lumi.158d00020177ff-cafbec01cb5eae6543be67a32aa5125f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "lumi",
+        "model": "lumi.sensor_ht.v1",
+        "name_by_user": null,
+        "name": "二楼客厅温湿度传感器",
+        "serial_number": null,
+        "sw_version": "",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wo_shi",
+        "config_entries": [
+          "a0760b02abad9ae9214f794c49468962"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "a4:c1:38:de:cb:8c"
+          ],
+          [
+            "bluetooth",
+            "a4:c1:38:de:cb:8c"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "060af716a90e69f64c5f8440742e419f",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "a4c138decb8c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Xiaomi",
+        "model": "BLE: LYWSD03MMC, miaomiaoce.sensor_ht.t2",
+        "name_by_user": null,
+        "name": "温湿度计",
+        "serial_number": null,
+        "sw_version": "1.0.0_0130",
+        "via_device_id": "2e07e9aa04181e61a32f1875e59a57eb"
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "c84e2e78aa5c718e23d18c21fd1416fe"
+        ],
+        "configuration_url": "http://192.168.1.18:80/PRESENTATION/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "440b53cbd9f507dac9187c4696f4f48a",
+        "identifiers": [
+          [
+            "ipp",
+            "cfe92100-67c4-11d4-a45f-a4d73c3e86ec"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "EPSON",
+        "model": "L3250 Series",
+        "name_by_user": null,
+        "name": "EPSON L3250 Series",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "yi_lou_ke_ting",
+        "config_entries": [
+          "554f81bb9aa149aa7b2d6c497388ed7c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d5164ea8ddbc0a197a51e668f8d9321a",
+        "identifiers": [
+          [
+            "kodi",
+            "554f81bb9aa149aa7b2d6c497388ed7c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Kodi",
+        "model": null,
+        "name_by_user": null,
+        "name": "192.168.1.6",
+        "serial_number": null,
+        "sw_version": "20.5",
+        "via_device_id": null
+      },
+      {
+        "area_id": "er_lou_ke_ting",
+        "config_entries": [
+          "bef9834aeeac13e41047411a7b7b9842"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "930e6a7da147560b371471ff16136917",
+        "identifiers": [
+          [
+            "kodi",
+            "e6ca6dbd-e749-4fa2-b867-b90a722d67da"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Kodi",
+        "model": null,
+        "name_by_user": null,
+        "name": "Android",
+        "serial_number": null,
+        "sw_version": "20.0",
         "via_device_id": null
       }
     ],
     "deleted_devices": [
       {
         "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "gpslogger",
-            "53c834c3dc112650"
-          ]
-        ],
-        "id": "2316c1ca107128d22bfebae6d1e04a6c",
-        "orphaned_timestamp": 1675671893.9904358
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "34:ce:00:e6:b3:d3-4ce5b01ecedd012e1faf5651ba23923a"
-          ]
-        ],
-        "id": "69454bf0dc064aa3013dfb07463c0d5f",
-        "orphaned_timestamp": 1675941991.5131576
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "00:9e:c8:e7:67:1d-4ce5b01ecedd012e1faf5651ba23923a"
-          ]
-        ],
-        "id": "d083e63732b823cc6550ae112d8a28a5",
-        "orphaned_timestamp": 1675941991.5131576
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "00:9e:c8:e7:67:1d-edcd89bbc0af9a334a436afb072c0285"
-          ]
-        ],
-        "id": "3c552b427d7256215b7822fcb4b5aa21",
-        "orphaned_timestamp": 1675942235.0762386
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "f8:44:11:63:41:0c-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "fb93ebfa4f4c50496682aa442e820f02",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d0001e80ca7-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "868b30a536564d9ac9c25ed87dfdb1e2",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "34:ce:00:e6:b3:d3-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "a827b87bec3cc45aefe5ee67bcdb5ee7",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "28:6c:07:f0:c4:e5-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "363a18c928f125636d89cfc7826156c9",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d00015d5c57-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "24d6d0a2680d37a4f5a46a801a1ed2eb",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d0001a64708-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "a590447595e37cbfbe5ea183efe4f210",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d00015d2507-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "2416da3dacc280555ad64dfbe9a322b3",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d00015dbaec-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "ef1c6c636ec7e54d760709c2a1f5e6ac",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d000128fa46-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "755f50b60b205827e0ac1dd8d56aaf87",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "xiaomi_miot",
-            "lumi.158d00015d1bf5-0f4e2188840bdc9dbef999afc777e5d2"
-          ]
-        ],
-        "id": "7eae41d14df8d4ad66c32a68339a7630",
-        "orphaned_timestamp": 1675942407.8507986
-      },
-      {
-        "config_entries": [],
         "connections": [
           [
             "mac",
-            "9f:5a:86:ad:c4:13"
+            "f0:b3:ec:1e:9d:67"
           ]
         ],
         "identifiers": [
           [
-            "homekit",
-            "15ec85eb714b287cb3396c78ff3e5034",
-            "homekit.bridge"
+            "apple_tv",
+            "F0:B3:EC:1E:9D:67"
           ]
         ],
-        "id": "fdf48e704259c4109fd6cc2903f5c02e",
-        "orphaned_timestamp": 1677293627.590643
+        "id": "66c01a7a6afa1be91ad2b381e109c928",
+        "orphaned_timestamp": 1710989950.813657
       },
       {
         "config_entries": [],
-        "connections": [
-          [
-            "upnp",
-            "uuid:5bcb6966-980a-4960-ab54-dba7b8a15b24"
-          ]
-        ],
+        "connections": [],
         "identifiers": [
           [
-            "dlna_dmr",
-            "uuid:5bcb6966-980a-4960-ab54-dba7b8a15b24"
+            "mobile_app",
+            "8dc123d77fb19387"
           ]
         ],
-        "id": "1549a9887dae0fa9414af20dbb08d50c",
-        "orphaned_timestamp": 1677749543.4978175
+        "id": "b7da0a71208506d684806f7c60ae7693",
+        "orphaned_timestamp": 1711004778.841797
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "629ad2427bed9ad3"
+          ]
+        ],
+        "id": "67fdf31f5a9d1e1ec48fa1770c88e182",
+        "orphaned_timestamp": 1711004782.9042902
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "9157A31E-ABEC-4F50-9EA4-93BD776039B7"
+          ]
+        ],
+        "id": "aa1406c248af8bfe45d788e2d39fb3d6",
+        "orphaned_timestamp": 1711004787.7402928
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "CB54FF8D-854F-43CA-811C-FE93EBEEB2EE"
+          ]
+        ],
+        "id": "037f6536e1dc83b3e8fc2510a2396023",
+        "orphaned_timestamp": 1711004791.443462
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "17590EED-B460-454F-9268-6E3B9C1E5D23"
+          ]
+        ],
+        "id": "a4134769ad716cba349519526de4dc7a",
+        "orphaned_timestamp": 1711022437.7601225
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "12C697A9-57DA-4CD4-AE47-EB23254CBCCF"
+          ]
+        ],
+        "id": "fe5c517d590a384f94bdb3d23bd695ad",
+        "orphaned_timestamp": 1711061450.7491903
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "speedtestdotnet",
+            "7acf5be2a49e4b80346126240efa09c5"
+          ]
+        ],
+        "id": "5883ffaf59294e3ca96d9129d9c3a814",
+        "orphaned_timestamp": 1711067054.947902
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "adguard",
+            "localhost",
+            3000,
+            "/control/"
+          ]
+        ],
+        "id": "6ee73e868071cd9dda3233a2f1551c69",
+        "orphaned_timestamp": 1711067103.842579
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "speedtestdotnet",
+            "5b1d9d4ec49b985f6833efdb16ac0b0d"
+          ]
+        ],
+        "id": "abc445de6fdf1ec475dd9dccea491068",
+        "orphaned_timestamp": 1711110174.571023
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "kodi",
+            "35b55c40107f3572fac1cad585a609a0"
+          ]
+        ],
+        "id": "4c143c98e265930abbfa539edce15dc8",
+        "orphaned_timestamp": 1712289645.3485363
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "kodi",
+            "0f0ef295817d9db2adb481c811ef0dc4"
+          ]
+        ],
+        "id": "2adf8dbe94e1293a92b66a123a9de4b3",
+        "orphaned_timestamp": 1712289649.5174427
       }
     ]
   }

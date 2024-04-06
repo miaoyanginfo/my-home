@@ -34,12 +34,11 @@ class BLEGateway(GatewayBase):
         if self.available is None:
             await self.ble_read_devices(sh)
 
-        if self.options.get("memory") and sh.model == "mgw":
-            self.debug("Init Bluetooth in memory storage")
-            sh.patch_memory_bluetooth()
-
     async def ble_mqtt_publish(self, msg: MQTTMessage):
-        if msg.topic == "miio/report" and b'"_async.ble_event"' in msg.payload:
+        if (
+            msg.topic in ("miio/report", "central/report")
+            and b'"_async.ble_event"' in msg.payload
+        ):
             await self.ble_process_event(msg.json["params"])
 
     async def ble_process_event(self, data: dict):

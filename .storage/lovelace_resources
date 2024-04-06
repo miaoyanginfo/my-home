@@ -5,9 +5,14 @@
   "data": {
     "items": [
       {
-        "url": "/hacsfiles/lovelace-mushroom/mushroom.js?hacstag=444350375261",
+        "url": "/hacsfiles/lovelace-mushroom/mushroom.js?hacstag=444350375352",
         "type": "module",
         "id": "977401710fff49a6a39a0c56e9917709"
+      },
+      {
+        "id": "43311a26248f4877b5964f0c66073d5c",
+        "url": "/local/custom-lovelace/ch_calendar-card/ch_calendar-card.js",
+        "type": "module"
       }
     ]
   }

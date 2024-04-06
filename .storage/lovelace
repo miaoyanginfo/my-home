@@ -27,6 +27,9 @@
             },
             {
               "entity": "person.miao_jing_ji"
+            },
+            {
+              "entity": "person.android"
             }
           ],
           "cards": [
@@ -34,9 +37,15 @@
               "show_current": true,
               "show_forecast": true,
               "type": "weather-forecast",
-              "entity": "weather.localweather",
+              "entity": "weather.he_feng_tian_qi",
               "name": "本地天气",
-              "secondary_info_attribute": "wind_speed"
+              "secondary_info_attribute": "wind_speed",
+              "forecast_type": "daily"
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.wo_de_jia",
+              "forecast_type": "daily"
             },
             {
               "type": "entities",
@@ -44,6 +53,9 @@
                 {
                   "entity": "sun.sun",
                   "name": "日出日落"
+                },
+                {
+                  "entity": "sensor.moon_phase"
                 },
                 {
                   "entity": "sensor.date",
@@ -55,6 +67,9 @@
                 },
                 {
                   "entity": "zone.home"
+                },
+                {
+                  "entity": "sensor.holiday"
                 }
               ],
               "title": "时间日期",
@@ -81,23 +96,28 @@
                   "entity": "person.miao_yang",
                   "fill_container": false,
                   "primary_info": "name",
-                  "secondary_info": "state"
+                  "secondary_info": "state",
+                  "icon_type": "entity-picture"
                 },
                 {
                   "type": "custom:mushroom-person-card",
-                  "entity": "person.xie_qiu_yan"
+                  "entity": "person.xie_qiu_yan",
+                  "icon_type": "entity-picture"
                 },
                 {
                   "type": "custom:mushroom-person-card",
-                  "entity": "person.ba_ba"
+                  "entity": "person.ba_ba",
+                  "icon_type": "entity-picture"
                 },
                 {
                   "type": "custom:mushroom-person-card",
-                  "entity": "person.ma_ma"
+                  "entity": "person.ma_ma",
+                  "icon_type": "entity-picture"
                 },
                 {
                   "type": "custom:mushroom-person-card",
-                  "entity": "person.miao_jing_ji"
+                  "entity": "person.miao_jing_ji",
+                  "icon_type": "entity-picture"
                 }
               ]
             },
@@ -106,9 +126,6 @@
               "entities": [
                 {
                   "entity": "light.gateway_light_286c07f0c4e5"
-                },
-                {
-                  "entity": "switch.1f_woshi"
                 },
                 {
                   "entity": "switch.ciwo_light"
@@ -120,10 +137,13 @@
                   "entity": "light.gateway_light_7c49eb1a6730"
                 },
                 {
-                  "entity": "light.ke_ting_deng"
+                  "entity": "switch.94f827836573_channel_1"
                 },
                 {
-                  "entity": "light.yang_tai_deng"
+                  "entity": "switch.94f827836573_channel_2"
+                },
+                {
+                  "entity": "switch.6cd3eec78641_switch"
                 }
               ],
               "title": "灯光",
@@ -153,6 +173,24 @@
                 },
                 {
                   "entity": "sensor.last_boot"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_2"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_3"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_4"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_8"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_20"
+                },
+                {
+                  "entity": "binary_sensor.192_168_1_21"
                 }
               ],
               "title": "系统网络监测",
@@ -215,11 +253,11 @@
                 },
                 {
                   "entity": "switch.s1_s3",
-                  "name": "S3"
+                  "name": "打印机电源"
                 },
                 {
                   "entity": "switch.s1_s4",
-                  "name": "S4"
+                  "name": "NAS主机电源"
                 }
               ],
               "title": "二楼电视插排",
@@ -300,19 +338,25 @@
               "entity": "media_player.kodi_0f0ef295817d9db2adb481c811ef0dc4"
             },
             {
+              "type": "custom:ch_calendar-card",
+              "entity": "sensor.holiday",
+              "icons": "/local/custom-lovelace/ch_calendar-card/icons/"
+            },
+            {
               "type": "entities",
               "entities": [
                 {
-                  "entity": "binary_sensor.nas"
+                  "entity": "binary_sensor.192_168_1_8",
+                  "name": "NAS"
                 },
                 {
                   "entity": "switch.my_nas"
                 },
                 {
-                  "entity": "button.my_nas_shutdown"
+                  "entity": "button.my_nas_shutdown_2"
                 },
                 {
-                  "entity": "button.my_nas_reboot"
+                  "entity": "button.my_nas_reboot_2"
                 }
               ],
               "title": "MY-NAS控制",
@@ -411,26 +455,11 @@
               "title": "下载测速表"
             },
             {
-              "type": "light",
-              "entity": "light.gateway_light_286c07f0c4e5"
-            },
-            {
               "type": "entities",
               "entities": [
-                {
-                  "entity": "sensor.miao_yang_de_iphone_geocoded_location"
-                },
-                {
-                  "entity": "sensor.iphoneqiu_qiu_geocoded_location"
-                },
-                {
-                  "entity": "sensor.iphone7_geocoded_location"
-                },
-                {
-                  "entity": "sensor.m2007j17c_di_li_bian_ma_wei_zhi"
-                }
+                "input_datetime.workday_alarm"
               ],
-              "state_color": false
+              "title": "闹铃时间设置"
             },
             {
               "square": true,
@@ -438,26 +467,26 @@
               "type": "grid",
               "cards": [
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
+                  "hours_to_show": 24,
                   "type": "sensor",
                   "detail": 1,
                   "entity": "sensor.a4c138decb8c_temperature"
                 },
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
+                  "hours_to_show": 24,
                   "type": "sensor",
                   "detail": 1,
                   "entity": "sensor.a4c138decb8c_humidity"
                 },
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
+                  "hours_to_show": 24,
                   "type": "sensor",
                   "detail": 1,
                   "entity": "sensor.illumination_7c49eb1a6730",
-                  "name": "网关2亮度"
+                  "name": "二楼卧室亮度"
                 }
               ]
             },
@@ -505,10 +534,6 @@
               ]
             },
             {
-              "type": "alarm-panel",
-              "entity": "alarm_control_panel.home_alarm"
-            },
-            {
               "type": "entities",
               "entities": [
                 {
@@ -525,23 +550,67 @@
               "cards": [
                 {
                   "type": "tile",
-                  "entity": "binary_sensor.motion_sensor_158d00015d5c57"
+                  "entity": "binary_sensor.motion_sensor_158d00015d5c57",
+                  "vertical": true
                 },
                 {
                   "type": "tile",
-                  "entity": "binary_sensor.motion_sensor_158d00015dbaec"
+                  "entity": "binary_sensor.motion_sensor_158d00015dbaec",
+                  "vertical": true
                 },
                 {
                   "type": "tile",
-                  "entity": "binary_sensor.motion_sensor_158d00015d2507"
+                  "entity": "binary_sensor.motion_sensor_158d00015d2507",
+                  "vertical": true
+                },
+                {
+                  "type": "tile",
+                  "entity": "binary_sensor.door_window_sensor_158d0001a64708",
+                  "vertical": true,
+                  "show_entity_picture": false
                 }
               ]
             },
             {
               "type": "entities",
               "entities": [
-                "sensor.fast_com_download"
-              ]
+                {
+                  "entity": "input_text.text2"
+                },
+                {
+                  "entity": "input_button.xiaoai"
+                }
+              ],
+              "title": "小爱讲话"
+            },
+            {
+              "square": true,
+              "type": "grid",
+              "cards": [
+                {
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.0x00158d00020177ff_temperature"
+                },
+                {
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.0x00158d00020177ff_humidity"
+                }
+              ],
+              "columns": 2
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.192_168_1_6"
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.android"
             }
           ]
         },
@@ -553,79 +622,55 @@
           "badges": [
             {
               "entity": "binary_sensor.motion_sensor_158d00015d2507"
+            },
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015d5c57"
+            },
+            {
+              "entity": "binary_sensor.motion_sensor_158d00015dbaec"
             }
           ],
           "cards": [
             {
+              "type": "weather-forecast",
+              "entity": "weather.he_feng_tian_qi",
+              "forecast_type": "daily"
+            },
+            {
+              "show_current": true,
+              "show_forecast": true,
+              "type": "weather-forecast",
+              "entity": "weather.wo_de_jia",
+              "forecast_type": "daily"
+            },
+            {
               "type": "horizontal-stack",
               "cards": [
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
-                  "type": "sensor",
-                  "detail": 1,
-                  "entity": "sensor.temperature_158d0001e80ca7",
-                  "name": "卧室温度"
-                },
-                {
                   "hours_to_show": 24,
-                  "graph": "line",
                   "type": "sensor",
                   "detail": 1,
                   "entity": "sensor.humidity_158d0001e80ca7",
-                  "name": "卧室湿度"
+                  "name": "一楼主卧湿度"
                 },
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
+                  "hours_to_show": 24,
                   "type": "sensor",
                   "detail": 1,
-                  "entity": "sensor.illumination_286c07f0c4e5",
-                  "name": "卧室亮度"
+                  "entity": "sensor.0x00158d00020177ff_humidity",
+                  "name": "二楼客厅湿度"
+                },
+                {
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.a4c138decb8c_humidity",
+                  "name": "二楼卧室湿度"
                 }
               ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "switch.94f827836573_channel_1",
-                  "name": "Channel 1"
-                },
-                {
-                  "entity": "switch.94f827836573_channel_2",
-                  "name": "Channel 2"
-                }
-              ],
-              "title": "Mi Smart Dual One Way  Wall Switch"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "sensor.94f827836573_action",
-                  "name": "Action"
-                }
-              ],
-              "title": "Mi Smart Dual One Way  Wall Switch"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "switch.94f827836573_led",
-                  "name": "LED"
-                },
-                {
-                  "entity": "switch.94f827836573_wireless_1",
-                  "name": "Wireless 1"
-                },
-                {
-                  "entity": "switch.94f827836573_wireless_2",
-                  "name": "Wireless 2"
-                }
-              ],
-              "title": "Mi Smart Dual One Way  Wall Switch"
             },
             {
               "square": true,
@@ -633,177 +678,52 @@
               "type": "grid",
               "cards": [
                 {
-                  "hours_to_show": 24,
                   "graph": "line",
+                  "hours_to_show": 24,
                   "type": "sensor",
                   "detail": 1,
+                  "entity": "sensor.temperature_158d0001e80ca7",
+                  "name": "一楼主卧"
+                },
+                {
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.0x00158d00020177ff_temperature"
+                },
+                {
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "name": "二楼卧室温度",
                   "entity": "sensor.a4c138decb8c_temperature"
-                },
-                {
-                  "hours_to_show": 24,
-                  "graph": "line",
-                  "type": "sensor",
-                  "detail": 1,
-                  "entity": "sensor.a4c138decb8c_humidity"
-                },
-                {
-                  "hours_to_show": 24,
-                  "graph": "line",
-                  "type": "sensor",
-                  "detail": 1,
-                  "entity": "sensor.illumination_7c49eb1a6730",
-                  "name": "网关2亮度"
                 }
               ]
             },
-            {
-              "type": "entities",
-              "entities": [
-                "light.ke_ting_deng",
-                "light.yang_tai_deng"
-              ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "sun.sun"
-              ],
-              "state_color": true,
-              "theme": "ios-dark-mode-light-blue",
-              "header": {
-                "type": "picture",
-                "image": "https://ts1.cn.mm.bing.net/th/id/R-C.96e29f5cff9dfd451a23296de3b8d930?rik=dgvqQ0h80yx2uA&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f6%2fe6%2f97b6389579.jpg&ehk=xQwPEqpQVYRmBP9Gc5%2fv1Z%2fVD4GlG1fUFJ6FJdASppw%3d&risl=&pid=ImgRaw&r=0",
-                "tap_action": {
-                  "action": "none"
-                },
-                "hold_action": {
-                  "action": "none"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "theme": "Backend-selected",
-          "title": "系统状态监测",
-          "path": "",
-          "icon": "mdi:monitor-eye",
-          "badges": [],
-          "cards": [
-            {
-              "type": "gauge",
-              "min": 0,
-              "max": 100,
-              "entity": "sensor.processor_use_percent",
-              "severity": {
-                "green": 0,
-                "yellow": 50,
-                "red": 80
-              }
-            },
-            {
-              "type": "gauge",
-              "min": 0,
-              "max": 100,
-              "entity": "sensor.memory_use_percent",
-              "severity": {
-                "green": 10,
-                "yellow": 30,
-                "red": 80
-              }
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "switch.my_nas"
-                },
-                {
-                  "entity": "button.my_nas_shutdown"
-                },
-                {
-                  "entity": "button.my_nas_reboot"
-                },
-                {
-                  "entity": "binary_sensor.nas"
-                },
-                {
-                  "entity": "sensor.plex_my_nas"
-                },
-                {
-                  "entity": "button.scan_clients_my_nas"
-                }
-              ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "binary_sensor.huawei_router_internet_connection"
-                },
-                {
-                  "entity": "button.huawei_router_reboot"
-                },
-                {
-                  "entity": "sensor.huawei_router_total_clients"
-                },
-                {
-                  "entity": "sensor.huawei_router_uptime"
-                },
-                {
-                  "entity": "switch.huawei_router_wifi_6_twt"
-                }
-              ],
-              "title": "主路由状态"
-            }
-          ]
-        },
-        {
-          "theme": "Backend-selected",
-          "title": "播放器",
-          "path": "",
-          "icon": "mdi:plex",
-          "type": "panel",
-          "badges": [],
-          "cards": [
             {
               "square": true,
-              "columns": 4,
               "type": "grid",
               "cards": [
                 {
-                  "type": "media-control",
-                  "entity": "media_player.plex_plex_for_android_tv_p2301"
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "name": "一楼主卧",
+                  "entity": "sensor.illumination_286c07f0c4e5"
                 },
                 {
-                  "type": "media-control",
-                  "entity": "media_player.plex_plex_for_ios_iphone"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.plex_plex_for_kodi_kodi1"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.plex_plex_for_windows_x13"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.plex_plex_web_microsoft_edge_windows"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.kodi_0f0ef295817d9db2adb481c811ef0dc4"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.kodi_35b55c40107f3572fac1cad585a609a0"
-                },
-                {
-                  "type": "media-control",
-                  "entity": "media_player.xiaomi_s12_671d_play_control"
+                  "graph": "line",
+                  "hours_to_show": 24,
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.illumination_7c49eb1a6730",
+                  "name": "二楼卧室亮度"
                 }
-              ]
+              ],
+              "columns": 2
             }
           ]
         },
@@ -840,6 +760,312 @@
               "type": "area",
               "area": "chu_fang",
               "navigation_path": "/config/areas/area/chu_fang"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.94f827836573_channel_1",
+                  "name": "Channel 1"
+                },
+                {
+                  "entity": "switch.94f827836573_channel_2",
+                  "name": "Channel 2"
+                }
+              ],
+              "title": "Mi Smart Dual One Way  Wall Switch"
+            }
+          ]
+        },
+        {
+          "title": "灯光",
+          "path": "unknown",
+          "type": "sections",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "light",
+                  "entity": "light.gateway_light_286c07f0c4e5"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.6cd3eec78641_switch"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.ciwo_light"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.1f_woshi"
+                },
+                {
+                  "type": "tile",
+                  "entity": "light.gateway_light_7c49eb1a6730"
+                },
+                {
+                  "type": "tile",
+                  "entity": "light.gateway_light_286c07f0c4e5"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.94f827836573_channel_1"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.woshi_light"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.94f827836573_channel_2"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.zimi_dhkg01_8641_switch"
+                }
+              ]
+            }
+          ],
+          "icon": "mdi:lightbulb",
+          "cards": []
+        },
+        {
+          "title": "view",
+          "path": "view",
+          "type": "sections",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:ch_calendar-card",
+                  "entity": "sensor.holiday",
+                  "icons": "/local/custom-lovelace/ch_calendar-card/icons/"
+                }
+              ],
+              "title": "日历"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "show_current": true,
+                  "show_forecast": false,
+                  "type": "weather-forecast",
+                  "entity": "weather.he_feng_tian_qi",
+                  "forecast_type": "daily"
+                },
+                {
+                  "show_current": false,
+                  "show_forecast": true,
+                  "type": "weather-forecast",
+                  "entity": "weather.wo_de_jia",
+                  "forecast_type": "daily"
+                },
+                {
+                  "type": "entity",
+                  "entity": "input_datetime.workday_alarm",
+                  "name": "工作日闹钟时间设定"
+                }
+              ],
+              "title": "天气"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "map",
+                  "entities": [
+                    {
+                      "entity": "device_tracker.harmony_os"
+                    },
+                    {
+                      "entity": "device_tracker.iphone12_2"
+                    },
+                    {
+                      "entity": "device_tracker.iphoneqiu_qiu"
+                    },
+                    {
+                      "entity": "device_tracker.miss"
+                    }
+                  ]
+                }
+              ],
+              "title": "设备位置"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.temperature_158d0001e80ca7"
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "entity": "sensor.0x00158d00020177ff_temperature",
+                  "detail": 1
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.humidity_158d0001e80ca7"
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.0x00158d00020177ff_humidity"
+                }
+              ],
+              "title": "室内温湿度"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.miao_yang",
+                      "primary_info": "name",
+                      "secondary_info": "state",
+                      "icon_type": "entity-picture",
+                      "fill_container": true,
+                      "layout": "vertical"
+                    },
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.ba_ba",
+                      "layout": "vertical",
+                      "icon_type": "entity-picture"
+                    },
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.ma_ma",
+                      "layout": "vertical",
+                      "icon_type": "entity-picture"
+                    },
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.xie_qiu_yan",
+                      "icon_type": "entity-picture",
+                      "layout": "vertical"
+                    },
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.miao_jing_ji",
+                      "layout": "vertical",
+                      "icon_type": "entity-picture"
+                    }
+                  ]
+                }
+              ],
+              "title": "在哪里"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "media-control",
+                  "entity": "media_player.xiaomi_s12_671d_play_control"
+                },
+                {
+                  "type": "media-control",
+                  "entity": "media_player.kodi_0f0ef295817d9db2adb481c811ef0dc4"
+                },
+                {
+                  "type": "media-control",
+                  "entity": "media_player.kodi_35b55c40107f3572fac1cad585a609a0"
+                }
+              ],
+              "title": "媒体播放器"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "switch.my_nas"
+                },
+                {
+                  "type": "tile",
+                  "entity": "button.my_nas_shutdown_2"
+                },
+                {
+                  "type": "tile",
+                  "entity": "button.my_nas_reboot_2"
+                },
+                {
+                  "type": "tile",
+                  "entity": "sensor.plex_my_nas"
+                },
+                {
+                  "type": "tile",
+                  "entity": "update.plex_media_server_my_nas"
+                },
+                {
+                  "type": "tile",
+                  "entity": "sensor.my_nas_cpu_li_yong_lu_zong_ji"
+                },
+                {
+                  "type": "tile",
+                  "entity": "sensor.my_nas_ke_yong_nei_cun_jiao_huan"
+                },
+                {
+                  "type": "tile",
+                  "entity": "binary_sensor.my_nas_an_quan_zhuang_tai"
+                }
+              ],
+              "title": "NAS控制"
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "switch.zimi_dhkg01_8641_switch"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.94f827836573_channel_2"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.woshi_light"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.94f827836573_channel_1"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.bingui"
+                },
+                {
+                  "type": "tile",
+                  "entity": "light.gateway_light_286c07f0c4e5"
+                },
+                {
+                  "type": "tile",
+                  "entity": "light.gateway_light_7c49eb1a6730"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.ciwo_light"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.6cd3eec78641_switch"
+                }
+              ],
+              "title": "灯光控制"
             }
           ]
         }

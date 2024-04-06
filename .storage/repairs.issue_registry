@@ -3,6 +3,42 @@
   "minor_version": 2,
   "key": "repairs.issue_registry",
   "data": {
-    "issues": []
+    "issues": [
+      {
+        "created": "2023-04-02T02:51:58.447376+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_switch"
+      },
+      {
+        "created": "2023-06-10T12:22:56.970574+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "config_entry_only_speedtestdotnet"
+      },
+      {
+        "created": "2023-06-10T12:23:08.580591+00:00",
+        "dismissed_version": "2023.7.0.dev20230610",
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "config_entry_only_xiaomi_aqara"
+      },
+      {
+        "created": "2024-03-21T02:40:22.694907+00:00",
+        "dismissed_version": "2024.3.1",
+        "domain": "weather",
+        "is_persistent": false,
+        "issue_id": "deprecated_weather_forecast_heweather_forecast"
+      },
+      {
+        "created": "2024-03-21T02:40:24.942938+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_systemmonitor"
+      }
+    ]
   }
 }

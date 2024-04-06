@@ -1,12 +1,12 @@
 """Support for services."""
 
 from dataclasses import dataclass
+from enum import StrEnum
 import logging
 from typing import Final
 
 import voluptuous as vol
 
-from homeassistant.backports.enum import StrEnum
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.exceptions import HomeAssistantError, ServiceNotFound
@@ -35,24 +35,26 @@ _FIELD_PASSWORD: Final = "password"
 
 _CV_MAC_ADDR: Final = cv.matches_regex("^([A-Fa-f0-9]{2}\\:){5}[A-Fa-f0-9]{2}$")
 
-_CV_SSID: Final = cv.matches_regex("^([A-Fa-f0-9]{2}\\:){5}[A-Fa-f0-9]{2}$")
-
 _WIFI_DURATION_MAP: dict[str, HuaweiGuestNetworkDuration] = {
-    "4 hours": HuaweiGuestNetworkDuration.FOUR_HOURS,
-    "1 day": HuaweiGuestNetworkDuration.ONE_DAY,
-    "Unlimited": HuaweiGuestNetworkDuration.UNLIMITED,
+    "four_hours": HuaweiGuestNetworkDuration.FOUR_HOURS,
+    "one_day": HuaweiGuestNetworkDuration.ONE_DAY,
+    "unlimited": HuaweiGuestNetworkDuration.UNLIMITED,
 }
 
 _WIFI_SECURITY_MAP: dict[str, bool] = {
-    "Encrypted": True,
-    "Open": False,
+    "encrypted": True,
+    "open": False,
 }
 
 
 # ---------------------------
-#   ServiceNames
 # ---------------------------
-class ServiceNames(StrEnum):
+
+
+# ---------------------------
+#   ServiceName
+# ---------------------------
+class ServiceName(StrEnum):
     ADD_TO_WHITELIST = "whitelist_add"
     ADD_TO_BLACKLIST = "blacklist_add"
     REMOVE_FROM_WHITELIST = "whitelist_remove"
@@ -68,23 +70,23 @@ class ServiceDescription:
 
 SERVICES = [
     ServiceDescription(
-        name=ServiceNames.ADD_TO_WHITELIST,
         schema=vol.Schema({vol.Required(_FIELD_MAC_ADDRESS): _CV_MAC_ADDR}),
+        name=ServiceName.ADD_TO_WHITELIST,
     ),
     ServiceDescription(
-        name=ServiceNames.REMOVE_FROM_WHITELIST,
         schema=vol.Schema({vol.Required(_FIELD_MAC_ADDRESS): _CV_MAC_ADDR}),
+        name=ServiceName.REMOVE_FROM_WHITELIST,
     ),
     ServiceDescription(
-        name=ServiceNames.ADD_TO_BLACKLIST,
         schema=vol.Schema({vol.Required(_FIELD_MAC_ADDRESS): _CV_MAC_ADDR}),
+        name=ServiceName.ADD_TO_BLACKLIST,
     ),
     ServiceDescription(
-        name=ServiceNames.REMOVE_FROM_BLACKLIST,
         schema=vol.Schema({vol.Required(_FIELD_MAC_ADDRESS): _CV_MAC_ADDR}),
+        name=ServiceName.REMOVE_FROM_BLACKLIST,
     ),
     ServiceDescription(
-        name=ServiceNames.GUEST_NETWORK_SETUP,
+        name=ServiceName.GUEST_NETWORK_SETUP,
         schema=vol.Schema(
             {
                 vol.Required(_FIELD_SERIAL_NUMBER): vol.Coerce(str),
@@ -135,7 +137,7 @@ def _find_coordinator_serial(
         coordinator = item.get(DATA_KEY_COORDINATOR)
         if not coordinator or not isinstance(coordinator, HuaweiDataUpdateCoordinator):
             continue
-        if coordinator.get_router_info().serial_number.upper() == serial_number.upper():
+        if coordinator.primary_router_serial_number == serial_number.upper():
             _LOGGER.debug(
                 "Found coordinator %s with serial number '%s'",
                 coordinator.name,
@@ -271,7 +273,7 @@ async def _async_setup_guest_network(hass: HomeAssistant, service: ServiceCall):
     coordinator = _find_coordinator_serial(hass, serial_number)
     if not coordinator:
         raise HomeAssistantError(
-            f"Can not find coordinator with serial number '{serial_number}'"
+            f"Can not find coordinator with primary router's serial number '{serial_number}'"
         )
 
     _LOGGER.debug(
@@ -321,19 +323,19 @@ async def async_setup_services(hass: HomeAssistant, config_entry: ConfigEntry) -
     async def async_call_service(service: ServiceCall) -> None:
         service_name = service.service
 
-        if service_name == ServiceNames.ADD_TO_WHITELIST:
+        if service_name == ServiceName.ADD_TO_WHITELIST:
             await _async_add_to_whitelist(hass, service)
 
-        elif service_name == ServiceNames.ADD_TO_BLACKLIST:
+        elif service_name == ServiceName.ADD_TO_BLACKLIST:
             await _async_add_to_blacklist(hass, service)
 
-        elif service_name == ServiceNames.REMOVE_FROM_WHITELIST:
+        elif service_name == ServiceName.REMOVE_FROM_WHITELIST:
             await _async_remove_from_whitelist(hass, service)
 
-        elif service_name == ServiceNames.REMOVE_FROM_BLACKLIST:
+        elif service_name == ServiceName.REMOVE_FROM_BLACKLIST:
             await _async_remove_from_blacklist(hass, service)
 
-        elif service_name == ServiceNames.GUEST_NETWORK_SETUP:
+        elif service_name == ServiceName.GUEST_NETWORK_SETUP:
             await _async_setup_guest_network(hass, service)
 
         else:

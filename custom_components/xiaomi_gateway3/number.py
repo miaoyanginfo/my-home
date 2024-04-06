@@ -1,58 +1,37 @@
-from homeassistant.components.number import NumberEntity
-from homeassistant.const import MAJOR_VERSION, MINOR_VERSION
-from homeassistant.core import callback
+from homeassistant.components.number import NumberEntity, DEFAULT_STEP, NumberMode
+from homeassistant.helpers.restore_state import RestoreEntity
 
-from . import DOMAIN
-from .core.converters import Converter
-from .core.device import XDevice
-from .core.entity import XEntity
-from .core.gateway import XGateway
+from .hass.entity import XEntity
 
 
-async def async_setup_entry(hass, config_entry, async_add_entities):
-    def setup(gateway: XGateway, device: XDevice, conv: Converter):
-        if conv.attr in device.entities:
-            entity: XEntity = device.entities[conv.attr]
-            entity.gw = gateway
-        else:
-            entity = XiaomiNumber(gateway, device, conv)
-        async_add_entities([entity])
-
-    gw: XGateway = hass.data[DOMAIN][config_entry.entry_id]
-    gw.add_setup(__name__, setup)
+# noinspection PyUnusedLocal
+async def async_setup_entry(hass, entry, async_add_entities) -> None:
+    XEntity.ADD[entry.entry_id + "number"] = async_add_entities
 
 
-# noinspection PyAbstractClass
-class XiaomiNumber(XEntity, NumberEntity):
-    _attr_value: float = None
+class XNumber(XEntity, NumberEntity, RestoreEntity):
+    _attr_mode = NumberMode.BOX
 
-    def __init__(self, gateway: "XGateway", device: XDevice, conv: Converter):
-        super().__init__(gateway, device, conv)
+    def on_init(self):
+        conv = next(i for i in self.device.converters if i.attr == self.attr)
+
+        multiply: float = getattr(conv, "multiply", 1)
 
         if hasattr(conv, "min"):
-            self._attr_min_value = conv.min
+            self._attr_native_min_value = conv.min * multiply
         if hasattr(conv, "max"):
-            self._attr_max_value = conv.max
+            self._attr_native_max_value = conv.max * multiply
+        if hasattr(conv, "step") or hasattr(conv, "multiply"):
+            self._attr_native_step = getattr(conv, "step", DEFAULT_STEP) * multiply
 
-    @callback
-    def async_set_state(self, data: dict):
-        if self.attr in data:
-            self._attr_value = data[self.attr]
+    def set_state(self, data: dict):
+        self._attr_native_value = data[self.attr]
 
-    @callback
-    def async_restore_last_state(self, state: float, attrs: dict):
-        self._attr_value = state
+    def get_state(self) -> dict:
+        return {self.attr: self._attr_native_value}
 
-    async def async_update(self):
-        await self.device_read(self.subscribed_attrs)
+    async def async_set_native_value(self, value: float) -> None:
+        self.device.write({self.attr: value})
 
-    # backward compatibility fix
-    if (MAJOR_VERSION, MINOR_VERSION) >= (2022, 8):
 
-        async def async_set_native_value(self, value: float) -> None:
-            await self.device_send({self.attr: value})
-
-    else:
-
-        async def async_set_value(self, value: float) -> None:
-            await self.device_send({self.attr: value})
+XEntity.NEW["number"] = XNumber

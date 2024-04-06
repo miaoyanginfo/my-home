@@ -12,9 +12,9 @@
       command_on: 'shA0AAocHAkKHBwJChwcCQocHAkKHBwKChscCQocHAkKHAocChwKGxwJHAkKHAobCgABGQobHAoAAAAA'
       command_off: 'sgs0AAobHAkKGxwJChscCRwJHAkKGwobChwKGwobChsKAAEVChscCQobHAkKHBwJChscCQobHAkAAAAA'
       
-    - name: 1f_woshi
-      command_on: 'shI0AAobHAoKHBwJChscCQobHAkKGx0JChwcCQocHAoKHAocChwKGxwJHAkKHAocCgABGRwKHAkAAAAA'
-      command_off: 'sgs0AAoAARUcCRwJChscCQobHAkKGxwJChscCQobHAkKGxwJChscCRwJHAkKGwobChsKGwobChsAAAAA'
+    # - name: 1f_woshi
+      # command_on: 'shI0AAobHAoKHBwJChscCQobHAkKGx0JChwcCQocHAoKHAocChwKGxwJHAkKHAocCgABGRwKHAkAAAAA'
+      # command_off: 'sgs0AAoAARUcCRwJChscCQobHAkKGxwJChscCQobHAkKGxwJChscCRwJHAkKGwobChsKGwobChsAAAAA'
    
 ####博联SPMINI####
 
@@ -43,3 +43,4 @@
   name: MY-NAS
   turn_off:
     service: shell_command.nasoff
+ 
