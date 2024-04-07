@@ -50,8 +50,8 @@ Recommended attributes names:
 - `led` - control device led light
 - `wireless` - change mode from wired to wireless (decoupled)
 - `power_on_state` - default state when electricity is supplied
-- `contact` - for contact sensor
-- `moisture` - for water leak sensor
+- `contact` - for door/windor sensor (zigbee2mqtt - contact, hass - door or window)
+- `water_leak` - for water leak sensor (zigbee2mqtt - water_leak, hass - moisture)
 
 Nice project with MIoT spec description: https://home.miot-spec.com/
 """
@@ -1379,9 +1379,19 @@ DEVICES += [{
     2528: ["Xiaomi", "Kettle Pro", "MJHWSHO2YM", "yunmi.kettle.v12"],  # RU
     "spec": [
         BLEKettle("power", "binary_sensor", mi=4101),  # power+state+temperature
+        BaseConv("state", "sensor"),
         BaseConv("temperature", "sensor"),
     ],
     "ttl": "12h",
+}, {
+    735: ["Xiaomi", "Honeywell Formaldehyde Monitor", "JQJCY01YM", "yuemee.airmonitor.mhfd1"],
+    "spec": [
+        BLEMathConv("temperature", "sensor", mi=4100, multiply=0.1, round=1, signed=True),  # int16
+        BLEMathConv("humidity", "sensor", mi=4102, multiply=0.1),  # uint16
+        BLEByteConv("battery", "sensor", mi=4106, entity=ENTITY_LAZY),  # no in new firmwares
+        # https://github.com/AlexxIT/XiaomiGateway3/issues/1177
+        BLEMathConv("formaldehyde", "sensor", mi=4112, multiply=0.01),  # uint16
+    ],
 }, {
     1161: ["Xiaomi", "Toothbrush T500", "MES601"],
     "spec": [
@@ -1402,6 +1412,7 @@ DEVICES += [{
         BaseConv("action", "sensor"),
         BLEFinger("fingerprint", mi=6),
         BLEDoor("door", mi=7),
+        BLEMapConv("action", mi=8, map={"00": "disarmed", "01": "armed"}),
         BLELock("lock", mi=11),
         BaseConv("contact", "binary_sensor"),  # from mi=7
         BLEByteConv("battery", "sensor", mi=4106),
@@ -1412,6 +1423,7 @@ DEVICES += [{
         BLEMathConv("temperature", "sensor", mi=4100, multiply=0.1, round=1, signed=True),  # int16
         BLEMathConv("humidity", "sensor", mi=4102, multiply=0.1),  # uint16
         BLEByteConv("battery", "sensor", mi=4106, entity=ENTITY_LAZY),  # no in new firmwares
+        # https://github.com/AlexxIT/XiaomiGateway3/issues/1127
         BLEMathConv("formaldehyde", "sensor", mi=4112, multiply=0.001),  # uint16
     ]
 }, {
@@ -2756,8 +2768,8 @@ DEVICES += [{
         CurtainPosConv("position", mi="2.p.2"),
         BaseConv("battery", "sensor", mi="3.p.1"),
         BaseConv("security_mode", "switch", mi="4.p.6", entity=ENTITY_CONFIG),
-        BaseConv("power_replenishment", "sensor", mi="7.p.1", entity=ENTITY_CONFIG),
-        BaseConv("realtime_current_in", "sensor", mi="7.p.2", entity=ENTITY_CONFIG),
+        BaseConv("power_replenishment", "sensor", mi="7.p.1", entity={"category": "diagnostic", "enabled": False, "lazy": True, "units": "mAh"}),
+        BaseConv("realtime_current_in", "sensor", mi="7.p.2", entity={"category": "diagnostic", "enabled": False, "class": "current", "units": "mA"}),
     ],
 }, {
     10813: ["Yeelink", "Curtain Motor C1", "YCCBCI008", "yeelink.curtain.crc1"],
@@ -3088,6 +3100,22 @@ DEVICES += [{
         BoolConv("flex_switch", "switch", mi="2.p.6"),
         MathConv("light_off_gradient_time", "number", mi="2.p.7", multiply=0.5, min=0, max=10, entity=ENTITY_CONFIG),
         MathConv("light_on_gradient_time", "number", mi="2.p.8", multiply=0.5, min=0, max=10, entity=ENTITY_CONFIG),
+    ]
+}, {
+    15082: ["Unknown", "Smart Quadruple Switch", "topwit.switch.rzw34"],
+    "spec": [
+        BaseConv("switch_1", "switch", mi="2.p.1"),
+        BaseConv("switch_2", "switch", mi="3.p.1"),
+        BaseConv("switch_3", "switch", mi="4.p.1"),
+        BaseConv("switch_4", "switch", mi="23.p.1"),
+        MapConv("mode_1", "select", mi="2.p.2", map={0: "off", 1: "wireless"}),
+        MapConv("mode_2", "select", mi="3.p.2", map={0: "off", 1: "wireless"}),
+        MapConv("mode_3", "select", mi="4.p.2", map={0: "off", 1: "wireless"}),
+        MapConv("mode_4", "select", mi="23.p.4", map={0: "off", 1: "wireless"}),
+        BaseConv("action", "sensor"),
+        MapConv("action", mi="5.e.1.p.2", map={1: BUTTON_1_SINGLE, 2: BUTTON_2_SINGLE, 3: BUTTON_3_SINGLE, 4: BUTTON_BOTH_SINGLE}),
+        MapConv("action", mi="5.e.2.p.2", map={1: BUTTON_1_DOUBLE, 2: BUTTON_2_DOUBLE, 3: BUTTON_3_DOUBLE, 4: BUTTON_BOTH_DOUBLE}),
+        MapConv("action", mi="5.e.3.p.2", map={1: BUTTON_1_HOLD, 2: BUTTON_2_HOLD, 3: BUTTON_3_HOLD, 4: BUTTON_BOTH_HOLD}),
     ]
 }, {
     "default": "mesh",  # default Mesh device
